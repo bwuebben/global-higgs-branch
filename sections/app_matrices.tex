@@ -1,0 +1,214 @@
+\section{Integral charge data for the compact examples}
+\label{app:matrices}
+
+\subsection[The X9 divisor reduction]{The $X_9$ divisor reduction}
+
+In the ordered basis \eqref{eq:x9-divisor-basis}, the three local coordinate
+rows are
+\begin{equation}
+ B_{\mathrm{red}}
+ =\begin{pmatrix}
+  1&0&-1&-1&0&0\\
+ -1&1& 0& 1&0&0\\
+  0&1&-1& 0&0&0
+ \end{pmatrix},
+ \qquad
+ Q_{\mathcal D}=B_{\mathrm{red}}^{\mathsf T}.
+ \label{eq:app-x9-b}
+\end{equation}
+The following integral vector combinations define a unimodular basis:
+\begin{align}
+ V_1&=-D_6,&
+ V_2&=D_5,\nonumber\\
+ S_1&=D_2+D_7,&
+ S_2&=D_2+D_5+D_6,\nonumber\\
+ S_3&=D_8,&
+ \Phi&=E.
+ \label{eq:app-x9-basis-change}
+\end{align}
+The determinant of the change-of-basis matrix is $-1$, and in this frame
+\begin{equation}
+ Q'=
+ \begin{pmatrix}
+ 1&0&1\\
+ 0&1&1\\
+ 0&0&0\\
+ 0&0&0\\
+ 0&0&0\\
+ 0&0&0
+ \end{pmatrix}.
+\end{equation}
+This proves both the effective matrix and its primitivity in the printed
+toric lattice.
+
+The full $E_2$ tangent scheme also contains the nilpotent coordinate $\alpha$.
+Its row is the pairing of the divisors with a class of $K_{S_7}^{\perp}$
+complementary to the root; the choice of complement is immaterial on the
+reduced branch, where $\alpha=0$. In the divisor order
+\eqref{eq:x9-divisor-basis}, the row is
+\begin{equation}
+ (0,-2,1,0,-2,0).
+ \label{eq:app-x9-alpha}
+\end{equation}
+Some spectator combinations can therefore couple to $\alpha$ over dual
+numbers. This does not add a finite Higgs mass because
+$\alpha^2=\alpha\beta=0$ and $\alpha$ vanishes on the reduction.
+
+\subsection[The X-circ toric and resolution input]{The $X^{\circ}$ toric and resolution input}
+\label{app:xcirc-input}
+
+Let $N_{\circ}\cong\ZZ^4$ be a fresh one-parameter-subgroup lattice and set
+$\Pi=\operatorname{conv}\{r_1,\ldots,r_{26}\}\subset
+(N_{\circ})_{\mathbb R}$. Thus $\Pi$ is the fan polytope: the ambient
+fourfold is defined by the fan over its faces, and $X^{\circ}$ is a
+$\Pi$-regular anticanonical hypersurface. In particular, $\Pi$ is not the
+polar $\Delta^{\circ}\subset M_{\mathbb R}$ of
+\eqref{eq:polar-convention}. The following table is the complete vertex list;
+its order fixes all subsequent labels.
+\begin{equation}
+\begin{array}{c|c@{\qquad}c|c}
+1&(-1,-1,-1,-1)&14&(0,-1,-1,0)\\
+2&(-1,-1,-1,0)&15&(0,-1,0,1)\\
+3&(-1,-1,0,-1)&16&(0,-1,0,0)\\
+4&(-1,-1,0,1)&17&(0,1,-1,-1)\\
+5&(-1,-1,1,0)&18&(0,1,-1,0)\\
+6&(-1,-1,1,1)&19&(0,1,0,-1)\\
+7&(-1,0,-1,-1)&20&(0,1,0,0)\\
+8&(-1,0,-1,0)&21&(1,1,-1,-1)\\
+9&(-1,0,0,-1)&22&(1,0,-1,0)\\
+10&(-1,0,0,1)&23&(0,0,0,-1)\\
+11&(-1,0,1,0)&24&(0,0,0,1)\\
+12&(-1,0,1,1)&25&(0,0,1,0)\\
+13&(0,-1,-1,-1)&26&(0,0,1,1)
+\end{array}
+ \label{eq:xcirc-vertices}
+\end{equation}
+The twenty-six unit-square faces, written by vertex index, are
+\begin{equation}
+\begin{array}{c|c@{\quad}c|c}
+N_1&\{1,2,7,8\}&N_{14}&\{5,6,25,26\}\\
+N_2&\{1,2,13,14\}&N_{15}&\{7,8,17,18\}\\
+N_3&\{1,3,7,9\}&N_{16}&\{7,9,17,19\}\\
+N_4&\{2,4,8,10\}&N_{17}&\{10,12,18,20\}\\
+N_5&\{2,4,14,15\}&N_{18}&\{10,12,24,26\}\\
+N_6&\{3,5,9,11\}&N_{19}&\{11,12,19,20\}\\
+N_7&\{3,5,13,16\}&N_{20}&\{11,12,25,26\}\\
+N_8&\{3,5,23,25\}&N_{21}&\{13,14,15,16\}\\
+N_9&\{3,9,19,23\}&N_{22}&\{13,16,23,25\}\\
+N_{10}&\{4,6,10,12\}&N_{23}&\{15,16,25,26\}\\
+N_{11}&\{4,10,15,24\}&N_{24}&\{17,18,19,20\}\\
+N_{12}&\{5,6,11,12\}&N_{25}&\{18,20,24,26\}\\
+N_{13}&\{5,6,15,16\}&N_{26}&\{19,20,25,26\}
+\end{array}
+ \label{eq:xcirc-node-faces}
+\end{equation}
+Each set in \eqref{eq:xcirc-node-faces} denotes the corresponding vertices
+$r_i$. The remaining singular faces are
+\begin{equation}
+\begin{array}{c|c|c}
+D_{6,1}&\{r_1,r_2,r_3,r_4,r_5,r_6\}&r_{27}=(-1,-1,0,0)\\
+D_{6,2}&\{r_7,r_8,r_9,r_{10},r_{11},r_{12}\}&r_{28}=(-1,0,0,0)\\
+D_{7,1}&\{r_1,r_7,r_{13},r_{17},r_{21}\}&r_{29}=(0,0,-1,-1)\\
+D_{7,2}&\{r_2,r_8,r_{14},r_{18},r_{22}\}&r_{30}=(0,0,-1,0),
+\end{array}
+ \label{eq:xcirc-divisorial-faces}
+\end{equation}
+where the last column is the unique interior lattice point. These face data
+give precisely the singularity inventory in \eqref{eq:xcirc-content}.
+
+For definiteness, one smooth projective crepant subdivision is fixed as
+follows. On the thirty boundary rays assign heights
+\begin{equation}
+ b_i=2^{26-i}\quad(1\leq i\leq26),
+ \qquad
+ b_i=-2^{30}+2^{30-i}\quad(27\leq i\leq30).
+ \label{eq:xcirc-resolution-heights}
+\end{equation}
+Take the lower-facet triangulation on every facet and cone it to the origin.
+The induced triangulations agree on common faces, every maximal cone is
+unimodular, and the four divisorial faces are star-triangulated at
+$r_{27},\ldots,r_{30}$. This fixes the exceptional curves and surfaces used
+below.
+
+Principal-divisor relations eliminate the rays $15,22,24,26$. Thus the
+rank-$26$ divisor basis is indexed by
+\begin{equation}
+ \mathcal I=
+ \{1,2,\ldots,14,16,17,18,19,20,21,23,25,27,28,29,30\}.
+ \label{eq:app-xcirc-index}
+\end{equation}
+For a local coordinate $a$, write its charge row as
+$b_a=\sum_{I\in\mathcal I}B_{aI}D_I$. The complete sparse presentation of
+$B$ is
+\begingroup
+\scriptsize
+\begin{align*}
+b_{N_1}&=D_1-D_2-D_7+D_8,&
+b_{N_2}&=D_1-D_2-D_{13}+D_{14},\\
+b_{N_3}&=D_1-D_3-D_7+D_9,&
+b_{N_4}&=D_2-D_4-D_8+D_{10},\\
+b_{N_5}&=D_2-D_4-D_{14},&
+b_{N_6}&=D_3-D_5-D_9+D_{11},\\
+b_{N_7}&=D_3-D_5-D_{13}+D_{16},&
+b_{N_8}&=D_3-D_5-D_{23}+D_{25},\\
+b_{N_9}&=D_3-D_9+D_{19}-D_{23},&
+b_{N_{10}}&=D_4-D_6-D_{10}+D_{12},\\
+b_{N_{11}}&=D_4-D_{10},&
+b_{N_{12}}&=D_5-D_6-D_{11}+D_{12},\\
+b_{N_{13}}&=D_5-D_6-D_{16},&
+b_{N_{14}}&=D_5-D_6-D_{25},\\
+b_{N_{15}}&=D_7-D_8-D_{17}+D_{18},&
+b_{N_{16}}&=D_7-D_9-D_{17}+D_{19},\\
+b_{N_{17}}&=D_{10}-D_{12}-D_{18}+D_{20},&
+b_{N_{18}}&=D_{10}-D_{12},\\
+b_{N_{19}}&=D_{11}-D_{12}-D_{19}+D_{20},&
+b_{N_{20}}&=D_{11}-D_{12}-D_{25},\\
+b_{N_{21}}&=D_{13}-D_{14}-D_{16},&
+b_{N_{22}}&=D_{13}-D_{16}-D_{23}+D_{25},\\
+b_{N_{23}}&=-D_{16}+D_{25},&
+b_{N_{24}}&=D_{17}-D_{18}-D_{19}+D_{20},\\
+b_{N_{25}}&=D_{18}-D_{20},&
+b_{N_{26}}&=D_{19}-D_{20}-D_{25},\\
+b_{D_{6,1},s_1}&=D_1-D_2-D_5+D_6,&
+b_{D_{6,1},s_2}&=D_2-D_3-D_4+D_5,\\
+b_{D_{6,1},s_3}&=D_1-D_2-D_3+D_4+D_5-D_6,&
+b_{D_{6,2},s_1}&=D_7-D_8-D_{11}+D_{12},\\
+b_{D_{6,2},s_2}&=D_8-D_9-D_{10}+D_{11},&
+b_{D_{6,2},s_3}&=D_7-D_8-D_9+D_{10}+D_{11}-D_{12},\\
+b_{D_{7,1},\alpha}&=-2D_1+2D_7+D_{13}-D_{17},&
+b_{D_{7,1},\beta}&=-D_1+D_{13}+D_{17}-D_{21},\\
+b_{D_{7,2},\alpha}&=2D_2-D_8-2D_{14},&
+b_{D_{7,2},\beta}&=D_8-D_{14}-D_{18}.
+\end{align*}
+\endgroup
+This is a $36\times26$ matrix of rank $21$, with twenty-one nonzero Smith
+invariants, all equal to one. Deleting the coordinates absent on a chosen
+$E_3$ component gives the four profile matrices in
+Table~\ref{tab:xcirc-profiles}.
+
+\subsection[Primitive vectors in X-circ]{Primitive vectors in $X^{\circ}$}
+
+If $B$ denotes the $36\times26$ local-coordinate-by-divisor matrix, the five
+primitive vectors producing \eqref{eq:xcirc-isolating-moments} are
+\begin{align}
+ v_9={}&\sum_{i=1}^{12}D_i+D_{17}+D_{18}+D_{19}+D_{20},\nonumber\\
+ v_{11}={}&-\sum_{i=7}^{12}D_i-D_{17}-D_{18}-D_{19}-D_{20}-D_{21},\nonumber\\
+ v_{\beta_1}={}&-D_{21},\nonumber\\
+ v_{\beta_2}={}&\sum_{i=1}^{12}D_i-D_{21},\nonumber\\
+ v_{A_1}={}&D_1+D_3+D_5+D_7+D_9+D_{11}+D_{13}+D_{16}
+ +D_{17}+D_{19}+D_{21}+D_{23}+D_{25}.
+ \label{eq:app-xcirc-vectors}
+\end{align}
+Direct multiplication gives
+\begin{align}
+ Bv_9&=e_{u_9}-e_{\alpha_1}+e_{\alpha_2},&
+ Bv_{11}&=e_{u_{11}}-e_{\alpha_1}+e_{\alpha_2},\nonumber\\
+ Bv_{\beta_1}&=e_{\beta_1},&
+ Bv_{\beta_2}&=e_{\alpha_2}+e_{\beta_2},\nonumber\\
+ Bv_{A_1}&=e_{L_1}+e_{L_2}.
+ \label{eq:app-xcirc-products}
+\end{align}
+The complete sparse matrix is included in the reproducibility source described
+in Appendix~\ref{app:reproducibility}. Its Smith form has $21$ nonzero unit
+invariants and five zero directions. After branch restriction, the four
+profiles have the ranks printed in Table~\ref{tab:xcirc-profiles}.

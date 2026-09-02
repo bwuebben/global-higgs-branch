@@ -1,0 +1,145 @@
+\section{Normalizability and gravity-decoupling limits}
+\label{sec:decoupling}
+
+The compact theorem and a rigid noncompact limit impose different
+normalizability conditions. In the compact model, the rows of $Q_X$ arise from
+dynamical vector fields. In a noncompact limit, some of those fields can
+become background flavor sources, in which case their moment-map equations
+must be removed. We formulate the distinction in this section.
+
+\subsection{Finite compact volume}
+\label{subsec:compact-normalizability}
+
+On a smooth compact resolution, the standard reduction
+\eqref{eq:c3-reduction} gives the five-dimensional kinetic term
+\begin{equation}
+ S_5\supset-\frac14\int_{M_5}G_{IJ}F^I\wedge *_5F^J,
+ \qquad
+ G_{IJ}\propto\int_{\wideX}\omega_I\wedge *_6\omega_J.
+ \label{eq:vector-kinetic-matrix}
+\end{equation}
+\cite{Cadavid:1995bk}.
+Every harmonic form on a compact manifold has finite norm. After separating
+the graviphoton, these fields supply the $h^{1,1}(\wideX)-1$ vector
+multiplets. At the transition point the graviphoton direction is the
+K\"ahler class of the singular threefold, which pairs to zero with every
+exceptional curve and root, so its row of $Q_X$ vanishes and the effective
+rows in Section~\ref{sec:examples} are vector-multiplet directions. The
+pairings in \eqref{eq:nodal-charge} and
+\eqref{eq:cocharacter} are therefore charges under dynamical fields, not
+charges under nondynamical flavor backgrounds.
+
+Similarly, the kinetic metric for compact complex-structure moduli is
+schematically
+\begin{equation}
+ G_{\kappa\bar\lambda}
+ \propto
+ \frac{\int_X\chi_\kappa\wedge\overline\chi_{\bar\lambda}}
+      {\int_X\Omega\wedge\overline\Omega},
+ \qquad
+ \chi_\kappa\in H^{2,1}(X).
+ \label{eq:complex-structure-metric}
+\end{equation}
+\cite{Cadavid:1995bk}.
+The local coordinates in $\cB_\sigma$ are limits of these compact directions,
+subject to the global image theorem. Thus no additional local $L^2$
+assumption is needed to impose
+\begin{equation}
+ Q_Xb=0
+ \label{eq:full-compact-constraint}
+\end{equation}
+at finite compact volume.
+
+\subsection{Dynamical and background vectors in a local limit}
+\label{subsec:dynamic-background}
+
+Consider a one-parameter family of K\"ahler classes $J(\Lambda)$ with
+\begin{equation}
+ \Vol_{J(\Lambda)}(X)\longrightarrow\infty,
+ \qquad
+ G_{N,5}\longrightarrow0.
+ \label{eq:gravity-decoupling}
+\end{equation}
+For a vector combination $v=v^ID_I$, let
+$\omega_v=v^I\omega_I$ and define its kinetic norm
+\begin{equation}
+ \mathcal N_v(\Lambda)
+ =\int_X\omega_v\wedge*_{J(\Lambda)}\omega_v,
+ \label{eq:vector-norm}
+\end{equation}
+understood in a finite-normalization basis after the standard five-dimensional
+Einstein-frame rescaling. The vector belongs to the retained dynamical theory
+only when its normalized kinetic term has a finite nonzero limit. Geometrically,
+this is the requirement that it become an $L^2$ two-form on the retained
+noncompact space. A compact divisor may furnish such a form; a divisor which
+becomes noncompact gives a non-normalizable flavor background.
+
+Let $P_{\mathrm{dyn}}$ project the compact vector lattice onto the combinations
+that remain dynamical, and let $\cB_{\mathrm{loc}}$ be the product of the
+local invariant-coordinate spaces retained in the chosen noncompact limit.
+The moment-map matrix of the limiting theory is
+\begin{equation}
+ \boxed{
+ Q_{\mathrm{dyn}}=P_{\mathrm{dyn}}Q_X,
+ \qquad
+ \operatorname{Im}(\cM_H\to\cB_{\mathrm{loc}})
+ =\ker Q_{\mathrm{dyn}}.}
+ \label{eq:projected-decoupling-matrix}
+\end{equation}
+If the norm of a shared vector diverges, its canonically normalized coupling
+to the local sector vanishes. That vector is no longer integrated over in the
+local theory; its moment-map equation is not imposed, and the corresponding
+row of $Q_X$ is deleted. Equation \eqref{eq:projected-decoupling-matrix} is
+therefore the limit of the compact derivation, not an independent ansatz.
+
+\subsection{Multistage decoupling}
+\label{subsec:multistage}
+
+Several local singularities can remain connected after the overall
+Calabi--Yau volume is sent to infinity. Shared compact surfaces or
+lower-codimension singular loci can continue to gauge a common flavor subgroup.
+Only a further decompactification factorizes the individual local theories.
+This multistage structure appears in geometric constructions of 5d theories
+and in compact analyses of generalized symmetries
+\cite{Apruzzi:2019vpe,Cvetic:2023plv}.
+
+For the present mechanism there are accordingly three regimes:
+\begin{equation}
+\begin{array}{c|c|c}
+\text{regime}&\text{dynamical shared vectors}&\text{constraint}\\
+\hline
+\text{compact supergravity}&\text{all compact rows}&Q_Xb=0\\
+\text{glued local QFT}&\text{selected finite-norm rows}&P_{\mathrm{dyn}}Q_Xb=0\\
+\text{factorized local sectors}&\text{no shared rows}&\text{no cross-sector equation}.
+\end{array}
+\label{eq:three-regimes}
+\end{equation}
+Coupling to gravity is therefore sufficient but not necessary for the
+correlation. A gravity-decoupled glued QFT may retain it as an ordinary 5d
+gauging. What is special to the compact statement is that every row is
+dynamical before a limit is chosen.
+
+\subsection[Complex deformations and the local L2 caveat]{Complex deformations and the local $L^2$ caveat}
+\label{subsec:local-l2-caveat}
+
+The same distinction applies to Higgs coordinates. Local geometric-engineering
+work uses a protected notion of dynamical complex deformation that is checked
+against Higgs chiral rings and magnetic quivers
+\cite{Closset:2020afy,DeMarco:2026higgs}. Strict $L^2$ normalizability of a
+representative three-form can additionally depend on the asymptotic metric of
+the chosen noncompact Calabi--Yau, with subtleties already visible for the
+conifold. We therefore separate:
+\begin{enumerate}
+ \item compact normalizability, which is sufficient for the theorem here;
+ \item protected local Higgs dynamics, established for the node, $E_2$ and
+ $E_3$ components used above; and
+ \item strict local $L^2$ realization in a specified noncompact metric, which
+ is not proved in this paper.
+\end{enumerate}
+
+No K\"ahler scaling ray has yet been constructed for $X_9$ or $X^{\circ}$
+which determines exactly which shared rows survive after gravity decouples.
+Accordingly, our principal theorem concerns compact M-theory at finite volume.
+Claims about a particular rigid limit must use
+\eqref{eq:projected-decoupling-matrix} and supply that additional geometric
+analysis.

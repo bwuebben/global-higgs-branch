@@ -1,0 +1,269 @@
+\section{Introduction and summary}
+\label{sec:introduction}
+
+Topology-changing transitions in Calabi--Yau compactifications admit a
+particularly direct interpretation in M-theory. At a conifold degeneration,
+M2-branes wrapped on exceptional curves become massless. Their charges are the
+homology classes of those curves, and condensation along the Higgs branch
+connects the resolved and deformed Calabi--Yau threefolds
+\cite{Greene:1995hu,Katz:1996,Witten:1996qb,Mohaupt:2004de}. Contractions of
+compact del Pezzo surfaces lead instead to interacting five-dimensional fixed
+points \cite{Seiberg:1996,Morrison:1996pp,Douglas:1996,Intriligator:1997}. These two kinds of transition are usually analyzed
+separately: the former in terms of charged hypermultiplets and the latter in
+terms of the Coulomb and Higgs branches of a local superconformal field theory.
+
+This paper studies compact transitions in which both types of sector occur at
+once. We call a transition \emph{cooperative} when its global deformation
+space contains a direction with nonzero components in several local sectors
+but contains no nonzero direction supported on any one of those sectors
+alone. The basic question is global. Suppose that a compact Calabi--Yau
+threefold contains isolated singularities $p$ which, in their noncompact
+geometric-engineering limits, define five-dimensional theories $\cT_p$. Each
+local theory can possess one or more Higgs-branch directions. Which
+combinations of these directions remain available when the singularities are
+embedded in the same compact threefold and coupled to the vector fields of the
+compactification?
+
+There is no reason for the answer to factorize. A complex deformation of the
+compact threefold restricts to a deformation of every singular germ, but the
+image of the restriction map
+\begin{equation}
+  \TangentDef:=\operatorname{Ext}^1_X(\Omega_X^1,\cO_X)
+  \longrightarrow \bigoplus_p T^1_{X,p},
+  \qquad
+  T^1_{X,p}:=\operatorname{Ext}^1_{\cO_{X,p}}
+  (\Omega^1_{X,p},\cO_{X,p}),
+  \label{eq:intro-restriction}
+\end{equation}
+can be a proper subspace. The same phenomenon has a five-dimensional
+description. Reducing the M-theory three-form on harmonic two-forms gives
+Abelian vector fields $A^I$. Wrapped M2 states are electrically charged under
+these fields, while the compact embedding gauges Cartan subgroups of the
+flavor symmetries of the interacting sectors. The corresponding moment-map
+equations correlate local Higgs operators that would be independent in
+isolated noncompact models.
+
+We make this relation precise for compact Calabi--Yau threefolds whose isolated
+singularities are ordinary double points and anticanonical cones over del
+Pezzo surfaces of degrees seven and six. We write
+\begin{equation}
+ S_7=\operatorname{Bl}_2\mathbb P^2,
+ \qquad
+ S_6=\operatorname{Bl}_3\mathbb P^2 .
+ \label{eq:intro-del-pezzo}
+\end{equation}
+The corresponding local sectors are a free hypermultiplet and the rank-one
+$E_2$ and $E_3$ fixed points, respectively. This notation avoids the common
+ambiguity between the degree of a del Pezzo surface and the number of blown-up
+points.
+
+The local input is finer than a dimension count. In one complex structure, a
+nodal hypermultiplet with scalars $(h,\widetilde h)$ projects to the conifold
+deformation coordinate $t=h\widetilde h$. For the $E_2$ theory, the invariant
+ring of its Higgs chiral ring under the complexified $SU(2)$ Cartan is
+\begin{equation}
+ \CC[\cH_{E_2}]^{\CC^*}
+ \cong \frac{\CC[J_0,U]}{(U^2,UJ_0)} .
+ \label{eq:intro-e2-ring}
+\end{equation}
+This is the complete nonreduced miniversal base of the cone over $S_7$.
+The reduced smoothing coordinate is the $SU(2)$ Cartan moment map $J_0$; the
+additional nilpotent tangent direction is the $U(1)$ current-multiplet
+operator $U$. For
+$E_3$, taking invariants under the complexified maximal torus gives
+\begin{equation}
+ \CC[\cH_{E_3}]^{T_{\CC}}
+ \cong
+ \frac{\CC[H_1,H_2,L]}{(H_1L,H_2L)} .
+ \label{eq:intro-e3-ring}
+\end{equation}
+The plane $(H_1,H_2)$ consists of the $SU(3)$ Cartan moment maps and the line
+$L$ is the $SU(2)$ Cartan moment map. Equation
+\eqref{eq:intro-e3-ring} is the reducible miniversal base of the cone over
+$S_6$. Its plane is the maximal-torus invariant image
+$\cB_{\mathfrak{sl}_3}\cong\CC^2$ of the minimal nilpotent orbit closure
+$\cH_{\mathfrak{sl}_3}:=\overline{\mathcal O_{\min}(\mathfrak{sl}_3)}$;
+its line is the corresponding image $\cB_{\mathfrak{sl}_2}\cong\CC$ of
+$\cH_{\mathfrak{sl}_2}:=\overline{\mathcal O_{\min}(\mathfrak{sl}_2)}$.
+This description keeps the two full $E_3$ Higgs components and their
+invariant images separate rather than combining them into a single
+tangent-space count. The local rings follow from
+the known Higgs chiral rings
+\cite{Cremonesi:2015lsa}; magnetic quivers provide an independent component
+and Hilbert-series check \cite{Ferlito:2016,Cabrera:2018,Closset:2020afy}.
+
+\subsection*{Charge constraints and the local-to-global deformation map}
+
+Let $\wideX\to X$ be a crepant resolution and let $D_I$ be compact divisor
+classes. At a node, denote the exceptional curve by $C_a$. At an $E_2$ or
+$E_3$ point, let $R_{p\alpha}$ be a root in the summand of
+$K_{S_p}^{\perp}$ selected by the chosen Higgs component. Here
+$K_{S_p}^{\perp}$ is the orthogonal complement of the canonical class in
+$H_2(S_p;\ZZ)$ for the intersection pairing. The compact matrix is
+\begin{equation}
+ c_{Ia}=D_I\cdot C_a,
+ \qquad
+ m_{Ip\alpha}=D_I\cdot\iota_{p*}R_{p\alpha}.
+ \label{eq:intro-charges}
+\end{equation}
+The first set of entries are the electric charges of wrapped M2-branes. The
+second set are the cocharacters specifying how $A^I$ gauges the local flavor
+Cartans. Thus the complex moment maps take the form
+\begin{equation}
+ \mu_I^{\CC}
+ =\sum_a c_{Ia}t_a
+  +\sum_r m^{(7)}_{Ir}\beta_r
+  +\sum_p\bigl(m_{Ip1}H_{p1}+m_{Ip2}H_{p2}+m_{Ip0}L_p\bigr),
+ \label{eq:intro-moment-map}
+\end{equation}
+with $H_{p1}L_p=H_{p2}L_p=0$ at each $E_3$ point.
+
+A \emph{branch profile} $\sigma$ chooses the full component
+$\cH_{\mathfrak{sl}_2}$ or $\cH_{\mathfrak{sl}_3}$ at each $E_3$ point;
+$\cB_{\sigma}$ is the product of their invariant images with the nodal and
+reduced $E_2$ lines. Let $\cM_{H,\sigma}^{\mathrm{rigid}}$ denote the product
+of the selected local Higgs cones, restricted to the triplet-moment-map zero locus
+for the effective compact Abelian group and then divided by that group.
+Restricting \eqref{eq:intro-moment-map} to the invariant coordinates gives a
+linear complex map $\Qcompact$. For the geometric equality below, $X$ is a
+$\Delta$-regular anticanonical hypersurface associated with an admissible
+four-dimensional reflexive polytope as defined in
+Section~\ref{subsec:admissible-class}, and it satisfies
+\eqref{eq:global-hypotheses}. Our principal result is
+\begin{equation}
+ \boxed{
+ \operatorname{Im}\!\left(
+   \cM_{H,\sigma}^{\mathrm{rigid}}\longrightarrow\cB_{\sigma}
+ \right)
+ =\ker(\Qcompact)
+ =\operatorname{Im}\!\left(
+   \TangentDef\longrightarrow\bigoplus_pT^1_{X,p}
+ \right)\cap\cB_{\sigma}.}
+ \label{eq:intro-main}
+\end{equation}
+The first equality is a five-dimensional moment-map statement. The second is
+the geometric local-to-global deformation theorem. Equation
+\eqref{eq:intro-main} therefore identifies the geometric kernel with a physical
+charge and gauging constraint, rather than attaching a field-theory
+interpretation to a dimension computed after the fact.
+
+Figure~\ref{fig:local-to-global} summarizes the three local inputs and the
+common compact charge map.
+\input{figures/local_to_global}
+
+The word ``image'' in \eqref{eq:intro-main} is essential. A local deformation
+base records invariant Higgs-branch coordinates, not the full
+hyperk\"ahler cone or its metric. Likewise, the right-hand side is a complex
+linear space on a fixed reduced profile. We do not identify it with the full
+quaternionic-K\"ahler scalar manifold of the compact supergravity theory.
+
+The real moment maps do not impose an additional inequality on this projected
+image. Every value of $t_a$, $\beta_r$, $(H_{p1},H_{p2})$, or $L_p$ has a
+balanced representative for which the corresponding local real Cartan moment
+maps vanish. Consequently every point of the complex kernel lifts to the
+zero-level triplet-moment-map locus. This also explains why signs in a homology
+relation do not obstruct Higgsing: phases reside in the elementary complex
+scalars, while their absolute values can be balanced.
+
+The geometric theorem has two levels. Under the stated compactness, Hodge and
+admissibility hypotheses, \eqref{eq:intro-main} is an exact first-order
+statement. A separate vanishing-period argument constrains genuine analytic
+arcs to all orders, including arcs tangent to a discriminant to arbitrarily
+high order. It implies a full-support relation for nodes, $E_2$ points and
+$E_3$ points smoothed through $\cH_{\mathfrak{sl}_2}$. The
+two-dimensional component $\cH_{\mathfrak{sl}_3}$ requires a two-period
+extension that is not claimed here. Conversely, the general integration of
+an allowed first-order
+class remains open; it is proved in the explicit positive example below.
+
+\subsection*{Three compact phenomena}
+
+The theorem produces three qualitatively different effects.
+
+First, a local Higgs direction can disappear completely after compact
+embedding. We give a compact model $X_7$ with one $E_2$ cone point. The
+reduced local theory has its $SU(2)$ Higgs component, but the compact kernel
+is zero. Hence no global first-order deformation activates it and no analytic
+smoothing exists.
+
+Second, local sectors can Higgs only cooperatively. Our main explicit model $X_9$
+contains two nodes and one $E_2$ point. Neither the two nodal sectors alone nor
+the $E_2$ sector alone has a nonzero global direction. In a primitive compact
+vector basis the effective charge matrix is
+\begin{equation}
+ Q_{X_9}^{\mathrm{eff}}=
+ \begin{pmatrix}1&0&1\\0&1&1\end{pmatrix},
+ \qquad
+ \ker Q_{X_9}^{\mathrm{eff}}=\CC(-1,-1,1).
+ \label{eq:intro-x9}
+\end{equation}
+The unique projected Higgs direction moves all three sectors together. An
+explicit family integrates it. The Hodge numbers change as
+\begin{equation}
+ (h^{1,1},h^{2,1})=(6,122)\longrightarrow(3,123).
+ \label{eq:intro-x9-hodge}
+\end{equation}
+Two vectors are Higgsed by the rank-two gauging, while the third disappearing
+vector is the neutral rank-one $E_2$ Coulomb direction represented by the
+exceptional divisor. The surviving deformation supplies one neutral
+hypermultiplet, in agreement with \eqref{eq:intro-x9-hodge}.
+
+Third, local smoothability need not imply simultaneous global Higgsability. A
+compact model $X^{\circ}$ contains $26$ nodes, two $E_2$ points and two $E_3$
+points. Every germ is locally smoothable. For all four ordered choices of
+$\mathfrak{sl}_2$ and $\mathfrak{sl}_3$ components at the two $E_3$ points,
+however, explicit primitive compact vectors force two nodal and
+both $E_2$ deformation coordinates to vanish. The projected kernels have
+dimensions $9,10,10,12$, so many partial Higgs directions survive, but no
+profile contains a trajectory that activates all thirty sectors. The
+vanishing-period theorem promotes this conclusion beyond tangent space on
+every profile, because any smoothing must move the two forced nodes and both
+$E_2$ points whatever components it selects at the $E_3$ points.
+Here the superscript circle is part of the model name and does not denote the
+polar operation introduced in \eqref{eq:polar-convention}.
+
+\subsection*{Relation to previous work and scope}
+
+Compact conifold charge matrices and their five-dimensional
+gauged-supergravity actions were developed in \cite{Mohaupt:2004de}.
+Malyshev's compact quintic supplied the closest geometric precursor: a del
+Pezzo root curve is homologous to four conifold curves, reducing the number of
+del Pezzo deformations \cite{Malyshev:2007zz}. Local $E_n$ Higgs branches and
+magnetic quivers are treated in
+\cite{Cremonesi:2015lsa,Ferlito:2016,Cabrera:2018,Bourget:2020bxh,Closset:2020afy}.
+De Marco, Del Zotto, Grimminger and Sangiovanni develop the local Higgs-branch
+stratification of five-dimensional fixed points from canonical singularities
+\cite{DeMarco:2026higgs}. The present problem is the subsequent compact one:
+which invariant directions survive when several such sectors share the
+dynamical vectors of a single compact threefold. Compact gluing and multistage
+decoupling are analyzed in
+\cite{Apruzzi:2019vpe,Cvetic:2023plv}.
+
+Our result extends the mixed geometry in
+\cite{Malyshev:2007zz}. It gives a uniform theorem for free and interacting
+localized sectors and derives its matrix as the electric-charge and
+flavor-cocharacter gauging map. It also retains the two components of the
+$E_3$ Higgs cone, identifies the full scheme-level $E_2/E_3$ projections, and
+separates the exact first-order image theorem from the all-orders obstruction.
+The cooperative and obstructed compact examples test each part of this
+structure. None of these field-theoretic or branchwise statements is contained
+in the one-example deformation count of \cite{Malyshev:2007zz}.
+
+All compact harmonic modes used in the construction have finite norm at
+finite volume, so the full matrix in \eqref{eq:intro-moment-map} is dynamical
+in the compact theory. In a limit that decouples gravity, only vector
+combinations with finite nonzero kinetic norm remain dynamical. The matrix is
+then projected to $Q_{\mathrm{dyn}}=P_{\mathrm{dyn}}Q_X$. Gravity may therefore
+decouple before all local sectors factorize; conversely, a fully factorized
+local limit removes the shared rows. We do not claim that the compact
+constraint survives every decoupling limit, and no example-specific K\"ahler
+scaling ray is needed for the finite-volume theorem.
+
+The paper is organized as follows. Section~\ref{sec:local-sectors} establishes
+the local operator dictionaries and magnetic-quiver checks.
+Section~\ref{sec:compact-gauging} derives the compact charge and gauging map.
+Section~\ref{sec:global-theorems} states the geometric first-order and
+all-orders theorems. Section~\ref{sec:examples} presents the absent,
+cooperative and obstructed Higgsing examples. Section~\ref{sec:decoupling}
+separates the compact result from its possible rigid limits, and
+Section~\ref{sec:discussion} discusses extensions and open problems.

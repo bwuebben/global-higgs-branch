@@ -1,0 +1,346 @@
+\section{Compact examples: forbidden, mixed and obstructed deformations}
+\label{sec:examples}
+
+Three compact configurations exhibit distinct consequences of the charge
+map: a local Higgs flow that disappears, a mixed transition that exists only
+through cooperation, and a large system with many partial directions but no
+simultaneous all-sector trajectory. These effects depend on the actual kernel,
+not only its dimension.
+
+\subsection[A single E2 direction that disappears globally]{A single $E_2$ direction that disappears globally}
+\label{subsec:x7}
+
+The smallest example, denoted $X_7$, is a compact anticanonical hypersurface
+with one isolated cone over $S_7$ and no other singularities. Locally, the
+$E_2$ theory has the reduced Higgs coordinate $\beta$ of
+Section~\ref{subsec:e2-sector}. In the convention
+\eqref{eq:polar-convention}, it is a $\Delta_7$-regular hypersurface in
+$\mathbb P_{\Delta_7}$, where
+\begin{equation}
+\begin{split}
+ \Delta_7=\operatorname{conv}\{&v_0=(1,0,0,0),v_1=(0,1,0,0),
+ v_2=(0,0,1,0),v_3=(-6,-4,-1,0),\\
+ &v_4=(0,0,0,1),v_5=(-6,-4,0,-1),
+ v_6=(-3,-2,1,-1)\}.
+\end{split}
+ \label{eq:x7-polytope}
+\end{equation}
+This reflexive polytope has fifteen unimodular triangular two-faces and one
+unit-edge pentagon
+$G_7=\operatorname{conv}\{v_2,v_3,v_4,v_5,v_6\}$ with the unique interior
+lattice point $p_7=(-3,-2,0,0)$; its dual edge has length one. The three
+remaining boundary lattice points of $\Delta_7$ lie in facet interiors, so
+their divisors miss a generic hypersurface. We fix a
+maximal projective crepant partial (MPCP) subdivision whose restriction to
+$G_7$ is the five-triangle star at
+$p_7$. All other two-faces are already unimodular, so this is the only local
+resolution choice entering the root calculation. Writing $D_i$ for the ray
+divisor of $v_i$, the reduced $A_1$ root pairs with the ambient divisor
+classes as
+\begin{equation}
+ b_{7,\beta}=-D_2-D_3+D_4+D_5.
+ \label{eq:x7-root-row}
+\end{equation}
+The row is nonzero and the reduced local branch is one-dimensional. Hence
+the root class has nonzero image in $H_2(\widehat X_7;\QQ)$, and therefore
+\begin{equation}
+ K_{\mathrm{red}}(X_7)=0.
+ \label{eq:x7-kernel}
+\end{equation}
+The corresponding compact vector gauges the $SU(2)$ Cartan with nonzero
+coefficient. Its complex moment-map equation sets $\beta=0$.
+
+Equation \eqref{eq:x7-kernel} has two consequences at different logical
+levels. Theorem~\ref{thm:first-order-image} says that no global first-order
+complex deformation moves the reduced local $E_2$ coordinate. The
+all-orders Theorem~\ref{thm:all-orders-necessity} then excludes a
+one-parameter smoothing whose first nonzero local term appears at higher
+order. Thus a genuine local Higgs branch of the isolated fixed point is absent
+from the compact deformation space.
+
+This example is intentionally elementary. A single local sector supplies
+nothing with which its nontrivial root class can cancel. It provides the clean
+negative control for the cooperative example below.
+
+\subsection[A mixed smoothing requiring simultaneous local deformations]{A mixed smoothing requiring simultaneous local deformations}
+\label{subsec:x9}
+
+The main positive example $X_9$ contains two nodes and one cone over
+$S_7$. Order the reduced invariant coordinates as
+\begin{equation}
+ x=(u_1,u_2,\beta)^{\mathsf T},
+ \label{eq:x9-coordinates}
+\end{equation}
+where $u_1,u_2$ are conifold moment maps and $\beta$ is the $E_2$ Cartan
+moment map. No nonzero relation among the two nodal curve classes alone has a
+nonzero coefficient on either curve.
+The $E_2$ root likewise cannot move by itself, as the preceding example
+illustrates.
+
+The underlying reflexive polytope is
+\begin{equation}
+\begin{split}
+ \Delta_9=\operatorname{conv}\{&v_0=(1,0,0,0),v_1=(0,1,0,0),
+ v_2=(-1,-1,0,0),\\
+ &v_3=(0,0,1,0),v_4=(0,0,0,1),v_5=(-4,-2,-1,0),\\
+ &v_6=(-4,-2,0,-1),v_7=(3,1,1,1),v_8=(2,1,1,1)\}.
+\end{split}
+ \label{eq:x9-polytope}
+\end{equation}
+Its singular two-faces are the squares
+$\{v_2,v_3,v_6,v_7\}$ and $\{v_2,v_4,v_5,v_7\}$ and the pentagon
+$\{v_3,v_4,v_5,v_6,v_8\}$. Star subdivision at the pentagon's interior
+point $p=(-2,-1,0,0)$ gives $E=D_p\cong S_7$. The only other boundary
+lattice point, $(-1,0,0,0)$, lies in a facet interior, and its divisor misses
+a generic anticanonical hypersurface. We fix an MPCP completion using the
+square diagonals $(v_6,v_7)$ and $(v_2,v_4)$, in the order just listed. With
+the sign convention that the chosen diagonal has coefficient $-1$, the two
+nodal circuit rows on the ten rays $(v_0,\ldots,v_8,p)$ are
+\begin{equation}
+ v_2+v_3-v_6-v_7,
+ \qquad
+ -v_2-v_4+v_5+v_7.
+ \label{eq:x9-node-circuits}
+\end{equation}
+The remaining choices in the MPCP completion lie over smooth strata and do
+not alter these circuit rows or the star of $p$. Principal-divisor relations eliminate
+$D_0,D_1,D_3,D_4$, giving the divisor basis below.
+
+After removing a toric divisor that does not meet the generic hypersurface, a
+saturated basis of the toric divisor quotient is
+\begin{equation}
+ \mathcal D=(D_2,D_5,D_6,D_7,D_8,E),
+ \label{eq:x9-divisor-basis}
+\end{equation}
+where $E\cong S_7$ is the exceptional divisor. This is a complete basis of
+$H^2(\widehat X_9;\QQ)$. In this basis, the compact gauging matrix is
+\begin{equation}
+ Q_{\mathcal D}
+ =\begin{pmatrix}
+  1&-1& 0\\
+  0& 1& 1\\
+ -1& 0&-1\\
+ -1& 1& 0\\
+  0& 0& 0\\
+  0& 0& 0
+ \end{pmatrix}.
+ \label{eq:x9-full-matrix}
+\end{equation}
+An integral unimodular change of the six compact vector directions isolates
+two effective vectors,
+\begin{equation}
+ V_1=-D_6,
+ \qquad
+ V_2=D_5,
+ \label{eq:x9-effective-vectors}
+\end{equation}
+and brings \eqref{eq:x9-full-matrix} to
+\begin{equation}
+ Q_{X_9}^{\mathrm{eff}}
+ =\begin{pmatrix}1&0&1\\0&1&1\end{pmatrix}.
+ \label{eq:x9-effective-matrix}
+\end{equation}
+Both nonzero Smith invariants are one in the printed toric lattice. The two
+complex moment-map equations are
+\begin{equation}
+ u_1+\beta=0,
+ \qquad
+ u_2+\beta=0,
+ \label{eq:x9-moment-maps}
+\end{equation}
+so
+\begin{equation}
+ \ker Q_{X_9}^{\mathrm{eff}}
+ =\CC(-1,-1,1).
+\label{eq:x9-kernel}
+\end{equation}
+
+The cooperative structure is displayed in
+Figure~\ref{fig:x9-cooperation}.
+\input{figures/x9_cooperation}
+
+No nonzero vector in \eqref{eq:x9-kernel} is supported only on the nodes or
+only on the $E_2$ sector. The two free-hypermultiplet sectors and the
+interacting sector can move only together. Conversely, an explicit
+one-parameter Calabi--Yau family realizes the class
+\begin{equation}
+ (u_1,u_2,\beta)=t(-1,-1,1)
+ \label{eq:x9-family-direction}
+\end{equation}
+and has smooth general fiber by Theorem~B of
+\cite{Wuebben:2026smoothing}. More explicitly, take the facet
+$F=\{v_2,v_3,v_4,v_5,v_6,v_7,v_8\}$ and deformation degree
+$R=(0,1,-1,-1)$. On the ordered edges
+\begin{equation}
+ (v_2v_5,v_2v_6,v_2v_7,v_3v_6,v_3v_7,v_3v_8,
+ v_4v_5,v_4v_7,v_4v_8,v_5v_6,v_7v_8)
+ \label{eq:x9-facet-edges}
+\end{equation}
+the edge-dilation vector is
+$\tau=(0,0,1,1,0,0,1,0,0,0,0)$. This is the compatible Minkowski
+decomposition used in the Ilten--Vollmert construction
+\cite{Altmann:1995,Ilten:2012}: it restricts to a
+segment-plus-segment decomposition on each square and to a
+segment-plus-unimodular-triangle decomposition on the pentagon. These data
+define the cited toric deformation and its relative anticanonical family. The
+kernel is
+therefore not only a first-order flat direction: it integrates to a mixed
+extremal transition, and it is cooperative in the sense defined in the
+Introduction.
+
+There is a useful spectrum check. Exact lattice-point and
+Mayer--Vietoris calculations give
+\begin{equation}
+ \begin{array}{c|ccc|cc}
+ &h^{1,1}&h^{2,1}&\chi&n_V&n_H^{\mathrm{neutral}}\\
+ \hline
+ \widehat X_9&6&122&-232&5&123\\
+ X_{9,t}&3&123&-240&2&124.
+ \end{array}
+ \label{eq:x9-spectrum-table}
+\end{equation}
+For a smooth compact Calabi--Yau threefold in M-theory,
+$n_V=h^{1,1}-1$ and $n_H^{\mathrm{neutral}}=h^{2,1}+1$. The two effective
+gaugings in \eqref{eq:x9-effective-matrix} Higgs two vector directions and
+remove two quaternionic directions from the product of local Higgs sectors.
+One quaternionic modulus remains, in agreement with the increase of
+$n_H^{\mathrm{neutral}}$ in \eqref{eq:x9-spectrum-table}.
+
+The transition loses three, not two, massless vector multiplets. The third has
+a different origin. The exceptional-divisor vector $E$ is neutral under the
+$E_2$ root moment map because
+\begin{equation}
+ E|_E=K_E,
+ \qquad
+ \beta\in K_E^{\perp}.
+ \label{eq:x9-neutral-exceptional}
+\end{equation}
+It is the rank-one $E_2$ Coulomb direction and disappears when the entire
+surface is replaced by the smoothing. It is not a third flavor gauging. This
+separation between Higgsed vectors and the lost SCFT Coulomb vector is needed
+for the protected spectrum to agree with the topology.
+
+The integrality statement above is made in the saturated toric divisor
+lattice. A possible finite index between that lattice and the full integral
+cohomology lattice would affect global forms or discrete remnants, but not the
+rank, the complex kernel or the multiplet count. We also do not claim the full
+massive spectrum at the interacting $E_2$ point.
+
+\subsection{Thirty locally smoothable sectors with no common trajectory}
+\label{subsec:xcirc}
+
+The large example $X^{\circ}$ contains
+\begin{equation}
+ 26\text{ nodes},
+ \qquad 2\text{ }E_2\text{ points},
+ \qquad 2\text{ }E_3\text{ points}.
+ \label{eq:xcirc-content}
+\end{equation}
+Every singular germ admits a local smoothing. At the $i$th $E_2$ point, let
+$\alpha_i$ denote the nilpotent scheme-theoretic tangent coordinate and
+$\beta_i$ the reduced smoothing coordinate. At the
+$j$th $E_3$ point, let $L_j$ be the $A_1$ coordinate and
+$(H_{j1},H_{j2})$ the $A_2$ coordinates. Record a profile by the ordered pair
+of component labels selected at the two $E_3$ points. The four reduced
+profiles are
+\begin{equation}
+ (2,2),\quad (2,3),\quad (3,2),\quad (3,3),
+ \label{eq:xcirc-profiles}
+\end{equation}
+where $2$ and $3$ are subscripts naming the selected simple factor:
+$2$ selects the $\mathfrak{sl}_2$ line and $3$ the $\mathfrak{sl}_3$ plane.
+
+Appendix~\ref{app:xcirc-input} gives the defining fan polytope $\Pi$, all singular
+two-faces, a strict convex height function fixing the crepant resolution, and
+the complete sparse charge matrix. Thus $X^{\circ}$ denotes a specified
+$\Pi$-regular anticanonical hypersurface rather than only an abstract
+singularity inventory.
+
+In an integral divisor frame the full local-to-global matrix has size
+$36\times26$ and rank $21$; the physical charge matrix is its transpose.
+Restricting to the four profiles gives the exact data in
+Table~\ref{tab:xcirc-profiles}.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}ccccc@{}}
+\toprule
+profile & $\dim_{\CC}\cB_\sigma$ & $\rank Q_\sigma$ & $\dim_{\CC}\ker Q_\sigma$ & forced reduced coordinates \\
+\midrule
+$(2,2)$ & $30$ & $21$ & $9$ & $u_9,u_{11},\beta_1,\beta_2$ \\
+$(2,3)$ & $31$ & $21$ & $10$ & $u_9,u_{11},\beta_1,\beta_2,L_1$ \\
+$(3,2)$ & $31$ & $21$ & $10$ & $u_9,u_{11},\beta_1,\beta_2,L_2$ \\
+$(3,3)$ & $32$ & $20$ & $12$ & $u_9,u_{11},\beta_1,\beta_2$ \\
+\bottomrule
+\end{tabular}
+\caption{The four branch-restricted compact charge maps for $X^{\circ}$.
+In a profile $(\sigma_1,\sigma_2)$, $\sigma_j=2$ selects the
+$\mathfrak{sl}_2$ line and $\sigma_j=3$ the $\mathfrak{sl}_3$ plane at the
+$j$th $E_3$ point; $\alpha_i$ is the nilpotent scheme-theoretic tangent
+coordinate and $\beta_i$ the reduced smoothing coordinate at the $i$th $E_2$
+point, while $L_j$ is the $\mathfrak{sl}_2$ line coordinate
+at the $j$th $E_3$ point. Every nonzero Smith invariant is one in the printed
+divisor lattice.}
+\label{tab:xcirc-profiles}
+\end{table}
+
+The forced-zero conclusions are witnessed by individual compact vectors, not
+only by a rank calculation. Five primitive integral vector combinations have
+complex moment maps
+\begin{align}
+ \mu_{V_9}^{\CC}&=u_9-\alpha_1+\alpha_2,&
+ \mu_{V_{11}}^{\CC}&=u_{11}-\alpha_1+\alpha_2,
+ \nonumber\\
+ \mu_{V_{\beta_1}}^{\CC}&=\beta_1,&
+ \mu_{V_{\beta_2}}^{\CC}&=\alpha_2+\beta_2,
+ \nonumber\\
+ \mu_{V_{A_1}}^{\CC}&=L_1+L_2.
+ \label{eq:xcirc-isolating-moments}
+\end{align}
+At an ordinary complex point of the $E_2$ Higgs scheme,
+$\alpha_1=\alpha_2=0$. The first four equations in
+\eqref{eq:xcirc-isolating-moments} therefore force
+\begin{equation}
+ u_9=u_{11}=\beta_1=\beta_2=0
+ \label{eq:xcirc-universal-zeros}
+\end{equation}
+on every reduced profile. The fifth equation correlates $L_1$ and $L_2$ on
+$(2,2)$, isolates the remaining line coordinate on $(2,3)$ or $(3,2)$, and
+becomes inactive on $(3,3)$. This explains the rank drop in the last row of
+Table~\ref{tab:xcirc-profiles}.
+
+The correct conclusion is not that $X^{\circ}$ has no Higgs directions. Its
+projected kernels have dimensions between nine and twelve. Rather, no profile
+contains a point at which all thirty local sectors have nonzero smoothing
+coordinates. The all-orders result is stronger than this first-order
+observation. Any one-parameter smoothing of $X^{\circ}$ would smooth the
+nodes $N_9$ and $N_{11}$ and both $E_2$ points, whatever components it
+selects at the two $E_3$ points. Theorem~\ref{thm:all-orders-necessity} and
+Remark~\ref{rem:full-support} then require a class in the kernel of the
+induced profile with nonzero projection to the coordinates in
+\eqref{eq:xcirc-universal-zeros}, and Table~\ref{tab:xcirc-profiles}
+excludes such a class on every profile. Consequently no analytic
+one-parameter family smooths all thirty germs, even if its local parameters
+begin at different orders. This is Theorem~6.5 of
+\cite{Wuebben:2026obstruction}, whose Corollary~6.7 also excludes every
+formal arc meeting all thirty local smoothing loci.
+
+\subsection{Finite classification for polytopes with at most nine vertices}
+\label{subsec:census}
+
+The three examples are part of a finite, reproducible classification. Among
+the $77$ admissible reflexive four-polytopes with at most nine vertices in
+the Kreuzer--Skarke list \cite{Kreuzer:2000} and a degree-seven cone point,
+the all-orders necessity condition obstructs $76$;
+$67$ of these have a single singular point, while nine have one node in
+addition to the $E_2$ point. The remaining case is $X_9$, whose explicit mixed
+family is smooth. Thus cooperative Higgsing is
+the unique smoothable outcome in this precisely stated bounded class
+by Proposition~9.2 and Corollary~6.7 of \cite{Wuebben:2026obstruction} and
+Theorems~B and~C of \cite{Wuebben:2026smoothing}.
+
+This census shows that the compact constraint is systematic rather than an
+accident of one matrix. It is not a statistical sample of all compact
+Calabi--Yau threefolds, and no universality claim is inferred from the ratio
+$76/77$.

@@ -1,0 +1,326 @@
+\section{Global deformation theorems}
+\label{sec:global-theorems}
+
+The physical matrix of Section~\ref{sec:compact-gauging} has an independent
+geometric characterization. We formulate it in terms of the topology of the
+singularity links and Milnor fibers. This section also distinguishes the exact
+first-order statement from the all-orders condition on an analytic smoothing
+arc.
+
+\subsection{Links, Milnor fibers and branch lattices}
+\label{subsec:link-lattices}
+
+Let $\Sigma_p$ be the link of the isolated singularity $(X,p)$. For a
+smoothing component $\sigma_p$, let $F_{p,\sigma_p}$ be a Milnor fiber and
+define the vanishing subspace
+\begin{equation}
+ V_{p,\sigma_p}
+ =\ker\!\left[
+ H_2(\Sigma_p;\QQ)\longrightarrow H_2(F_{p,\sigma_p};\QQ)
+ \right].
+ \label{eq:milnor-kernel}
+\end{equation}
+The spaces used in this paper are
+\begin{equation}
+ \begin{array}{c|c|c}
+ (X,p)&H_2(\Sigma_p;\QQ)&V_{p,\sigma_p}\\
+ \hline
+ \text{node}&\QQ&\QQ\\
+ C(S_7)&K_{S_7}^{\perp}\otimes\QQ&A_1\otimes\QQ\\
+ C(S_6),\ \cH_{\mathfrak{sl}_2}&K_{S_6}^{\perp}\otimes\QQ&A_1\otimes\QQ\\
+ C(S_6),\ \cH_{\mathfrak{sl}_3}&K_{S_6}^{\perp}\otimes\QQ&A_2\otimes\QQ.
+ \end{array}
+ \label{eq:local-milnor-table}
+\end{equation}
+For a del Pezzo cone, the link is the unit-circle bundle of $K_{S_p}$ and
+the Gysin sequence gives
+\begin{equation}
+ H_2(\Sigma_p;\QQ)\cong K_{S_p}^{\perp}\subset H_2(S_p;\QQ),
+ \label{eq:link-gysin}
+\end{equation}
+where the superscript $\perp$ refers to the intersection pairing. The root
+subspaces in \eqref{eq:local-milnor-table} are the cycles that die
+in the corresponding Milnor fiber (Proposition~2.1 and Section~2.4 of
+\cite{Wuebben:2026obstruction}, where the three sweeping Fano threefolds
+are identified).
+
+Choose a branch profile $\sigma$ and set
+\begin{equation}
+ \Kbranch
+ =\ker\!\left[
+   \bigoplus_pH_2(\Sigma_p;\QQ)\longrightarrow H_2(\wideX;\QQ)
+ \right]
+ \cap\bigoplus_pV_{p,\sigma_p}.
+ \label{eq:topological-kernel}
+\end{equation}
+The map sends a nodal generator to its exceptional curve class and a del
+Pezzo link class to its pushforward from the del Pezzo exceptional divisor. Thus
+\eqref{eq:topological-kernel} is the rational kernel of
+\eqref{eq:geometric-charge-map}.
+
+\begin{lemma}[local deformation--link comparison]
+\label{lem:local-comparison}
+Let $\widehat X_p\to(X,p)$ be the chosen crepant local resolution, with
+exceptional set $E_p$, and put
+\begin{equation}
+ K_p^{\mathrm{cr}}=
+ \ker\!\left[
+ H^2_{E_p}(\widehat X_p;\Omega^2_{\widehat X_p})
+ \longrightarrow H^2(\widehat X_p;\Omega^2_{\widehat X_p})
+ \right].
+ \label{eq:local-crepant-kernel}
+\end{equation}
+For a node and for the cones over $S_7$ and $S_6$, contraction with the
+crepant volume form and the boundary map give natural isomorphisms
+\begin{equation}
+ T^1_{X,p}\cong K_p^{\mathrm{cr}}
+ \cong H_2(\Sigma_p;\CC).
+ \label{eq:local-hodge-identification}
+\end{equation}
+These isomorphisms commute with the maps to
+$H^2(\wideX;\Omega^2_{\wideX})$ and $H_2(\wideX;\CC)$ induced by the local
+inclusions. They carry the tangent cone of a smoothing component to
+$V_{p,\sigma_p}\otimes\CC$.
+\end{lemma}
+
+For completeness, the branch assertion is finite. The circle-bundle Gysin
+sequence identifies the del Pezzo link with $K_{S_p}^{\perp}$. On the
+pentagon, the reflection fixing the unique smoothing parameter acts, after
+the determinant twist from contraction with the volume form, on the unique
+$A_1$ root line. On the hexagon, a sixfold rotation has a $(-1)$ eigenspace
+and a Coxeter eigenspace; these are the $A_1$ line and $A_2$ plane. The local
+cohomology sequence identifies these eigenspaces with
+\eqref{eq:local-crepant-kernel}. This proves the branch statement and the
+compatibility with the Gysin maps; the full derivation is Lemmas~8.6
+and~8.7 of \cite{Wuebben:2026smoothing}, which rest on Schlessinger's
+comparison \cite{Schlessinger:1971} in the depth-three form of
+\cite{Friedman:2022}.
+
+\subsection{A class of toric anticanonical hypersurfaces}
+\label{subsec:admissible-class}
+
+Let $N\cong\ZZ^4$, let $M=\operatorname{Hom}(N,\ZZ)$, and write
+$\langle\ ,\ \rangle$ for the natural pairing. For a four-dimensional
+reflexive polytope $\Delta\subset N_{\mathbb R}$, set
+\begin{equation}
+ \Delta^\circ=\{u\in M_{\mathbb R}:\langle u,v\rangle\geq-1
+ \text{ for every }v\in\Delta\}.
+ \label{eq:polar-convention}
+\end{equation}
+Let $\Sigma_\Delta$ be the fan of cones over the faces of $\Delta$ and
+$\mathbb P_\Delta=\operatorname{TV}(\Sigma_\Delta)$ its Gorenstein Fano
+toric fourfold. A hypersurface $X\subset\mathbb P_\Delta$ is
+$\Delta$-regular if its Laurent equation and every face restriction are
+nondegenerate in the sense of Batyrev \cite{Batyrev:1994}.
+
+If $G\subset\Delta$ is a two-face, its dual face $G^*\subset\Delta^\circ$
+is an edge. A $\Delta$-regular anticanonical hypersurface meets the torus
+orbit associated with $G$ in $\ell(G^*)$ points, where $\ell$ is lattice
+length; the transverse germ at each point is the affine cone over the toric
+surface defined by $G$. We call $G$ \emph{singular} when it is not a
+unimodular triangle. The unit square, the unit-edge pentagon with one interior
+lattice point, and the analogous hexagon give, respectively, a node and the
+cones over $S_7$ and $S_6$.
+
+The explicit finite theorem is proved for the following controlled class. We
+call $\Delta$ admissible if:
+\begin{enumerate}
+ \item every two-face is a unimodular triangle, a unit square, or a
+ pentagon or hexagon with one interior lattice point;
+ \item every edge has lattice length one; and
+ \item the dual edge of every singular two-face has lattice length one.
+\end{enumerate}
+For a $\Delta$-regular anticanonical hypersurface, the singular locus is then
+finite and consists exactly of nodes and cones over $S_7$ or $S_6$. The
+ambient divisor matrix detects the full rational topological kernel in
+\eqref{eq:topological-kernel}; equivalently, the correction term in
+Batyrev's formula for $h^{1,1}$ \cite{Batyrev:1994} vanishes on this class
+(Proposition~8.3 of \cite{Wuebben:2026obstruction}).
+
+The abstract local-to-global statement below uses the following additional
+hypotheses:
+\begin{equation}
+ \omega_X\cong\cO_X,
+ \qquad h^1(X,\cO_X)=0,
+ \qquad
+ \wideX\text{ satisfies the }\partial\bar\partial\text{-lemma}.
+ \label{eq:global-hypotheses}
+\end{equation}
+The third holds automatically for the projective crepant resolution fixed
+in Section~\ref{subsec:m2-charges}; all three hold in the toric
+hypersurface examples of Section~\ref{sec:examples}.
+
+\subsection{The first-order image theorem}
+\label{subsec:first-order-theorem}
+
+Let $\TangentDef$ denote the global first-order deformation space of $X$. We
+view $V_{p,\sigma_p}\otimes\CC$ as a subspace of $T^1_{X,p}$ through
+\eqref{eq:local-hodge-identification}.
+
+\begin{theorem}[first-order local-to-global image]
+\label{thm:first-order-image}
+Let $X$ arise from an admissible polytope and satisfy
+\eqref{eq:global-hypotheses}. For every branch profile $\sigma$,
+\begin{equation}
+ \operatorname{Im}\!\left[
+   \TangentDef\longrightarrow\bigoplus_pT^1_{X,p}
+ \right]
+ \cap\bigoplus_p\bigl(V_{p,\sigma_p}\otimes\CC\bigr)
+ =\Kbranch\otimes\CC.
+ \label{eq:first-order-image-theorem}
+\end{equation}
+Equivalently, in the divisor and root bases of
+Section~\ref{sec:compact-gauging}, the right-hand side is
+$\ker\Qcompact$.
+\end{theorem}
+
+\begin{proof}
+For a normal Gorenstein threefold with finite
+non-local-complete-intersection (non-lci) locus, the cotangent
+complex and Kähler-differential deformation groups agree through degree two
+(Lemma~8.5 of \cite{Wuebben:2026smoothing}).
+The local-to-global Ext sequence therefore begins
+\begin{equation}
+ 0\longrightarrow H^1(X;\Theta_X)\longrightarrow\TangentDef
+ \xrightarrow{\ \operatorname{loc}\ }\bigoplus_pT^1_{X,p}
+ \xrightarrow{\ \mathrm{ob}\ }H^2(X;\Theta_X).
+ \label{eq:local-to-global-ext}
+\end{equation}
+We identify the kernel of $\mathrm{ob}$ on each branch.
+
+Let $E=\operatorname{Exc}(\wideX\to X)$ and
+$X_{\mathrm{reg}}=\wideX\setminus E$. Excision and the local-cohomology
+sequence give the exact segment
+\begin{equation}
+ H^1(X_{\mathrm{reg}};\Omega^2_{X_{\mathrm{reg}}})\longrightarrow
+ \bigoplus_p H^2_{E_p}(\widehat X_p;\Omega^2_{\widehat X_p})
+ \longrightarrow H^2(\wideX;\Omega^2_{\wideX}).
+ \label{eq:global-support-sequence}
+\end{equation}
+By Lemma~\ref{lem:local-comparison}, each branch space
+$V_{p,\sigma_p}\otimes\CC$ is a subspace of $K_p^{\mathrm{cr}}$ in the
+middle term. Moreover, the middle map in
+\eqref{eq:global-support-sequence} fits into the commutative square
+\begin{equation}
+\begin{array}{ccc}
+ \displaystyle\bigoplus_pH_2(\Sigma_p;\CC)&\longrightarrow&H_2(\wideX;\CC)\\
+ \downarrow\wr&&\downarrow\operatorname{PD}\\
+ \displaystyle\bigoplus_pK_p^{\mathrm{cr}}&\longrightarrow&H^4(\wideX;\CC),
+\end{array}
+ \label{eq:gysin-comparison-square}
+\end{equation}
+where the lower arrow is the last map of
+\eqref{eq:global-support-sequence} followed by the de Rham map. Thus a link
+class in the topological kernel \eqref{eq:topological-kernel} has zero de
+Rham image. The $\partial\bar\partial$-lemma makes
+$H^2(\wideX;\Omega^2_{\wideX})\to H^4(\wideX;\CC)$ injective, so exactness of
+\eqref{eq:global-support-sequence} lifts that class to
+$H^1(X_{\mathrm{reg}};\Omega^2_{X_{\mathrm{reg}}})$.
+
+Contraction with a trivialization of $\omega_X$ identifies
+$H^1(X_{\mathrm{reg}};\Omega^2_{X_{\mathrm{reg}}})$ with
+$H^1(X_{\mathrm{reg}};\Theta_{X_{\mathrm{reg}}})$. Schlessinger's
+depth-three comparison \cite{Schlessinger:1971}, in the form of
+\cite{Friedman:2022}, identifies the latter with $\TangentDef$, and
+naturality identifies
+the resulting localization map with $\operatorname{loc}$ in
+\eqref{eq:local-to-global-ext}. This proves that every element of
+$\Kbranch\otimes\CC$ lies in the left-hand side of
+\eqref{eq:first-order-image-theorem}. Conversely, any global deformation
+class maps to zero under $\mathrm{ob}$; the same commutative square sends its
+link class to zero in $H_2(\wideX;\CC)$. Lemma~\ref{lem:local-comparison}
+then identifies its branch restriction with an element of $\Kbranch$. The
+two inclusions prove the equality. This argument is the kernel comparison of
+Theorem~D (Theorem~8.8) and Section~8.4 of \cite{Wuebben:2026smoothing},
+printed here to make the maps and obstruction group explicit.
+\end{proof}
+
+Combining Theorem~\ref{thm:first-order-image} with
+Proposition~\ref{prop:physical-kernel} yields the central identification
+\begin{equation}
+ \operatorname{Im}\!\left(
+ \cM_{H,\sigma}^{\mathrm{rigid}}\to\cB_{\sigma}
+ \right)
+ =\operatorname{Im}\!\left(
+ \TangentDef\to\bigoplus_pT^1_{X,p}
+ \right)\cap\cB_{\sigma}.
+ \label{eq:physical-geometric-identification}
+\end{equation}
+This is the sense in which the geometric kernel is physically derived as a
+five-dimensional charge and gauging constraint.
+
+\subsection{All-orders necessity}
+\label{subsec:all-orders}
+
+A first-order statement does not by itself constrain an analytic arc whose
+local parameter begins at higher order. The necessary condition for a genuine
+smoothing is obtained instead from vanishing periods. For a node, a
+distinguished vanishing three-sphere has period proportional to the local
+deformation parameter. For the divisorial contractions used here, the Milnor
+fiber contains a distinguished three-cycle whose period is nonzero on the
+relevant component. Mayer--Vietoris boundary maps relate these cycles to
+classes in \eqref{eq:topological-kernel}. The resulting argument is insensitive
+to the order of contact with the local discriminant. The required local
+period statement and its simultaneous full-support consequence are
+Theorem~6.1 and Remark~6.2, respectively, of
+\cite{Wuebben:2026obstruction}.
+
+\begin{theorem}[all-orders necessary relation]
+\label{thm:all-orders-necessity}
+Let $X$ be a compact complex threefold with
+$\omega_X\cong\cO_X$ and $h^1(X,\cO_X)=0$, whose singularities are nodes and
+anticanonical cones over $S_7$ or $S_6$. Fix a crepant resolution
+$\wideX\to X$, small over the nodes and with the corresponding del Pezzo
+surface over each cone point. Let
+$\mathcal X\to\mathbb D$ be a flat proper analytic family over a disc, with
+central fiber $\mathcal X_0\cong X$ and smooth fibers $\mathcal X_s$ for all
+sufficiently small $s\ne0$, and let $\sigma$ be the branch profile it
+induces: at each $E_3$ point, the component of the miniversal base through
+which the family smooths the germ. Then the projection
+\begin{equation}
+ \Kbranch\longrightarrow V_{q,\sigma_q}
+ \label{eq:nonzero-projection}
+\end{equation}
+is nonzero for every node $q$, every $E_2$ point $q$, and every $E_3$ point
+$q$ at which $\sigma_q=\mathfrak{sl}_2$.
+\end{theorem}
+
+\begin{remark}
+\label{rem:full-support}
+Since $\QQ$ is infinite, a generic rational linear combination avoids the
+finite union of the coordinate hyperplanes in question, so $\Kbranch$
+contains a single class whose component is nonzero simultaneously at every
+germ named in Theorem~\ref{thm:all-orders-necessity}. The statement applies
+to the actual analytic arc and not merely to its first derivative.
+\end{remark}
+
+Theorem~\ref{thm:all-orders-necessity} gives no conclusion at an $E_3$
+point smoothed through $\cH_{\mathfrak{sl}_3}$, although it still constrains
+every other germ of the same family, with $\Kbranch$ computed on the profile
+that family induces. That component has a two-dimensional Milnor kernel. The
+analogous proof requires two independent period pairings, not only a nonzero
+scalar period, and remains open. The first-order
+Theorem~\ref{thm:first-order-image} does include this plane.
+
+\subsection{Integrability boundary}
+\label{subsec:integrability}
+
+Theorem~\ref{thm:first-order-image} implies that every branch-restricted class
+in the kernel lifts to a global first-order deformation. It does not imply
+that this deformation integrates. The del Pezzo cone germs are not local
+complete intersections \cite{Gross:1997}, and the standard unobstructedness
+argument for nodal
+Calabi--Yau threefolds does not apply uniformly on the non-$\QQ$-factorial
+locus relevant here.
+
+Three distinct assertions should therefore remain separate:
+\begin{enumerate}
+ \item $b\in\ker\Qcompact$ solves the projected rigid moment-map equations;
+ \item $b$ is the localization of a global first-order complex deformation;
+ \item $b$ is tangent to an actual finite extremal transition.
+\end{enumerate}
+The first two are proved for every profile in the admissible class. The third
+is proved for purely nodal transitions and for the explicit $X_9$ family in
+Section~\ref{subsec:x9}; it is open in general. This is the remaining step in
+a necessary-and-sufficient mixed analogue of Friedman's conifold-transition
+criterion \cite{Friedman:1986}.

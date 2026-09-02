@@ -1,0 +1,18 @@
+.DS_Store
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# LaTeX auxiliaries; the descriptive release PDF is versioned.
+main.pdf
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc

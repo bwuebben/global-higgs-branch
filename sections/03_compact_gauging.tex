@@ -1,0 +1,242 @@
+\section{Compact embedding and the five-dimensional gauging matrix}
+\label{sec:compact-gauging}
+
+The physical matrix correlating the coordinates of
+Section~\ref{sec:local-sectors} has two types of columns. Exceptional curves at
+nodes give electrically charged wrapped-M2 hypermultiplets. Roots in an
+exceptional del Pezzo surface determine how compact Abelian vectors embed into
+the flavor Cartan of the interacting fixed point. Both columns are obtained by
+evaluating curve classes on compact divisors.
+
+\subsection{Vector fields and wrapped-M2 charges}
+\label{subsec:m2-charges}
+
+Let $X$ be a compact singular Calabi--Yau threefold and let
+\begin{equation}
+ \pi:\wideX\longrightarrow X
+ \label{eq:crepant-resolution}
+\end{equation}
+be a projective crepant resolution. Choose harmonic two-forms $\omega_I$ on
+$\wideX$ whose cohomology classes span the vector directions relevant to the
+transition. The M-theory three-form has the expansion
+\begin{equation}
+ C_3=\sum_I A^I\wedge\omega_I+\cdots .
+ \label{eq:c3-reduction}
+\end{equation}
+If an M2-brane wraps a curve $C\subset\wideX$, its worldline coupling is
+\begin{equation}
+ \int_{\mathbb R\times C}C_3
+ =\sum_I\left(\int_C\omega_I\right)\int_{\mathbb R}A^I.
+ \label{eq:m2-coupling}
+\end{equation}
+For a divisor class $D_I$ dual to $\omega_I$, the electric charge is therefore
+\begin{equation}
+ c_I(C)=\int_C\omega_I=D_I\cdot C.
+ \label{eq:m2-charge}
+\end{equation}
+
+At a resolved node $a$, let $C_a\cong\mathbb P^1$ denote the exceptional
+curve. The wrapped M2-brane is the massless hypermultiplet of the conifold
+transition, with charge vector
+\begin{equation}
+ c_{Ia}=D_I\cdot C_a.
+ \label{eq:nodal-charge}
+\end{equation}
+Thus the map
+\begin{equation}
+ \ZZ^{N_{\mathrm{node}}}\longrightarrow
+ H_2(\wideX;\ZZ)/\mathrm{tors},
+ \qquad e_a\longmapsto[C_a]
+ \label{eq:nodal-homology-map}
+\end{equation}
+is simultaneously the homology map of the resolution and the electric charge
+map of the transition states. This is the standard compact conifold
+description \cite{Katz:1996,Mohaupt:2004de}.
+
+\subsection{Flavor cocharacters from del Pezzo roots}
+\label{subsec:flavor-cocharacters}
+
+Suppose the exceptional locus over $p$ contains
+$S_{7,p}$ or $S_{6,p}$. The local non-Abelian flavor lattice is the root
+lattice inside $K_{S_p}^{\perp}$, the orthogonal complement of $K_{S_p}$ in
+$H_2(S_p;\ZZ)$ for the intersection form. Let
+\begin{equation}
+ \iota_p:S_p\hookrightarrow\wideX
+\end{equation}
+be the inclusion and let $R_{p\alpha}$ be a root. The restriction
+$D_I|_{S_p}$ assigns degrees to the M2 states supported on curves in $S_p$.
+For $E_2$, with $R=e_1-e_2$, the difference of the charges of the two
+exceptional-curve states is
+\begin{equation}
+ c_I(e_1)-c_I(e_2)
+ =D_I\cdot\iota_{p*}(e_1-e_2).
+ \label{eq:e2-charge-difference}
+\end{equation}
+This is the differential of the homomorphism from the compact $U(1)$ generated
+by $A^I$ into the $SU(2)$ flavor torus. More generally, define
+\begin{equation}
+ m_{Ip\alpha}
+ =\left\langle D_I|_{S_p},R_{p\alpha}^{\vee}\right\rangle
+ \sim D_I\cdot\iota_{p*}R_{p\alpha}.
+ \label{eq:cocharacter}
+\end{equation}
+The proportionality allows for the conventional common normalization between
+a primitive geometric root and a Cartan generator. All algebras here are
+simply laced. We fix compatible root-marked moment-map coordinates throughout.
+Changing a root/coroot normalization or orientation changes the corresponding
+coordinate and matrix column together. The resulting kernels are identified
+by this invertible coordinate change; their coordinate vectors are not
+literally unchanged.
+
+For $E_2$ there is one reduced root coordinate $\beta_p$. For $E_3$, the
+$A_2$ component uses $(R_{p1},R_{p2})$ and the $A_1$ component uses $R_{p0}$,
+as in \eqref{eq:e3-roots}. Gauging a flavor isometry couples the
+vector-multiplet auxiliary triplet to the corresponding current-multiplet
+moment map \cite{Ceresole:2000}. Since moment maps add under diagonal
+gauging, the compact complex moment maps are
+\begin{equation}
+ \mu_I^{\CC}
+ =\sum_a c_{Ia}t_a
+  +\sum_r m^{(7)}_{Ir}\beta_r
+  +\sum_p\left(
+     m_{Ip1}H_{p1}+m_{Ip2}H_{p2}+m_{Ip0}L_p
+   \right).
+ \label{eq:compact-complex-mm}
+\end{equation}
+This conclusion uses only the flavor current multiplets of the interacting
+SCFT; it does not require a weakly coupled Lagrangian description of the
+$E_2$ or $E_3$ fixed point.
+
+\subsection{Branch profiles and the compact charge map}
+\label{subsec:branch-profiles}
+
+At each $E_3$ point choose either the full Higgs component
+$\cH_{\mathfrak{sl}_2}$ or $\cH_{\mathfrak{sl}_3}$. A collection of choices
+is a \emph{branch profile} $\sigma$. The associated local coordinate space
+uses the invariant images of \eqref{eq:e3-invariant-images}:
+\begin{equation}
+ \cB_{\sigma}
+ =\bigoplus_a\CC_{t_a}
+  \oplus\bigoplus_r\CC_{\beta_r}
+  \oplus\bigoplus_p \cB_{p,\sigma_p},
+ \qquad
+ \cB_{p,\mathfrak{sl}_2}=(\cB_{\mathfrak{sl}_2})_p=\CC_{L_p},
+ \quad
+ \cB_{p,\mathfrak{sl}_3}=(\cB_{\mathfrak{sl}_3})_p
+ =\CC^2_{H_{p1},H_{p2}}.
+ \label{eq:profile-space}
+\end{equation}
+Let $\Lambda_{\mathrm{vec}}$ be the lattice generated by the compact
+Abelian vector directions $A^I$, equivalently by their divisor classes
+$D_I$ modulo the integral principal-divisor relations; the $D_I$ are taken to
+span $H^2(\wideX;\QQ)$, which on the admissible class of
+Section~\ref{subsec:admissible-class} the restricted ambient toric divisors
+do. Its dual records one complex moment-map equation for each vector
+direction. The restriction of
+\eqref{eq:compact-complex-mm} to a profile is therefore the linear map
+\begin{equation}
+ \Qcompact:\cB_{\sigma}\longrightarrow
+ \Lambda_{\mathrm{vec}}^{\vee}\otimes\CC.
+ \label{eq:compact-charge-map}
+\end{equation}
+
+The same map can be defined before complexification. Let
+$\Lambda^{\mathrm H}_{p,\sigma_p}$ be the root sublattice selected by the
+local component, and let a nodal summand be generated by $[C_a]$. Then
+\begin{equation}
+ \begin{split}
+ \Lambda^{\mathrm H}_{\sigma}
+ &=\bigoplus_a\ZZ[C_a]
+   \oplus\bigoplus_p\Lambda^{\mathrm H}_{p,\sigma_p},\\
+ Q^{\mathrm{geo}}_{X,\sigma}:\Lambda^{\mathrm H}_{\sigma}
+ &\longrightarrow H_2(\wideX;\ZZ)/\mathrm{tors},
+ \qquad
+ \gamma\longmapsto\sum_p\iota_{p*}\gamma_p .
+ \end{split}
+ \label{eq:geometric-charge-map}
+\end{equation}
+Evaluating \eqref{eq:geometric-charge-map} on the divisor classes gives the
+matrix in \eqref{eq:compact-charge-map}. In other words, the geometric
+local-to-global map and the physical embedding of the local electric and
+flavor charges are dual descriptions of one lattice homomorphism.
+
+In the toric hypersurface examples, the finite matrix is initially computed
+using ambient divisor classes. The geometric comparison reviewed in
+Section~\ref{sec:global-theorems} proves that, under the admissibility
+hypotheses used here, its branch-restricted kernel equals the complete
+topological kernel. Thus the finite presentation does not miss a continuous
+constraint. Questions about a possible finite index between the printed toric
+lattice and the full integral cohomology lattice affect global forms and line
+operators, but not the rational kernel or the continuous Higgs selection rule.
+
+\subsection{The projected moment-map locus}
+\label{subsec:projected-locus}
+
+Let $G_{\mathrm{eff}}$ be the compact Abelian group acting effectively on the
+transition sectors through \eqref{eq:compact-complex-mm}. In the rigid
+zero-level description, form the triplet-moment-map quotient of the product of
+the local Higgs cones on a fixed profile. We use
+$\cM_{H,\sigma}^{\mathrm{rigid}}$ for this quotient and retain only its map to
+the invariant coordinates \eqref{eq:profile-space}.
+
+\begin{proposition}[physical kernel]
+\label{prop:physical-kernel}
+For every branch profile $\sigma$, the image of the rigid zero-level Higgs
+locus in its local deformation coordinates is
+\begin{equation}
+ \operatorname{Im}\!\left(
+ \cM_{H,\sigma}^{\mathrm{rigid}}\longrightarrow\cB_{\sigma}
+ \right)
+ =\ker(\Qcompact).
+ \label{eq:physical-kernel}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+If a point solves the complex moment-map equations, equation
+\eqref{eq:compact-complex-mm} states exactly that its invariant coordinate
+vector $b\in\cB_{\sigma}$ obeys $\Qcompact b=0$. This proves one inclusion.
+
+Conversely, take $b\in\ker\Qcompact$. Lift every nodal coordinate $t_a$ by
+\eqref{eq:conifold-balanced}. Lift every $E_2$ coordinate $\beta_r$ by
+\eqref{eq:e2-double-cover} with equal absolute values. On an $E_3$ component,
+use the balanced rank-one ADHM representatives described after
+\eqref{eq:e3-roots}. Every local real Cartan moment map then vanishes
+separately. The total real moment maps consequently vanish, while the total
+complex moment maps vanish because $\Qcompact b=0$. This constructs a point
+of the zero-level triplet-moment-map locus above every $b$ in the complex
+kernel. Since the coordinates in $\cB_{\sigma}$ are gauge invariant, taking
+the quotient does not change the image.
+\end{proof}
+
+If the selected local components have total quaternionic dimension
+$d_{\mathrm{loc}}$ and a rank-$s$ Abelian group acts locally freely, the
+familiar count gives
+\begin{equation}
+ \dim_{\HH}\cM_H=d_{\mathrm{loc}}-s
+ =\dim_{\CC}\ker\Qcompact.
+ \label{eq:dimension-check}
+\end{equation}
+Equation \eqref{eq:physical-kernel} is stronger than this count: it specifies
+which combinations of coordinates survive and remains meaningful at profiles
+where the action has nontrivial stabilizers. It also avoids the incorrect
+identification of the full Higgs branch with a complex vector space.
+
+\subsection{Compact supergravity qualification}
+\label{subsec:supergravity-qualification}
+
+The microscopic charge assignment \eqref{eq:m2-charge} and flavor embedding
+\eqref{eq:cocharacter} are exact compactification data. Proposition
+\ref{prop:physical-kernel} is stated in the rigid hyperk\"ahler-cone
+description at zero moment-map level. The scalar manifold of five-dimensional
+$\mathcal N=1$ supergravity is instead quaternionic K\"ahler, and its detailed
+metric receives gravitational and strong-coupling corrections. We use the
+rigid statement only to identify the holomorphic Higgs-deformation projection
+and its compact gauging constraint. We do not claim that it constructs the
+complete finite-Planck-mass scalar manifold.
+
+This distinction does not turn the matrix into a background flavor constraint.
+At finite compact volume the fields $A^I$ in \eqref{eq:c3-reduction} have
+finite kinetic terms and are dynamical. Their auxiliary-field equations impose
+the compact moment maps. What changes in a noncompact limit is the set of rows
+that remain dynamical, as discussed in Section~\ref{sec:decoupling}.

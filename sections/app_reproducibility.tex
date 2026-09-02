@@ -1,0 +1,43 @@
+\section{Reproducibility}
+\label{app:reproducibility}
+
+All computations used in the physics translation are exact integer, rational
+or symbolic calculations. No numerical fit or floating-point rank decision
+enters a claim. From the project root, the local checks are run with
+\begin{verbatim}
+venv/bin/python checks/check_nodal_charge.py
+venv/bin/python checks/check_e2_gauging.py
+venv/bin/python checks/check_e3_gauging.py
+venv/bin/python checks/check_e3_magnetic_quivers.py
+venv/bin/python checks/check_xcirc_e3_profiles.py
+venv/bin/python checks/check_x9_spectrum.py
+\end{verbatim}
+The scripts verify, respectively:
+\begin{enumerate}
+ \item the nodal moment-map image and charge-kernel identity;
+ \item the $E_2$ invariant ring, balanced lift and $X_9$ reduced matrix;
+ \item the $E_3$ invariant ring, root basis and branchwise balanced lifts;
+ \item the affine-$A_1/A_2$ monopole sums and fiber-product Hilbert-series
+ identity;
+ \item the four $X^{\circ}$ profile ranks, Smith invariants and isolating
+ vectors; and
+ \item the $X_9$ divisor quotient, Hodge numbers, effective vectors and
+ multiplet changes.
+\end{enumerate}
+
+The source geometric computations are maintained with the companion
+mathematical papers. For the thirty-sector obstruction they include the
+independent reconstructions of the $36\times26$ matrix, its topological kernel,
+the local Milnor kernels and the vanishing-period statements. For $X_9$ they
+include the singular-locus calculation, branch restriction, explicit family,
+divisor quotient and Batyrev lattice-point counts
+\cite{Wuebben:2026obstruction,Wuebben:2026smoothing}.
+
+The finite scripts check the printed matrices and
+formulas. They do not replace the Hodge-theoretic proof of
+Theorem~\ref{thm:first-order-image}, the period proof of
+Theorem~\ref{thm:all-orders-necessity}, or the geometric construction of the
+$X_9$ family.
+
+The manuscript source and exact finite checks are available at
+\url{https://github.com/bwuebben/global-higgs-branch}.

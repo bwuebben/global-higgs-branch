@@ -1,0 +1,46 @@
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  node distance=7mm and 8mm,
+  sector/.style={draw,rounded corners,fill=gray!7,align=center,
+    minimum height=13mm,text width=0.25\textwidth,font=\small},
+  map/.style={draw,very thick,rounded corners,align=center,
+    minimum height=14mm,text width=0.22\textwidth,font=\small},
+  result/.style={draw,double,rounded corners,align=center,
+    minimum height=14mm,text width=0.22\textwidth,font=\small},
+  arrow/.style={-{Latex[length=2.2mm]},thick}
+]
+\node[sector] (node) {nodes\\[-1mm]
+  $t_a=h_a\widetilde h_a$\\
+  wrapped-M2 hypers};
+\node[sector,right=of node] (e2) {$E_2$ sectors\\[-1mm]
+  $\beta_r=\mu^{\CC}_{SU(2)}$\\
+  reduced Higgs line};
+\node[sector,right=of e2] (e3) {$E_3$ sectors\\[-1mm]
+  $(H_{p1},H_{p2})$ or $L_p$\\
+  branch profile $\sigma$};
+
+\node[map,below=12mm of e2] (charge) {compact charge map $Q_{X,\sigma}$\\[1mm]
+  $c_{Ia}=D_I\!\cdot C_a$\,,\quad
+  $m_{Ip\alpha}=D_I\!\cdot\iota_{p*}R_{p\alpha}$};
+\node[result,right=15mm of charge] (kernel) {allowed holomorphic data\\[1mm]
+  $\ker Q_{X,\sigma}$};
+
+\draw[arrow] (node.south) -- (charge.north west);
+\draw[arrow] (e2.south) -- (charge.north);
+\draw[arrow] (e3.south) -- (charge.north east);
+\draw[arrow] (charge) -- node[above,font=\scriptsize]
+  {$\mu_I^{\CC}=0$} (kernel);
+
+\node[align=center,font=\scriptsize,below=5mm of charge,text width=0.66\textwidth]
+  {The same divisor--curve pairing is the wrapped-M2 electric charge,
+   the flavor-cocharacter gauging, and the dual of the geometric
+   local-to-global map.};
+\end{tikzpicture}
+\caption{The compact Higgs-gluing mechanism on a fixed $E_3$ branch profile.
+The displayed kernel is the image in invariant complex moment-map
+coordinates. Balanced representatives lift it to the zero level of the full
+triplet moment maps; integration to a finite complex deformation is a separate
+question.}
+\label{fig:local-to-global}
+\end{figure}

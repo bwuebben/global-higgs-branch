@@ -1,0 +1,3 @@
+# Preserve the upstream JHEP support files byte for byte.
+JHEP.bst -whitespace
+jheppub.sty -whitespace

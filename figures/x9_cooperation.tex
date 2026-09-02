@@ -1,0 +1,41 @@
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  node distance=7mm and 7mm,
+  sector/.style={draw,rounded corners,fill=gray!7,align=center,
+    minimum height=12mm,text width=0.19\textwidth,font=\small},
+  equation/.style={draw,very thick,rounded corners,align=center,
+    minimum height=13mm,text width=0.31\textwidth,font=\small},
+  endpoint/.style={draw,double,rounded corners,align=center,
+    minimum height=13mm,text width=0.27\textwidth,font=\small},
+  note/.style={draw,dashed,rounded corners,align=left,
+    text width=0.27\textwidth,font=\scriptsize},
+  arrow/.style={-{Latex[length=2.2mm]},thick}
+]
+\node[sector] (h1) {conifold hyper 1\\$u_1=h_1\widetilde h_1$};
+\node[sector,right=of h1] (h2) {conifold hyper 2\\$u_2=h_2\widetilde h_2$};
+\node[sector,right=of h2] (e2) {$E_2$ fixed point\\$\beta=\mu^{\CC}_{SU(2)}$};
+
+\node[equation,below=11mm of h2] (mm)
+  {$Q^{\mathrm{eff}}_{X_9}=\begin{psmallmatrix}1&0&1\\0&1&1\end{psmallmatrix}$\\[1mm]
+   $u_1+\beta=0$\,,\quad $u_2+\beta=0$};
+\node[endpoint,below=9mm of mm] (smooth)
+  {primitive mixed trajectory\\
+   $(u_1,u_2,\beta)=t(-1,-1,1)$};
+\node[note,right=11mm of mm] (vectors)
+  {$V_1,V_2$: flavor vectors Higgsed by the rank-two gauging.\\[1mm]
+   $E$: neutral $E_2$ Coulomb vector lost when the exceptional divisor is
+   smoothed; it is not a third gauging.};
+
+\draw[arrow] (h1.south) -- (mm.north west);
+\draw[arrow] (h2.south) -- (mm.north);
+\draw[arrow] (e2.south) -- (mm.north east);
+\draw[arrow] (mm) -- node[right,font=\scriptsize] {$\ker Q_{X_9}^{\mathrm{eff}}$} (smooth);
+\draw[arrow,dashed] (mm.east) -- (vectors.west);
+\end{tikzpicture}
+\caption{Cooperative Higgsing in $X_9$. No nonzero trajectory is supported on
+the two conifold sectors or on the $E_2$ sector alone. The unique global
+direction activates all three, while the protected vector-multiplet count
+separates the two Higgsed flavor vectors from the neutral SCFT Coulomb vector.}
+\label{fig:x9-cooperation}
+\end{figure}

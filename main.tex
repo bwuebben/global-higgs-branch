@@ -1,0 +1,91 @@
+\documentclass[11pt,letterpaper]{article}
+\pdfoutput=1
+
+\usepackage{jheppub}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+
+\input{macros}
+
+\hypersetup{
+  pdftitle={Global Constraints on Higgsing Localized Five-Dimensional Sectors in Compact M-Theory Vacua},
+  pdfauthor={Bernd Johannes Wuebben},
+  pdfsubject={Compact Calabi--Yau transitions and five-dimensional Higgs branches},
+  pdfkeywords={M-theory; five-dimensional field theory; Calabi--Yau threefolds; Higgs branches}
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Global Constraints on Higgsing Localized Five-Dimensional Sectors\\
+in Compact M-Theory Vacua}
+
+\author{Bernd Johannes Wuebben}
+\affiliation{New York, NY, USA}
+\emailAdd{wuebben@gmail.com}
+
+\abstract{Complex deformations of noncompact canonical Calabi--Yau
+threefold singularities encode Higgs-branch renormalization-group flows of
+five-dimensional theories. We determine which such flows remain available
+when several singularities occur in one compact Calabi--Yau threefold. The
+local sectors are conifold points supporting free hypermultiplets and cones
+over del Pezzo surfaces of degrees seven and six engineering the rank-one
+$E_2$ and $E_3$ fixed points. We identify their deformation coordinates with
+flavor moment maps and derive a compact Abelian gauging matrix from wrapped-M2
+charges and divisor pairings. On either $E_3$ branch (the minimal nilpotent
+orbit closure of $\mathfrak{sl}_3$ or that of $\mathfrak{sl}_2$), we prove
+that the invariant deformation-coordinate values attained on the triplet
+moment-map zero locus in the rigid description are precisely the kernel of
+this matrix. The geometric comparison applies to $\Delta$-regular
+anticanonical hypersurfaces whose fan
+polytopes have unit edges and only unimodular triangles, unit squares, or
+one-interior-point pentagons and hexagons as two-faces, with unit dual edges
+at the singular faces. Assuming trivial canonical bundle,
+$h^1(\mathcal O)=0$, and the
+$\partial\bar\partial$-lemma on the crepant resolution, the same kernel is
+the image of the global first-order deformation space. This extends the
+charge description of
+conifold transitions to mixed transitions containing interacting and
+reducible Higgs sectors. A period argument supplies an all-orders necessary
+condition for analytic one-parameter smoothings on the nodal, $E_2$, and
+$\mathfrak{sl}_2$ branches. We exhibit a mixed transition in which two
+conifold sectors and one $E_2$ sector can move only simultaneously along a
+common one-dimensional deformation, and a compact model with thirty locally
+smoothable sectors but
+no trajectory that Higgses all of them.}
+
+\keywords{M-Theory, Supersymmetric Gauge Theory, Supergravity Models,
+Differential and Algebraic Geometry}
+
+\begin{document}
+\maketitle
+
+\input{sections/01_introduction}
+\input{sections/02_local_sectors}
+\input{sections/03_compact_gauging}
+\input{sections/04_global_theorems}
+\input{sections/05_examples}
+\input{sections/06_decoupling}
+\input{sections/07_discussion}
+
+\appendix
+\input{sections/app_local_algebra}
+\input{sections/app_matrices}
+\input{sections/app_reproducibility}
+
+\bibliographystyle{JHEP}
+\bibliography{references}
+
+\end{document}
