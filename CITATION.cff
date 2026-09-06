@@ -18,7 +18,7 @@ preferred-citation:
     - family-names: Wuebben
       given-names: Bernd Johannes
   year: 2026
-  url: "https://github.com/bwuebben/global-higgs-branch/blob/main/bulk-gauging-quantum-couplings.pdf"
+  url: "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/02-quantum-transition/paper.pdf"
 references:
   - type: unpublished
     title: "Global Constraints on Higgsing Localized Five-Dimensional Sectors in Compact M-Theory Vacua"
@@ -26,14 +26,14 @@ references:
       - family-names: Wuebben
         given-names: Bernd Johannes
     year: 2026
-    url: "https://github.com/bwuebben/global-higgs-branch/blob/main/global-higgs-branch.pdf"
+    url: "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/01-global-constraints/paper.pdf"
   - type: unpublished
     title: "Bulk Gauging and Quantum Couplings across a Compact Higgs Transition"
     authors:
       - family-names: Wuebben
         given-names: Bernd Johannes
     year: 2026
-    url: "https://github.com/bwuebben/global-higgs-branch/blob/main/bulk-gauging-quantum-couplings.pdf"
+    url: "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/02-quantum-transition/paper.pdf"
   - type: unpublished
     title: "Magnetic Sheaves and Stability Walls in a Compact Calabi–Yau Transition"
     authors:
@@ -41,4 +41,4 @@ references:
         given-names: Bernd Johannes
     year: 2026
     notes: "Supporting technical note."
-    url: "https://github.com/bwuebben/global-higgs-branch/blob/main/magnetic-sheaves-stability-walls.pdf"
+    url: "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/03-magnetic-sheaves/paper.pdf"

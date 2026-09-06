@@ -2,7 +2,7 @@
 
 Run: sage -c "load('checks/check_x9_glued_probe.sage')"
 The geometric proof (duality, stability, spherical twist and rigidity)
-is in sections_probes/02_sheaves.tex. This checks its algebraic inputs;
+is in papers/03-magnetic-sheaves/sections/02_sheaves.tex. This checks its algebraic inputs;
 it does not classify the full moduli or certify a physical chamber.
 The additional reduced-pencil hypothesis is NOT used here.
 """

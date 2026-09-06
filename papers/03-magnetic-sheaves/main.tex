@@ -12,7 +12,7 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning,calc}
 
-\input{macros}
+\input{../../shared/macros}
 \makeatletter
 \gdef\@fpheader{Companion technical note}
 \makeatother
@@ -63,14 +63,14 @@ reduced-member hypothesis, stated in an appendix.}
 \hypersetup{pageanchor=false}
 \maketitle
 \hypersetup{pageanchor=true}
-\input{sections_probes/01_setup}
-\input{sections_probes/02_sheaves}
-\input{sections_probes/03_stability}
-\input{sections_probes/04_quantum}
-\input{sections_probes/05_discussion}
+\input{sections/01_setup}
+\input{sections/02_sheaves}
+\input{sections/03_stability}
+\input{sections/04_quantum}
+\input{sections/05_discussion}
 \appendix
-\input{sections_probes/app_pencils}
-\input{sections_probes/app_data}
+\input{sections/app_pencils}
+\input{sections/app_data}
 \bibliographystyle{JHEP}
-\bibliography{references,references_new}
+\bibliography{foundations,transition}
 \end{document}

@@ -2,8 +2,8 @@ This repository is released under three licenses.
 
 1. CHECK CODE
 
-The files in checks/ and verify.sh are licensed under the MIT License printed
-below.
+The code in checks/, scripts/ and Makefile is licensed under the MIT License
+printed below.
 
 2. PAPER AND REPOSITORY PROSE
 
@@ -15,7 +15,8 @@ https://creativecommons.org/licenses/by/4.0/
 
 3. JHEP SUPPORT FILES
 
-jheppub.sty and JHEP.bst are Copyright SISSA Medialab and are distributed
+The files shared/tex/jheppub.sty and shared/tex/JHEP.bst are Copyright
+SISSA Medialab and are distributed
 under the LaTeX Project Public License, version 1.3 or later, as stated in
 their file headers. They are not covered by the MIT or CC BY grants above.
 

@@ -49,7 +49,7 @@ def check_higgs_ring() -> None:
     assert all(basis.reduce(relation)[1] == 0 for relation in ideal)
 
     # A monomial I^a M^b Itilde^c has standard SU(2) Cartan weight 2(a-c),
-    # or weight a-c for the unit-root-charge generator used in main2.tex. At weight
+    # or weight a-c for the unit-root-charge generator used in paper 2. At weight
     # zero, a=c and (I Itilde)^a M^b reduces exactly to M^(2a+b).
     for a in range(8):
         for b in range(8):
