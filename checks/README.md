@@ -1,6 +1,6 @@
 # Computational checks
 
-The 38 scripts below support the three papers. Most are exact integer,
+The 39 scripts below support the three papers. Most are exact integer,
 rational or symbolic computations. The numerical period and wall diagnostics
 are identified separately. None replaces the geometric or analytic proofs.
 
@@ -9,8 +9,8 @@ are identified separately. None replaces the geometric or analytic proofs.
 From the repository root:
 
 ```bash
-make checks       # ten Python scripts
-make check-full   # all 38 Python/Sage scripts
+make checks       # eleven Python scripts
+make check-full   # all 39 Python/Sage scripts
 ```
 
 The full suite requires SageMath (tested with 10.9). Set `SAGE=/path/to/sage`
@@ -40,6 +40,7 @@ Primarily [paper 1](../papers/01-global-constraints/).
 | [check_nodal_charge.py](check_nodal_charge.py) | Nodal charge kernels. |
 | [check_e2_gauging.py](check_e2_gauging.py) | E₂ invariant ring and X₉ gauging. |
 | [check_e3_gauging.py](check_e3_gauging.py) | Branchwise E₃ invariant rings. |
+| [check_smoothing_criterion.py](check_smoothing_criterion.py) | E₃ discriminant factors, the exact row-space test and four counterexample restrictions; standard library only. |
 | [check_e3_magnetic_quivers.py](check_e3_magnetic_quivers.py) | E₃ magnetic-quiver Hilbert series. |
 | [check_xcirc_e3_profiles.py](check_xcirc_e3_profiles.py) | Four thirty-sector branch profiles. |
 | [check_x9_spectrum.py](check_x9_spectrum.py) | Divisor, Hodge and multiplet counts. |

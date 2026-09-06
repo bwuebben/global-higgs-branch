@@ -167,7 +167,7 @@ one-parameter Calabi--Yau family realizes the class
  (u_1,u_2,\beta)=t(-1,-1,1)
  \label{eq:x9-family-direction}
 \end{equation}
-and has smooth general fiber by Theorem~B of
+and has smooth general fiber by Theorem~11.8 of
 \cite{Wuebben:2026smoothing}. More explicitly, take the facet
 $F=\{v_2,v_3,v_4,v_5,v_6,v_7,v_8\}$ and deformation degree
 $R=(0,1,-1,-1)$. On the ordered edges
@@ -264,6 +264,7 @@ Table~\ref{tab:xcirc-profiles}.
 \begin{table}[t]
 \centering
 \small
+\begin{adjustbox}{max width=\textwidth,center}
 \begin{tabular}{@{}ccccc@{}}
 \toprule
 profile & $\dim_{\CC}\cB_\sigma$ & $\rank Q_\sigma$ & $\dim_{\CC}\ker Q_\sigma$ & forced reduced coordinates \\
@@ -274,6 +275,7 @@ $(3,2)$ & $31$ & $21$ & $10$ & $u_9,u_{11},\beta_1,\beta_2,L_2$ \\
 $(3,3)$ & $32$ & $20$ & $12$ & $u_9,u_{11},\beta_1,\beta_2$ \\
 \bottomrule
 \end{tabular}
+\end{adjustbox}
 \caption{The four branch-restricted compact charge maps for $X^{\circ}$.
 In a profile $(\sigma_1,\sigma_2)$, $\sigma_j=2$ selects the
 $\mathfrak{sl}_2$ line and $\sigma_j=3$ the $\mathfrak{sl}_3$ plane at the
@@ -326,6 +328,56 @@ begin at different orders. This is Theorem~6.5 of
 \cite{Wuebben:2026obstruction}, whose Corollary~6.7 also excludes every
 formal arc meeting all thirty local smoothing loci.
 
+\subsection{Nonzero deformations constrained to a discriminant}
+\label{subsec:discriminant-obstruction}
+
+There is a second obstruction mechanism: an allowed $E_3$ deformation
+can be nonzero but confined to a discriminant line. We use the compact
+example of \cite[Theorems~5.1 and~5.3]{Wuebben:2026smoothing}, with thirty
+nodes and two degree-six cone points. This is a different threefold from
+$X^{\circ}$, which has twenty-six nodes and four cone points. The cited
+construction specifies its reflexive fan polytope, projective crepant
+resolution and full divisor--curve matrix. Here we record the three
+divisor identities that explain its obstruction as compact gauging.
+
+Let $n_0,\ldots,n_{29}$ be its nodal coordinates. At cone $i=0,1$,
+write $\lambda_i$ for the $A_1$ coordinate and $(a_i,b_i)$ for the
+coefficients of $A_i=e_3-e_1$ and $B_i=e_2-e_3$ in its $A_2$ plane.
+The three plane coefficients are
+\begin{equation}
+ a_iA_i+b_iB_i=-a_i e_1+b_i e_2+(a_i-b_i)e_3,
+ \qquad a_ib_i(a_i-b_i)\ne0
+ \label{eq:discriminant-example-plane}
+\end{equation}
+for a smoothing direction. Three integral compact divisor combinations
+give the moment-map equations
+\begin{equation}
+ \begin{aligned}
+ n_{13}-a_0+b_0-a_1+b_1&=0,\\
+ b_0+b_1&=0,\\
+ n_{16}+\lambda_0+\lambda_1&=0.
+ \end{aligned}
+ \label{eq:discriminant-example-gaugings}
+\end{equation}
+They hold on the full charge kernel before a profile is chosen.
+Denote the line and plane by $L$ and $P$. On $LL$ the first equation
+forces $n_{13}=0$, while on $PP$ the third forces $n_{16}=0$.
+On $LP$ the second forces $b_1=0$; on $PL$ it forces $b_0=0$.
+Every profile therefore fails the exact smoothing criterion.
+
+The mixed profiles nevertheless contain relations nonzero at every
+singular point. For example the cited $LP$ relation has
+$(\lambda_0,a_1,b_1)=(3,1,0)$ and all thirty nodal coefficients nonzero.
+Its $E_3$ plane deformation is nonzero, but its middle coefficient in
+\eqref{eq:discriminant-example-plane} vanishes. Thus a nonzero invariant
+deformation at each sector does not imply simultaneous smoothing.
+The selected bases are smooth of dimensions $34,34,34,35$ on
+$LL,LP,PL,PP$, respectively, and all their tangents integrate
+\cite[Section~5.3]{Wuebben:2026smoothing}. The failure is to leave the
+local discriminants, not a failure of selected-base integrability. This
+does not exclude partial Higgs directions or identify the entire physical
+vacuum space with a deformation base.
+
 \subsection{Finite classification for polytopes with at most nine vertices}
 \label{subsec:census}
 
@@ -338,7 +390,7 @@ addition to the $E_2$ point. The remaining case is $X_9$, whose explicit mixed
 family is smooth. Thus cooperative Higgsing is
 the unique smoothable outcome in this precisely stated bounded class
 by Proposition~9.2 and Corollary~6.7 of \cite{Wuebben:2026obstruction} and
-Theorems~B and~C of \cite{Wuebben:2026smoothing}.
+Theorems~11.8 and~10.3 of \cite{Wuebben:2026smoothing}.
 
 This census shows that the compact constraint is systematic rather than an
 accident of one matrix. It is not a statistical sample of all compact

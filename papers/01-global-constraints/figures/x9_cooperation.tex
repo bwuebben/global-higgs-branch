@@ -1,5 +1,6 @@
 \begin{figure}[t]
 \centering
+\begin{adjustbox}{max width=\textwidth,center}
 \begin{tikzpicture}[
   node distance=7mm and 7mm,
   sector/.style={draw,rounded corners,fill=gray!7,align=center,
@@ -27,12 +28,13 @@
    $E$: neutral $E_2$ Coulomb vector lost when the exceptional divisor is
    smoothed; it is not a third gauging.};
 
-\draw[arrow] (h1.south) -- (mm.north west);
+\draw[arrow] (h1.south) -- ++(0,-5mm) -| ([xshift=-6mm]mm.north);
 \draw[arrow] (h2.south) -- (mm.north);
-\draw[arrow] (e2.south) -- (mm.north east);
-\draw[arrow] (mm) -- node[right,font=\scriptsize] {$\ker Q_{X_9}^{\mathrm{eff}}$} (smooth);
+\draw[arrow] (e2.south) -- ++(0,-5mm) -| ([xshift=6mm]mm.north);
+\draw[arrow] (mm.south) -- node[right,font=\scriptsize] {$\ker Q_{X_9}^{\mathrm{eff}}$} (smooth.north);
 \draw[arrow,dashed] (mm.east) -- (vectors.west);
 \end{tikzpicture}
+\end{adjustbox}
 \caption{Cooperative Higgsing in $X_9$. No nonzero trajectory is supported on
 the two conifold sectors or on the $E_2$ sector alone. The unique global
 direction activates all three, while the protected vector-multiplet count

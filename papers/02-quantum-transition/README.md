@@ -15,6 +15,13 @@ mutation and continuation of all eight regular periods identify the
 surviving genus-zero prepotential with the smooth-phase prepotential,
 including its constant and integral normalization.
 
+The exact mixed smoothing criterion and selected-base integrability theorem
+of [CY paper 5](https://github.com/bwuebben/calabi-yau-smoothability/tree/main/paper5)
+now supply the general existence argument. The explicit X₉ construction
+is retained because it identifies the smooth phase used in the quantum
+comparison. This geometric integrability does not supply the missing
+finite-Planck scalar metric or a uniform five-dimensional particle model.
+
 The fibration and heterotic K3 data do not supply the global heterotic
 bundle construction or massless U(1). The finite-Planck hypermultiplet
 metric remains open. The four-state description is not uniform in the

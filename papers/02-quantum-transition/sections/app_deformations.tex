@@ -99,14 +99,14 @@ classes. On the pentagon the smoothing line is the unique
 $A_1$ root line; on the hexagon the reflection and Coxeter
 eigenspaces give the $A_1$ and $A_2$ summands. The local
 comparison and its volume-form determinant twist are proved in
-\cite[Lemmas~8.6--8.7]{Wuebben:2026smoothing}, using
+\cite[Lemmas~2.3--2.4]{Wuebben:2026smoothing}, using
 Schlessinger's comparison in the depth-three form
 \cite{Schlessinger:1971,Friedman:2022}.
 
 \begin{proof}[Proof of Theorem~\ref{thm:first-order-image}]
 For these normal Gorenstein threefolds, the cotangent-complex
 and differential deformation groups agree through degree two. The
-non-lci locus is finite \cite[Lemma~8.5]{Wuebben:2026smoothing}.
+non-lci locus is finite \cite[Lemma~2.2]{Wuebben:2026smoothing}.
 The local-to-global sequence is
 \begin{equation}
  0\longrightarrow H^1(X,\Theta_X)\longrightarrow\mathbb T_X^1
@@ -143,30 +143,51 @@ matrix imposes every continuous constraint
 \cite[Proposition~8.3]{Wuebben:2026obstruction}.
 \end{proof}
 
-\subsection{All-orders necessity and the multiplet change}
+\subsection{Exact smoothing, selected bases and the multiplet change}
 
-\begin{theorem}\label{thm:all-orders-necessity}
-Let $X$ be compact with $\omega_X\cong\mathcal O_X$ and
-$h^1(X,\mathcal O_X)=0$, with only nodes and anticanonical
-$S_7,S_6$ cones, and with a crepant resolution small at the
-nodes. Suppose a flat proper analytic family over a disc has
-central fiber $X$ and smooth nearby fibers, and let $\sigma$
-be its induced branch profile. Then $K_\sigma$ projects
-nontrivially onto $V_{p,\sigma_p}$ at every node, every $E_2$
-point and every $E_3$ point smoothed through the $A_1$ component.
+\begin{theorem}[mixed smoothing criterion]\label{thm:all-orders-necessity}
+Let $X$ be connected, normal and projective with
+$\omega_X\cong\mathcal O_X$ and $h^1(X,\mathcal O_X)=0$,
+with only nodes and exact analytic anticanonical $S_7,S_6$ cones.
+Choose a smooth crepant resolution, small at the nodes and standard
+divisorial at the cones, and a reduced local profile $\sigma$.
+Then $X$ has a convergent one-parameter smoothing on $\sigma$ if
+and only if $K_\sigma$ contains a vector nonzero on every rank-one
+summand and with all three coefficients $\mu_i$ nonzero on each
+$A_2$ summand, written as $\sum_i\mu_i e_i$ with $\sum_i\mu_i=0$.
+Necessity applies to arbitrary analytic smoothing arcs.
 \end{theorem}
 
-This is the vanishing-period criterion of
-\cite[Theorem~6.1 and Remark~6.2]{Wuebben:2026obstruction}:
-the distinguished local three-cycle has nonzero period on each
-named smoothing component, and the global Mayer--Vietoris
-boundary map relates these periods to $K_\sigma$.
-It applies to the analytic arc, independently of the first
-nonzero order of its local parameter. Over $\QQ$, a generic
-linear combination then gives one kernel class nonzero at all
-the named germs simultaneously. The $A_2$ plane is not covered
-by this scalar-period argument, and sufficiency or general
-integrability is not asserted.
+This is \cite[Theorem~4.7]{Wuebben:2026smoothing} in the degree-six/seven
+case. The three $A_2$ coefficients are the nodal smoothing coordinates
+on its simultaneous partial resolution. In the root coordinates used
+here they are $(H_1,H_2-H_1,-H_2)$, so the plane discriminant is
+$H_1H_2(H_1-H_2)=0$. The nodal period argument on the partial model
+proves their separate nonvanishing at every order; the scalar-period
+argument of \cite{Wuebben:2026obstruction} handles the rank-one germs.
+A finite union of proper linear subspaces cannot cover $K_\sigma$, so
+checking the individual scalar functionals is sufficient to find one
+relation avoiding all discriminants.
+
+For analytic local classifying maps, let $\operatorname{Def}^{\sigma}(X)$
+be the scheme-theoretic inverse image of the selected reduced local
+branches. The companion integrability theorem states that, if
+$K_\sigma\to V_{p,\sigma_p}$ is nonzero at every $E_3$ point, then
+\begin{equation}
+ \operatorname{Def}^{\sigma}(X)\text{ is smooth},\qquad
+ \dim\operatorname{Def}^{\sigma}(X)=h^1(X,\Theta_X)+\dim K_\sigma,
+ \label{eq:selected-base-dimension}
+\end{equation}
+and every tangent on it is realized by a convergent curve
+\cite[Theorem~4.5]{Wuebben:2026smoothing}. No extra projection hypothesis
+is required at nodes or $E_2$ points. Lifting a relation outside the
+discriminants and integrating it proves sufficiency in the preceding
+theorem. This does not assert smoothness of unrestricted deformation
+schemes, integrability on all zero-projection $E_3$ profiles, or an
+identification of a nonlinear classifying map with a linear inclusion.
+The geometric theorem also allows degree-five and
+$\mathbb P^1\times\mathbb P^1$ cones, but their physical operator
+dictionaries are not used in this paper.
 
 For one $E_2$ point there is a direct topological count that
 avoids any assumption about the unknown hypermultiplet metric.
@@ -174,7 +195,7 @@ Let $n$ be the number of nodes, $k=\dim K_\sigma$ and
 $\rho=n+1-k$.
 
 \begin{proposition}\label{thm:forced-spectrum}
-If such an $X$ admits a smoothing $X_t$, then
+If the exact criterion holds and $X_t$ is a smoothing, then
 \begin{equation}
  h^{1,1}(\wideX)-h^{1,1}(X_t)=\rho+1,\qquad
  h^{2,1}(X_t)-h^{2,1}(\wideX)=k.

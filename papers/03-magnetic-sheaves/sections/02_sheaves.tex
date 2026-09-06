@@ -344,6 +344,7 @@ The second sheaf supplies a compact contribution carrying the
 cooperative electric class. It remains distinct from the desired five-dimensional particle
 index. The complete moduli at either charge have not been classified,
 and physical stability at the cooperative contraction is not established.
+
 Section~\ref{subsec:x9-probe-transport} extends the Gieseker-stability
 calculation and explains why the raw D0 shift is frame-dependent.
 At these fixed charges, the divisor
@@ -355,3 +356,66 @@ Thus replacing the quotient in
 \eqref{eq:x9-glued-extensions} by the zero-D0 curve sheaf does not
 give a nontrivial extension of $\cO_T$. This excludes that elementary
 construction, not other sheaves or derived objects at zero D0 shift.
+
+\subsection{Persistence in smooth polarized deformations}
+\label{subsec:probe-smooth-deformations}
+
+The integrability theorem for the singular threefold does not by itself
+deform a specified magnetic sheaf. In the smooth resolved phase there is,
+however, a separate consequence of \eqref{eq:x9-glued-rigidity}.
+
+\begin{proposition}\label{prop:probe-smooth-persistence}
+Let $\mathcal X\to B$ be a smooth projective family of Calabi--Yau
+threefolds over a smooth pointed complex base, with central fiber
+$X=\wideX_9$ and a relative ample polarization restricting to $J_*$.
+For each $\mathcal F\in\{\mathcal F_2,\mathcal F_R\}$, the relative
+stable-sheaf moduli space is \textup{\'{e}tale} over $B$ at $[\mathcal F]$.
+After an \textup{\'{e}tale} base change and restriction to a neighborhood,
+$\mathcal F$ extends to a flat family of stable sheaves. Its local
+moduli branch is unique, and each nearby fiber is an isolated reduced
+stable point with numerical DT contribution $+1$.
+\end{proposition}
+
+\begin{proof}
+Stability gives $\operatorname{Hom}_X(\mathcal F,\mathcal F)=\CC$.
+Serre duality on the smooth Calabi--Yau threefold and
+\eqref{eq:x9-glued-rigidity} give
+\begin{equation}
+ \dim\operatorname{Ext}^k_X(\mathcal F,\mathcal F)
+ =\begin{cases}1,&k=0,3,\\0,&k=1,2.\end{cases}
+ \label{eq:probe-spherical-ext}
+\end{equation}
+For a first-order ambient deformation with Kodaira--Spencer class
+$\kappa\in H^1(X,T_X)$, the obstruction to extending $\mathcal F$ is
+\begin{equation}
+ o_{\mathcal F}(\kappa)
+  =(\operatorname{id}_{\mathcal F}\otimes\kappa)
+        \circ\operatorname{At}(\mathcal F)
+  \in\operatorname{Ext}^2_X(\mathcal F,\mathcal F),
+ \label{eq:probe-atiyah-obstruction}
+\end{equation}
+where $\operatorname{At}(\mathcal F)\in
+\operatorname{Ext}^1_X(\mathcal F,\mathcal F\otimes\Omega_X^1)$
+is the Atiyah class. The corresponding obstruction for a small Artin
+extension lies in $\operatorname{Ext}^2_X(\mathcal F,\mathcal F)$
+tensored with its kernel; lifts, when they exist, form a torsor under
+the analogous first Ext group
+\cite[Section~3]{huybrechtsthomas2010deformations}. These groups vanish,
+so the relative moduli morphism is formally \textup{\'{e}tale} at the
+point, and hence \textup{\'{e}tale} since it is locally of finite
+presentation. Scalar automorphisms require an \textup{\'{e}tale} local
+choice of universal family but do not change the coarse moduli branch.
+The deformation is a flat sheaf after shrinking, and stability is open
+for the relative polarization. Upper semicontinuity preserves vanishing
+of the first and second self-Ext groups. Thus the fiber moduli point
+remains smooth of dimension zero and has Behrend weight $+1$.
+\end{proof}
+
+This proposition concerns ordinary smooth deformations of the resolved
+phase, with fixed topology and an ample polarization. It does not provide
+a relative sheaf across the contraction, where the topology changes;
+nor does it control physical stability when the large-volume description
+fails. Even within the smooth family it describes the specified local
+component, not every stable object of the same charge. In particular,
+the distinct counts on $\mathbb F_1$ and $\mathbb P^2$ are not made into
+an equal-charge deformation-invariance statement by the smoothing theorem.

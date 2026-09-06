@@ -1,6 +1,6 @@
 # Computation reference
 
-The 38 scripts in this directory reproduce calculations in the three
+The 39 scripts in this directory reproduce calculations in the three
 manuscripts. Most use exact integer, rational and symbolic arithmetic;
 the explicitly identified numerical period/wall calculations are exceptions.
 They supplement the geometric and analytic proofs, not replace them.
@@ -19,8 +19,8 @@ They supplement the geometric and analytic proofs, not replace them.
 Run from the repository root:
 
 ```bash
-make verify       # ten Python checks and all three LaTeX builds
-make verify-full  # all 38 scripts and all three LaTeX builds
+make verify       # eleven Python checks and all three LaTeX builds
+make verify-full  # all 39 scripts and all three LaTeX builds
 make papers       # all three LaTeX builds, without computations
 ```
 
@@ -38,6 +38,14 @@ The other scripts use their documented defaults. Several scripts independently
 recompute shared geometry; the full suite can take several minutes.
 
 ## Paper 1: finite algebra
+
+`python3 checks/check_smoothing_criterion.py` verifies the three E₃
+discriminant factors in the paper's root basis, the rational row-space
+test for a kernel to avoid the discriminants, the X₉ relation, and the
+four restrictions of the thirty-node/two-cone example's three printed
+divisor identities. Its 26 exact checks need only the standard library.
+The companion CY paper 5 supplies the full counterexample geometry and
+analytic integrability proof; this script does not replace either.
 
 The first six Python scripts are `check_nodal_charge.py`,
 `check_e2_gauging.py`, `check_e3_gauging.py`,

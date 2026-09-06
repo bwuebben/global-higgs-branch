@@ -1,5 +1,6 @@
 \begin{figure}[t]
 \centering
+\begin{adjustbox}{max width=\textwidth,center}
 \begin{tikzpicture}[
   node distance=7mm and 8mm,
   sector/.style={draw,rounded corners,fill=gray!7,align=center,
@@ -26,21 +27,22 @@
 \node[result,right=15mm of charge] (kernel) {allowed holomorphic data\\[1mm]
   $\ker Q_{X,\sigma}$};
 
-\draw[arrow] (node.south) -- (charge.north west);
+\draw[arrow] (node.south) -- ++(0,-5mm) -| ([xshift=-6mm]charge.north);
 \draw[arrow] (e2.south) -- (charge.north);
-\draw[arrow] (e3.south) -- (charge.north east);
-\draw[arrow] (charge) -- node[above,font=\scriptsize]
-  {$\mu_I^{\CC}=0$} (kernel);
+\draw[arrow] (e3.south) -- ++(0,-5mm) -| ([xshift=6mm]charge.north);
+\draw[arrow] (charge.east) -- node[above,font=\scriptsize]
+  {$\mu_I^{\CC}=0$} (kernel.west);
 
 \node[align=center,font=\scriptsize,below=5mm of charge,text width=0.66\textwidth]
   {The same divisor--curve pairing is the wrapped-M2 electric charge,
    the flavor-cocharacter gauging, and the dual of the geometric
    local-to-global map.};
 \end{tikzpicture}
+\end{adjustbox}
 \caption{The compact Higgs-gluing mechanism on a fixed $E_3$ branch profile.
 The displayed kernel is the image in invariant complex moment-map
 coordinates. Balanced representatives lift it to the zero level of the full
-triplet moment maps; integration to a finite complex deformation is a separate
-question.}
+triplet moment maps. The exact geometric smoothing criterion requires this
+kernel to meet the complement of every local discriminant.}
 \label{fig:local-to-global}
 \end{figure}

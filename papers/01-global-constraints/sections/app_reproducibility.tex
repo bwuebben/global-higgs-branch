@@ -11,6 +11,7 @@ venv/bin/python checks/check_e3_gauging.py
 venv/bin/python checks/check_e3_magnetic_quivers.py
 venv/bin/python checks/check_xcirc_e3_profiles.py
 venv/bin/python checks/check_x9_spectrum.py
+python3 checks/check_smoothing_criterion.py
 \end{verbatim}
 The scripts verify, respectively:
 \begin{enumerate}
@@ -20,9 +21,12 @@ The scripts verify, respectively:
  \item the affine-$A_1/A_2$ monopole sums and fiber-product Hilbert-series
  identity;
  \item the four $X^{\circ}$ profile ranks, Smith invariants and isolating
- vectors; and
+ vectors;
  \item the $X_9$ divisor quotient, Hodge numbers, effective vectors and
- multiplet changes.
+ multiplet changes; and
+ \item the three $E_3$ discriminant factors in the moment-map root
+ convention, the finite row-space smoothing test, and the four
+ profile restrictions of \eqref{eq:discriminant-example-gaugings}.
 \end{enumerate}
 
 The source geometric computations are maintained with the companion
@@ -35,9 +39,12 @@ divisor quotient and Batyrev lattice-point counts
 
 The finite scripts check the printed matrices and
 formulas. They do not replace the Hodge-theoretic proof of
-Theorem~\ref{thm:first-order-image}, the period proof of
-Theorem~\ref{thm:all-orders-necessity}, or the geometric construction of the
-$X_9$ family.
+Theorem~\ref{thm:first-order-image}, the analytic necessity and sufficiency
+in Theorem~\ref{thm:all-orders-necessity}, selected-base integrability, or
+the geometric construction of the $X_9$ family. The full toric input and
+deformation-base calculation for the thirty-node/two-cone counterexample,
+as well as the $X_{19}$ smoothing, are reproduced in the companion
+mathematical source distribution \cite{Wuebben:2026smoothing}.
 
 The manuscript source and exact finite checks are available at
 \url{https://github.com/bwuebben/global-higgs-branch}.

@@ -3,9 +3,10 @@
 
 The physical matrix of Section~\ref{sec:compact-gauging} has an independent
 geometric characterization. We formulate it in terms of the topology of the
-singularity links and Milnor fibers. This section also distinguishes the exact
-first-order statement from the all-orders condition on an analytic smoothing
-arc.
+singularity links and Milnor fibers. The mixed smoothing theorem then
+converts the charge-kernel calculation into an exact existence criterion.
+We distinguish this criterion from smoothness of the selected deformation
+base and from the nonlinear geometry of the physical Higgs branch.
 
 \subsection{Links, Milnor fibers and branch lattices}
 \label{subsec:link-lattices}
@@ -91,8 +92,8 @@ $A_1$ root line. On the hexagon, a sixfold rotation has a $(-1)$ eigenspace
 and a Coxeter eigenspace; these are the $A_1$ line and $A_2$ plane. The local
 cohomology sequence identifies these eigenspaces with
 \eqref{eq:local-crepant-kernel}. This proves the branch statement and the
-compatibility with the Gysin maps; the full derivation is Lemmas~8.6
-and~8.7 of \cite{Wuebben:2026smoothing}, which rest on Schlessinger's
+compatibility with the Gysin maps; the full derivation is Lemmas~2.3
+and~2.4 of \cite{Wuebben:2026smoothing}, which use Schlessinger's
 comparison \cite{Schlessinger:1971} in the depth-three form of
 \cite{Friedman:2022}.
 
@@ -178,7 +179,7 @@ $\ker\Qcompact$.
 For a normal Gorenstein threefold with finite
 non-local-complete-intersection (non-lci) locus, the cotangent
 complex and Kähler-differential deformation groups agree through degree two
-(Lemma~8.5 of \cite{Wuebben:2026smoothing}).
+(Lemma~2.2 of \cite{Wuebben:2026smoothing}).
 The local-to-global Ext sequence therefore begins
 \begin{equation}
  0\longrightarrow H^1(X;\Theta_X)\longrightarrow\TangentDef
@@ -231,7 +232,7 @@ class maps to zero under $\mathrm{ob}$; the same commutative square sends its
 link class to zero in $H_2(\wideX;\CC)$. Lemma~\ref{lem:local-comparison}
 then identifies its branch restriction with an element of $\Kbranch$. The
 two inclusions prove the equality. This argument is the kernel comparison of
-Theorem~D (Theorem~8.8) and Section~8.4 of \cite{Wuebben:2026smoothing},
+Theorem~2.5 of \cite{Wuebben:2026smoothing},
 printed here to make the maps and obstruction group explicit.
 \end{proof}
 
@@ -249,78 +250,129 @@ Proposition~\ref{prop:physical-kernel} yields the central identification
 This is the sense in which the geometric kernel is physically derived as a
 five-dimensional charge and gauging constraint.
 
-\subsection{All-orders necessity}
+\subsection{The local discriminants and the exact criterion}
 \label{subsec:all-orders}
 
-A first-order statement does not by itself constrain an analytic arc whose
-local parameter begins at higher order. The necessary condition for a genuine
-smoothing is obtained instead from vanishing periods. For a node, a
-distinguished vanishing three-sphere has period proportional to the local
-deformation parameter. For the divisorial contractions used here, the Milnor
-fiber contains a distinguished three-cycle whose period is nonzero on the
-relevant component. Mayer--Vietoris boundary maps relate these cycles to
-classes in \eqref{eq:topological-kernel}. The resulting argument is insensitive
-to the order of contact with the local discriminant. The required local
-period statement and its simultaneous full-support consequence are
-Theorem~6.1 and Remark~6.2, respectively, of
-\cite{Wuebben:2026obstruction}.
-
-\begin{theorem}[all-orders necessary relation]
-\label{thm:all-orders-necessity}
-Let $X$ be a compact complex threefold with
-$\omega_X\cong\cO_X$ and $h^1(X,\cO_X)=0$, whose singularities are nodes and
-anticanonical cones over $S_7$ or $S_6$. Fix a crepant resolution
-$\wideX\to X$, small over the nodes and with the corresponding del Pezzo
-surface over each cone point. Let
-$\mathcal X\to\mathbb D$ be a flat proper analytic family over a disc, with
-central fiber $\mathcal X_0\cong X$ and smooth fibers $\mathcal X_s$ for all
-sufficiently small $s\ne0$, and let $\sigma$ be the branch profile it
-induces: at each $E_3$ point, the component of the miniversal base through
-which the family smooths the germ. Then the projection
+A nonzero local deformation need not smooth a cone point. The
+\emph{local discriminant} is the locus in a selected deformation component
+where the nearby fiber remains singular. At a node, an $E_2$ point or an
+$E_3$ line it is the origin. At an $E_3$ plane write
 \begin{equation}
- \Kbranch\longrightarrow V_{q,\sigma_q}
- \label{eq:nonzero-projection}
+ \kappa_p=H_{p1}(e_1-e_2)+H_{p2}(e_2-e_3)
+ =\mu_{p1}e_1+\mu_{p2}e_2+\mu_{p3}e_3.
+ \label{eq:e3-three-coefficients}
 \end{equation}
-is nonzero for every node $q$, every $E_2$ point $q$, and every $E_3$ point
-$q$ at which $\sigma_q=\mathfrak{sl}_2$.
+Thus $(\mu_{p1},\mu_{p2},\mu_{p3})
+=(H_{p1},H_{p2}-H_{p1},-H_{p2})$. The discriminant consists of
+the three lines $\mu_{pi}=0$, equivalently
+\begin{equation}
+ H_{p1}H_{p2}(H_{p1}-H_{p2})=0.
+ \label{eq:e3-discriminant}
+\end{equation}
+The three coefficients are the smoothing coordinates of the three nodes
+in a simultaneous partial resolution of the degree-six cone
+\cite[Section~3]{Wuebben:2026smoothing}. They also agree with the
+diagonal invariants $z_i=q_i\widetilde q_i$ of the local moment-map
+presentation in Appendix~\ref{app:local-algebra}.
+
+Let $\mathcal D_\sigma\subset\cB_\sigma$ be the union of the inverse
+images of these local discriminants under projection to the individual
+summands. The following is the degree-six/seven specialization of the
+mixed smoothing theorem \cite[Theorem~4.7]{Wuebben:2026smoothing}.
+
+\begin{theorem}[exact smoothing criterion]
+\label{thm:all-orders-necessity}
+Let $X$ be a connected normal projective complex threefold with
+$\omega_X\cong\cO_X$ and $h^1(X,\cO_X)=0$, whose singularities are
+nodes and exact analytic anticanonical cones over $S_7$ or $S_6$.
+Fix a smooth crepant resolution, small over the nodes and standard
+divisorial over the cones, and a reduced branch profile $\sigma$.
+Then $X$ has a convergent one-parameter smoothing inducing $\sigma$
+if and only if
+\begin{equation}
+ (\Kbranch\otimes\CC)\setminus\mathcal D_\sigma\ne\varnothing.
+ \label{eq:exact-smoothing-criterion}
+\end{equation}
+Equivalently, the relation space contains a vector nonzero on every
+rank-one summand and with all three $\mu_{pi}$ nonzero at each $E_3$
+plane. Necessity applies to arbitrary analytic smoothing arcs, without
+an assumption on their order of contact with the local discriminants.
 \end{theorem}
 
-\begin{remark}
-\label{rem:full-support}
-Since $\QQ$ is infinite, a generic rational linear combination avoids the
-finite union of the coordinate hyperplanes in question, so $\Kbranch$
-contains a single class whose component is nonzero simultaneously at every
-germ named in Theorem~\ref{thm:all-orders-necessity}. The statement applies
-to the actual analytic arc and not merely to its first derivative.
+For necessity, the simultaneous partial resolution replaces an $E_3$
+plane by three nodes without changing the noncentral fibers of a smoothing
+arc. Nodal period necessity supplies three separate nonzero coefficients;
+their sum is zero in the del Pezzo marking. The rank-one period argument
+treats the other germs. A generic rational linear combination of the
+resulting global relations makes all required coefficients nonzero
+simultaneously. This strengthens the scalar-period criterion of
+\cite{Wuebben:2026obstruction}. Sufficiency uses the selected-base
+smoothness stated below: lift a relation satisfying
+\eqref{eq:exact-smoothing-criterion} to a global tangent and integrate it.
+Every local discriminant factor has nonzero derivative, so all nearby
+fibers are smooth. The analytic globalization and arbitrary-arc necessity
+are proved in \cite[Section~4]{Wuebben:2026smoothing}.
+
+\begin{remark}[finite linear test]\label{rem:full-support}
+Condition~\eqref{eq:exact-smoothing-criterion} is equivalent to requiring
+that none of the individual scalar functionals defining
+$\mathcal D_\sigma$ vanish identically on $\Kbranch$. A rational vector
+space is not a finite union of proper linear subspaces. Nonzero projection
+to an $A_2$ plane alone is weaker: the image can be one of its three
+discriminant lines.
 \end{remark}
 
-Theorem~\ref{thm:all-orders-necessity} gives no conclusion at an $E_3$
-point smoothed through $\cH_{\mathfrak{sl}_3}$, although it still constrains
-every other germ of the same family, with $\Kbranch$ computed on the profile
-that family induces. That component has a two-dimensional Milnor kernel. The
-analogous proof requires two independent period pairings, not only a nonzero
-scalar period, and remains open. The first-order
-Theorem~\ref{thm:first-order-image} does include this plane.
-
-\subsection{Integrability boundary}
+\subsection{Selected-base integrability and its physical scope}
 \label{subsec:integrability}
 
-Theorem~\ref{thm:first-order-image} implies that every branch-restricted class
-in the kernel lifts to a global first-order deformation. It does not imply
-that this deformation integrates. The del Pezzo cone germs are not local
-complete intersections \cite{Gross:1997}, and the standard unobstructedness
-argument for nodal
-Calabi--Yau threefolds does not apply uniformly on the non-$\QQ$-factorial
-locus relevant here.
+Fix analytic local classifying maps from a semiuniversal deformation of
+$X$. Denote by $\operatorname{Def}^{\sigma}(X)$ the scheme-theoretic inverse
+image of the product of the selected reduced local branches. The following
+specialization of \cite[Theorem~4.5]{Wuebben:2026smoothing} concerns this
+selected space, not the unrestricted deformation scheme.
 
-Three distinct assertions should therefore remain separate:
-\begin{enumerate}
- \item $b\in\ker\Qcompact$ solves the projected rigid moment-map equations;
- \item $b$ is the localization of a global first-order complex deformation;
- \item $b$ is tangent to an actual finite extremal transition.
-\end{enumerate}
-The first two are proved for every profile in the admissible class. The third
-is proved for purely nodal transitions and for the explicit $X_9$ family in
-Section~\ref{subsec:x9}; it is open in general. This is the remaining step in
-a necessary-and-sufficient mixed analogue of Friedman's conifold-transition
-criterion \cite{Friedman:1986}.
+\begin{theorem}[smooth selected deformation base]\label{thm:selected-integrability}
+Under the hypotheses of Theorem~\ref{thm:all-orders-necessity}, suppose
+$\Kbranch\to V_{p,\sigma_p}$ is nonzero at every $E_3$ point.
+Then $\operatorname{Def}^{\sigma}(X)$ is smooth of dimension
+\begin{equation}
+ h^1(X,\Theta_X)+\dim_{\QQ}\Kbranch,
+ \label{eq:selected-base-dimension}
+\end{equation}
+and every tangent to it integrates to a convergent curve on the selected
+branches. No additional nonzero-projection hypothesis is required at
+nodes or $E_2$ points.
+\end{theorem}
+
+The geometric proof replaces an $E_2$ cone by a cone over
+$\mathbb P^1\times\mathbb P^1$ and the $E_3$ line or plane by two or
+three nodes. The partial model has an unobstructed deformation space;
+analytic blow-down and a surjective map on selected tangents give the
+asserted smooth base. This addresses the non-complete-intersection cone
+germs rather than assuming the nodal unobstructedness theorem applies to
+them unchanged.
+
+For the admissible toric class, Proposition~\ref{prop:physical-kernel}
+and Theorem~\ref{thm:all-orders-necessity} give
+\begin{equation}
+ X\text{ smooths on }\sigma
+ \quad\Longleftrightarrow\quad
+ \operatorname{Im}(\cM_{H,\sigma}^{\mathrm{rigid}}\to\cB_\sigma)
+       \setminus\mathcal D_\sigma\ne\varnothing.
+ \label{eq:physical-exact-criterion}
+\end{equation}
+Thus the compact gauging and the local discriminants decide existence of
+a geometric transition. A smooth selected base may nevertheless contain
+no smooth fiber. Nor does its smoothness imply that the nonlinear local
+classifying map is a linear inclusion, that every prescribed local arc
+globalizes, or that the full hypermultiplet manifold is a vector space.
+The embedded $E_2$ tangent is not an additional finite trajectory, and
+selected profiles with zero $E_3$ projection are not covered by
+Theorem~\ref{thm:selected-integrability}.
+
+The geometric theorem also covers exact cones of degree five and cones
+over $\mathbb P^1\times\mathbb P^1$: their conditions are five nonzero
+conic-pencil pairings and a nonzero ruling-difference coefficient,
+respectively \cite[Section~1.2]{Wuebben:2026smoothing}. Extending the physical
+operator dictionary to those sectors is separate from the node/$E_2$/$E_3$
+comparison proved here.
