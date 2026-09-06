@@ -1,0 +1,79 @@
+\documentclass[11pt,letterpaper]{article}
+\pdfoutput=1
+
+\usepackage{jheppub}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{adjustbox}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+
+\input{macros}
+
+\hypersetup{
+  pdftitle={Bulk Gauging and Quantum Couplings across a Compact Higgs Transition},
+  pdfauthor={Bernd Johannes Wuebben},
+  pdfsubject={Compact Calabi--Yau transitions and five-dimensional Higgs branches},
+  pdfkeywords={M-theory; five-dimensional field theory; Calabi--Yau threefolds; Higgs branches; heterotic--type II duality}
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Bulk Gauging and Quantum Couplings\\
+across a Compact Higgs Transition}
+\author{Bernd Johannes Wuebben}
+\affiliation{New York, NY, USA}
+\emailAdd{wuebben@gmail.com}
+\abstract{We study an explicit compact Calabi--Yau transition in which two
+conifold sectors and a rank-one $E_2$ sector can Higgs only together.
+The integral relation between their curve classes determines two shared
+Abelian gaugings and a transition from Hodge numbers $(6,122)$ to
+$(3,123)$. We compute the primitive surviving charge lattice and its
+cubic couplings, and show that the flavor gauging cannot remain
+dynamical in a gravity-decoupling limit with bounded local K\"ahler
+scales. On an auxiliary circle the quantum transition contains four
+conifold states spanning a primitive rank-three electric lattice.
+An explicit Laurent mutation and analytic continuation of all eight
+regular periods identify the genus-zero prepotential of the surviving
+vectors with that of the smooth phase, including the integral
+normalization and constant term. The four-state description is not
+uniform in the five-dimensional limit because the Kaluza--Klein gap
+closes. The K3 and elliptic fibrations identify a dilaton gauging,
+an anomaly-consistent six-dimensional $U(2)$ phase and equal compact
+images of two E-string roots. An exact volume bound excludes the
+six-dimensional limit on the transition face. A heterotic K3 candidate
+and topological data are obtained; the global bundle construction
+and the finite-Planck hypermultiplet geometry remain open.}
+\keywords{M-Theory, Supersymmetric Gauge Theory, Supergravity Models,
+String Duality, Differential and Algebraic Geometry}
+\renewcommand{\afterTocRuleSpace}{\bigskip\bigskip\clearpage}
+\begin{document}
+\hypersetup{pageanchor=false}
+\maketitle
+\hypersetup{pageanchor=true}
+\input{sections2_restructured/01_introduction}
+\input{sections2_restructured/02_constraints}
+\input{sections2_restructured/03_transition}
+\input{sections2_restructured/04_decoupling}
+\input{sections2_restructured/05_quantum}
+\input{sections2_restructured/06_fibrations}
+\input{sections2_restructured/07_discussion}
+\appendix
+\input{sections2_restructured/app_deformations}
+\input{sections2_restructured/app_lattices}
+\input{sections2_restructured/app_periods}
+\input{sections2_restructured/app_fibrations}
+\bibliographystyle{JHEP}
+\bibliography{references,references_new}
+\end{document}

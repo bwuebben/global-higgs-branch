@@ -1,0 +1,415 @@
+\section{Quantum phase constraints}
+\label{subsec:x9-mirror-periods}
+
+Mirror symmetry supplies closed-M2 indices independently of the
+magnetic sheaf counts. Let $n^0_\beta$ be the genus-zero
+Gopakumar--Vafa invariant of the resolved threefold in curve class
+$\beta$. We fix its normalization by
+\begin{equation}
+ \mathcal F_{\rm inst}(t)
+ =-\frac{1}{(2\pi i)^3}\sum_{\beta>0}n^0_\beta
+       \operatorname{Li}_3(e^{2\pi i t\cdot\beta}).
+ \label{eq:x9-gv-prepotential}
+\end{equation}
+These are integer coefficients of a spin-weighted M2 index, not
+dimensions of magnetic sheaf moduli
+\cite{Gopakumar:1998BPS}. Applying the toric Frobenius construction
+\cite{Hosono:1995Mirror,Demirtas:2024Mirror} gives
+\begin{equation}
+ n^0_{C_1}=n^0_{C_2}=1,\qquad n^0_R=0,\qquad
+ n^0_{\iota_*e_1}=n^0_{\iota_*e_2}=1,
+ \label{eq:x9-electric-gv}
+\end{equation}
+where $\iota:E\hookrightarrow\wideX_9$ and
+$e_1=D_4|_E$, $e_2=D_3|_E$. The period construction and integral marking are given in
+\cite[Section~5 and Appendix~C]{Wuebben:2026quantum}.
+It determines all coefficients through total nef degree eight:
+of $3002$ nonzero lattice classes in the chosen outer Mori cone,
+$80$ have nonzero genus-zero invariant.
+
+\paragraph{The mixed electric class has no connected curve.}
+The vanishing in \eqref{eq:x9-electric-gv} also has a geometric
+proof, valid beyond the finite degree computation. Let
+$\pi:\wideX_9\to X_9$ be the contraction, whose exceptional fibers
+are the disjoint loci $C_1$, $C_2$ and $E$. For any $m,n>0$, a
+connected stable map in class $\beta=mC_1+nC_2$ would have zero
+degree against the pullback of an ample divisor on $X_9$.
+Its image must therefore lie in one fiber of $\pi$.
+It cannot lie in either nodal fiber, since $C_1,C_2$ are independent
+classes and both coefficients are positive. It cannot lie in $E$:
+\begin{equation}
+ E\cdot\beta=0,\qquad E|_E=K_E,
+ \qquad -K_E\ \text{is ample}.
+ \label{eq:x9-mixed-map-obstruction}
+\end{equation}
+Every nonconstant effective curve in $E$ has strictly negative
+intersection with $E$. Hence the connected stable-map space is
+empty for this class in every genus. In particular
+$n^0_{mC_1+nC_2}=0$ for all $m,n>0$. This argument concerns
+connected maps; the disconnected cycle $C_1\sqcup C_2$ certainly
+exists.
+
+The other entries of \eqref{eq:x9-electric-gv} are the isolated
+$(-1,-1)$ rational-curve contributions, reproduced by the mirror
+calculation. The compact relation now has a spectral interpretation:
+\begin{equation}
+ \iota_*e_1=\iota_*e_2+C_1+C_2,
+ \qquad
+ J\cdot\iota_*e_1=J\cdot\iota_*e_2+J\cdot C_1+J\cdot C_2.
+ \label{eq:x9-m2-threshold-relation}
+\end{equation}
+An isolated rational curve in $E$ has the same total compact charge
+and five-dimensional BPS mass as the disconnected three-curve
+configuration on the right. The genus-zero single-particle index
+at the left-hand charge is $+1$, whereas the difference class $R$
+has no connected holomorphic representative. This is a threshold
+charge and mass identity, not a calculation of a decay amplitude.
+It explains why the $+1$ magnetic contribution at relative charge
+$(R,-1)$ cannot be read as an elementary particle of charge $R$.
+Neither the vanishing nor this threshold identity determines the
+interacting operator spectrum at the singular point.
+
+\paragraph{Computed magnetic corrections.}
+Let $H_1,\ldots,H_6$ be the integral nef basis specified in Section~\ref{sec:probe-setup}, and let $\beta_a$ be its dual curve basis.
+Thus $\beta_1=C_2$, $\beta_5=C_1$, $\beta_6=\iota_*e_2$, and
+$\iota_*e_1=\beta_1+\beta_5+\beta_6$.
+Write $t=\sum_a t_aH_a$ and $q_a=e^{2\pi i t_a}$.
+Differentiating \eqref{eq:x9-gv-prepotential} gives the corrections
+in \eqref{eq:x9-probe-quantum-period} in the same Mukai frame:
+\begin{equation}
+ \Psi_P(t)=\frac{1}{4\pi^2}\sum_{\beta>0}
+      (P\cdot\beta)n^0_\beta\operatorname{Li}_2(q^\beta).
+ \label{eq:x9-computed-magnetic-period}
+\end{equation}
+No additional polynomial or $c_2$ term is included here. Since
+$A=-H_1+H_2$ and $V=H_1-H_2-H_5+H_6$, the first terms are
+\begin{equation}
+ \begin{aligned}
+ 4\pi^2\Psi_A&=-q_1+q_2+\tfrac14(-q_1^2+q_2^2)
+                     +3q_2q_3-2q_2q_6+O(q^3),\\
+ 4\pi^2\Psi_V&=q_1-q_2-q_5+q_6
+          +\tfrac14(q_1^2-q_2^2-q_5^2+q_6^2)
+                     -3q_2q_3+q_3q_6+O(q^3).
+ \end{aligned}
+ \label{eq:x9-magnetic-period-leading}
+\end{equation}
+The remainder denotes total degree at least three, not powers of a
+single coordinate. The one-quarter coefficients are double covers
+of the degree-one classes.
+
+To evaluate the previous path, use the flat coordinates
+\begin{equation}
+ (t_1,\ldots,t_6)=
+ (-s+i\lambda\epsilon,\ i\lambda\epsilon,\ i\lambda(b+\epsilon),\
+ i\lambda(a+\epsilon),\ i\lambda\epsilon,\ i\lambda\epsilon).
+ \label{eq:x9-mirror-flat-path}
+\end{equation}
+Let $s_{[d]}$ denote the root of the alignment equation after
+retaining GV terms of total degree at most $d$ in
+\eqref{eq:x9-computed-magnetic-period}, with the full dilogarithm
+for each retained class. At $t=-sD_5+iJ_*$ the degree-eight values are
+\begin{equation}
+ \begin{array}{c@{\quad}r@{\quad}r@{\quad}r}
+  &s^{\rm pol}&s_{[8]}&s_{[8]}-s^{\rm pol}\\ \hline
+ \mathcal F_2&0.740626137605&0.740632681385&6.54378\times10^{-6}\\
+ \mathcal F_R&0.793227613297&0.793233852071&6.23877\times10^{-6}
+ \end{array}
+ \label{eq:x9-quantum-wall-numbers}
+\end{equation}
+The degree-six and degree-eight results differ by less than
+$2\times10^{-20}$ here. This is agreement between truncations,
+not a rigorous bound on the omitted classes. The truncated roots
+are transverse and satisfy the same-phase inequality.
+
+These numbers compare finite truncations near large volume.
+They are not used to infer the phase sign at the transition.
+
+\subsection{Charge transport and circle holonomy}
+There is an exact continuation statement near either ordinary
+conifold, with the other sectors kept nonsingular. Put
+$\tau_i=t\cdot C_i$ and choose the vanishing brane
+$\mathcal O_{C_i}(-1)$, whose charge is $(0,0,C_i,0)$.
+The isolated-curve contribution is
+\begin{equation}
+ \Psi_P^{(i)}=\frac{P\cdot C_i}{4\pi^2}
+        \operatorname{Li}_2(e^{2\pi i\tau_i})
+ =\frac{P\cdot C_i}{2\pi i}\tau_i\log(-2\pi i\tau_i)
+       +\text{single-valued terms}.
+ \label{eq:x9-nodal-period-monodromy}
+\end{equation}
+A counterclockwise loop around $\tau_i=0$ consequently adds
+$(P\cdot C_i)\tau_i$ to $Z$. In the original period branch this
+is equivalent to the integral charge transformation
+\begin{equation}
+ M_i:(P,q,q_0)\longmapsto
+       (P,q+(P\cdot C_i)C_i,q_0).
+ \label{eq:x9-nodal-charge-monodromy}
+\end{equation}
+We use this period-continuation convention; transforming the charge
+basis instead gives the inverse map. This is the usual conifold
+transvection, also described by the spherical-twist monodromy
+\cite[Section~5]{Aspinwall:2017Discriminants}.
+
+The two transformations commute, since the vanishing charges are
+mutually local. They are not equivalent to a single conifold
+transvection associated with $R$. On the integral magnetic--electric
+lattice,
+\begin{equation}
+ \begin{aligned}
+ (M_1M_2-1)(P,q)&=
+       \bigl(0,(P\cdot C_1)C_1+(P\cdot C_2)C_2\bigr),\\
+ (M_R-1)(P,q)&=\bigl(0,(P\cdot R)R\bigr),\\
+ \operatorname{rank}(M_1M_2-1)&=2,\qquad
+ \operatorname{rank}(M_R-1)=1.
+ \end{aligned}
+ \label{eq:x9-two-node-monodromy}
+\end{equation}
+Here $M_R$ is a hypothetical single-particle transvection, not an
+asserted discriminant monodromy. This distinction is consistent
+with $n^0_R=0$ and is not removed by the compact homology relation.
+For the magnetic constituents the needed pairings are
+\begin{equation}
+ \begin{array}{c@{\qquad}rr}
+ P&P\cdot C_1&P\cdot C_2\\\hline
+ A&0&-1\\ V&-1&1\\ T&-1&0
+ \end{array}.
+ \label{eq:x9-nodal-probe-pairings}
+\end{equation}
+Thus $M_2$ changes the electric charges of $\mathcal G$ and
+$\mathcal H$ by $-C_2$ and $+C_2$, respectively, while leaving
+their total probe charge fixed. The combined nodal monodromy shifts
+the probe and its seed by $-C_1$, rather than $-R$. Their relative
+charges remain unchanged. These formulas determine charge transport,
+not stability or an index at the common singular point.
+
+On \eqref{eq:x9-mirror-flat-path}, the normalized electric periods
+of the two nodal D0 towers are
+\begin{equation}
+ Z_{1,k}=k+i\lambda\epsilon,\qquad
+ Z_{2,k}=k-s+i\lambda\epsilon,\qquad k\in\ZZ.
+ \label{eq:x9-nodal-tower-endpoint}
+\end{equation}
+At fixed auxiliary-circle radius, simultaneous nodal masslessness
+therefore requires $\epsilon\to0$ and $s\to\ZZ$.
+If the alignment tends to an interior value $s_*\in(0,1)$ instead,
+the second tower has a nonzero normalized mass gap
+$\operatorname{dist}(s_*,\ZZ)$. Thus shrinking the classical curve
+areas along this $B$-field path does not by itself reach the
+simultaneous massless locus. This is a condition on the auxiliary
+four-dimensional probe problem, not an obstruction to the original
+five-dimensional geometric transition.
+
+
+\subsection{The marked compact transition}
+Write $(v,a,b)=(z_2,z_3,z_4)$ for the spectator parameters.
+For sufficiently small nonzero values, the companion paper proves
+that the locus
+\begin{equation}
+ \Sigma:\quad z_1=z_5=z_6=1
+ \quad\Longleftrightarrow\quad t_1=t_5=t_6=0
+ \label{eq:x9-finite-bulk-locus}
+\end{equation}
+has four ordinary nodes. In the continued large-volume marking,
+their integral charges are precisely
+\begin{equation}
+ (0,0,C_1,0),\quad(0,0,C_2,0),\quad
+ (0,0,\iota_*e_1,0),\quad(0,0,\iota_*e_2,0).
+ \label{eq:x9-finite-bulk-integral-charges}
+\end{equation}
+They generate a primitive rank-three lattice, with the single
+relation $\iota_*e_1-\iota_*e_2-C_1-C_2=0$.
+This assertion uses convergent electric periods and unit local
+residues, not just the abstract relation or Hodge numbers
+\cite[Section~5.2 and Appendix~C]{Wuebben:2026quantum}.
+Its analytic proof is not repeated here.
+
+In this compact integral marking, the magnetic pairings with the
+exceptional-curve doublet are
+\begin{equation}
+ \begin{array}{c@{\qquad}rr}
+ P&P\cdot\iota_*e_1&P\cdot\iota_*e_2\\\hline
+ A&-1&0\\V&1&1\\T&0&1
+ \end{array}.
+ \label{eq:x9-local-probe-pairings}
+\end{equation}
+Thus the monodromy around this pair shifts the electric charge of
+$\mathcal G$ by $-\iota_*e_1$, that of $\mathcal H$ by
+$\iota_*e_1+\iota_*e_2$, and the total probe and its seed each
+by $\iota_*e_2$. Their relative charges remain unchanged.
+With $\tau_i=Z_{\gamma_i}$, the corresponding singular part of
+a magnetic period due to these two nodes is
+\begin{equation}
+ Z_P^{\rm sing}=
+ \frac1{2\pi i}\sum_{i=1}^2(P\cdot\iota_*e_i)
+                 \tau_i\log\tau_i.
+ \label{eq:x9-local-magnetic-singular-part}
+\end{equation}
+The two $C_1,C_2$ nodes contribute the analogous terms with their
+previously computed magnetic pairings. Each singular term tends
+to zero at the massless point and does not determine the
+regular, bulk-dependent part of either constituent period.
+In particular it does not fix
+$\operatorname{Im}(Z_{\mathcal G}\overline{Z_{\mathcal H}})$.
+These singular pieces alone do not settle the phase alignment.
+The regular terms can, however, be continued on the same
+small-bulk branch.
+
+\subsection{Regular periods and the constituent phase}
+The same continuation gives the regular magnetic periods
+\cite[Appendix~C]{Wuebben:2026quantum}. In the Mukai frame of
+\eqref{eq:x9-probe-quantum-period}, their leading terms are
+\begin{equation}
+ \begin{aligned}
+ \Psi_A|_\Sigma&=-\frac1{12}-\frac{v+a}{4\pi^2}
+                          +O(\delta^2),\\
+ \Psi_V|_\Sigma&=\frac1{12}+\frac{2(v+a)}{4\pi^2}
+                          +O(\delta^2),
+ \qquad \delta=|v|+|a|+|b|.
+ \end{aligned}
+ \label{eq:x9-regular-magnetic-leading}
+\end{equation}
+Here $\Sigma$ denotes \eqref{eq:x9-finite-bulk-locus}; the error
+is a small-bulk analytic remainder, not a total nef-degree
+truncation. The constant terms include the four conifold
+multicovers. The convergence proof in the companion paper sums all local
+degrees before expanding in the spectator parameters.
+
+For positive sufficiently small $(v,a,b)$, all three spectator
+flat coordinates are purely imaginary. Write
+$t_j=iy_j$ for $j=2,3,4$, with $y_j>0$, and put
+$J_\Sigma=y_2H_2+y_3H_3+y_4H_4$. The restricted magnetic
+corrections are real. The two quotient charges differ by $C_1$
+with zero D0 shift, so their periods coincide exactly on $\Sigma$.
+Using their Mukai charges gives
+\begin{equation}
+ \begin{aligned}
+ Z_{\mathcal G}&=\mathcal V_A+\tfrac12+\Psi_A-iY,\\
+ Z_{\mathcal H_2}=Z_{\mathcal H_R}
+               &=\mathcal V_V-\tfrac5{12}+\Psi_V+iY,
+ &Y&=y_3+\tfrac32y_4,
+ \end{aligned}
+ \label{eq:x9-endpoint-constituent-periods}
+\end{equation}
+where $\mathcal V_P=PJ_\Sigma^2/2$. In particular, the common
+total probe period is real and equals
+\begin{equation}
+ \begin{aligned}
+ M_\Sigma&=\mathcal V_T+\tfrac1{12}+\Psi_T,
+ &\Psi_T&=\Psi_A+\Psi_V,\\
+ \mathcal V_T&=2y_2y_3+2y_3^2+3y_2y_4+8y_3y_4+7y_4^2.
+ \end{aligned}
+ \label{eq:x9-endpoint-total-period}
+\end{equation}
+It is strictly positive when the positive bulk parameters are
+sufficiently small: $y_3,y_4\to+\infty$, whereas $\Psi_T\to0$.
+For either specified constituent split the exact alignment
+function therefore satisfies
+\begin{equation}
+ \operatorname{Im}(Z_{\mathcal G}\overline{Z_{\mathcal H}})
+       =-Y M_\Sigma<0.
+ \label{eq:x9-endpoint-phase-sign}
+\end{equation}
+Thus the target is not on this marginal-stability wall. With
+$\langle\Gamma_{\mathcal G},\Gamma_{\mathcal H}\rangle=-1$,
+the necessary two-center stability inequality is satisfied
+\cite[eq.~(3.23)]{Denef:2007Halos}; equivalently the relative
+Fayet--Iliopoulos parameter has the bound-state sign used in
+\eqref{eq:x9-probe-quiver-wall}.
+This conclusion is a phase test for the specified charges.
+It does not prove survival of both constituent BPS states from
+large volume, exclude other decay channels, or extend the
+two-node quiver index to a locus with four additional massless
+particles. Those questions remain necessary for a compact
+magnetic bound-state index.
+
+\subsection{Light-particle emission and confinement}
+\label{subsec:x9-magnetic-higgs}
+
+Fix a positive sufficiently small bulk point on $\Sigma$. Approach it
+in flat coordinates with the spectator coordinates fixed and
+\begin{equation}
+ t_1=i\epsilon c_2,\qquad t_5=i\epsilon c_1,\qquad
+ t_6=i\epsilon c_e,\qquad c_1,c_2,c_e>0,\quad\epsilon\downarrow0.
+ \label{eq:x9-light-electric-ray}
+\end{equation}
+The four light periods, ordered as $(C_1,C_2,\iota_*e_1,\iota_*e_2)$,
+are exactly $i\epsilon(c_1,c_2,c_1+c_2+c_e,c_e)$. At the endpoint,
+\eqref{eq:x9-endpoint-constituent-periods} gives positive real parts
+for $Z_{\mathcal G}$ and both $Z_{\mathcal H}$ when the bulk
+parameters are sufficiently small. The same holds for both total
+probe periods. Continuity, including the vanishing
+$\tau\log\tau$ terms, preserves these inequalities on a final
+segment $0<\epsilon<\epsilon_0$.
+
+Let $\Gamma$ be any of these five charges and let
+$\eta=\sum_i n_i\gamma_i$, with $n_i\geq0$ and not all zero,
+be a sum of the four light charges. Then
+$Z_\eta=i\epsilon m_\eta$, where
+$m_\eta=n_1c_1+n_2c_2+n_3(c_1+c_2+c_e)+n_4c_e>0$, and
+\begin{equation}
+ \operatorname{Im}(Z_{\Gamma-\eta}\overline{Z_\eta})
+ =-\epsilon m_\eta\operatorname{Re}Z_\Gamma<0.
+ \label{eq:x9-light-emission-sign}
+\end{equation}
+Thus $\Gamma\to(\Gamma-\eta)+\eta$ cannot be marginal on this
+segment. The CPT-conjugate electric charge has the opposite, also
+nonzero, alignment. This excludes these light-emission walls, whether
+or not the proposed residual charge supports a BPS state. It neither
+excludes other magnetic decompositions nor supplies a stable state at
+the beginning of the segment. At $\epsilon=0$ the electric masses
+vanish, so this argument does not define an endpoint particle index.
+
+\paragraph{Confined magnetic flux.}
+Choose the orientations
+\begin{equation}
+ (\delta_1,\delta_2,\delta_3,\delta_4)
+ =(-\gamma_{C_1},-\gamma_{C_2},\gamma_{e_1},-\gamma_{e_2}),
+ \qquad \sum_i\delta_i=0.
+ \label{eq:x9-oriented-condensate}
+\end{equation}
+At a generic Higgs vacuum all four hypermultiplets have nonzero
+expectation values. A D4 magnetic charge $P\in H^2(\wideX_9,\ZZ)$
+then has flux winding vector
+$w(P)=(\langle P,\delta_i\rangle)_{i=1}^4$, where the pairing
+is $P\cdot\gamma_i$ before the orientation change. Its image lies in
+\begin{equation}
+ \Lambda_{\rm flux}=\{w\in\ZZ^4:\textstyle\sum_iw_i=0\}.
+ \label{eq:x9-confined-flux-lattice}
+\end{equation}
+This is the $A_3$ root lattice as an integral winding lattice; it
+does not assert an $SU(4)$ gauge enhancement. Write
+$P=\sum_a p^aH_a$ in the primitive nef basis. The independent pairings are
+$(P\cdot C_1,P\cdot C_2,P\cdot\iota_*e_2)=(p^5,p^1,p^6)$.
+They range independently over $\ZZ^3$, so the image is all of
+\eqref{eq:x9-confined-flux-lattice}, with no finite index.
+The matter charges generate a saturated lattice; consequently
+the unbroken subgroup of the $U(1)^6$ gauge torus is connected.
+The $\ZZ_4$ quotient of the Higgs-branch coordinates is not an
+unbroken discrete gauge group at a generic vacuum.
+
+The relevant magnetic pairings are
+\begin{equation}
+ \begin{array}{c|rrrr|rrrr}
+ &P C_1&P C_2&P\iota_*e_1&P\iota_*e_2
+ &w_1&w_2&w_3&w_4\\\hline
+ A&0&-1&-1&0&0&1&-1&0\\
+ V&-1&1&1&1&1&-1&1&-1\\
+ T&-1&0&0&1&1&0&0&-1\\
+ D_8&0&0&1&1&0&0&1&-1\\
+ E&0&0&-1&-1&0&0&-1&1
+ \end{array}.
+ \label{eq:x9-full-probe-flux}
+\end{equation}
+Here $A=D_4$, $V=D_7+D_8$ and $T=D_6=A+V$, as above.
+The fluxes of the two constituents do not cancel: their sum is
+$w(T)=(1,0,0,-1)$. Thus neither constituent nor either total
+probe can continue as an isolated particle with that magnetic
+charge at a generic Higgs vacuum. Its broken magnetic flux must
+be carried by strings. This is the usual confinement mechanism
+in a conifold Higgs transition \cite[Sections~3--4]{Greene:1996Confinement}.
+Adding any electric charge leaves this obstruction unchanged.
+In the mirror surgery, the same pairings specify the boundary
+of the three-chain obtained from a magnetic three-cycle.
+Neither the existence of a particular BPS core before Higgsing
+nor the tension or BPS character of its flux strings follows
+from this charge calculation.

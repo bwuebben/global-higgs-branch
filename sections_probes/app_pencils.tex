@@ -1,0 +1,91 @@
+\section{Conditional pencil contributions}
+\label{app:pencil}
+For this calculation impose the additional condition that every member
+of both pencils is reduced and that the displayed toric members are
+their only reducible members. This is an explicit hypothesis on the
+pencils, not a consequence of the cubic form; a complete genericity
+check for the anticanonical family is not supplied here. The isolated sheaves of Section~\ref{subsec:x9-moving-probes}
+do not depend on this hypothesis.
+
+For $n=0,1$, consider the sheaves $\cO_T$ and $I_{p,T}$, respectively,
+on members $T\in|P_i|$, pushed forward to $X$. Use the ample
+polarization $J_*=(6,18,16,-11,-8,7)$ in the basis
+\eqref{eq:x9-divisor-basis}; it is the sum of the six primitive ambient
+nef generators. These sheaves form open and closed smooth components
+of the stable pure-sheaf moduli, with contributions
+\begin{equation}
+ \begin{array}{c|cc|cc}
+ &\mathcal M_i(0)&\mathcal M_i(1)&
+ \Omega_i^{\rm seed}(0)&\Omega_i^{\rm seed}(1)\\\hline
+ i=5&\mathbb P^1&X&-2&232\\
+ i=6&\mathbb P^1&\operatorname{Bl}_{C_1}X&-2&230 .
+ \end{array}
+ \label{eq:x9-moving-seeds}
+\end{equation}
+The superscript denotes only these specified components, not the
+full index at the same charge.
+
+Here is a component and stability argument, including the reducible
+members. For $T=A+B$, a proper subunion $A$ supports the maximal
+subsheaf $\cO_A(-B)\subset\cO_T$. A subsheaf of $I_{p,T}$ supported
+on $A$ has no larger reduced Hilbert polynomial. The strict comparison
+of the linear coefficients with that of $\cO_T$ is
+\begin{equation}
+ \delta_T(A)=
+ [J_*\cdot A(A+2B)](J_*^2\cdot T)
+ -(J_*\cdot T^2)(J_*^2\cdot A)>0.
+ \label{eq:x9-probe-stability}
+\end{equation}
+For the ordered components in \eqref{eq:x9-probe-pencils}, and subunions
+$1,2,3,12,13,23$, the numerators are
+\begin{equation}
+ \begin{array}{c|rrrrrr}
+ &1&2&3&12&13&23\\\hline
+ P_5&2952&3690&1230&1230&3690&2952\\
+ P_6&3740&4876&1482&1488&4628&3982 .
+ \end{array}
+ \label{eq:x9-probe-stability-data}
+\end{equation}
+Subsheaves of full multirank have a nonzero lower-dimensional quotient.
+The remaining pencil members are integral by hypothesis, where rank-one
+stability is automatic. Thus all the specified sheaves are stable,
+including those with the point on a double curve.
+
+The smooth member determines the line-bundle cohomology:
+$h^0(X,\cO_X(P_i))=2$, with no higher cohomology.
+The divisor sequence gives $H^1(T,\cO_T)=0$ for every member. Consequently
+$\operatorname{Ext}^1_X(\cO_T,\cO_T)$ is the one-dimensional pencil
+tangent space. For a point $p$ outside the base locus, the evaluation
+map on the two sections is surjective, so
+$R\operatorname{Hom}(\cO_X(-P_i),I_p)=\CC$ in degree zero.
+The sequence
+\begin{equation}
+ 0\longrightarrow\cO_X(-P_i)\longrightarrow I_p
+ \longrightarrow I_{p,T}\longrightarrow0
+ \label{eq:x9-probe-twist}
+\end{equation}
+identifies $I_{p,T}$ with the spherical twist of $I_p$ about
+$\cO_X(-P_i)$. This twist is an autoequivalence
+\cite[Theorem~1.2]{Seidel:2001Twists}; it preserves the
+three-dimensional $\operatorname{Ext}^1(I_p,I_p)$.
+For $P_6$ and $p\in C_1$, every pencil member is smooth along the
+base curve. The normal-deformation sequence then bounds
+$\dim\operatorname{Ext}^1_X(I_{p,T},I_{p,T})$ by
+$2+h^0(K_T)=3$. The smooth three-dimensional incidence variety
+$\operatorname{Bl}_{C_1}X$ already supplies these deformations.
+Thus the natural proper parameter spaces are open and closed smooth
+components also at the base locus and singular fibers.
+
+Their Behrend functions are $-1$. Since
+$\chi(X)=2(6-122)=-232$ and
+$\chi(\operatorname{Bl}_{C_1}X)=\chi(X)+\chi(C_1)=-230$,
+the entries in \eqref{eq:x9-moving-seeds} follow.
+In the charge convention of \eqref{eq:x9-supported-mukai}, the two
+families have
+\begin{equation}
+ \Gamma_{5,n}=(0,P_5,0,1-n),\qquad
+ \Gamma_{6,n}=(0,P_6,-\tfrac12 C_1,\tfrac{11}{12}-n).
+ \label{eq:x9-points-seed-charges}
+\end{equation}
+These results fix neither the other components nor the physical
+stability condition near the cooperative contraction.

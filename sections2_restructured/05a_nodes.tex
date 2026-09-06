@@ -1,0 +1,130 @@
+\subsection{A compact four-node degeneration}
+\label{subsec:x9-mirror-periods}
+
+Use the primitive nef divisors $H_a$ and algebraic mirror
+coordinates $z_a$ specified in Appendix~\ref{app:mirror-periods}.
+Their dual integral curve classes are $\beta_a$, with
+\begin{equation}
+ C_2=\beta_1,\qquad C_1=\beta_5,\qquad
+ \iota_*e_2=\beta_6,\qquad
+ \iota_*e_1=\beta_1+\beta_5+\beta_6.
+ \label{eq:x9-electric-nef-charges}
+\end{equation}
+The notation $\beta_a$ for curve classes is distinct from the
+local moment-map coordinate $\beta$. Set
+\begin{equation}
+ \Sigma:\ z_1=z_5=z_6=1,\qquad (v,a,b)=(z_2,z_3,z_4).
+ \label{eq:x9-finite-bulk-locus}
+\end{equation}
+In a smooth ambient chart $(x,y,r,s)\in(\CC^*)^2\times\CC^2$
+the full compact mirror equation restricts to
+\begin{equation}
+ \mathcal F=(1+xy)(1+x^{-1}+vy^{-1}+r)
+             +s\bigl(r(br-1)+as\bigr)=0.
+ \label{eq:x9-finite-bulk-factorization}
+\end{equation}
+This is not a truncation in $a$ or $b$. Its four nodes lie at
+\begin{equation}
+ s=0,\quad y=-x^{-1},\quad r\in\{0,b^{-1}\},\quad
+ vx^2-(1+r)x-1=0.
+ \label{eq:x9-finite-bulk-nodes}
+\end{equation}
+For $bv\ne0$ and $(1+r)^2+4v\ne0$, the Hessian determinants
+are nonzero. The two nodes at $r=0$ approach the local $E_2$
+doublet; the other pair approaches the original conifold sectors
+in their square charts as $b\to0$. Appendix~\ref{app:mirror-periods}
+constructs the charts and excludes additional singularities at
+an exact rational sample, giving an open four-node stratum.
+
+The local smoothing covectors in the three normal parameters
+$(z_1,z_5,z_6)$ are
+\begin{equation}
+ (x^{-1},x^{-1}+r,-1).
+ \label{eq:x9-finite-bulk-smoothing}
+\end{equation}
+They have rank three. The closure of $s=1+xy=0$ is a compact
+Weil divisor passing once through each node. Its complement of
+the node neighborhoods supplies a four-chain with boundary the
+four oriented vanishing spheres. Thus there is one relation with
+unit coefficients, and the smoothing rank excludes a second.
+Blowing up this divisor gives a projective small resolution.
+
+The four vanishing cycles are mutually local, with rank-three
+span. Standard type-IIB conifold physics therefore supplies four
+massless hypermultiplets charged under three Abelian vectors
+\cite{Strominger:1995Conifold,Greene:1995hu}. Their Higgsing gives
+$(\Delta n_V,\Delta n_H^{\rm neutral})=(-3,+1)$ and mirror
+Hodge numbers $(122,6)\to(123,3)$. This is the finite-radius
+particle description. The family identification below establishes
+more than this numerical agreement with the original smoothing.
+
+\subsection{The integral massless charges}
+
+\begin{proposition}\label{prop:x9-integral-charges}
+On a marked sufficiently small nonzero $(v,a,b)$ branch of $\Sigma$,
+the large-volume flat coordinates satisfy
+\begin{equation}
+ t_1=t_5=t_6=0.
+ \label{eq:x9-finite-bulk-flat-locus}
+\end{equation}
+In D6--D4--D2--D0 order, the four vanishing charges are
+\begin{equation}
+ (0,0,C_1,0),\quad(0,0,C_2,0),\quad
+ (0,0,\iota_*e_1,0),\quad(0,0,\iota_*e_2,0).
+ \label{eq:x9-finite-bulk-integral-charges}
+\end{equation}
+Their span $V$ is a primitive rank-three isotropic sublattice.
+Its unique relation, in this order, is $(-1,-1,1,-1)$.
+\end{proposition}
+\begin{proof}
+At fixed spectator degree, summation over all three local degrees
+gives convergent expressions for the scalar period $W_0$ and
+the six electric periods $W_0t_a$. A binomial convolution sets
+the three local logarithmic corrections to zero on $\Sigma$.
+The branch is continued without coordinate winding, fixing the
+integer logarithmic offsets. The estimates and coefficient
+identities are proved in Appendix~\ref{app:mirror-periods}.
+
+The seven electric periods are single-valued near the locus.
+Picard--Lefschetz monodromy around each individual node therefore
+excludes D6 and D4 components from its vanishing charge. The
+three spectator flat coordinates are independent along $\Sigma$,
+excluding spectator D2 components and a D0 shift. Unit-normalized
+node residues, matched to the exceptional-curve and nodal flop
+limits, fix the four primitive labels in
+\eqref{eq:x9-electric-nef-charges}. The first, fifth and sixth
+dual basis elements generate their span, proving saturation;
+the integral cohomology tests in the appendix exclude hidden
+torsion. Mutual locality follows either from their pure D2
+charges or from their disjoint Milnor neighborhoods.
+\end{proof}
+
+The massless charge matrix, after removing neutral vectors, is
+\begin{equation}
+ Q_{\rm light}=\begin{pmatrix}1&0&1&0\\0&1&1&0\\0&0&1&1\end{pmatrix}.
+ \label{eq:x9-local-four-charge-matrix}
+\end{equation}
+Its three Smith invariants are one. The formal zero-level
+hyperk\"ahler quotient is the same $\CC^2/\ZZ_4$ surface as
+\eqref{eq:x9-dressed-generators}. Here all four columns have an actual
+simultaneous massless-particle interpretation at finite radius.
+This does not determine a compact quaternionic-K\"ahler metric.
+
+It is important to use $V$, not the image of the combined
+monodromy logarithm, in the integral reduction. In the basis
+$(\beta_1,\beta_5,\beta_6)$ the latter is generated by
+$I_3+\mathbf1\mathbf1^{\mathsf T}$, of determinant four.
+It has index four in $V$, although each node has unit charge.
+
+At a generic Higgs vacuum, a magnetic divisor charge $P$ has
+oriented flux vector
+\[
+ (-PC_1,-PC_2,P\iota_*e_1,-P\iota_*e_2).
+\]
+Its image is all of $\{w\in\ZZ^4:\sum_iw_i=0\}$, since
+the three independent electric pairings are surjective onto
+$\ZZ^3$. This is an $A_3$ winding lattice, not an $SU(4)$
+enhancement. Its kernel is exactly
+\eqref{eq:x9-unconfined-magnetic-lattice}; these are the magnetic
+directions whose periods can descend through the transition.
+The saturation also implies a connected unbroken gauge torus.

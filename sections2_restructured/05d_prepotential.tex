@@ -1,0 +1,176 @@
+\subsection{The D6 period and the prepotential constant}
+\label{subsec:x9-d6-period}
+
+The symplectic pairing and the reality of the marked continuation fix the
+eighth period. Curvature and flux shifts are essential in making this
+an integral statement. We first specify the D-brane basis; the D6 label
+below denotes a six-brane wrapping the threefold, not the toric divisor
+$D_6$.
+
+\paragraph{The integral symplectic frame.}
+Appendix~\ref{app:integral-charges} constructs the primitive
+topological charge generators $\mathsf m_0,\mathsf m_a,\mathsf e_0,
+\mathsf e_a$, with pairing minus the Euler form. Use the ordered
+divisor bases $L_a=H_a$ on the resolution and $L_a=K_a$ on the
+smooth side, and write $c_a=c_2(X)L_a$, $\kappa_{abc}=L_aL_bL_c$.
+
+Define the integers
+\begin{equation}
+ I_a=\frac{\kappa_{aaa}}6+\frac{c_a}{12},\qquad
+ h_{ab}=\frac{\kappa_{abb}-\kappa_{aab}}2.
+ \label{eq:x9-d6-rr-integers}
+\end{equation}
+Riemann--Roch gives $I_a\in\ZZ$ and $h_{ab}\in\ZZ$.
+The unimodular correction
+\begin{equation}
+ \mathsf m'_0=\mathsf m_0,\qquad
+ \mathsf m'_a=\mathsf m_a+I_a\mathsf e_0+\sum_{b>a}h_{ab}\mathsf e_b
+ \label{eq:x9-d6-integral-correction}
+\end{equation}
+puts the pairing in standard symplectic form, leaving the electric
+generators fixed \cite[Equations~(2.20)--(2.24)]{Demirtas:2024Mirror}.
+The two index rows are $(2,3,9,26,36,50)$ and $(3,9,26)$.
+In this convention the prepotential and normalized periods are
+\begin{equation}
+ \begin{aligned}
+ F^X(t)&=-\frac16\kappa_{abc}t_at_bt_c
+       +\frac12 a_{ab}t_at_b+\frac1{24}c_at_a
+       +\frac{\chi(X)\zeta(3)}{2(2\pi i)^3}
+       +F^X_{\rm inst}(t),\\
+ G^X&=2F^X-t_aF^X_a,\qquad F^X_a=\partial_{t_a}F^X,\qquad
+ a_{ab}=\begin{cases}
+ \kappa_{aab}/2,&a\geq b,\\
+ \kappa_{abb}/2,&a<b.
+ \end{cases}
+ \end{aligned}
+ \label{eq:x9-d6-full-prepotential}
+\end{equation}
+Repeated indices are summed except in the definition of $a_{ab}$.
+The period $G^X$ belongs to $\mathsf m_0$, which was not changed by
+\eqref{eq:x9-d6-integral-correction}. Equivalently, in the
+\emph{unsubtracted} Frobenius derivatives,
+\begin{equation}
+ W_XG^X=\frac16\kappa_{abc}\varpi^{abc}_X
+                 +\frac1{12}c_a\varpi^a_X,
+ \label{eq:x9-d6-frobenius-normalization}
+\end{equation}
+where $\varpi^{abc}_X$ includes the factors $(2\pi i)^{-3}$
+\cite[Equations~(2.29) and~(4.19)]{Demirtas:2024Mirror}.
+Removing the $\zeta(3)$ term would change this marked period.
+
+The surviving block of $a_{ab}$ on the resolution equals the
+smooth-side matrix, just as the cubic and $c_2$ rows agree:
+\begin{equation}
+ (a^{\rm res}_{i+1,j+1})_{i,j=1}^3=a^{\rm sm}
+ =\begin{pmatrix}
+ 0&3&17/2\\3&7&49/2\\17/2&49/2&83/2
+ \end{pmatrix}.
+ \label{eq:x9-d6-quadratic-matrix}
+\end{equation}
+Proposition~\ref{prop:x9-neutral-period-descent} therefore identifies
+the seven unnormalized integral periods belonging to
+$\mathsf e_0,\mathsf e_2,\mathsf e_3,\mathsf e_4,
+\mathsf m'_2,\mathsf m'_3,\mathsf m'_4$ with their smooth-side counterparts.
+For example their magnetic components are
+\begin{equation}
+ W F_i=-\Pi^{\rm mag}_i+\frac{c_i}{24}W
+                         +\sum_j a_{ij}\Pi^{\rm el}_j.
+ \label{eq:x9-d6-seven-integral-periods}
+\end{equation}
+Local electric terms on the resolution vanish on $\Sigma$.
+
+\begin{proposition}\label{prop:x9-d6-period}
+On the marked small-bulk branch of $\Sigma$, the reduced integral
+symplectic period vector agrees with that of $X_{9,t}$. In the
+conventions \eqref{eq:x9-d6-full-prepotential},
+\begin{equation}
+ G^{\rm res}|_\Sigma=G^{\rm sm},\qquad
+ F^{\rm res}|_\Sigma=F^{\rm sm},\qquad
+ F^{\rm res}_{\rm inst}|_\Sigma-F^{\rm sm}_{\rm inst}
+       =-\frac{4\zeta(3)}{(2\pi i)^3}.
+ \label{eq:x9-d6-period-and-constant}
+\end{equation}
+The integral map sends the surviving classes
+$(\mathsf m'_0,\mathsf m'_2,\mathsf m'_3,\mathsf m'_4;
+\mathsf e_0,\mathsf e_2,\mathsf e_3,\mathsf e_4)$ to the correspondingly
+ordered smooth-side basis, in $V^\perp/V$.
+\end{proposition}
+
+\begin{proof}
+Conifold excision identifies $H_3$ of the complement of the vanishing
+spheres with $V^\perp$. Filling by the small-resolution neighborhoods
+quotients it by the images of the boundary three-spheres, namely $V$.
+Since $V$ is primitive, this is the free integral symplectic quotient
+$V^\perp/V$. The residue-preserving birational identification in
+Proposition~\ref{prop:x9-mirror-mutation} preserves this pairing.
+The corrected basis \eqref{eq:x9-d6-integral-correction} makes the
+quotient explicit: discard $\mathsf m'_1,\mathsf m'_5,\mathsf m'_6$ and quotient by
+$\mathsf e_1,\mathsf e_5,\mathsf e_6$. The eight classes stated in the proposition give a
+unimodular symplectic basis.
+
+The D6 class $\mathsf m_0$ lies in $V^\perp$, since every vanishing charge
+is pure D2. Its period thus descends. The difference of its descended
+class and the smooth-side $\mathsf m_0$ pairs trivially with each of the seven
+already identified classes. Their common annihilator is the line
+spanned by $\mathsf e_0$. Consequently
+\begin{equation}
+ W\bigl(G^{\rm res}|_\Sigma-G^{\rm sm}\bigr)=cW,
+ \qquad c\in\ZZ.
+ \label{eq:x9-d6-scalar-ambiguity}
+\end{equation}
+This step uses the polarization, not just the dimension of the period
+space. A real coefficient would already suffice below.
+
+We determine $c$ on the positive real branch. Subtract the quadratic
+term from the prepotential and write
+$\widetilde F_a=F_a-a_{ab}t_b$; this rational symplectic change
+does not alter $G$. The electric and second-derivative Abel
+continuation in Appendix~\ref{app:mirror-periods}, along
+$z_1=z_5=z_6=\rho\uparrow1$ with fixed sufficiently small positive
+$(v,a,b)$, has
+\begin{equation}
+ W\in\mathbb R\setminus\{0\},\qquad t_a\in i\mathbb R,\qquad
+ \widetilde F_a\in\mathbb R.
+ \label{eq:x9-d6-real-continuation}
+\end{equation}
+The Gamma coefficients and logarithms are real before their explicit
+powers of $2\pi i$ are inserted. The convergent weighted sums fix
+these reality properties on the continuation, rather than selecting
+a new branch at the endpoint. The initial large-volume value of $G$
+is purely imaginary by \eqref{eq:x9-d6-full-prepotential}; the
+quadratic term cancels from $2F-t_aF_a$. Special geometry gives
+\begin{equation}
+ dG=\sum_a\bigl(\widetilde F_a\,dt_a-t_a\,d\widetilde F_a\bigr).
+ \label{eq:x9-d6-reality-differential}
+\end{equation}
+Its right-hand side is purely imaginary along this path. Hence the
+continued $G^{\rm res}$ is purely imaginary, including its finite
+endpoint supplied by conifold descent. This argument requires no
+termwise limit of an uncontracted third-derivative series. The
+smooth-side $G^{\rm sm}$ is likewise purely imaginary on its
+positive small-parameter branch. Equation~\eqref{eq:x9-d6-scalar-ambiguity}
+then forces the real integer $c$ to vanish. Analytic continuation
+from this open real locus gives the identity throughout the marked
+complex neighborhood.
+
+The seven-period result, together with
+\eqref{eq:x9-d6-quadratic-matrix}, makes all three derivatives of
+$F^{\rm res}|_\Sigma-F^{\rm sm}$ zero. Equality of $G$ fixes this
+constant to zero. Finally
+$\chi(\wideX_9)=-232$ and $\chi(X_{9,t})=-240$; subtracting the
+perturbative terms in \eqref{eq:x9-d6-full-prepotential} gives the
+last equality in \eqref{eq:x9-d6-period-and-constant}.
+\end{proof}
+
+The eighth-period match also fixes the projective special K\"ahler
+geometry of the surviving vectors. In the common normalization,
+\begin{equation}
+ e^{-K_{\rm vec}}=i\bigl(\overline{X^A}F_A-X^A\overline{F_A}\bigr),
+ \qquad (X^A)=(1,\tau_i),\quad (F_A)=(G,F_i),
+ \label{eq:x9-d6-special-kahler}
+\end{equation}
+has the same restriction on both sides, as does its tangential
+metric. The terms involving the three vanishing electric coordinates
+drop out of the original pairing. Thus the identification includes
+the graviphoton period and is stronger than equality of the Yukawa
+couplings alone. This is an equality of the reduced vector geometry on the marked branch.

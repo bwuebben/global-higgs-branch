@@ -9,11 +9,10 @@ the X_9 lattice reduction, and representative real-moment-map lifts.
 
 from __future__ import annotations
 
-from cmath import exp, phase
 from functools import reduce
-from math import gcd, isclose, sqrt
+from math import gcd
 
-from sympy import Matrix, groebner, symbols
+from sympy import I, Matrix, conjugate, groebner, simplify, sqrt, symbols
 from sympy.matrices.normalforms import smith_normal_form
 from sympy.polys.domains import ZZ
 
@@ -49,7 +48,8 @@ def check_higgs_ring() -> None:
     )
     assert all(basis.reduce(relation)[1] == 0 for relation in ideal)
 
-    # A monomial I^a M^b Itilde^c has Cartan weight 2(a-c).  At weight
+    # A monomial I^a M^b Itilde^c has standard SU(2) Cartan weight 2(a-c),
+    # or weight a-c for the unit-root-charge generator used in main2.tex. At weight
     # zero, a=c and (I Itilde)^a M^b reduces exactly to M^(2a+b).
     for a in range(8):
         for b in range(8):
@@ -61,18 +61,18 @@ def check_higgs_ring() -> None:
         assert basis.reduce(fat * generator)[1] == 0
 
     print("Cartan-invariant E2 ring: C[M,P]/(P^2, M P)")
-    print("Altmann base identification: beta = M, alpha = P")
+    print("Altmann invariant scheme: alpha = P, beta = M up to a nilpotent shift")
 
 
 def check_real_moment_map_lifts() -> None:
-    """Check explicit lifts beta=ab with |a|=|b| on representative values."""
-    for beta in (0j, 1 + 0j, -1 + 0j, 2 + 3j, -4j):
-        radius = sqrt(abs(beta))
-        a = radius * exp(1j * phase(beta)) if beta else 0j
-        b = radius + 0j
-        assert isclose(abs(a * b - beta), 0.0, abs_tol=1e-12)
-        assert isclose(abs(a) ** 2 - abs(b) ** 2, 0.0, abs_tol=1e-12)
-    print("Representative E2 lifts satisfy beta=ab and mu_R=0")
+    """Check exact balanced lifts for the unit-root-charge moment map."""
+    for beta in (0, 1, -1, 2 + 3*I, -4*I):
+        radius = sqrt(2*abs(beta))
+        a = 2*beta/radius if beta else 0
+        b = radius
+        assert simplify(a*b/2-beta) == 0
+        assert simplify((a*conjugate(a)-b*conjugate(b))/4) == 0
+    print("Exact E2 lifts satisfy beta=ab/2 and mu_R=0")
 
 
 def check_x9_matrix() -> None:

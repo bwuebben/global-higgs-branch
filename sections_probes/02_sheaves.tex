@@ -1,0 +1,357 @@
+\section{Supported sheaves and isolated contributions}
+\label{subsec:x9-rank-one-index}
+
+The rigid surfaces $S_-=\mathbb F_1$ and $S_+=\mathbb P^2$ also give
+a computable component of a protected count. Compactify the spatial
+direction of the wrapped-M5 string on a circle. The resulting type-IIA
+charges are D4--D2--D0 charges. We use the large-volume description by
+Gieseker-stable pure two-dimensional sheaves, with an ample polarization
+on the compact threefold $X$, and count the component supported on $S$.
+This is a specified sheaf-moduli contribution, not an identification of
+the full physical BPS index at the transition point.
+
+Fix a line bundle $L$ on $S$ and let $Z\subset S$ have length $n$.
+Write $i:S\hookrightarrow X$ and $\mathcal E=L\otimes I_Z$.
+Every rank-one torsion-free sheaf on $S$ with determinant $L$ and second
+Chern class $n$ is of this form. Its pushforward is stable for every
+ample polarization: a proper subsheaf of the same rank has a nonzero
+lower-dimensional quotient and hence smaller reduced Hilbert polynomial.
+The moduli space on $S$ is $S^{[n]}=\operatorname{Hilb}^n(S)$,
+smooth and projective of dimension $2n$ \cite{Gottsche:2003Hilbert}.
+
+This remains a smooth component of the moduli on the compact threefold.
+The normal bundle is $K_S$, and the change-of-rings sequence gives
+\begin{equation}
+ 0\longrightarrow\operatorname{Ext}^1_S(\mathcal E,\mathcal E)
+ \longrightarrow\operatorname{Ext}^1_X(i_*\mathcal E,i_*\mathcal E)
+ \longrightarrow\operatorname{Hom}_S(\mathcal E,\mathcal E\otimes K_S).
+ \label{eq:x9-supported-deformations}
+\end{equation}
+The last group vanishes: taking double duals embeds it into
+$H^0(S,K_S)=0$. There are no determinant deformations, since
+$H^1(S,\cO_S)=0$. Thus the first group is the $2n$-dimensional
+tangent space to $S^{[n]}$. The natural map from
+this proper Hilbert scheme into the stable-sheaf moduli is therefore an
+isomorphism onto an open and closed smooth component. In particular,
+the ambient Behrend function is $(-1)^{2n}=1$ on this component, so its
+numerical Donaldson--Thomas contribution is
+\begin{equation}
+ \Omega_{S,L}(n)=\chi(S^{[n]})
+ \label{eq:x9-supported-dt}
+\end{equation}
+\cite[Theorem~4.18 and Section~1.2]{Behrend:2009DT}. No other moduli
+component or stability chamber is included in this definition.
+
+The cohomology supplies a refinement
+$\Omega_{S,L}(n;y)=y^{-2n}\sum_j b_j(S^{[n]})y^j$.
+Here $y$ records centered cohomological degree; it is not a flavor
+fugacity or an assumed infrared R-charge. We do not identify this
+refinement with a protected spin character at finite gravitational
+coupling: a spin-refined trace in the compact string theory need not
+be invariant under changes of coupling
+\cite[Section~2.6]{Manschot:2011Halos}. For these two rational
+surfaces all odd Betti numbers vanish. G\"ottsche's product formula
+\cite[eq.~(2.1)]{Gottsche:2003Hilbert} gives
+\begin{equation}
+ \begin{aligned}
+ \mathcal Z_S(q,y)&=\sum_{n\geq0}\Omega_{S,L}(n;y)q^n\\
+ &=\prod_{m\geq1}
+ \frac{1}{(1-y^{-2}q^m)(1-q^m)^{b_2(S)}(1-y^2q^m)}.
+ \end{aligned}
+ \label{eq:x9-supported-refined}
+\end{equation}
+The answer is independent of $L$. The first numerical contributions are
+\begin{equation}
+ \begin{array}{c|rrrrrrr}
+ n&0&1&2&3&4&5&6\\\hline
+ S_-&1&4&14&40&105&252&574\\
+ S_+&1&3&9&22&51&108&221
+ \end{array}
+ \label{eq:x9-supported-counts}
+\end{equation}
+Since $b_2(S_-)-b_2(S_+)=1$, even the refined ratio is
+\begin{equation}
+ \frac{\mathcal Z_{S_-}(q,y)}{\mathcal Z_{S_+}(q,y)}
+ =\prod_{m\geq1}(1-q^m)^{-1}.
+ \label{eq:x9-supported-blowup}
+\end{equation}
+With $q=e^{2\pi i\tau}$, the vacuum-normalized unrefined series
+$q^{-\chi(S)/24}\mathcal Z_S(q,1)$ are $\eta(\tau)^{-4}$ and
+$\eta(\tau)^{-3}$. Their ratio is the oscillator character
+$\eta(\tau)^{-1}$ of the extra chiral boson, consistent with the wrapped-string anomaly difference
+computed in \cite{Wuebben:2026quantum}. These are fixed-flux coefficients
+of the rank-one string count \cite[Section~2.1]{Alim:2010M5}, not its
+complete flux-summed elliptic genus.
+
+\subsection{Shifted flux charges}
+The flux shift is essential when interpreting these coefficients as
+brane charges. In the convention
+$\Gamma=\operatorname{ch}(i_*\mathcal E)\sqrt{\operatorname{Td}(X)}$,
+Grothendieck--Riemann--Roch gives
+\begin{equation}
+ \begin{gathered}
+ f=c_1(L)-\frac12K_S,\\
+ \Gamma=\left(0,[S],i_*f,\frac12\int_S f^2+\frac{\chi(S)}{24}-n\right)
+ \end{gathered}
+ \label{eq:x9-supported-mukai}
+\end{equation}
+\cite[Appendix~B.1]{Alim:2010M5}. Thus $c_1(L)=ah+be$ on
+$S_-$ gives $f=(a+\tfrac32)h+(b-\tfrac12)e$, whereas
+$c_1(L)=ah$ on $S_+$ gives $f=(a+\tfrac32)h$. For the fixed representatives with restrictions
+$(D_0|,D_1|,D_8|)=(0,h,-3h+e)$ on $S_-$ and
+$(D_0|,D_1|,\nu|)=(0,h,-3h)$ on $S_+$, their electric
+charges are
+\begin{equation}
+ \begin{aligned}
+ (Q_{D_0},Q_{D_1},Q_{D_8})_-&=(0,a+\tfrac32,-3a-b-4),\\
+ (Q_{D_0},Q_{D_1},Q_\nu)_+&=(0,a+\tfrac32,-3a-\tfrac92).
+ \end{aligned}
+ \label{eq:x9-supported-flux-charges}
+\end{equation}
+There is no integral $b$ for which the shifted exceptional flux vanishes.
+Consequently \eqref{eq:x9-supported-blowup} compares oscillator counts,
+not equal-charge states across the transition. A flux-summed genus
+requires the shifted lattice, a quadratic refinement, and its
+polarization-dependent self-dual decomposition. Nor does this sheaf
+calculation determine all bound states in the physical stability
+condition of the compactification.
+
+\subsection{Magnetic pairings}
+There is an additional obstruction to extracting the condensate spectrum
+from this string by ordinary halo wall-crossing. For a D4--D2--D0 core
+of magnetic charge $P$ and a purely electric particle
+$\gamma=(0,0,\gamma_2,\gamma_0)$, choose the Dirac pairing convention
+$\langle\Gamma_P,\gamma\rangle=P\cdot\gamma_2$. The compact data give
+\begin{equation}
+ \begin{array}{c|rrr}
+ P&C_1&C_2&R=C_1+C_2\\\hline
+ D_8&0&0&0\\
+ D_5&0&1&1\\
+ D_6&-1&0&-1
+ \end{array}
+ \label{eq:x9-magnetic-probes}
+\end{equation}
+The first row vanishes for every electric charge in
+$\ZZ C_1+\ZZ C_2$, independently of the core flux and of D0 charge.
+The ordinary halo index has an exponent proportional to this Dirac
+pairing \cite{Denef:2007Halos}; see also
+\cite[eqs.~(2.23)--(2.25)]{Manschot:2011Halos}. Its multiplier around the $D_8$
+core is identically one for any spectrum supported on this charge
+lattice. Equivalently, $D_5|_{S_-}=D_6|_{S_-}=0$, and every
+supported flux counted above is neutral under both effective vectors.
+This excludes a halo-wall-crossing determination using this core; it
+does not exclude threshold bound states, contact interactions, or the
+geometric transition itself. The $D_5$ and $D_6$ strings instead have
+nonzero pairings with the required root and complementary nodes.
+This vanishing applies to the rank-two root and nodal lattice,
+not to all four finite-radius conifold charges: $D_8\iota_*e_1
+=D_8\iota_*e_2=1$. The distinction will matter in
+Section~\ref{subsec:x9-magnetic-higgs}.
+
+\subsection{Moving supports and the reducible fiber}
+\label{subsec:x9-moving-probes}
+
+The nonzero pairings in \eqref{eq:x9-magnetic-probes} do not by themselves
+determine a probe index. Unlike $D_8$, both $D_5$ and $D_6$ move.
+Write $X=\wideX_9$ and $P_i=D_i$. Their pencils have the members
+\begin{equation}
+ P_5\sim D_3+D_7+D_8,\qquad P_6\sim D_4+D_7+D_8,
+ \qquad P_5^2=0,\quad P_6^2=C_1.
+ \label{eq:x9-probe-pencils}
+\end{equation}
+The first defines the K3 fibration.
+A smooth member of the second is a K3 surface blown up at a point,
+with canonical curve $C_1$. Each pencil has two sections, represented
+in Cox coordinates by $(z_5,z_3z_7z_8)$ and $(z_6,z_4z_7z_8)$.
+The second has scheme-theoretic base locus $C_1$, a smooth complete
+intersection with normal bundle $\cO(-1)\oplus\cO(-1)$.
+Its universal member is therefore $\operatorname{Bl}_{C_1}X$.
+Counting a single fixed K3 would omit the motion of the support
+\cite[Section~2.2]{Bouchard:2017Vertical}.
+
+The higher cohomology of $\cO_X(P_i)$ vanishes and
+$h^0(\cO_X(P_i))=2$. The divisor sequence then gives
+$H^1(T,\cO_T)=0$ for every member. The structure-sheaf seed
+charges, whether or not their full pencil is a stable moduli
+component, are
+\begin{equation}
+ \Gamma_{5,0}=(0,P_5,0,1),\qquad
+ \Gamma_{6,0}=(0,P_6,-\tfrac12C_1,\tfrac{11}{12}).
+ \label{eq:x9-moving-seed-charges}
+\end{equation}
+Appendix~\ref{app:pencil} computes zero- and one-point pencil
+contributions under a separate reduced-member hypothesis.
+The support restrictions and isolated contributions below are
+unconditional for the specified resolved geometry.
+
+\paragraph{Where the missing probe states must occur.}
+For $P_5$, the limitation is stronger than motion of the support.
+Any effective support cycle of class $P_5$ is vertical for $\rho$:
+nefness and $P_5^2=0$ imply that each component has zero intersection
+with $P_5$ and an ample divisor. A sheaf on such a support is unchanged
+by tensoring with $\cO_X(P_5)$, which is pulled back from the base and
+trivial over a neighborhood of the finitely many supporting fibers.
+Its induced D2 charge therefore obeys
+\begin{equation}
+ Q_{P_5}=P_5\cdot\operatorname{ch}_2(\mathcal F)=0.
+ \label{eq:x9-vertical-charge-selection}
+\end{equation}
+Adding $C_2$ or $R$ to a seed changes this charge by one. Such a
+core--particle state cannot lie in any pure two-dimensional sheaf
+component of magnetic charge $P_5$ in this large-volume description.
+It would require a different physical stability description, for
+example a derived object; this is not a no-go for the physical state.
+
+For $P_6$, set $A_6=D_7-D_6=-D_4-D_8$. Every pencil member except
+$T_*=D_4+D_7+D_8$ is disjoint from $D_4$ and $D_8$.
+Thus $\cO_X(A_6)$ restricts trivially to it, and all sheaves supported
+on those members have $Q_{A_6}=0$, including the seeds. But
+\begin{equation}
+ A_6\cdot C_1=0,\qquad A_6\cdot C_2=A_6\cdot R=1.
+ \label{eq:x9-reducible-probe-selection}
+\end{equation}
+Within this pencil, a sheaf obtained by adding $C_2$ or $R$ must
+therefore be supported on $T_*$. This reduces the sheaf calculation
+to a reducible surface, with gluing along its double curves. The vertical modular formulas of
+\cite{Bouchard:2017Vertical} assume irreducible fibers and cannot be
+applied directly to this contribution. Neither a fixed smooth-K3
+oscillator series nor the seed components above determine it.
+
+\paragraph{An isolated contribution with cooperative electric charge.}
+Isolated components of this reducible-surface moduli problem can be computed
+without the additional pencil hypothesis. Put $T=T_*$ and
+$\mathcal I=I_{C_2,T}$. Consider the two sheaves
+\begin{equation}
+ \mathcal F_2=\mathcal Hom_T(\mathcal I,\cO_T),\qquad
+ \mathcal F_R=\mathcal Hom_T(\mathcal I,\omega_T)
+             =\mathcal F_2\otimes\cO_X(P_6).
+ \label{eq:x9-glued-sheaves}
+\end{equation}
+Sheaves on $T$ are again understood to be pushed forward to $X$.
+Both are $J_*$-Gieseker stable and define isolated reduced points of
+the stable-sheaf moduli on $X$. Their charges and numerical DT
+contributions are
+\begin{equation}
+ \begin{array}{c|c|c}
+ &\Gamma&\Omega^{\rm iso}\\\hline
+ \mathcal F_2&(0,P_6,-\tfrac12 C_1+C_2,-\tfrac1{12})&1\\
+ \mathcal F_R&(0,P_6,\tfrac12 C_1+C_2,-\tfrac1{12})&1 .
+ \end{array}
+ \label{eq:x9-glued-indices}
+\end{equation}
+In particular,
+$\Gamma(\mathcal F_R)-\Gamma_{6,0}=(0,0,R,-1)$.
+The superscript denotes these individual components, not the full
+invariants at their charges.
+
+The construction also determines the gluing at the double curve.
+The complete intersection $C_2=D_2D_4\simeq\mathbb P^1$ has
+normal bundle $\cO(-1)\oplus\cO(-1)$ in $X$, and
+\begin{equation}
+ (D_4,D_7,D_8)\cdot C_2=(-1,1,0),\qquad P_6\cdot C_2=0.
+ \label{eq:x9-gluing-incidence}
+\end{equation}
+It meets $D_4\cap D_7$ at one transverse point $p$, away from $D_8$.
+Near $p$ the surface and ideal have the form
+$\cO_T=\CC[[x,y,z]]/(xy)$ and $\mathcal I=(x,z)$.
+Thus $C_2$ is not Cartier on $T$: the dual ideal in
+\eqref{eq:x9-glued-sheaves} is rank-one torsion-free, but not locally
+free at $p$. This is essential. The naive restrictions
+$(\cO_{D_4}(C_2),\cO_{D_7},\cO_{D_8})$ have degrees one and zero
+on the two sides of $D_4\cap D_7$, and cannot be glued as a line
+bundle.
+
+The ideal $\mathcal I$ is maximal Cohen--Macaulay on the Gorenstein
+surface $T$, by the sequence
+$0\to\mathcal I\to\cO_T\to\cO_{C_2}\to0$ and the depth lemma.
+Duality gives pure sheaves in \eqref{eq:x9-glued-sheaves} and sequences
+\begin{equation}
+ \begin{aligned}
+ 0&\longrightarrow\cO_T\longrightarrow\mathcal F_2
+       \longrightarrow\cO_{C_2}(-2)\longrightarrow0,\\
+ 0&\longrightarrow\omega_T\longrightarrow\mathcal F_R
+       \longrightarrow\cO_{C_2}(-2)\longrightarrow0.
+ \end{aligned}
+ \label{eq:x9-glued-extensions}
+\end{equation}
+Here $\omega_T=\cO_T(P_6)=\cO_T(C_1)$, and its restriction to
+$C_2$ is trivial. Since $\chi(\cO_{C_2}(-2))=-1$, these sequences
+give precisely the D0 shift in \eqref{eq:x9-glued-indices}; it must
+not be discarded when interpreting the electric flux as an added
+particle.
+
+For stability, a proper subunion $U\subset T$ has the same generic
+double-curve gluing as $\cO_T$. For $T=U+(T-U)$ define
+\[
+ \delta_T(U)=[J_*U(2T-U)](J_*^2T)-(J_*T^2)(J_*^2U).
+\]
+Relative to $\cO_T$, the component
+fluxes of $\mathcal F_2$ are $(C_2,0,0)$ and those of
+$\mathcal F_R$ are $(C_2,C_1,0)$, in the order $(D_4,D_7,D_8)$.
+Let $\gamma$ be the total flux and $\gamma_U$ its sum over $U$.
+The numerator comparing the maximal subsheaf supported on $U$ with
+the full sheaf is
+\begin{equation}
+ \delta_{\gamma}(U)=\delta_T(U)
+   +2\big[(J_*\cdot\gamma)(J_*^2\cdot U)
+          -(J_*\cdot\gamma_U)(J_*^2\cdot T)\big].
+ \label{eq:x9-glued-stability}
+\end{equation}
+Point defects do not change this coefficient. For the six subunions
+$1,2,3,12,13,23$, the numerators are
+\begin{equation}
+ \begin{array}{c|rrrrrr}
+ \mathcal F_2&3388&5222&1488&1482&4282&4334\\
+ \mathcal F_R&3630&4974&1494&1476&4530&4092 .
+ \end{array}
+ \label{eq:x9-glued-stability-data}
+\end{equation}
+All are strictly positive. Full-multirank proper subsheaves have a
+nonzero lower-dimensional quotient, hence a smaller reduced Hilbert
+polynomial. This proves stability, including the non-locally-free
+gluing point.
+
+To compute the ambient deformation space, let $I_{C_2}$ be the ideal
+in $X$. Since $C_2$ is disjoint from the pencil base curve $C_1$,
+the restriction of the two sections of $\cO_X(P_6)$ to
+$\cO_{C_2}(P_6)=\cO_{C_2}$ is surjective. Together with the higher
+cohomology vanishing above, this gives
+$R\operatorname{Hom}(\cO_X(-P_6),I_{C_2})=\CC$ in degree zero.
+Consequently
+\begin{equation}
+ 0\longrightarrow\cO_X(-P_6)\longrightarrow I_{C_2}
+       \longrightarrow\mathcal I\longrightarrow0
+ \label{eq:x9-glued-twist}
+\end{equation}
+is the spherical-twist triangle. The autoequivalence of
+\cite[Theorem~1.2]{Seidel:2001Twists} identifies the self-Ext groups
+of $I_{C_2}$ and $\mathcal I$. The former has no first-order
+deformations: $H^0(N_{C_2/X})=0$ and $H^1(\cO_X)=0$.
+Derived duality satisfies
+$R\mathcal Hom_X(\mathcal I,\cO_X)=\mathcal F_R[-1]$;
+it, and tensoring by $\cO_X(-P_6)$, preserve the dimension of
+self-$\operatorname{Ext}^1$. Thus
+\begin{equation}
+ \operatorname{Ext}^1_X(\mathcal F_2,\mathcal F_2)
+ =\operatorname{Ext}^1_X(\mathcal F_R,\mathcal F_R)=0.
+ \label{eq:x9-glued-rigidity}
+\end{equation}
+Each stable point is therefore an open and closed smooth
+zero-dimensional component, with Behrend weight $+1$
+\cite[Section~1.2 and Theorem~4.18]{Behrend:2009DT}.
+
+The second sheaf supplies a compact contribution carrying the
+cooperative electric class. It remains distinct from the desired five-dimensional particle
+index. The complete moduli at either charge have not been classified,
+and physical stability at the cooperative contraction is not established.
+Section~\ref{subsec:x9-probe-transport} extends the Gieseker-stability
+calculation and explains why the raw D0 shift is frame-dependent.
+At these fixed charges, the divisor
+sequence and Serre duality give
+\[
+ R\operatorname{Hom}_X(\cO_{C_2}(-1),\cO_T)=0.
+\]
+Thus replacing the quotient in
+\eqref{eq:x9-glued-extensions} by the zero-D0 curve sheaf does not
+give a nontrivial extension of $\cO_T$. This excludes that elementary
+construction, not other sheaves or derived objects at zero D0 shift.

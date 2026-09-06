@@ -1,11 +1,44 @@
 cff-version: 1.2.0
-message: "If you use this manuscript or its checks, please cite it as below."
-title: "Global Constraints on Higgsing Localized Five-Dimensional Sectors in Compact M-Theory Vacua"
-type: manuscript
+message: "Please cite the individual manuscript relevant to the result used; entries for all three are in CITATION.bib."
+title: "Compact Higgs Transitions: Manuscripts and Reproducibility Code"
+type: software
 authors:
   - family-names: Wuebben
     given-names: Bernd Johannes
-year: 2026
-date-released: 2026-08-31
+date-released: 2026-09-06
 repository-code: "https://github.com/bwuebben/global-higgs-branch"
-license: CC-BY-4.0
+license:
+  - CC-BY-4.0
+  - MIT
+  - LPPL-1.3c
+preferred-citation:
+  type: unpublished
+  title: "Bulk Gauging and Quantum Couplings across a Compact Higgs Transition"
+  authors:
+    - family-names: Wuebben
+      given-names: Bernd Johannes
+  year: 2026
+  url: "https://github.com/bwuebben/global-higgs-branch/blob/main/bulk-gauging-quantum-couplings.pdf"
+references:
+  - type: unpublished
+    title: "Global Constraints on Higgsing Localized Five-Dimensional Sectors in Compact M-Theory Vacua"
+    authors:
+      - family-names: Wuebben
+        given-names: Bernd Johannes
+    year: 2026
+    url: "https://github.com/bwuebben/global-higgs-branch/blob/main/global-higgs-branch.pdf"
+  - type: unpublished
+    title: "Bulk Gauging and Quantum Couplings across a Compact Higgs Transition"
+    authors:
+      - family-names: Wuebben
+        given-names: Bernd Johannes
+    year: 2026
+    url: "https://github.com/bwuebben/global-higgs-branch/blob/main/bulk-gauging-quantum-couplings.pdf"
+  - type: unpublished
+    title: "Magnetic Sheaves and Stability Walls in a Compact Calabi–Yau Transition"
+    authors:
+      - family-names: Wuebben
+        given-names: Bernd Johannes
+    year: 2026
+    notes: "Supporting technical note."
+    url: "https://github.com/bwuebben/global-higgs-branch/blob/main/magnetic-sheaves-stability-walls.pdf"

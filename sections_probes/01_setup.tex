@@ -1,0 +1,96 @@
+\section{Geometry, charge conventions and scope}
+\label{sec:probe-setup}
+
+Magnetic objects can test aspects of a Calabi--Yau transition
+that are not fixed by its massless electric spectrum. Such a
+test requires both a charge calculation and a stability
+condition. This note studies the first requirement and parts
+of the second for the compact transition of
+\cite{Wuebben:2026quantum}. We compute specified numerical
+Donaldson--Thomas contributions, their polarization
+dependence, a two-constituent magnetic wall near large volume,
+and exact phase constraints near the quantum transition.
+The results do not determine the full physical BPS index at
+the strongly coupled endpoint.
+
+Let $X=\wideX_9$ be the smooth resolution of a compact
+Calabi--Yau threefold with two conifold points and one cone
+over $E=\operatorname{Bl}_2\mathbb P^2$. Its Hodge numbers
+are $(6,122)$. The nodal curves $C_1,C_2$ and the two
+exceptional curves $e_1,e_2$ of $E$ obey
+\begin{equation}
+ R=\iota_*(e_1-e_2)=C_1+C_2.
+ \label{eq:probe-root}
+\end{equation}
+The compact gaugings allow these local sectors to Higgs only
+together. The smooth side has Hodge numbers $(3,123)$ and a
+rigid plane. In the resolved chamber the corresponding
+surface is $S_-=D_8\simeq\mathbb F_1$; on the smooth side
+it is $S_+\simeq\mathbb P^2$, with class $\nu$.
+Their classical restrictions and string anomalies are computed
+in \cite[Section~3]{Wuebben:2026quantum}.
+
+We use the primitive divisor basis
+\begin{equation}
+ \mathcal D=(D_2,D_5,D_6,D_7,D_8,E).
+ \label{eq:x9-divisor-basis}
+\end{equation}
+The integral nef basis $(H_1,\ldots,H_6)$ has columns
+\begin{equation}
+ \begin{pmatrix}
+ 0&0&1&1&2&2\\1&1&2&4&5&5\\0&1&2&4&4&5\\
+ 0&-1&-1&-3&-3&-3\\0&-1&-1&-2&-2&-2\\0&0&1&2&2&2
+ \end{pmatrix}
+ \label{eq:x9-mirror-nef}
+\end{equation}
+in $\mathcal D$. In particular
+$H_1=D_5$, $H_2=D_4+D_5$, $H_3=D_1$, $H_4=D_0$.
+Write $\beta_a$ for the dual curve basis. Then
+\begin{equation}
+ C_2=\beta_1,\quad C_1=\beta_5,\quad
+ \iota_*e_2=\beta_6,\quad
+ \iota_*e_1=\beta_1+\beta_5+\beta_6.
+\end{equation}
+The ample class $J_*=
+\sum_aH_a=(6,18,16,-11,-8,7)$ fixes the initial polarization.
+The contraction face is $J=aD_0+bD_1$, $a,b\geq0$.
+Appendix~\ref{app:probe-data} prints the intersection data
+needed for the sheaf stability tests.
+
+For a pure surface sheaf $\mathcal F$, charges mean
+\begin{equation}
+ \Gamma(\mathcal F)=\operatorname{ch}(\mathcal F)
+          \sqrt{\operatorname{Td}(X)}=(0,P,q,q_0),\qquad
+ Z_{\rm LV}=-\int_Xe^{-t}\Gamma,\quad t=B+iJ.
+\end{equation}
+The D0 convention makes a point sheaf have period $-1$.
+The Dirac pairing with an electric charge
+$(0,0,\gamma,\gamma_0)$ is $P\gamma$.
+The normalized exact central charge for $P\neq0$ differs
+from its polynomial value by a magnetic period correction
+$\Psi_P$. No additional curvature term is added after the
+Mukai charge has been fixed.
+
+The four-dimensional particles here come from wrapping a
+five-dimensional magnetic string on an auxiliary spacetime
+circle. This is distinct from the elliptic circle in the
+six-dimensional interpretation of $X$. The physical mass
+contains the usual common normalization; phase comparisons
+use the holomorphic central charges above.
+
+The main unconditional sheaf result is the existence of two
+isolated stable components carrying relative charges
+$(C_2,-1)$ and $(R,-1)$ with respect to a moving D4 seed.
+Each contributes $+1$ to the numerical DT invariant.
+Both remain Gieseker stable along ample polarizations approaching
+the contraction. Their explicitly identified magnetic split
+has a transverse alignment near large volume, but the exact
+endpoint periods lie strictly away from that alignment.
+Light-electric emission walls are also excluded on a final
+specified segment. These exclusions are incomplete: they do
+not prove that the constituent BPS states survive the whole
+continuation. Moreover their magnetic charges are confined at
+a generic Higgs vacuum. Conditional counts involving the full
+moving pencils are kept in Appendix~\ref{app:pencil} so that
+their additional genericity assumption is separate from the
+isolated-component results.

@@ -1,0 +1,200 @@
+\section{Fibrations and the six-dimensional interpretation}
+\label{sec:fibrations}
+
+\subsection{The K3-fiber vector}
+\label{subsec:k3-fibration}
+
+The two vectors imposing the joint constraint have a fibration
+interpretation. The functional $-e_3^*$ on the fan takes value
+$1$ on $v_5$, $-1$ on $v_3,v_7,v_8$ and zero elsewhere;
+no resolved cone contains rays of both signs. It defines a K3
+fibration
+\begin{equation}
+ \rho:\wideX_9\longrightarrow\mathbb P^1,\qquad
+ [\mathrm{K3}]=D_5\sim D_3+D_7+D_8.
+ \label{eq:k3-fibration}
+\end{equation}
+The generic fiber has Picard rank three. Its classes
+$(D_2|,D_6|,E|)$ have Gram matrix
+\begin{equation}
+ \begin{pmatrix}-2&1&0\\1&0&1\\0&1&-2\end{pmatrix},\qquad
+ \operatorname{Pic}(\mathrm{K3})\simeq U\oplus\langle-4\rangle.
+ \label{eq:k3-lattice}
+\end{equation}
+The middle class is an elliptic fiber and the other two are
+disjoint sections. The horizontal surface $D_6$ is a K3 blown
+up once; its exceptional curve is $C_1$. In contrast, $C_2$
+is a section of $\rho$.
+
+In the K3-fibration heterotic/type-II dictionary, $D_5$ is the
+heterotic dilaton vector multiplet
+\cite{Kachru:1995wm,Klemm:1995tj,Aspinwall:1995vk,Antoniadis:1995vz}.
+Since $D_5^2=0$, its norm is
+\begin{equation}
+ \mathcal N_{D_5}=\frac{\operatorname{vol}(\mathrm{K3})^2}{\mathcal V}.
+ \label{eq:dilaton-norm}
+\end{equation}
+Thus one of the shared gaugings is a dilaton gauging; the other,
+$-D_6$, restricts to the elliptic fiber class in the K3 lattice.
+Vertical versus horizontal M2 curves give the usual perturbative
+versus nonperturbative interpretation of $C_1$ and $C_2$ in this
+dictionary. This interprets the compact charges but does not
+independently construct their heterotic states or condensates.
+
+\subsection{The flat elliptic model and its anomalies}
+\label{subsec:sixd}\label{subsec:genus-one}
+
+The nef divisor $w=D_4+D_5=D_3+D_6$ has $w^3=0$ and defines
+a genus-one fibration over $\mathbb P^2$. Its fiber $F=w^2$
+pairs with $(D_0,D_1,D_2,E)$ as $(3,2,1,1)$ and trivially
+with the other divisors. There are two rational sections $D_2,E$
+and two non-flat points $q_3,q_4$ on a line $L_0$.
+Flopping $C_1$ gives a flat elliptic threefold $X_9^{\rm fl}$
+over $B'=\operatorname{Bl}_{q_3,q_4}\mathbb P^2$: the fan
+projection to the last two coordinates then maps every cone
+to a cone. Write $H,E_3,E_4$ for the base hyperplane and
+exceptional classes, and $L=H-E_3-E_4$.
+
+The fiber monomials give a Morrison--Park two-section model
+\cite{Morrison:2012ei}, specialized so that $L$ carries an
+$I_2$ fiber and the sections are disjoint. The latter condition
+removes charge-two singlet loci in the normalization where the
+ordinary singlet has charge one. The flat six-dimensional
+tensor branch has $T=2$, algebra
+$\mathfrak{su}(2)\oplus\mathfrak u(1)$, and gauge curve $L$.
+The two exceptional base curves support the geometric E-string
+sectors \cite{Ganor:1996pc}. Its vector count is
+$T+\operatorname{rank}G+1=5$, as required by
+\eqref{eq:x9-spectrum-table}.
+
+The charged matter and anomaly coefficient are
+\begin{equation}
+ 10\,\mathbf2_{1/2}+76\,\mathbf1_1,\qquad
+ b=\frac{11}{2}H-\frac32E_3-\frac32E_4.
+ \label{eq:x9-height-class}
+\end{equation}
+Here the gravitational hypermultiplet count weights a doublet
+by dimension two. Thus $H_{m tot}=123+20+76=219$,
+$V=4$, and $H_{m tot}-V+29T=273$.
+The nonabelian anomaly conditions use $K_{B'}L=L^2=-1$
+and give ten fundamentals. In the conventional Abelian
+normalization \cite{Kumar:2010ru,Park:2011ji}, the remaining
+checks read
+\begin{equation}
+\begin{aligned}
+ -6K_{B'}b&=81=20(1/2)^2+76,\\
+ 3b^2&=\frac{309}{4}=20(1/2)^4+76,\\
+ bL&=\frac52=10(1/2)^2.
+\end{aligned}
+\label{eq:x9-abelian-anomaly-checks}
+\end{equation}
+These agree with the geometric count of $76$ isolated $I_2$
+fibers away from $L_0$.
+
+The full height, including its exceptional-base components,
+is independently fixed by the sections. Put
+$P=\pi^*c_1(B')=3w-D_3-D_4$ and use $D_2$ as zero section.
+The Shioda and shifted Kaluza--Klein divisors are
+\begin{equation}
+ \sigma=E-D_2-P+\tfrac12D_8,\qquad Z=D_2+\tfrac12P,
+ \qquad -\pi_*(\sigma^2)=b.
+ \label{eq:x9-shioda-kk}
+\end{equation}
+They obey $\pi_*(\sigma Z)=\pi_*(\sigma D_8)=\pi_*(Z^2)=0$
+\cite{Grimm:2015gka}. The half-Cartan term supplies the
+geometric center identification: in integral charge normalization
+the doublets have charge one and the singlets charge two,
+giving $U(2)=(SU(2)\times U(1))/\ZZ_2$. These statements
+come from the F-theory geometry, not a heterotic bundle tuning.
+
+\subsection{The two E-string roots and the elliptic-circle limit}
+\label{subsec:estring-roots}\label{subsec:finite-circle}
+
+On $X_9^{\rm fl}$ the surfaces $S_i=D_i$, $i=3,4$, are rational
+elliptic surfaces. Let $o_i=D_2|_{S_i}$, $s_i=E|_{S_i}$,
+$F_i=-K_{S_i}$, and define
+\begin{equation}
+ r_i=s_i-o_i-F_i.
+ \label{eq:x9-estring-roots}
+\end{equation}
+The two sections are disjoint, have square $-1$ and meet the
+fiber once. Hence $r_i^2=-2$ and $r_i o_i=r_i F_i=0$:
+each is a root in the $E_8(-1)$ orthogonal complement of
+$\langle o_i,F_i\rangle$ \cite{Schutt:2009elliptic}.
+Their compact images coincide. Indeed $o_3=-C_1$, $o_4=C_2$,
+$F_3=F_4=F$ and $s_4-s_3=R$, so
+\begin{equation}
+ r_4-r_3=R-C_1-C_2=0.
+\end{equation}
+The integral curve pairings verifying these identities are
+printed in Appendix~\ref{app:reproducibility}. This identifies
+two local root images, not the entire microscopic heterotic
+$E_8$ gauge algebras or a BPS state for every signed root class.
+
+The transition face also determines whether a six-dimensional
+limit exists. Write $J=aD_0+bD_1$ with $a,b\geq0$ and
+$a+b>0$, and $\tau=JF=3a+2b$. The original and flat chambers
+share this face because $JC_1=0$. The cubic gives
+\begin{equation}
+ \frac7{24}\leq\frac{\mathcal V}{\tau^3}\leq\frac{83}{162}.
+ \label{eq:x9-finite-circle-bound}
+\end{equation}
+To prove the bound, put $x=a/\tau\in[0,1/3]$. Then
+\begin{equation}
+ \frac{\mathcal V}{\tau^3}
+ =\frac7{24}+\frac34x-\frac18x^2-\frac5{12}x^3.
+\end{equation}
+Its derivative is decreasing and has positive minimum $19/36$;
+the endpoint values give \eqref{eq:x9-finite-circle-bound}.
+The F-theory limit requires $\tau/\mathcal V^{1/3}\to0$
+\cite{Bonetti:2011mw}, so it is excluded on this face.
+This is the elliptic 6d-to-5d circle, not the auxiliary 5d-to-4d
+circle of Section~\ref{subsec:x9-circle-limit}. Nor does the
+bound force the total Planck volume to vanish at fixed fiber
+volume: the section $E$ has zero volume on the face, but
+$\operatorname{vol}(D_2)=2a^2$.
+
+For completeness the finite-circle charge relation is visible
+without taking either limit. Expand
+$J=\tau Z+\pi^*j+z\sigma+\phi D_8$; on the face,
+$z=2a+b$ and $\phi=-b/2$. The common root image has
+$(Zr,\sigma r,D_8r)=(0,-3/2,1)$, so
+\begin{equation}
+ J(r+F)=\tau-\tfrac32z+\phi=0.
+ \label{eq:x9-affine-charge-relation}
+\end{equation}
+The section-difference class has one unit of this elliptic
+Kaluza--Klein charge. A different zero section changes the
+divisor coordinates, not the volume bound. At finite radius,
+$j$ is not directly the six-dimensional base K\"ahler class:
+the tensor dictionary includes Green--Schwarz shifts
+\cite{Bonetti:2011mw,Grimm:2015gka}.
+
+\subsection{The status of the heterotic construction}
+\label{subsec:heterotic-k3}
+
+Regard $B'$ as $\mathbb F_1$ blown up once on the positive
+section. Its heterotic parent has instanton numbers $(11,13)$;
+the extra blowup replaces one instanton by a five-brane
+\cite{Morrison:1996na,Morrison:1996xf}. The residual data are
+\begin{equation}
+ (k_1,k_2;N_5)=(11,12;1),\qquad k_1+k_2+N_5=24.
+ \label{eq:x9-heterotic-instantons}
+\end{equation}
+In this presentation the common root above identifies a root
+of the E-string over the negative section with one of the
+five-brane's E-string. It does not derive their condensate
+dynamics.
+
+An integral subdivision of the Newton polytope along
+$m_4+2m_1+m_2=0$ has a reflexive common slice with $30$
+lattice points. It produces a candidate elliptic heterotic K3
+with a distinguished $I_2$ fiber; an exact member has fibers
+$I_2+22I_1$. Its equation and coefficient data are given in
+Appendix~\ref{app:reproducibility}. The semistable total family,
+bundle or spectral-sheaf data and their gluing remain to be
+constructed. In particular the massless $U(1)$ requires a
+St\"uckelberg check, not merely a bundle commutant
+\cite{Cvetic:2015uwu,Honecker:2006qz}. The F-theory spectrum
+and root relation therefore constrain a heterotic construction;
+they do not complete it.

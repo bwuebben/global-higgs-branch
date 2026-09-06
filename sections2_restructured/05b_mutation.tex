@@ -1,0 +1,160 @@
+\subsection{The small resolution as a smooth-side mirror}
+\label{subsec:x9-mirror-mutation}
+
+The holomorphic families can also be compared explicitly. The general
+ambient fiber of the smoothing of $X_9$ is toric: its fan, reconstructed
+in \cite[Section~11]{Wuebben:2026smoothing}, has primitive rays
+\begin{equation}
+ \begin{aligned}
+ r_0&=(-1,-3,-1,0),&r_1&=(-1,-3,0,-1),\\
+ r_2&=(-1,-1,0,0),&r_3&=(-1,0,0,0),\\
+ r_4&=(0,1,0,0),&r_5&=(1,-1,0,0),&r_6&=(1,3,1,1).
+ \end{aligned}
+ \label{eq:x9-smooth-mirror-rays}
+\end{equation}
+Its maximal cones are
+$1456,1346,0456,0346,0145,0134,01256,1236,0236,0123$.
+This is a Gorenstein Fano fourfold; a general anticanonical
+hypersurface is the smooth fiber $X_{9,t}$. Consequently
+$P=\operatorname{conv}(r_0,\ldots,r_6)$ is the Newton polytope
+of its Batyrev mirror \cite{Batyrev:1994}.
+
+\begin{proposition}\label{prop:x9-mirror-mutation}
+For generic $(v,a,b)$, the projective small resolution of the
+four-node mirror on $\Sigma$ is birational to a smooth crepant
+Batyrev mirror of $X_{9,t}$. The birational map preserves the
+residue three-form, and the two smooth projective models are
+related by flops. The parameter family $(v,a,b)$ has generically
+full rank in the three-dimensional complex-structure moduli space.
+\end{proposition}
+
+\begin{proof}
+Write \eqref{eq:x9-finite-bulk-factorization} as
+$\mathcal F=fg+sk$, with
+$f=1+xy$, $g=1+x^{-1}+vy^{-1}+r$ and $k=r(br-1)+as$.
+Blow up the compact Weil divisor given in this chart by $(s,f)$.
+In the affine blowup chart $s=Tf$, the strict transform is
+\begin{equation}
+ g+Tr(br-1)+aT^2f=0.
+ \label{eq:x9-mutation-blowup-chart}
+\end{equation}
+On its dense torus set $u=r$, $p=x/r^2$ and $q=y/r^2$.
+Dividing \eqref{eq:x9-mutation-blowup-chart} by the torus unit $uT$
+gives
+\begin{equation}
+ \begin{aligned}
+ F_{\rm sm}={}&\frac{1}{Tu^3p}+\frac{v}{Tu^3q}
+       +\frac{1}{Tu}+\frac{1}{T}+bu
+       +\frac{aT}{u}+aTu^3pq-1=0.
+ \end{aligned}
+ \label{eq:x9-mutated-mirror}
+\end{equation}
+The exponents of its seven nonconstant monomials, in the order
+shown, are precisely \eqref{eq:x9-smooth-mirror-rays}.
+The inverse map on the dense open set $1+u^4pq\ne0$ is
+\begin{equation}
+ x=u^2p,\qquad y=u^2q,\qquad r=u,\qquad
+ s=T(1+u^4pq).
+ \label{eq:x9-mutation-map}
+\end{equation}
+Thus this is a birational map from the actual small resolution,
+not just a comparison of Newton-polytope invariants.
+
+The three-form is preserved as well. Put $h=s/r$ and
+$G=1+u^4pq$. In the integral old torus coordinates $(h,u,p,q)$,
+the original Laurent equation is $\mathcal F/(rs)=0$.
+The substitution $h=TG/u$ changes this Laurent polynomial
+exactly to $F_{\rm sm}$. Moreover
+\begin{equation}
+ d\log h\wedge d\log u\wedge d\log p\wedge d\log q
+ =d\log T\wedge d\log u\wedge d\log p\wedge d\log q,
+ \label{eq:x9-mutation-volume}
+\end{equation}
+because $d\log G$ involves only $u,p,q$.
+Taking residues proves the assertion, up to the common orientation
+choice. This is a Laurent mutation in the usual volume-preserving
+sense \cite[Definition~1.1]{Ilten:2012Mutation}.
+
+We must check that the coefficient restrictions in
+\eqref{eq:x9-mutated-mirror} do not impose an extra specialization.
+The lattice points of $P$ are its seven vertices, the origin and
+$e_*=(0,-1,0,0)$. The point $e_*$ lies in the relative interior
+of the facet with inward normal $n_*=(0,1,-2,-2)$.
+It pairs nonnegatively with all other primitive facet normals.
+The corresponding toric root automorphism acts on anticanonical
+monomials by
+\begin{equation}
+ \chi^m\longmapsto
+ \chi^m(1+\lambda/u)^{1+\langle n_*,m\rangle}.
+ \label{eq:x9-mirror-root-gauge}
+\end{equation}
+At the coefficients in \eqref{eq:x9-mutated-mirror}, an added
+coefficient $c/u$ transforms to $(c-\lambda+b\lambda^2)/u$;
+the constant becomes $-1+2b\lambda$ and the coefficient of
+$(Tu)^{-1}$ becomes $1+\lambda$. The derivative of the first
+coefficient with respect to $\lambda$ is $-1$ at zero. Thus
+$c=0$ is locally a slice for this automorphism. Normalize the
+constant coefficient to $-1$. The four torus normalizations
+$c_{r_0}=c_{r_2}=c_{r_3}=1$ and $c_{r_6}=c_{r_5}$ have
+exponent matrix with rows
+$(r_0,r_2,r_3,r_6-r_5)$ and determinant $1$. They leave exactly
+$(c_{r_1},c_{r_4},c_{r_5})=(v,b,a)$, with no finite torus
+ambiguity.
+
+For completeness, $P$ and its polar have $9$ and $162$ lattice
+points; the sums of facet-interior lattice counts are $1$ and
+$34$, and both codimension-two corrections vanish. Batyrev's
+formulas give $(h^{1,1},h^{2,1})=(123,3)$ and show that all
+three complex-structure deformations are polynomial. At
+$(v,a,b)=(1/2,1/100,1/10)$ the face polynomials are
+nondegenerate, including on the full torus; the exact check
+tests their saturated critical ideals. Nondegeneracy is open,
+so a maximal projective crepant partial toric resolution gives
+a smooth projective Calabi--Yau threefold generically
+\cite[Section~4.5]{Batyrev:1994}.
+The small resolution constructed above is also smooth projective
+and Calabi--Yau on the generic four-node family. The two models
+are birational; hence they are connected by flops
+\cite[Theorem~1]{Kawamata:2007Flops}.
+\end{proof}
+
+\paragraph{The fundamental period.}
+An independent all-orders comparison is available. The three
+nonnegative primitive relations among
+\eqref{eq:x9-smooth-mirror-rays} are
+\begin{equation}
+ \begin{pmatrix}
+ 1&1&0&0&4&1&1\\
+ 0&0&1&0&2&1&0\\
+ 0&0&0&1&1&1&0
+ \end{pmatrix}.
+ \label{eq:x9-mutated-relations}
+\end{equation}
+They generate every nonnegative integral relation: its coefficients
+satisfy $n_0=n_1=n_6=\alpha$, $n_2=\beta$, $n_3=\gamma$,
+$n_4=4\alpha+2\beta+\gamma$ and $n_5=\alpha+\beta+\gamma$.
+With the constant
+term normalized as in \eqref{eq:x9-mutated-mirror}, take
+\begin{equation}
+ (\xi_1,\xi_2,\xi_3)=(va^2b^4,ab^2,ab),\qquad
+ (v,a,b)=(\xi_1/\xi_2^2,\xi_3^2/\xi_2,\xi_2/\xi_3).
+ \label{eq:x9-mutated-parameters}
+\end{equation}
+The integral exponent matrix has determinant $-1$.
+The normalized constant-term period is
+\begin{equation}
+ W_{\rm sm}=\sum_{\alpha,\beta,\gamma\geq0}
+ \frac{(8\alpha+4\beta+3\gamma)!\,
+       \xi_1^\alpha\xi_2^\beta\xi_3^\gamma}
+ {(\alpha!)^3\beta!\gamma!(4\alpha+2\beta+\gamma)!
+                          (\alpha+\beta+\gamma)!}.
+ \label{eq:x9-mutated-period}
+\end{equation}
+The substitution
+$(\ell,m,n)=(\alpha,2\alpha+\beta+\gamma,4\alpha+2\beta+\gamma)$
+identifies every coefficient with
+\eqref{eq:x9-bulk-restricted-fundamental}. Its inverse is
+$(\alpha,\beta,\gamma)=(\ell,n-m-2\ell,2m-n)$; nonnegativity
+is exactly the support condition in that formula. Therefore
+$W_{\rm sm}=W_0|_\Sigma$ to all orders, and analytically in their
+common small-bulk domain of convergence.

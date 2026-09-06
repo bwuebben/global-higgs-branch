@@ -1,0 +1,97 @@
+\section{Fibration data and reproducibility}
+\label{app:reproducibility}
+
+\subsection{Integral E-string root images}
+
+Across the $C_1$ flop the cubic changes by
+$\kappa_{\rm fl}(A,B,C)=\kappa(A,B,C)-(AC_1)(BC_1)(CC_1)$.
+Intersecting the flat-model sections with $D_3,D_4$ gives the
+following curve pairings in the primitive divisor basis of
+Section~\ref{subsec:x9}:
+\begin{equation}
+\begin{array}{c|rrrrrr}
+ &D_2&D_5&D_6&D_7&D_8&E\\\hline
+ o_3=-C_1&-1&0&1&1&0&0\\
+ o_4=C_2&-1&1&0&1&0&0\\
+ s_3&0&0&1&0&1&-1\\
+ s_4&0&1&0&0&1&-1\\
+ F_3=F_4&1&0&0&0&0&1\\
+ r_3=r_4&0&0&0&-1&1&-2
+\end{array}
+\label{eq:x9-estring-pairing-table}
+\end{equation}
+The unimodular pairing in Appendix~\ref{app:integral-charges}
+makes equality of these rows an integral homology statement.
+In particular $s_4-s_3=C_1+C_2$, whereas the common root
+$r_i=s_i-o_i-F_i$ is a different class. This distinction is
+needed when assigning the elliptic Kaluza--Klein charge.
+
+\subsection{An elliptic K3 in the common slice}
+
+The slice $m_4+2m_1+m_2=0$ of the Newton polytope has $30$
+lattice points. In an integral basis its polar has vertices
+\begin{equation}
+ (-4,-2,-1),\ (0,1,0),\ (1,0,1),\ (1,0,0),\
+ (-1,-1,0),\ (0,0,1).
+\end{equation}
+The two pieces of the subdivision meet in this reflexive
+three-dimensional slice. The resulting K3 equation can be
+written, in an affine base coordinate $s$, as
+\begin{equation}
+ a_0w^2+(b_0u^2+b_1uv+b_2v^2)w
+ +u(c_0u^3+c_1u^2v+c_2uv^2+c_3v^3)=0.
+\label{eq:x9-k3-slice-equation}
+\end{equation}
+Here $a_0,b_2$ are nonzero constants,
+$\deg b_1\leq2$, $\deg b_0\leq4$, and
+$c_j\in s\,\CC[s]_{\leq7-2j}$. An exact rational member
+is specified by the following coefficient vectors, ordered
+by increasing power of $s$:
+\begin{equation}
+\begin{array}{c|l}
+ a_0&(4)\\ b_2&(2)\\ b_1&(3,1,5)\\ b_0&(7,4,4,9,5)\\
+ c_3/s&(7,4)\\ c_2/s&(1,8,5,6)\\
+ c_1/s&(2,3,1,5,9,4)\\ c_0/s&(5,9,8,6,5,1,3,8)
+\end{array}
+\label{eq:x9-k3-coefficients}
+\end{equation}
+Completing the square produces a binary quartic with coefficients
+\begin{equation}
+\begin{aligned}
+ A&=b_0^2-4a_0c_0,& B&=2b_0b_1-4a_0c_1,\\
+ C&=b_1^2+2b_0b_2-4a_0c_2,&D&=2b_1b_2-4a_0c_3,&E_4&=b_2^2.
+\end{aligned}
+\end{equation}
+Writing $E_4$ for the quartic coefficient, to distinguish it
+from the divisor $E$, its invariants are
+\begin{equation}
+ I=12AE_4-3BD+C^2,\qquad
+ J_4=72ACE_4+9BCD-27AD^2-27E_4B^2-2C^3.
+\end{equation}
+One normalization of the Jacobian has $f=-I/3$, $g=-J_4/27$.
+The polynomial $4I^3-J_4^2$ has degree $24$ and a double
+zero at $s=0$. Its quotient by $s^2$ is squarefree and coprime
+to $I,J_4$; the fiber at infinity is smooth. Thus this member
+has precisely $I_2+22I_1$. This is an exact K3 calculation,
+not a construction of the heterotic bundles or of a semistable
+total degeneration.
+
+\subsection{Reproducibility and the role of finite checks}
+
+The source distribution contains exact-arithmetic calculations
+in \texttt{checks/}, with commands and dependencies documented
+in \texttt{checks/README.md}. They reconstruct the fan, Chow
+ring, primitive lattices, local smoothing topology, mirror
+critical scheme, Laurent mutation, Frobenius coefficients and
+fibration data printed here. The explicit global smoothing
+family is the one constructed in \cite{Wuebben:2026smoothing}.
+
+The period statements do not follow from a finite expansion.
+The coefficient identities, analytic continuation estimates
+and integral normalization used in their proofs appear in
+Section~\ref{sec:quantum} and Appendix~\ref{app:mirror-periods}.
+Exact low-degree series comparisons test these formulas; they
+are not substituted for their all-orders arguments. Numerical
+central-charge evaluations and the separate magnetic-sheaf
+calculations are discussed in the companion note
+\cite{Wuebben:2026magnetic}.

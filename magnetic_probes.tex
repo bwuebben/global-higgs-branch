@@ -1,0 +1,76 @@
+\documentclass[11pt,letterpaper]{article}
+\pdfoutput=1
+
+\usepackage{jheppub}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{adjustbox}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+
+\input{macros}
+\makeatletter
+\gdef\@fpheader{Companion technical note}
+\makeatother
+
+\hypersetup{
+  pdftitle={Magnetic Sheaves and Stability Walls in a Compact Calabi--Yau Transition},
+  pdfauthor={Bernd Johannes Wuebben},
+  pdfsubject={Compact Calabi--Yau transitions and five-dimensional Higgs branches},
+  pdfkeywords={M-theory; five-dimensional field theory; Calabi--Yau threefolds; Higgs branches; heterotic--type II duality}
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Magnetic Sheaves and Stability Walls\\
+in a Compact Calabi--Yau Transition}
+\author{Bernd Johannes Wuebben}
+\affiliation{New York, NY, USA}
+\emailAdd{wuebben@gmail.com}
+\abstract{We study magnetic sheaves in a compact Calabi--Yau transition
+coupling two conifold sectors to a rank-one $E_2$ sector.
+Fixed-support Hilbert schemes give rank-one numerical
+Donaldson--Thomas contributions on the rigid $\mathbb F_1$
+and $\mathbb P^2$ surfaces on the two sides. On a reducible
+moving divisor, two dual-ideal sheaves are isolated and
+Gieseker stable, each contributing $+1$; their stability
+persists along ample polarizations approaching the contraction.
+An explicit magnetic splitting has one extension mode and a
+transverse phase alignment near large volume. Using the
+analytically continued periods of the companion paper, we
+determine the constituent phase sign at the marked quantum
+transition and exclude emission of the known light electric
+particles on a final specified segment. The probe charges
+nevertheless carry confined magnetic flux after Higgsing.
+These are component counts and partial wall constraints,
+not a determination of the physical BPS index at the endpoint.
+Counts involving complete moving pencils require a separate
+reduced-member hypothesis, stated in an appendix.}
+\keywords{D-branes, M-Theory, Supersymmetric Gauge Theory, String Duality}
+\renewcommand{\afterTocRuleSpace}{\bigskip\bigskip\clearpage}
+\begin{document}
+\hypersetup{pageanchor=false}
+\maketitle
+\hypersetup{pageanchor=true}
+\input{sections_probes/01_setup}
+\input{sections_probes/02_sheaves}
+\input{sections_probes/03_stability}
+\input{sections_probes/04_quantum}
+\input{sections_probes/05_discussion}
+\appendix
+\input{sections_probes/app_pencils}
+\input{sections_probes/app_data}
+\bibliographystyle{JHEP}
+\bibliography{references,references_new}
+\end{document}

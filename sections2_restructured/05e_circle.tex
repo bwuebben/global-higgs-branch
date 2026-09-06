@@ -1,0 +1,176 @@
+\subsection{The auxiliary-circle limit}
+\label{subsec:x9-circle-limit}
+
+The marked four-node locus has a large-radius limit on the original
+five-dimensional contraction face. Its four-hypermultiplet infrared
+description, however, has no radius-independent range of validity.
+These are distinct statements: the limiting geometry can be identified
+without treating the finite-circle conifold theory as the full
+five-dimensional theory.
+
+\paragraph{Suppression of smooth-side instantons.}
+The smooth-side effective cone gives a further all-orders consequence. By
+\eqref{eq:x9-neutral-common-mori}, every nonzero effective degree
+has $m+n>0$. Hence $J_0=\alpha K_3+\beta K_2$, with
+$\alpha,\beta>0$, lies in the interior of the smooth-side K\"ahler
+cone: its degree on a curve is $\alpha n+\beta m$.
+The ambient boundary curves of degree $(1,0,0)$ do not meet the
+Calabi--Yau hypersurface. Along
+\eqref{eq:x9-circle-scaling-path}, every smooth-side instanton is thus
+suppressed, although $v=v_0$ remains fixed. The convergent
+Frobenius series and the locally invertible mirror map give an
+analytic nonpolynomial prepotential near the origin. To see the
+convergence directly, the factorial ratios and their first two
+derivatives are bounded by an exponential in total degree times
+a polynomial in that degree; the latter includes the harmonic-number
+factors. Analytic inversion of the mirror map and integration of the
+regular magnetic series preserve a nonzero convergence domain. Its support
+has no pure $q_1$ term, so, for any fixed number of flat-coordinate
+derivatives,
+\begin{equation}
+ \partial_{\tau_{i_1}}\cdots\partial_{\tau_{i_k}}
+ F^{\rm sm}_{\rm inst}
+ =O\!\left(e^{-2\pi L\min(\alpha,\beta)}\right).
+ \label{eq:x9-neutral-instanton-suppression}
+\end{equation}
+The bound holds at fixed sufficiently small $v_0$ on the smooth-side
+large-volume branch. Consequently its quantum vector couplings have
+the cubic five-dimensional limit already matched in
+\eqref{eq:x9-primitive-cubic}.
+\paragraph{Radius and period normalization.}
+Let $R_{\rm aux}$ be the radius of the spacetime circle reducing five
+dimensions to four, measured in the five-dimensional metric, and put
+$\mathcal R=R_{\rm aux}M$ for a fixed mass unit $M$.
+This is not the elliptic-fiber circle of Section~\ref{sec:fibrations}.
+In the leading circle dictionary the dimensionless vector coordinates
+are $t_a=B_a+i\mathcal R h_a$, where the real five-dimensional scalars
+obey $\frac16\kappa_{abc}h_ah_bh_c=1$ after volume normalization
+\cite[eqs.~(5.35)--(5.41)]{Hattab:2025M2}.
+The total M-theory Calabi--Yau volume is a separate hypermultiplet
+parameter and is kept fixed and finite here. Calibrating the periods
+by the unit D0 charge gives, for an existing BPS state,
+\begin{equation}
+ M_\gamma^{(5\text{-metric})}
+       =\frac{|Z_\gamma|}{R_{\rm aux}}.
+ \label{eq:x9-radius-mass-normalization}
+\end{equation}
+The four-dimensional Einstein-frame mass has an additional common Weyl
+factor; it is not the mass used in \eqref{eq:x9-radius-mass-normalization}.
+The same KK normalization is used for local circle theories in
+\cite[eq.~(2.27)]{Closset:2022UPlane}.
+
+\paragraph{A scaling inside the marked family.}
+Fix sufficiently small positive $v_0,a_0,b_0$ and constants
+$\alpha,\beta>0$. With $L\to\infty$, take
+\begin{equation}
+ z_1=z_5=z_6=1,\qquad v=v_0,\qquad
+ a=a_0e^{-2\pi L\beta},\qquad b=b_0e^{-2\pi L\alpha}.
+ \label{eq:x9-circle-scaling-path}
+\end{equation}
+Choose generic constants so that the path lies in the four-node
+stratum for all sufficiently large $L$. This path stays in the
+convergence domain of the marked period resummation. Writing
+$t_j=iy_j$ for $j=2,3,4$, its exact flat coordinates satisfy
+\begin{equation}
+ \begin{aligned}
+ t_1=t_5=t_6&=0,&
+ y_2&=c+O(a+b),\qquad c=-\frac{\log v_0}{2\pi}>0,\\
+ y_3&=L\beta+O(1),&y_4&=L\alpha+O(1).
+ \end{aligned}
+ \label{eq:x9-circle-period-scaling}
+\end{equation}
+Indeed all logarithmic corrections are bounded analytic functions
+of $(v,a,b)$ by \eqref{eq:x9-bulk-electric-periods}.
+At $a=b=0$, \eqref{eq:x9-local-exact-endpoint} gives $q_2=v$,
+which fixes the first limit in \eqref{eq:x9-circle-period-scaling}.
+Thus, for $J_\Sigma=y_2H_2+y_3H_3+y_4H_4$,
+\begin{equation}
+ \frac{J_\Sigma}{L}\longrightarrow
+ J_0=\alpha D_0+\beta D_1,\qquad
+ \frac{J_\Sigma^3}{6L^3}\longrightarrow
+ \mathcal V_0=
+ \frac{83\alpha^3+147\alpha^2\beta+81\alpha\beta^2+14\beta^3}{6}>0.
+ \label{eq:x9-circle-geometric-limit}
+\end{equation}
+The leading radius therefore scales as
+$\mathcal R\sim L\mathcal V_0^{1/3}$, and the volume-normalized
+five-dimensional class tends to $J_0/\mathcal V_0^{1/3}$.
+Bounded resummed magnetic corrections do not alter this leading
+cubic scaling. We do not assume that the local instanton corrections
+themselves vanish at the conifold locus.
+
+The extra condition needed to contract the whole del Pezzo surface
+is visible in its restriction lattice. In the basis $(h,e_1,e_2)$
+of $E=\operatorname{Bl}_2\mathbb P^2$,
+\begin{equation}
+ H_2|_E=h,\qquad H_3|_E=H_4|_E=0,\qquad
+ (D_8\cap E)=\beta_2.
+ \label{eq:x9-circle-surface-restriction}
+\end{equation}
+The two exceptional curves have zero period on $\Sigma$, whereas
+$\beta_2$ has period $iy_2\ne0$. Its rescaled area $y_2/L$ tends
+to zero, so $J_\Sigma|_E/L\to0$: the entire surface, not only the
+two exceptional curves, contracts. This is precisely the additional
+condition distinguishing the five-dimensional face
+\eqref{eq:local-scale-plane} from the codimension-three complex
+four-node locus.
+
+\paragraph{Finite bulk gaugings and the local strong-coupling limit.}
+The limit in \eqref{eq:x9-circle-geometric-limit} does not send the
+M-theory bulk volume to infinity. In particular it is not the rigid
+limit of Section~\ref{sec:decoupling}. With fixed five-dimensional
+Planck mass, dimensional reduction instead gives
+$M_4^2=2\pi R_{\rm aux}M_5^3$ in the common five-dimensional metric.
+The two vectors imposing cooperation remain normalizable.
+This can be checked after removing the graviphoton from the Hodge metric:
+\begin{equation}
+ \mathcal G_J^{\rm vec}(P,Q)
+ =-JPQ+\frac{(J^2P)(J^2Q)}{6\mathcal V_J}.
+ \label{eq:x9-circle-projected-metric}
+\end{equation}
+Up to the common finite volume normalization, the block on
+$(V_1,V_2)=(-D_6,D_5)$ at $J_0$ is
+\begin{equation}
+ \mathcal G_{J_0}^{\rm vec}|_{V_1,V_2}
+ =\begin{pmatrix}d&\tau-d\\\tau-d&d\end{pmatrix},\qquad
+ d=\frac{2(7\alpha^2+8\alpha\beta+2\beta^2)^2}{3\mathcal V_0},
+ \quad\tau=3\alpha+2\beta.
+ \label{eq:x9-circle-finite-gaugings}
+\end{equation}
+Its eigenvalues are $\tau$ and
+\begin{equation}
+ 2d-\tau=
+ \frac{143\alpha^4+289\alpha^3\beta+199\alpha^2\beta^2
+                       +52\alpha\beta^3+4\beta^4}
+      {83\alpha^3+147\alpha^2\beta+81\alpha\beta^2+14\beta^3},
+ \label{eq:x9-circle-positive-eigenvalue}
+\end{equation}
+both finite and strictly positive. By contrast, put
+$\eta=y_2/L$ and $J=J_0+\eta H_2$. The restriction data give
+\begin{equation}
+ \frac12J^2E=\frac{\eta^2}{2},\qquad
+ \mathcal G_J^{\rm vec}(E,E)
+       =3\eta+\frac{\eta^4}{6\mathcal V_J}\longrightarrow0.
+ \label{eq:x9-circle-local-strong-coupling}
+\end{equation}
+Bounded $H_3,H_4$ offsets in \eqref{eq:x9-circle-period-scaling}
+do not change these limits. Thus the del Pezzo string tension scale
+vanishes and its Coulomb direction becomes strongly coupled, while
+the two bulk gaugings remain dynamical. These are limiting
+five-dimensional geometric couplings, not the four-dimensional
+threshold couplings obtained by integrating out massless conifold
+hypermultiplets.
+
+\paragraph{Why four hypermultiplets do not suffice in the limit.}
+The KK gap is $1/R_{\rm aux}$. At any fixed positive energy cutoff,
+the number of Fourier modes of even one five-dimensional massless
+field grows without bound. Hence the four-dimensional truncation
+requires energies much smaller than $1/R_{\rm aux}$ and has no
+uniform cutoff as $R_{\rm aux}\to\infty$.
+
+Equations \eqref{eq:x9-circle-scaling-path}--\eqref{eq:x9-circle-geometric-limit}
+identify the limiting Coulomb-branch locus with the original
+five-dimensional cooperative contraction. They do not construct
+the interacting five-dimensional Higgs action or its finite-Planck
+metric. The choice of mirror crepant chamber and magnetic BPS
+survival also remain separate questions.

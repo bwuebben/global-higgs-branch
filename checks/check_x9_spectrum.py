@@ -178,7 +178,8 @@ assert facet_interior_points == {FACET_INTERIOR}
 # form the identity, so eliminating D_0,D_1,D_3,D_4 is integral and leaves
 # the saturated toric Picard basis (D_2,D_5,D_6,D_7,D_8,D_p).  The Batyrev
 # correction vanishes and its rank equals h11, so it is a complete H^2-basis
-# over Q.  Equality with the full integral H^2 lattice is not used.
+# over Q. Equality with the full free integral H^2 lattice is established
+# separately by check_x9_integral_screening.sage, not by this count.
 ray_matrix = Matrix.hstack(*(Matrix(v) for v in RAYS))
 pivot = (0, 1, 3, 4)
 free = (2, 5, 6, 7, 8, 9)

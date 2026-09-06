@@ -1,0 +1,353 @@
+\section{Stability and magnetic constituents}
+\label{subsec:x9-probe-transport}
+
+The two isolated sheaves remain stable for polarizations approaching
+the cooperative face. This statement concerns Gieseker stability;
+it does not assume its equivalence to physical stability at vanishing
+curve volume. Set
+\begin{equation}
+ J_\epsilon=aD_0+bD_1+\epsilon J_*,\qquad
+ a,b\geq0,\quad \epsilon>0.
+ \label{eq:x9-probe-approach}
+\end{equation}
+This class is ample. For $a+b>0$ it approaches the contraction as
+$\epsilon\to0$, with
+$J_\epsilon\cdot C_1=J_\epsilon\cdot C_2=\epsilon$.
+Substitution in \eqref{eq:x9-glued-stability} gives cubics in
+$(a,b,\epsilon)$ with nonnegative coefficients for all six subunions,
+for both $\mathcal F_2$ and $\mathcal F_R$. The coefficient of
+$\epsilon^3$ is the strictly positive entry in
+\eqref{eq:x9-glued-stability-data}. Explicit common lower bounds
+are printed in \eqref{eq:x9-transport-coefficients}.
+Thus neither sheaf crosses a Gieseker wall along
+\eqref{eq:x9-probe-approach}; its isolated contribution remains $+1$
+for every positive rational $\epsilon$ and rational $a,b\geq0$.
+
+The magnetic probe itself does not contract. Its limiting volume is
+\begin{equation}
+ \lim_{\epsilon\to0}\frac12J_\epsilon^2\cdot P_6
+ =7a^2+8ab+2b^2>0\qquad(a+b>0).
+ \label{eq:x9-probe-volume}
+\end{equation}
+Moreover, Gieseker stability is an asymptotic statement about the
+Hilbert polynomial for each fixed ample polarization. A physical
+large-volume approximation along $\lambda J_\epsilon$ requires, in
+particular, $\lambda\epsilon\gg1$ in string units. It is not uniform
+in the contraction limit at fixed $\lambda$. The calculation therefore
+removes a polarization-wall obstruction, but does not control quantum
+stability at the endpoint \cite[Appendix~B.2]{Alim:2010M5}.
+
+\paragraph{Circle momentum and spectral flow.}
+There are two different circle reductions in this paper. The elliptic
+fibration describes a six-dimensional theory reduced to five dimensions;
+its KK tower is represented by M2-branes on the elliptic fiber class
+$F$. The sheaf count instead compactifies a spatial direction of the
+five-dimensional M5 string on an auxiliary circle to obtain a
+four-dimensional D4--D2--D0 particle. D0 charge records momentum on
+this latter circle \cite[Section~2.1]{Alim:2010M5}. It must not be
+identified with the elliptic-fiber contribution in the six-dimensional dictionary.
+
+The relative D0 label also depends on the integral $B$-field frame.
+For a line-bundle class $\ell\in H^2(X,\ZZ)$, tensoring gives, in our
+Mukai convention,
+\begin{equation}
+ \begin{aligned}
+ (P,q,q_0)&\longmapsto
+ (P,q+P\ell,q_0+\ell\cdot q+\tfrac12P\ell^2),\\
+ (\gamma,\Delta q_0)&\longmapsto
+ (\gamma,\Delta q_0+\ell\cdot\gamma)
+ \end{aligned}
+ \label{eq:x9-probe-spectral-flow}
+\end{equation}
+for two charges with the same magnetic part $P$.
+The simultaneous change $B\mapsto B+\ell$ leaves
+$e^{-B}\Gamma$ unchanged; this is a change of charge frame, not a
+new physical state. It is the line-bundle form of spectral flow
+\cite[eq.~(2.7)]{Alim:2010M5}, with the D0 sign fixed by our
+definition of $\Gamma$.
+Here
+\begin{equation}
+ P_6D_5=F,\qquad D_5^2=0,\qquad
+ D_5\cdot C_2=D_5\cdot R=1.
+ \label{eq:x9-probe-flow-class}
+\end{equation}
+Consequently $\ell=D_5$ changes the relative labels $(C_2,-1)$ and
+$(R,-1)$ to $(C_2,0)$ and $(R,0)$, while adding $F$ to the seed's
+D2 charge. A nonzero raw D0 shift is therefore not an invariant
+obstruction. This relabeling neither supplies a state at the original
+seed-plus-root charge in the original $B=0$ frame nor extracts a
+five-dimensional particle from a wrapped magnetic string.
+Decompactifying the auxiliary circle also removes the finite momentum
+spacing, but makes the wrapped magnetic particle an extended string;
+its excitation count is not thereby a bulk particle index.
+
+\paragraph{A fixed-charge path crosses a magnetic slope wall.}
+Varying $B$ while keeping the sheaves and their charges fixed is
+different from the simultaneous transformation above. Take
+$B=-sD_5$, $0\leq s\leq1$, and define the twisted Hilbert polynomial
+by $P_{B,J}(\mathcal F;m)=\int_X e^{-B}\operatorname{ch}(\mathcal F)
+e^{mJ}\operatorname{Td}(X)$. For a subunion $U$, its strict
+linear-coefficient comparison becomes
+\begin{equation}
+ \delta_{\mathcal F,s}(U)=\delta_{\mathcal F,0}(U)
+ +2s\big[(J\cdot F)(J^2\cdot U)
+             -(J\cdot D_5U)(J^2\cdot T)\big],
+ \qquad T=P_6.
+ \label{eq:x9-probe-b-wall}
+\end{equation}
+All the flux $D_5T=F$ lies on $D_4$. The first vanishing comparison
+is therefore the one for $U=D_4$, at
+\begin{equation}
+ s_{\mathcal F}(J)=
+ \frac{\delta_{\mathcal F,0}(D_4)}
+ {2(J\cdot F)\,J^2\cdot(D_7+D_8)}\in(0,1).
+ \label{eq:x9-probe-first-wall}
+\end{equation}
+To check that this is first, multiply each of the other five
+comparisons at this value by the positive denominator. Their
+expansions in $(a,b,\epsilon)$ have nonnegative coefficients and
+strictly positive $\epsilon^6$ coefficients. Also
+$\delta_{\mathcal F,1}(D_4)$ has strictly negative coefficients
+on every nonzero monomial. The intersections printed in Appendix~\ref{app:probe-data}
+and \eqref{eq:x9-probe-b-wall} determine these polynomial tests.
+In particular,
+\begin{equation}
+ \begin{aligned}
+ s_{\mathcal F_2}(J_*)&=\frac{77}{104},&
+ s_{\mathcal F_R}(J_*)&=\frac{165}{208},\\
+ \lim_{\epsilon\to0}s_{\mathcal F}(J_\epsilon)
+ &=\frac{7a^2+8ab+2b^2}{11a^2+10ab+2b^2}.
+ \end{aligned}
+ \label{eq:x9-probe-wall-values}
+\end{equation}
+The limiting value is $17/23$ on the interior ray $a=b$.
+Both sheaves are twisted-Gieseker stable before their stated slope
+wall and unstable after it. At the wall itself the constant Hilbert
+coefficient must also be compared; no claim of Gieseker
+semistability there is needed.
+
+The destabilizing subsheaf and the extension are explicit. Write
+$V=D_7+D_8$ and
+$\mathcal G=\cO_{D_4}(C_2+K_{D_4})$. The component gluing gives
+\begin{equation}
+ \begin{aligned}
+ 0&\longrightarrow\mathcal G\longrightarrow\mathcal F_2
+       \longrightarrow\cO_V\longrightarrow0,\\
+ 0&\longrightarrow\mathcal G\longrightarrow\mathcal F_R
+       \longrightarrow\cO_V(P_6)\longrightarrow0.
+ \end{aligned}
+ \label{eq:x9-probe-magnetic-extension}
+\end{equation}
+These are nontrivial extensions, unique up to scalar. Indeed
+$H^*(\mathcal G)=0$ and $H^*(\mathcal G(V))=\CC$ in degree zero:
+on the rational elliptic surface $D_4$, the two line bundles are
+$\cO(C_2-F)$ and $\cO(C_2)$. The divisor resolution of $\cO_V$
+then gives $\operatorname{Ext}^1_X(\cO_V,\mathcal G)=\CC$ and
+vanishing in other degrees. The same holds for $\cO_V(P_6)$ because
+$\cO_{D_4}(P_6)$ is trivial. The two magnetic charges are $D_4$ and
+$V$, with Dirac pairing $-1$ in our convention. This is a split of
+the magnetic support, not emission of a purely electric cooperative
+particle.
+
+For comparison, the polynomial large-volume central charge
+$Z_{\rm LV}=-\int_Xe^{-(B+iJ)}\Gamma$
+\cite[Appendix~A, eq.~(A.9)]{Denef:2007Halos} gives relative values
+\begin{equation}
+ \Delta Z_{2,\rm LV}=1-s+i\epsilon,\qquad
+ \Delta Z_{R,\rm LV}=1-s+2i\epsilon.
+ \label{eq:x9-probe-relative-central}
+\end{equation}
+The fixed-charge path thus encounters the magnetic slope wall before
+the real term cancels at $s=1$. This is a controlled large-volume
+comparison, not an exact marginal-stability wall at the contraction.
+We next determine the associated two-constituent contribution
+near large volume and the persistence of its phase alignment.
+
+\subsection{Magnetic bound states near large volume}
+\label{subsec:x9-probe-phase-wall}
+
+The magnetic splitting in \eqref{eq:x9-probe-magnetic-extension}
+admits a two-constituent bound-state calculation near large volume.
+It also gives a transverse phase alignment that persists under
+sufficiently small quantum corrections. Neither statement requires
+extrapolating Gieseker stability to the contraction.
+
+\paragraph{Rigid constituents and one extension mode.}
+Write $A=D_4$, $V=D_7+D_8$, $\mathcal H_2=\cO_V$ and
+$\mathcal H_R=\cO_V(T)$. All three constituents
+$\mathcal G,\mathcal H_2,\mathcal H_R$ are spherical: their
+self-Ext groups are $\CC$ in degrees zero and three and vanish in
+degrees one and two. For $\mathcal G$, this follows from
+$H^1(A,\cO_A)=H^0(A,K_A)=0$ on the rational elliptic surface.
+For either extension $0\to\mathcal G\to\mathcal F\to\mathcal H\to0$,
+the cross-Ext calculation above and Serre duality give
+\begin{equation}
+ \operatorname{RHom}_X(\mathcal H,\mathcal G)=\CC[-1],
+ \qquad
+ \operatorname{RHom}_X(\mathcal G,\mathcal H)=\CC[-2].
+ \label{eq:x9-probe-cross-ext}
+\end{equation}
+The connecting map
+$\operatorname{Ext}^2(\mathcal G,\mathcal H)\to
+\operatorname{Ext}^3(\mathcal G,\mathcal G)$ is an isomorphism:
+its Serre-dual map sends the identity of $\mathcal G$ to the
+nonzero extension class. Thus
+$\operatorname{RHom}(\mathcal G,\mathcal F)=\CC$ in degree zero,
+and $\mathcal H$ is the spherical twist of $\mathcal F$ about
+$\mathcal G$. The autoequivalence
+\cite[Theorem~1.2]{Seidel:2001Twists} and the rigidity of
+$\mathcal F$ prove the assertion for $\mathcal H$.
+
+The factors are also twisted-Gieseker stable along the polarizations
+\eqref{eq:x9-probe-approach} and $B=-sD_5$. Stability of
+$\mathcal G$ follows from rank one on the integral surface $A$.
+For $\mathcal H=\cO_V(L)$, where $L=0$ or $T$, the maximal
+subsheaf on $U=D_7$ or $D_8$ is $\cO_U(L-(V-U))$. Put
+$q_U=U(L-(V-U))-U^2/2$. Its strict slope comparison is
+\begin{equation}
+ (J_\epsilon\cdot q_{\mathcal H})(J_\epsilon^2\cdot U)
+ -(J_\epsilon\cdot q_U)(J_\epsilon^2\cdot V)>0.
+ \label{eq:x9-probe-factor-stability}
+\end{equation}
+Each of these four cubics has nonnegative coefficients in
+$(a,b,\epsilon)$; their $\epsilon^3$ coefficients, in the order
+$(\mathcal H_2,D_7),(\mathcal H_2,D_8),
+(\mathcal H_R,D_7),(\mathcal H_R,D_8)$, are
+$(422,282,419,285)$. These inequalities are independent of $s$
+because $D_5V=0$. Proper subsheaves of full multirank have a
+nonzero lower-dimensional quotient and cannot destabilize.
+
+\paragraph{Phase alignment including the D0 terms.}
+Fix $J_\epsilon$ and use $t=-sD_5+i\lambda J_\epsilon$.
+Define $v_A=J_\epsilon^2A/2$, $v_V=J_\epsilon^2V/2$,
+$f=J_\epsilon\cdot F$, $g=J_\epsilon\cdot q_{\mathcal G}$ and
+$h=J_\epsilon\cdot q_{\mathcal H}$. Their values are
+\begin{equation}
+ \begin{aligned}
+ v_A&=\tfrac32a^2+3ab+b^2+21a\epsilon+17b\epsilon
+                         +\tfrac{121}{2}\epsilon^2,\\
+ v_V&=\tfrac{11}{2}a^2+5ab+b^2+45a\epsilon+19b\epsilon
+                         +88\epsilon^2,\\
+ f&=3a+2b+13\epsilon,\qquad
+ g=-\tfrac12(3a+2b+11\epsilon),\\
+ h_2&=\tfrac12(3a+2b+12\epsilon),\qquad
+ h_R=\tfrac12(3a+2b+14\epsilon).
+ \end{aligned}
+ \label{eq:x9-probe-phase-data}
+\end{equation}
+The polynomial central charges, with the Mukai D0 terms retained,
+are therefore
+\begin{equation}
+ Z_{\mathcal G,\rm LV}=\lambda^2v_A-s+\tfrac12
+                   +i\lambda(g+sf),\qquad
+ Z_{\mathcal H,\rm LV}=\lambda^2v_V-\tfrac5{12}+i\lambda h.
+ \label{eq:x9-probe-factor-central}
+\end{equation}
+Set $K=fv_V>0$ and $C=v_Ah-v_Vg$. Direct multiplication gives
+\begin{equation}
+ \begin{aligned}
+ \operatorname{Im}(Z_{\mathcal G,\rm LV}
+                     \overline{Z_{\mathcal H,\rm LV}})
+ &=\lambda\big[(\lambda^2K+h-\tfrac5{12}f)s
+                  -\lambda^2C-\tfrac5{12}g-\tfrac12h\big],\\
+ s_{\mathcal F}^{\rm pol}(\lambda)
+ &=\frac{\lambda^2C+\tfrac5{12}g+\tfrac12h}
+         {\lambda^2K+h-\tfrac5{12}f}.
+ \end{aligned}
+ \label{eq:x9-probe-polynomial-wall}
+\end{equation}
+Here $4C=\delta_{\mathcal F,0}(A)$ and $4K$ is the denominator
+in \eqref{eq:x9-probe-first-wall}. Hence this alignment approaches
+the slope wall with an $O(\lambda^{-2})$ correction. At $J_*$,
+\begin{equation}
+ s_2^{\rm pol}(\lambda)=\frac{20328\lambda^2+17}{27456\lambda^2+14},
+ \qquad
+ s_R^{\rm pol}(\lambda)=\frac{21780\lambda^2+29}{27456\lambda^2+38}.
+ \label{eq:x9-probe-finite-wall}
+\end{equation}
+Both lie in $(0,1)$ for $\lambda\geq1$. Their derivatives of the
+alignment function with respect to $s$ are strictly positive.
+The real parts of both constituent central charges are positive
+there, so the solutions describe equal phases, not opposite phases.
+The same conclusions hold for any fixed $J_\epsilon$ and sufficiently
+large $\lambda$.
+
+\paragraph{Quantum corrections and the local bound-state index.}
+Choose flat period coordinates $t^I=X^I/X^0$ in the large-volume
+charge frame, and divide the holomorphic central charge by $X^0$.
+For zero D6 charge its form is
+\begin{equation}
+ Z(0,P,q,q_0;t)=-\tfrac12P t^2+q\cdot t-q_0+\Psi_P(t),
+ \label{eq:x9-probe-quantum-period}
+\end{equation}
+where $\Psi_P$ is linear in $P$ and contains the worldsheet-instanton
+corrections to the magnetic periods
+\cite[Appendix~B.2]{Alim:2010M5}. The polynomial charge convention
+is the one used in \eqref{eq:x9-probe-factor-central}; no additional
+$c_2$ shift is added to its D0 terms. Specify the path by
+$t=-sD_5+i\lambda J_\epsilon$ in these flat coordinates.
+For fixed ample $J_\epsilon$, the convergent large-volume period
+expansion makes $\Psi_A,\Psi_V$ and their $s$ derivatives
+$O(e^{-c\lambda})$ for some $c>0$, uniformly on a bounded
+$s$ interval.
+
+The correction to the first line of
+\eqref{eq:x9-probe-polynomial-wall} is then
+$O(\lambda^2e^{-c\lambda})$, whereas its transverse derivative
+is $\lambda^3K+O(\lambda)$. The implicit-function argument gives
+a unique nearby exact alignment, with
+\begin{equation}
+ s_{\mathcal F}^{\rm exact}(\lambda)
+ =s_{\mathcal F}^{\rm pol}(\lambda)
+       +O(\lambda^{-1}e^{-c\lambda}).
+ \label{eq:x9-probe-asymptotic-wall}
+\end{equation}
+The same-phase inequality remains strict, since
+$\operatorname{Re}(Z_{\mathcal G}\overline{Z_{\mathcal H}})
+=\lambda^4v_Av_V+O(\lambda^2)>0$.
+This proves persistence of the alignment near large volume without
+evaluating the quantum periods. The estimate is not uniform at the contraction.
+
+Under the usual large-volume identification of these stable sheaves
+with BPS branes, the two-constituent sector near alignment has one
+chiral extension mode $x$, no adjoint deformation modes and no
+oriented cycle. Its quiver quantum mechanics has dimension vector
+$(1,1)$ and no superpotential. With the sign convention
+$\zeta\propto-\operatorname{Im}(Z_{\mathcal G}
+\overline{Z_{\mathcal H}})$, its relative D-term equation is
+\begin{equation}
+ |x|^2=\zeta,\qquad
+ \mathcal M_{\rm rel}=
+ \begin{cases}
+  \{\mathrm{pt}\},&\zeta>0,\\
+  \varnothing,&\zeta<0.
+ \end{cases}
+ \label{eq:x9-probe-quiver-wall}
+\end{equation}
+At $\zeta=0$ the constituents can separate and the bound state is
+at threshold. The relative index is consequently one below the
+nearby wall in $s$ and zero above it. Equivalently the two-constituent
+contribution to the index jump, oriented from the unbound to the
+bound side, is $+1$: both isolated constituent contributions are
+$+1$ and $|\langle\Gamma_{\mathcal G},\Gamma_{\mathcal H}\rangle|=1$.
+This agrees with the primitive wall-crossing factor
+\cite[Section~4.2 and eq.~(5.3)]{Denef:2007Halos}.
+It is a contribution from specified rigid constituents, not the
+complete invariant of either constituent charge or of their sum.
+
+One quantum-period identity needs no expansion. Since the charged
+sheaf and the seed have the same magnetic charge, their magnetic
+periods cancel exactly:
+\begin{equation}
+ \Delta Z_2=1+t\cdot C_2,\qquad
+ \Delta Z_R=1+t\cdot R.
+ \label{eq:x9-probe-exact-electric-difference}
+\end{equation}
+These equal $1-s+i\lambda\epsilon$ and
+$1-s+2i\lambda\epsilon$ on the specified flat-coordinate path.
+The identity does not assert that a BPS particle of the difference
+charge exists, or identify the classical contraction with a particular
+quantum-period value. In particular, the bounds above are for fixed
+$\epsilon>0$ and are not uniform as $\epsilon\to0$ at fixed
+$\lambda$. Section~\ref{subsec:x9-mirror-periods} evaluates their endpoint
+phase sign using the continued periods of the companion paper.

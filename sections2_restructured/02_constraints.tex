@@ -1,0 +1,188 @@
+\section{Compact charge constraints}
+\label{sec:compact-gauging}\label{sec:local-sectors}
+
+\subsection{Wrapped-brane charges and deformation coordinates}
+\label{subsec:m2-charges}
+
+Let $\pi:\wideX\to X$ be a projective crepant resolution of a
+compact Calabi--Yau threefold with isolated singularities. In an
+integral divisor basis, the three-form reduction and wrapped-M2
+coupling are
+\begin{equation}
+ C_3=\sum_I A^I\wedge\omega_I+\cdots,\qquad
+ q_I(C)=\int_C\omega_I=D_I C.
+ \label{eq:c3-reduction}
+\end{equation}
+For a resolved node the exceptional curve supports the conifold
+hypermultiplet \cite{Greene:1995hu,Katz:1996,Mohaupt:2004de}.
+In one complex structure its scalars $(h,\widetilde h)$ have
+opposite charges, and the invariant deformation coordinate is
+\begin{equation}
+ u=h\widetilde h,\qquad xy-zw=u.
+ \label{eq:conifold-map}
+\end{equation}
+For $u=|u|e^{i\theta}$, taking
+$(h,\widetilde h)=\sqrt{|u|}(e^{i\theta},1)$ also sets the
+real moment map to zero.
+
+The anticanonical cone over $S_7=\operatorname{Bl}_2\mathbb P^2$
+engineers the rank-one $E_2$ theory, with flavor algebra
+$\mathfrak{su}(2)\oplus\mathfrak u(1)$
+\cite{Seiberg:1996,Morrison:1996pp}. Its reduced Higgs ring is
+\begin{equation}
+ \CC[J_+,J_0,J_-]/(J_+J_--J_0^2),\qquad \beta=J_0.
+ \label{eq:e2-reduced}
+\end{equation}
+The operators $J_\pm$ are the instanton currents in its
+$SU(2)$ gauge-theory deformation with one flavor
+\cite{Cremonesi:2015lsa}. The geometric deformation coordinate
+$\beta$ is the Cartan invariant, not the whole two-complex-dimensional
+Higgs cone. Normalize its effective Cartan action to give $J_+$
+charge one. On the double cover,
+\begin{equation}
+ (J_+,J_0,J_-)=(a^2,ab,b^2)/2,\quad(a,b)\sim(-a,-b),\qquad
+ \mu^{\mathbb R}=\tfrac14(|a|^2-|b|^2).
+ \label{eq:e2-double-cover}
+\end{equation}
+Equal absolute values again lift every complex $\beta$ at zero
+real moment map. The cover coordinates are not chiral-ring
+generators. The full ring also contains a nilpotent operator;
+its scheme-theoretic role is recorded in Appendix~\ref{app:deformations}.
+
+For the root $R=e_1-e_2$ on $S_7$, the compact charge of the
+raising current is the difference of the two exceptional-curve
+charges:
+\begin{equation}
+ q_I(e_1)-q_I(e_2)=D_I\iota_*R.
+ \label{eq:e2-charge-difference}
+\end{equation}
+It is not twice this difference. In the standard $SU(2)$ Cartan
+normalization, where a root has weight two, the corresponding
+coefficient is $\tfrac12D_I\iota_*R$. The effective action on
+the reduced ring need not by itself extend to all states;
+Appendix~\ref{app:integral-charges} checks the extension in $X_9$
+using the diagonal center identification with the other Abelian
+and Coulomb factors.
+
+The degree-six del Pezzo cone similarly has $E_3$ flavor algebra
+$\mathfrak{su}(3)\oplus\mathfrak{su}(2)$. Its two reduced
+deformation components are a Cartan plane and a Cartan line,
+corresponding to the $A_2$ and $A_1$ root sublattices of
+$K_{S_6}^\perp$. A \emph{branch profile} $\sigma$ chooses one
+component at each such point. No $E_3$ point occurs in $X_9$;
+the branchwise formulation is useful for stating the general
+comparison precisely.
+
+\subsection{The rigid and geometric constraints}
+
+Let $\mathcal B_\sigma$ be the direct sum of the nodal lines,
+the reduced $E_2$ lines and the selected $E_3$ Cartan spaces.
+Choose compatible root-marked coordinates. The map
+\begin{equation}
+ Q_{X,\sigma}:\mathcal B_\sigma\longrightarrow
+ H^2(\wideX;\QQ)^\vee\otimes\CC
+ \label{eq:compact-charge-map}
+\end{equation}
+has columns the divisor pairings with exceptional nodal curves
+and the pushforwards of the selected roots. Since moment maps
+add under diagonal gauging, its components are the total complex
+moment maps of the rigid local-sector model
+\cite{Ceresole:2000}.
+
+\begin{proposition}\label{prop:physical-kernel}
+The image of the zero-level rigid triplet-moment-map quotient
+in the invariant coordinates $\mathcal B_\sigma$ is
+$\ker Q_{X,\sigma}$.
+\end{proposition}
+\begin{proof}
+The complex moment-map equations give one inclusion. Conversely,
+lift each coordinate of a vector in the kernel by the balanced
+representatives above. For an $E_3$ component use the rank-one
+ADHM representative with $|q_i|=|\widetilde q_i|$ and
+$\sum_iq_i\widetilde q_i=0$, as detailed in
+Appendix~\ref{app:deformations}. Each local real Cartan moment
+map vanishes separately, and the complex equations vanish by
+the kernel condition. Quotienting does not change these invariant
+coordinate values.
+\end{proof}
+
+The same kernel has a geometric interpretation. We use the fan
+polytope convention: $\mathbb P_\Delta$ is defined by cones over
+faces of a reflexive $\Delta\subset\ZZ^4\otimes\mathbb R$;
+the polar $\Delta^\circ$ is its anticanonical Newton polytope.
+Call $\Delta$ admissible when every edge has lattice length one,
+its two-faces are unimodular triangles, unit squares or unit-edge
+pentagons/hexagons with one interior lattice point, and every dual
+edge of a singular two-face has length one. A $\Delta$-regular
+anticanonical hypersurface then has exactly the isolated local
+germs just described. These hypotheses make the ambient divisor
+calculation detect the full rational kernel
+\cite{Batyrev:1994,Wuebben:2026obstruction}.
+
+\begin{theorem}\label{thm:first-order-image}
+Let $X$ be such a hypersurface, with $\omega_X\cong\mathcal O_X$,
+$h^1(X,\mathcal O_X)=0$, and a projective crepant resolution.
+Identifying each branch tangent space with its root-marked
+invariant coordinates, the image of the global first-order
+deformation space $\mathbb T_X^1$ satisfies
+\begin{equation}
+ \operatorname{im}\left(\mathbb T_X^1\longrightarrow
+                     \bigoplus_pT^1_{X,p}\right)
+       \cap\mathcal B_\sigma=\ker Q_{X,\sigma}.
+ \label{eq:first-order-image-theorem}
+\end{equation}
+\end{theorem}
+The proof in Appendix~\ref{app:deformations} identifies the
+local-to-global obstruction map with the pushforward of link
+classes. Combined with Proposition~\ref{prop:physical-kernel},
+it identifies two images in $\mathcal B_\sigma$; it does not
+identify the entire Higgs branch with a complex vector space.
+
+A vanishing-period argument also imposes a necessary relation on
+an analytic smoothing, even when its first derivative vanishes:
+the branch kernel must project nontrivially to every node,
+every $E_2$ point and every line-smoothed $E_3$ point. The precise
+statement is given in Appendix~\ref{app:deformations}. It gives
+no all-orders conclusion on the two-dimensional $E_3$ component.
+Nor does first-order lifting prove general integrability. The
+actual $X_9$ smoothing will be supplied independently in
+Section~\ref{subsec:x9}.
+
+\subsection{The finite-Planck qualification}
+\label{subsec:supergravity-qualification}
+
+The charges are exact compactification data, whereas
+Proposition~\ref{prop:physical-kernel} uses rigid hyperk\"ahler
+cones. A compact supergravity hypermultiplet manifold is instead
+quaternionic K\"ahler. Consider a two-derivative description with
+Abelian hypermultiplet-isometry gaugings, neutral vector scalars
+and no tensor multiplets. Let $P_I^r$ be the quaternionic moment
+maps, $k_I^X$ the Killing vectors, and $h^I$ the very-special
+coordinates normalized by $\kappa_{IJK}h^Ih^Jh^K=6$.
+At constant scalars and zero field strengths, the fermion shifts
+give the fully supersymmetric Minkowski conditions
+\cite{Ceresole:2000,Mohaupt:2004de}
+\begin{equation}
+ h^IP_I^r=0,\qquad h_x^IP_I^r=0,\qquad h^Ik_I^X=0.
+ \label{eq:compact-susy-shifts}
+\end{equation}
+At a regular point, $h^I$ and its independent tangent vectors
+$h_x^I$ span the full vector space: the cubic gradient annihilates
+the tangents but has nonzero pairing with $h^I$. Hence
+\begin{equation}
+ P_I^r=0\ \hbox{for all }I,r,\qquad h^Ik_I^X=0.
+ \label{eq:compact-quaternionic-vacua}
+\end{equation}
+Gravity does not replace these individual equations by only the
+graviphoton combination. On the relevant massless locus the
+hyperino condition can vanish for the transition-sector charges;
+the quaternionic moment-map equations remain.
+
+The charge embedding alone does not construct the nonlinear map
+from $P_I^r$ to the rigid coordinates or a smooth hypermultiplet
+action at the interacting $E_2$ point. Explicit conifold
+supergravity models already approximate this metric
+\cite{Mohaupt:2004de}. We therefore keep three statements separate:
+the rigid invariant-coordinate constraint, the compact geometric
+smoothing, and the exact vector-sector comparison. The first two
+do not supply the missing quaternionic dictionary.

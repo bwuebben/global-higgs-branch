@@ -1,0 +1,178 @@
+\section{Gravity-decoupling limits}
+\label{sec:decoupling}
+
+\subsection{Dynamical vectors and local scales}
+\label{subsec:dynamic-background}
+
+At finite compact volume, every harmonic two-form has finite norm and
+supplies a dynamical vector in the reduction of $C_3$
+\cite{Cadavid:1995bk}. At the contraction, the graviphoton direction
+pairs trivially with the exceptional curves, so the two nonzero rows
+of \eqref{eq:x9-effective-vectors} belong to vector multiplets.
+A gravity-decoupling limit can instead turn these vectors into
+background flavor sources. Whether their constraint survives is
+therefore a question about the full kinetic form, not the charge
+matrix alone.
+
+Work at fixed eleven-dimensional Planck length. For a divisor
+combination $P$ the inverse coupling, up to one common normalization,
+is the Hodge norm
+\begin{equation}
+ \mathcal N_P(J)=\int_{\wideX_9}\omega_P\wedge *_J\omega_P
+ =-JP^2+\frac{(J^2P)^2}{4\mathcal V},\qquad
+ \mathcal V=\frac{J^3}{6}.
+ \label{eq:norm-formula}
+\end{equation}
+This follows from Lefschetz decomposition of harmonic $(1,1)$-forms
+\cite{Candelas:1990pi,Strominger:1990pd}. A retained vector needs a
+finite nonzero norm in the local units. A mode of divergent norm has
+vanishing canonically normalized coupling to a fixed local current.
+Once the decoupled vector is omitted, its moment-map equation is not
+imposed on the limiting local theory. All vector mixing must be
+included in this test.
+
+We consider K\"ahler paths with
+\begin{equation}
+ \mathcal V\longrightarrow\infty,\qquad
+ J C_1,\ J C_2,\ J|_E\ \hbox{bounded}.
+ \label{eq:gravity-decoupling}
+\end{equation}
+The first condition decouples five-dimensional gravity; the others
+keep the local particle and surface scales bounded. These hypotheses
+are essential. The finite-volume circle limit of
+Section~\ref{subsec:x9-circle-limit} is a different operation.
+
+\subsection{The allowed nef face and retained vectors}
+\label{subsec:x9-rigid-limits}
+
+The linear space annihilating the local scales is
+\begin{equation}
+ H=\{w:wC_1=wC_2=0,\ w|_E=0\}
+   =\operatorname{span}(D_0,D_1).
+ \label{eq:local-scale-plane}
+\end{equation}
+It is also the pullback of $H^2(X_9;\QQ)$ to the resolution.
+
+\begin{proposition}\label{prop:local-scale-face}
+The intersection of the nef cone with $H$ is
+$\mathbb R_{\geq0}D_0+\mathbb R_{\geq0}D_1$.
+\end{proposition}
+\begin{proof}
+Both generators are restrictions of nef toric divisors. The effective
+curves $D_1D_8|_{\wideX_9}$ and $D_0D_2|_{\wideX_9}$ have
+$(D_0,D_1)$ pairings $(0,1)$ and $(4,0)$, respectively. Hence a
+nef combination $\alpha D_0+\beta D_1$ must have
+$\alpha,\beta\geq0$, proving the reverse inclusion.
+\end{proof}
+
+\begin{lemma}\label{lem:dynamical-subspace}
+For a path satisfying \eqref{eq:gravity-decoupling}, each normalized
+accumulation direction is a nonzero element
+$w=\alpha D_0+\beta D_1$ of this cone and has $w^3>0$.
+If $\mathcal N_P$ stays bounded along a subsequence with direction
+$w$, then $wP=0$ in $H^4(\wideX_9;\mathbb R)$. Conversely, along
+$J=J_*+\Lambda w$, every $P\in\operatorname{ann}(w)$ has
+$\mathcal N_P\to-J_*P^2$.
+\end{lemma}
+\begin{proof}
+The local pairings define a linear map with kernel $H$.
+Their boundedness bounds the transverse component of $J$, while
+divergent volume forces its $H$ component to diverge. Its normalized
+limits lie in the nef face. The cubic
+\eqref{eq:x9-inherited-cubic} is positive on every nonzero ray there.
+Writing $J=s(w+o(1))$, $s\to\infty$, gives
+\begin{equation}
+ \mathcal N_P=s\left[-wP^2+\frac{3(w^2P)^2}{2w^3}\right]+o(s).
+\end{equation}
+The Hodge index inequality, extended to nef $w$ by continuity,
+is $(w^2P)^2\geq w^3(wP^2)$. The bracket is thus at least
+$(w^2P)^2/(2w^3)\geq0$. Boundedness forces $w^2P=wP^2=0$.
+The form $wPQ$ is negative semidefinite on $w^2P=0$;
+a vector of zero square lies in its radical. Since $w^3>0$,
+orthogonality also to $w$ gives $wP=0$ in $H^4$.
+For the converse, both $JP^2$ and $J^2P$ are independent of
+$\Lambda$ when $wP=0$, and the denominator in
+\eqref{eq:norm-formula} diverges.
+\end{proof}
+
+\begin{theorem}\label{thm:no-rigid-limit}
+No gravity-decoupling path satisfying \eqref{eq:gravity-decoupling}
+retains the $E_2$ Cartan gauging of $X_9$. In particular the norms
+of $V_1=-D_6$ and $V_2=D_5$ diverge. The maximal retained subspaces
+for each leading direction, realized on straight K\"ahler rays,
+have the following charge rows on $(u_1,u_2,\beta)$:
+\begin{equation}
+\begin{array}{c|c|c|c}
+ w&\operatorname{ann}(w)&\hbox{nonzero charge row}&\rank Q_{\rm dyn}\\\hline
+ D_1&\operatorname{span}(D_2,E)&(1,-1,0)&1\\
+ D_0&\operatorname{span}(D_8,E)&\hbox{none}&0\\
+ \alpha D_0+\beta D_1,\ \alpha\beta>0&\operatorname{span}(E)&\hbox{none}&0 .
+\end{array}
+\label{eq:x9-limit-table}
+\end{equation}
+\end{theorem}
+\begin{proof}
+The intersection form gives the annihilators in
+\eqref{eq:x9-limit-table}; the charge rows follow from
+\eqref{eq:x9-full-matrix}. None pairs nontrivially with $R$.
+The lemma bounds the retained subspace of any path by the appropriate
+annihilator. Further divergent subleading scales may remove vectors,
+but cannot restore a root-charged one.
+For a straight ray take $J_*=(6,18,16,-11,-8,7)$ in the basis
+$\mathcal D$. The limiting norm matrices are
+$\operatorname{diag}(14,11)$ on $(D_2,E)$ for $w=D_1$, and
+$\left(\begin{smallmatrix}5&-1\\-1&11\end{smallmatrix}\right)$
+on $(D_8,E)$ for $w=D_0$; on the interior ray the $E$ norm is
+$11$. They are positive definite and realize the listed subspaces.
+Neither $D_5$ nor $D_6$ belongs to an annihilator, so their norms
+cannot stay bounded on any diverging sequence satisfying the hypotheses.
+\end{proof}
+
+Thus a local limit may retain $u_1=u_2$, but never
+$u_1=u_2=-\beta$. Other compactifications can retain common
+compact surfaces and shared gauging after gravity decouples
+\cite{Apruzzi:2019vpe,Cvetic:2023plv}; the theorem is specific to
+the cone and local-scale conditions of $X_9$.
+
+\subsection{Current exchange with vector mixing}
+\label{subsec:x9-current-exchange}
+
+The inverse kinetic matrix makes the loss of the interaction explicit.
+For $J=t^ID_I$ set $L_{IJ}=\kappa_{IJK}t^K$ and $v=Lt$.
+Polarization of \eqref{eq:norm-formula} gives
+\begin{equation}
+ G=-L+\frac{vv^{\mathsf T}}{4\mathcal V},\qquad
+ G^{-1}=-L^{-1}+\frac{tt^{\mathsf T}}{2\mathcal V}.
+ \label{eq:x9-full-inverse}
+\end{equation}
+Multiplication verifies the second identity using
+$t^{\mathsf T}Lt=6\mathcal V$. Let $C$ be the first two columns
+of \eqref{eq:x9-full-matrix}. The exchange coefficient of the
+two corresponding currents is $\mathsf H=C^{\mathsf T}G^{-1}C$,
+including all six vector fields. On $J=J_*+\Lambda w$,
+\begin{equation}
+ (1,1)\mathsf H_w(1,1)^{\mathsf T}
+ =\begin{cases}
+  2/(3\Lambda)+O(\Lambda^{-2}),&w=D_0,\\
+  1/\Lambda+O(\Lambda^{-2}),&w=D_1,\\
+  2/(5\Lambda)+O(\Lambda^{-2}),&w=D_0+D_1.
+ \end{cases}
+ \label{eq:x9-root-exchange}
+\end{equation}
+The full matrices are printed in Appendix~\ref{app:integral-charges}.
+For $w=D_1$ the difference current retains a finite coupling,
+but the shared root current still decouples. Removing the graviphoton
+subtracts $tt^{\mathsf T}/(3\mathcal V)$ from $G^{-1}$; its
+contribution to $\mathsf H$ is $O(\Lambda^{-3})$, leaving
+\eqref{eq:x9-root-exchange} unchanged.
+
+At every finite $\Lambda$, $\mathsf H$ is positive definite, so
+$(Q^{\rm eff}b)^\dagger\mathsf H(Q^{\rm eff}b)$ has kernel
+$\CC(-1,-1,1)$. Its limiting matrix has the larger kernel
+$\{u_1=u_2\}$ on the $D_1$ ray and $\CC^3$ on the other two.
+The vacuum constraint of the limiting local theory therefore need
+not be the limit of the finite-coupling constraint. This quadratic
+expression only diagnoses the rigid moment maps: the chosen $J_*$
+leaves $JC_1=JC_2=1$, so these rays are not themselves Higgs vacua.
+At finite Planck mass the full conditions of
+\eqref{eq:compact-quaternionic-vacua} are still required.

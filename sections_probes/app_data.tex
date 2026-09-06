@@ -1,0 +1,66 @@
+\section{Intersection and stability data}
+\label{app:probe-data}
+The resolved fan and its primitive lattices are specified in
+\cite[Appendix~B]{Wuebben:2026quantum}. In the ordered basis
+$\mathcal D$, with $D_9=E$, the nonzero cubic entries are
+\begin{equation}
+\begin{array}{cc|cc|cc|cc}
+ IJK&\kappa_{IJK}&IJK&\kappa_{IJK}&IJK&\kappa_{IJK}&IJK&\kappa_{IJK}\\\hline
+ 222&8&266&1&667&-1&788&-6\\
+ 225&-2&267&1&677&-1&888&8\\
+ 226&-3&569&1&699&-2&889&-1\\
+ 227&-2&599&-2&777&-3&899&-1\\
+ 256&1&666&-1&778&4&999&7
+\end{array}
+\label{eq:x9-full-cubic-data}
+\end{equation}
+All permutations agree and omitted entries vanish.
+The second-Chern pairings in this basis are
+\[
+ c_2(X)\cdot\mathcal D=(-4,24,26,18,-4,-2).
+\]
+The remaining divisors are
+\begin{equation}
+\begin{aligned}
+ D_0&=D_2+4D_5+4D_6-3D_7-2D_8+2E,\\
+ D_1&=D_2+2D_5+2D_6-D_7-D_8+E,\\
+ D_3&=D_5-D_7-D_8,\qquad D_4=D_6-D_7-D_8.
+\end{aligned}
+\end{equation}
+The two nodal curves pair with $\mathcal D$ as
+$C_1=(1,0,-1,-1,0,0)$ and $C_2=(-1,1,0,1,0,0)$.
+
+For the stability argument of Section~\ref{subsec:x9-probe-transport},
+let $Q_U$ have the coefficients below in the ordered monomials
+$(a^3,a^2b,ab^2,b^3,a^2\epsilon,ab\epsilon,b^2\epsilon,
+a\epsilon^2,b\epsilon^2,\epsilon^3)$. The subunion order is that of
+\eqref{eq:x9-glued-stability-data}.
+\begingroup\small\setlength{\arraycolsep}{3pt}
+\begin{equation}
+\begin{array}{c|rrrrrrrrrr}
+ U& a^3&a^2b&ab^2&b^3&a^2\epsilon&ab\epsilon&b^2\epsilon
+ &a\epsilon^2&b\epsilon^2&\epsilon^3\\\hline
+ 1&42&76&44&8&553&662&190&2385&1420&3388\\
+ 2&42&90&60&12&639&882&279&3141&2073&4974\\
+ 3&0&42&48&12&70&476&237&660&1255&1488\\
+ 12&0&42&48&12&70&476&233&660&1239&1476\\
+ 13&42&90&60&12&595&842&275&2781&1937&4282\\
+ 23&42&76&44&8&597&702&198&2745&1572&4092
+\end{array}
+\label{eq:x9-transport-coefficients}
+\end{equation}
+\endgroup
+For both sheaves, every coefficient of
+$\delta_{\mathcal F,0}(U)-Q_U$ is nonnegative. Since $Q_U$ has a
+positive $\epsilon^3$ coefficient, all six comparisons are strictly
+positive on \eqref{eq:x9-probe-approach}. The cubic data above also
+give the $B$-dependent comparisons directly through
+\eqref{eq:x9-probe-b-wall}.
+
+The exact Sage checks in \texttt{checks/} reconstruct the
+dual-ideal presentation, polarization polynomials, first slope
+walls and constituent phase data. A separate Python calculation
+checks the Hilbert-scheme products. The commands, including the
+mirror-period and numerical-wall calculations, are documented
+in \texttt{checks/README.md}. Finite-degree agreement does not
+certify a tail bound or a physical stability chamber.

@@ -1,0 +1,264 @@
+\section{Integral lattices and classical data}
+\label{app:integral-charges}
+
+\subsection{The resolved chamber and intersection form}
+
+Adjoin $v_9=p=(-2,-1,0,0)$ and $v_{10}=(-1,0,0,0)$ to
+\eqref{eq:x9-polytope}. The lower-facet triangulation with heights
+\begin{equation}
+ h_i=b_i+(i+1)/1009,\qquad
+ (b_0,\ldots,b_{10})=(10,11,3,9,2,7,1,4,8,-5,-3)
+\end{equation}
+fixes a complete smooth fan with $29$ maximal cones. The divisor
+$D_{10}$ misses the hypersurface. In the basis
+\eqref{eq:x9-divisor-basis}, with $D_9=E$, the nonzero cubic
+entries are as follows; all permutations agree and all omitted
+entries vanish:
+\begin{equation}
+\begin{array}{cc|cc|cc|cc}
+ IJK&\kappa_{IJK}&IJK&\kappa_{IJK}&IJK&\kappa_{IJK}&IJK&\kappa_{IJK}\\\hline
+ 222&8&266&1&667&-1&788&-6\\
+ 225&-2&267&1&677&-1&888&8\\
+ 226&-3&569&1&699&-2&889&-1\\
+ 227&-2&599&-2&777&-3&899&-1\\
+ 256&1&666&-1&778&4&999&7
+\end{array}
+\label{eq:x9-full-cubic-data}
+\end{equation}
+The second-Chern row is $(-4,24,26,18,-4,-2)$, and the
+remaining divisor classes are
+\begin{equation}
+\begin{aligned}
+ D_0&=D_2+4D_5+4D_6-3D_7-2D_8+2E,\\
+ D_1&=D_2+2D_5+2D_6-D_7-D_8+E,\\
+ D_3&=D_5-D_7-D_8,\qquad D_4=D_6-D_7-D_8.
+\end{aligned}
+\end{equation}
+These data determine every norm, charge pairing and cubic used
+in Sections~\ref{subsec:x9}--\ref{sec:decoupling}.
+
+\subsection{Resolved and smoothed lattices}
+Order the resolved divisors as $(D_2,D_5,D_6,D_7,D_8,E)$, with
+$D_9=E$. The six integral curve classes
+\begin{equation}
+ (D_6D_7,D_2D_4,D_4D_5,D_8E,D_3D_7,D_0D_5)|_{\wideX_9}
+\end{equation}
+give the divisor--curve pairing, with curves as rows,
+\begin{equation}
+ P=\begin{pmatrix}
+ 1&0&-1&-1&0&0\\-1&1&0&1&0&0\\1&0&0&0&0&1\\
+ 0&0&0&0&-1&-1\\0&0&1&-1&2&0\\2&0&3&0&0&0
+ \end{pmatrix},\qquad \det P=1.
+ \label{eq:x9-integral-pairing}
+\end{equation}
+Since the six divisors are already a rational basis, any integral
+cohomology class has rational coordinates whose pairing with these
+curves is integral. Multiplication by $P^{-1}$ shows that those
+coordinates are integral. Thus the displayed divisors generate
+$H^2(\wideX_9;\ZZ)/\mathrm{tors}$, and the displayed curve classes
+generate its dual. This argument does not infer integral saturation
+from the rational Hodge-number count.
+
+The Mayer--Vietoris description of the smooth fiber also holds on free
+integral lattices. The links have $H^1(L;\ZZ)=0$. On the $E_2$ surface
+use $(h,e_1,e_2)$ with intersection form $\operatorname{diag}(1,-1,-1)$
+and $K=-3h+e_1+e_2$. For $V_7=\operatorname{Bl}_{pt}\mathbb P^3$,
+\begin{equation}
+ H|_E=2h-e_1-e_2,\qquad Q|_E=h-e_1-e_2,\qquad
+ K=-2H|_E+Q|_E.
+ \label{eq:x9-integral-local-gluing}
+\end{equation}
+The two restrictions form an integral basis of $R^\perp$, where
+$R=e_1-e_2$: their matrix on $(h,e_1+e_2)$ has determinant $-1$.
+Both $K$ and the deleted divisor class $2H-Q$ are primitive. Therefore
+$H^2(V_7\setminus E;\ZZ)\cong\ZZ^2/\ZZ(2,-1)$ maps isomorphically
+to $R^\perp/\ZZ K$ in the link cohomology, with no finite index.
+For the resolution, excision and Poincar\'e--Lefschetz duality give
+$H^3(\wideX_9,Y;\ZZ)\cong H_3(N;\ZZ)=0$, since the exceptional
+neighborhoods retract onto $E$ and the two nodal curves. Thus restriction
+to the common complement is surjective, with kernel $\ZZ E$; the nodal
+Milnor fibers have $H^2=0$. The class $E$ is primitive by
+\eqref{eq:x9-integral-pairing}. The neutral
+lattice has integral basis
+\begin{equation}
+ (A,B,D_8,E)=(D_2+D_7,D_5+D_6-D_7,D_8,E).
+\end{equation}
+Indeed adjoining $-D_6,D_5$ gives a unimodular six-divisor basis.
+Quotienting by $E$ gives \eqref{eq:x9-primitive-smooth-basis}.
+
+\subsection{The local correction to the cubic}
+
+Set $V_7=\operatorname{Bl}_{pt}\mathbb P^3$, with pullback
+hyperplane $H$ and exceptional plane $Q$. The compactifying
+surface is $S_7\in|2H-Q|$ and its complement is the Milnor
+fiber. The restrictions in \eqref{eq:x9-integral-local-gluing}
+identify the surviving link classes with $R^\perp/\ZZ K_E$.
+Every inherited divisor in $\operatorname{span}(D_0,D_1)$
+restricts to zero on the exceptional surface and the links.
+It therefore has a compactly supported representative on $Y$;
+all products with an inherited factor agree on both sides, as
+do its second-Chern pairings.
+
+For the remaining correction, glue the Milnor fiber to the
+orientation-reversed exceptional neighborhood. As a cut and paste,
+the resulting closed six-manifold is
+$V_7-\mathbb P(\mathcal O\oplus K_{S_7}^{-1})$.
+If $\lambda=D_8|_E=e$ is the exceptional curve on
+$S_7=\operatorname{Bl}_1(\mathbb P^1\times\mathbb P^1)$,
+its lifts are $Q$ on $V_7$ and $\pi^*\lambda$ on the projective
+bundle. They give
+\begin{equation}
+ Q^3=1,\qquad (\pi^*\lambda)^3=0,\qquad
+ p_1(V_7)Q=4,\qquad
+ p_1\bigl(\mathbb P(\mathcal O\oplus K^{-1})\bigr)\pi^*\lambda=0.
+\end{equation}
+Here $c_1(V_7)=4H-2Q$, $c_2(V_7)H=6$ and $c_2(V_7)Q=0$.
+Since $p_1=-2c_2$ on a Calabi--Yau threefold, these equalities
+give $\Delta(\nu^3)=1$ and $\Delta(c_2\nu)=-2$.
+The independence of the chosen resolved representative is explicit:
+\begin{equation}
+ (D_8+tE)^3+\bigl(-2tH+(1+t)Q\bigr)^3=9.
+\end{equation}
+The second term is the local correction associated with the same
+boundary class, not an extra bulk divisor.
+
+Geometrically, the $(-1)$-curve $D_8\cap E$ contracts and the
+surface $D_8\cong\mathbb F_1$ maps to a plane through the
+singularity. Its local cone over $e$ is replaced in the smoothing
+by $Q\setminus e\cong\CC^2$. Gluing along their common
+three-sphere gives a smooth plane of class $\nu$.
+Adjunction then yields $\nu^3=K_{\mathbb P^2}^2=9$ and
+$c_2(X_{9,t})\nu=c_2(\mathbb P^2)-9=-6$ independently.
+
+\subsection{The integral flavor action}
+The effective action on the reduced Higgs cone need not be faithful
+on all states. In particular the $E_2$ non-Abelian flavor factor is
+$SU(2)$, not $SO(3)$ \cite[Section~3.9.1]{Apruzzi:2021vcu}.
+We check the compact action on the geometric M2 charge lattice,
+using the structure-group criterion of
+\cite[Section~2.1]{Apruzzi:2021vcu}: divide the product of gauge and
+flavor factors by the central subgroup acting trivially on those charges.
+
+For $\gamma=d h+m_1e_1+m_2e_2$, choose integral charges
+\begin{equation}
+ q_g=-K\cdot\gamma=3d+m_1+m_2,\qquad
+ w=-R\cdot\gamma=m_1-m_2,\qquad q_a=h\cdot\gamma=d.
+ \label{eq:x9-local-integral-charges}
+\end{equation}
+Here $q_g$ is the local Coulomb charge, $w$ is the standard $SU(2)$
+weight with root weight two, and $q_a$ is a complementary Abelian
+charge convention, allowing shifts by the Coulomb generator. Their
+image is the index-two lattice $q_g+w+q_a\in2\ZZ$. Hence the
+faithful structure group on this charge lattice is
+\begin{equation}
+ \frac{U(1)_g\times SU(2)_F\times U(1)_a}
+ {\langle(-1,-\mathbf1,-1)\rangle}.
+ \label{eq:x9-local-structure-group}
+\end{equation}
+This specifies the geometric charge action, not additional ultraviolet
+flavor data or an independent identification of the six-dimensional
+$U(2)$ gauge factor.
+
+The restrictions of the six compact divisors to $E$, as columns in
+$(h,e_1,e_2)$, are
+\begin{equation}
+ T=\begin{pmatrix}
+ 0&1&1&0&1&-3\\0&-1&0&0&-1&1\\0&0&-1&0&-1&1
+ \end{pmatrix}.
+ \label{eq:x9-full-restriction}
+\end{equation}
+For $D|_E=xh+ye_1+ze_2$, its action on a curve is
+\begin{equation}
+ D\cdot\gamma
+ =-\frac{y+z}{2}q_g+\frac{z-y}{2}w
+  +\left(x+\frac32(y+z)\right)q_a.
+ \label{eq:x9-full-local-action}
+\end{equation}
+In particular, the coefficient triples for the two effective vectors are
+\begin{equation}
+ V_1:\ (-\tfrac12,\tfrac12,\tfrac12),\qquad
+ V_2:\ (\tfrac12,\tfrac12,-\tfrac12).
+ \label{eq:x9-cocharacter-lifts}
+\end{equation}
+Each $2\pi$ loop closes by the central identification in
+\eqref{eq:x9-local-structure-group}. On the reduced current ring the
+Coulomb and complementary Abelian actions are trivial, leaving unit
+charges for $J_+$ under both vectors, as required in
+\eqref{eq:x9-operator-charges}. Thus the reduced action is consistent
+without requiring a half-Cartan to be a cocharacter of $SU(2)$ alone.
+
+Finally this marking makes explicit the nilpotent-coordinate freedom
+in \eqref{eq:e2-dictionary}. Let $U$ be the current normalized for
+$q_a$. On the six compact divisors the coefficient of that current is
+$(0,-\tfrac12,-\tfrac12,0,-2,0)$, whereas the geometric
+$\alpha$ column is $(0,-2,1,0,-2,0)$. Their difference is
+$\tfrac32$ times the root column. The compatible invariant coordinates are
+\begin{equation}
+ \alpha_{\mathrm{geom}}=U,\qquad
+ \beta_{\mathrm{geom}}=J_0+\tfrac32U.
+ \label{eq:x9-nilpotent-marking}
+\end{equation}
+The relations $U^2=UJ_0=0$ show directly that this shear preserves the
+full invariant scheme. On its reduction $U=0$ it changes neither the
+cooperative kernel nor the dressed-instanton ring.
+
+\subsection{The formal invariant ring}
+\label{subsec:x9-dressed-instantons}
+
+In the primitive effective basis $(-D_6,D_5)$, the charges are
+\begin{equation}
+\begin{array}{c|rrrrrrr}
+ &h_1&\widetilde h_1&h_2&\widetilde h_2&J_+&J_-&\beta\\\hline
+ V_1&1&-1&0&0&1&-1&0\\
+ V_2&0&0&1&-1&1&-1&0 .
+\end{array}
+\label{eq:x9-operator-charges}
+\end{equation}
+Remove the neutral pairs $h_i\widetilde h_i$ and $J_+J_-$
+from any invariant monomial. Charge neutrality leaves a power
+of $h_1h_2J_-$ or $\widetilde h_1\widetilde h_2J_+$.
+Together with $u_i=-\beta$ and $J_+J_-=\beta^2$, this proves
+the presentation \eqref{eq:x9-dressed-generators}. Grading the
+hypermultiplet scalars by degree one and the currents by degree
+two gives the refined Hilbert series
+\begin{equation}
+ H(t,z)=\frac{1-t^8}{(1-t^2)(1-zt^4)(1-z^{-1}t^4)}
+       =\frac1{1-t^2}\sum_{n\in\ZZ}z^nt^{4|n|},
+ \label{eq:x9-dressed-hilbert}
+\end{equation}
+where $Y$ has instanton fugacity $z$. An instanton current of
+charge $n$ must be dressed by $|n|$ fields from each node.
+Removing the local instanton currents forces $\beta^2=0$,
+so the reduced formal quotient becomes a point. This detects
+the local strong-coupling sector in the operator model; it is
+not a heterotic perturbative calculation or a compact BPS index.
+
+\input{sections2_restructured/app_k_theory}
+
+\subsection{The current-exchange matrices}
+
+For $J=J_*+\Lambda w$ with
+$J_*=(6,18,16,-11,-8,7)$ in $\mathcal D$, both nodal areas
+are one. The cubic tensor above and \eqref{eq:x9-full-inverse}
+give
+\begin{equation}
+\begin{aligned}
+ \mathsf H_{D_0}
+ &=\frac1{66\Lambda}\begin{pmatrix}31&-9\\-9&31\end{pmatrix}
+   +O(\Lambda^{-2}),\\
+ \mathsf H_{D_1}
+ &=\frac1{14}\begin{pmatrix}1&-1\\-1&1\end{pmatrix}
+   +\frac1{196\Lambda}\begin{pmatrix}96&-5\\-5&110\end{pmatrix}
+   +O(\Lambda^{-2}),\\
+ \mathsf H_{D_0+D_1}
+ &=\frac1{590\Lambda}\begin{pmatrix}209&-91\\-91&209\end{pmatrix}
+   +O(\Lambda^{-2}).
+\end{aligned}
+\label{eq:x9-current-asymptotics}
+\end{equation}
+Since $Gt=v/2$ and $t^{\mathsf T}Gt=3\mathcal V$, graviphoton
+subtraction removes the matrix
+\[
+ (3\mathcal V)^{-1}\begin{pmatrix}1&1\\1&1\end{pmatrix}
+ =O(\Lambda^{-3}).
+\]

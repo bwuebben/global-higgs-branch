@@ -1,0 +1,241 @@
+\section{The mixed transition in \texorpdfstring{$X_9$}{X9}}
+\label{sec:examples}\label{subsec:x9}
+
+\subsection{Geometry and the smoothing}
+
+Let $S_7=\operatorname{Bl}_{p_1,p_2}\mathbb P^2$ denote the del Pezzo
+surface of degree seven. The compact threefold $X_9$ has two ordinary
+double points and one cone over $S_7$. Its crepant resolution
+$\wideX_9$ is an anticanonical hypersurface in the toric fourfold with
+fan polytope
+\begin{equation}
+\begin{split}
+\Delta_9=\operatorname{conv}\{&v_0=(1,0,0,0),\ v_1=(0,1,0,0),\ v_2=(-1,-1,0,0),\\
+&v_3=(0,0,1,0),\ v_4=(0,0,0,1),\ v_5=(-4,-2,-1,0),\\
+&v_6=(-4,-2,0,-1),\ v_7=(3,1,1,1),\ v_8=(2,1,1,1)\}.
+\end{split}
+\label{eq:x9-polytope}
+\end{equation}
+The singular two-faces are the squares $2367$, $2457$ and the
+pentagon $34568$. We use the square diagonals $67$ and $24$, and
+the star subdivision of the pentagon at $p=(-2,-1,0,0)$.
+The exceptional divisor $E=D_p$ is $S_7$; the two exceptional
+curves are $C_1,C_2$. The remaining boundary point $(-1,0,0,0)$
+lies in a facet interior and its divisor misses the hypersurface.
+The chamber and integral intersection data are specified in
+Appendices~\ref{app:integral-charges} and~\ref{app:mirror-periods}.
+
+Write $h,e_1,e_2$ for the standard basis of $H_2(E;\ZZ)$,
+with intersection form $\operatorname{diag}(1,-1,-1)$ and
+$K_E=-3h+e_1+e_2$. The compact root relation is
+\begin{equation}
+ R:=\iota_*(e_1-e_2)=C_1+C_2.
+ \label{eq:x9-root-relation}
+\end{equation}
+Neither the nodal curves nor the root can deform independently.
+In reduced local coordinates $(u_1,u_2,\beta)$ the allowed
+direction is $(-1,-1,1)$, as the charge calculation below shows.
+
+This direction integrates to an actual smoothing
+$\mathcal X\to\Delta$ with smooth general fiber $X_{9,t}$
+\cite[Theorem~B]{Wuebben:2026smoothing}. The construction uses the
+facet $F=\{v_2,\ldots,v_8\}$ and deformation degree $(0,1,-1,-1)$.
+On its ordered edges
+\begin{equation}
+ (25,26,27,36,37,38,45,47,48,56,78)
+ \label{eq:x9-facet-edges}
+\end{equation}
+the dilation vector is $(0,0,1,1,0,0,1,0,0,0,0)$. It defines
+compatible Minkowski decompositions into two segments on each square
+and a segment plus a unimodular triangle on the pentagon. The
+Ilten--Vollmert deformation and its relative anticanonical family
+therefore smooth all three germs
+\cite{Altmann:1995,Ilten:2012,Wuebben:2026smoothing}, with
+\begin{equation}
+ (u_1,u_2,\beta)=t(-1,-1,1).
+ \label{eq:x9-family-direction}
+\end{equation}
+Smoothability here is an existence result, not an inference from
+the first-order kernel.
+
+The massless multiplets on the two smooth sides are
+\begin{equation}
+\begin{array}{c|rrr|rr}
+ &h^{1,1}&h^{2,1}&\chi&n_V&n_H^{\rm neutral}\\\hline
+ \wideX_9&6&122&-232&5&123\\
+ X_{9,t}&3&123&-240&2&124 .
+\end{array}
+\label{eq:x9-spectrum-table}
+\end{equation}
+Here $n_V=h^{1,1}-1$ excludes the graviphoton and
+$n_H^{\rm neutral}=h^{2,1}+1$ includes the universal hypermultiplet.
+The general transition formula of Appendix~\ref{app:deformations}
+gives the same change as the independent construction of the general
+fiber: two flavor vectors are Higgsed, the rank-one $E_2$ Coulomb
+vector disappears, and one new neutral hypermultiplet remains.
+
+\subsection{Integral charges and the joint constraint}
+
+The six divisors
+\begin{equation}
+ \mathcal D=(D_2,D_5,D_6,D_7,D_8,E)
+ \label{eq:x9-divisor-basis}
+\end{equation}
+form the full free integral $H^2$ lattice, not merely a saturated
+toric quotient. An explicit unimodular pairing proves this in
+Appendix~\ref{app:integral-charges}. Their pairings with
+$(C_1,C_2,R)$ are
+\begin{equation}
+ Q_{\mathcal D}=
+ \begin{pmatrix}1&-1&0\\0&1&1\\-1&0&-1\\-1&1&0\\0&0&0\\0&0&0\end{pmatrix}.
+ \label{eq:x9-full-matrix}
+\end{equation}
+An integral change of vector basis isolates
+\begin{equation}
+ V_1=-D_6,\qquad V_2=D_5,\qquad
+ Q_{X_9}^{\rm eff}=\begin{pmatrix}1&0&1\\0&1&1\end{pmatrix}.
+ \label{eq:x9-effective-vectors}
+\end{equation}
+Both nonzero Smith invariants are one. Thus
+\begin{equation}
+ u_1+\beta=u_2+\beta=0,\qquad
+ \ker Q_{X_9}^{\rm eff}=\CC(-1,-1,1).
+ \label{eq:x9-moment-maps}
+\end{equation}
+Every nonzero allowed deformation moves all three sectors. The
+exceptional-divisor vector is neutral under this flavor constraint:
+$E|_E=K_E$ and $K_E\cdot(e_1-e_2)=0$. Its loss in
+\eqref{eq:x9-spectrum-table} is the loss of the local Coulomb
+direction, not a third row of the rank-two flavor matrix.
+
+The reduced rigid current ring gives a useful refinement of this
+coordinate statement. If $J_\pm,J_0$ are the $E_2$ instanton currents
+and $u_i=h_i\widetilde h_i$, its invariant generators can be chosen as
+\begin{equation}
+ X=h_1h_2J_-,\qquad Y=\widetilde h_1\widetilde h_2J_+,\qquad
+ XY=\beta^4.
+ \label{eq:x9-dressed-generators}
+\end{equation}
+Consequently the formal reduced quotient is $\CC^2/\ZZ_4$.
+The integral extension of the flavor action and the current-ring
+calculation are given in Appendix~\ref{app:integral-charges}.
+This is neither a finite-Planck hypermultiplet metric nor an
+unbroken discrete gauge group at a generic Higgs vacuum.
+
+\subsection{Surviving vectors and classical couplings}
+
+Let $Y$ be the common complement of small singular neighborhoods.
+The nodal Milnor fibers have $H^2=0$. For the $S_7$ cone the Milnor
+fiber is $\operatorname{Bl}_{pt}\mathbb P^3\setminus S_7$;
+its restriction to the link has image $R^\perp/\ZZ K_E$.
+Integral Mayer--Vietoris gluing therefore gives
+\begin{equation}
+ H^2(X_{9,t};\ZZ)_{\rm free}
+ \simeq \ker(C_1,C_2,R)/\ZZ E.
+ \label{eq:x9-smooth-h2}
+\end{equation}
+A primitive basis of this quotient is
+\begin{equation}
+ (A,B,\nu)=(D_2+D_7,D_5+D_6-D_7,\nu),\qquad
+ D_0=A+4B-2\nu,\quad D_1=A+2B-\nu,
+ \label{eq:x9-primitive-smooth-basis}
+\end{equation}
+where $\nu$ agrees with $D_8$ on $Y$. The older convenient basis
+$(D_0,D_1,\nu)$ has index two and will be used only when that
+particular comparison simplifies the geometry.
+
+The surface $D_8\cong\mathbb F_1$ meets $E$ in its exceptional
+curve. In the smoothing it becomes a rigid plane of class $\nu$
+and normal bundle $\mathcal O_{\mathbb P^2}(-3)$, hence a local
+$E_0$ geometry \cite{Morrison:1996pp}. The cut-and-paste calculation
+in Appendix~\ref{app:integral-charges} gives
+\begin{equation}
+ \nu^3=9\quad\hbox{versus}\quad D_8^3=8,\qquad
+ c_2(X_{9,t})\cdot\nu=-6\quad\hbox{versus}\quad
+ c_2(\wideX_9)\cdot D_8=-4.
+ \label{eq:x9-smooth-cubic}
+\end{equation}
+All cubic entries involving $D_0$ or $D_1$ agree when these fixed
+representatives on $Y$ are used. In particular,
+\begin{equation}
+ \mathcal F(\alpha D_0+\beta D_1)
+ =\frac{83\alpha^3+147\alpha^2\beta+81\alpha\beta^2+14\beta^3}{6}
+ \label{eq:x9-inherited-cubic}
+\end{equation}
+on both sides, with $\mathcal F=J^3/6$ in five-dimensional units.
+
+For the quantum comparison a different lift is required: it must
+annihilate all four electric charges, not just their root difference.
+In the primitive nef basis $H_1,\ldots,H_6$ of
+\eqref{eq:x9-mirror-nef}, this lattice is
+\begin{equation}
+ \Lambda^0_{\rm mag}
+ =\{P:P C_1=P C_2=P\iota_*e_1=P\iota_*e_2=0\}
+ =\ZZ H_2\oplus\ZZ H_3\oplus\ZZ H_4.
+ \label{eq:x9-unconfined-magnetic-lattice}
+\end{equation}
+The classes in \eqref{eq:x9-primitive-smooth-basis} have lifts
+\begin{equation}
+ \widetilde A=D_2+D_7,\qquad
+ \widetilde B=D_5+D_6-D_7+E,\qquad \widetilde\nu=D_8+E,
+ \label{eq:x9-unconfined-lifts}
+\end{equation}
+whose columns in $(H_2,H_3,H_4)$ form
+\begin{equation}
+ U=\begin{pmatrix}0&-1&-2\\2&-1&-1\\-1&1&1\end{pmatrix},\qquad \det U=-1.
+ \label{eq:x9-unconfined-unimodular}
+\end{equation}
+Indeed $P\mapsto P+(P\cdot\iota_*e_2)E$ induces the integral
+isomorphism from \eqref{eq:x9-smooth-h2} to
+\eqref{eq:x9-unconfined-magnetic-lattice}. With these lifts all ten
+cubic entries and all three second-Chern pairings agree with the
+smooth side. In lexicographic order in $(A,B,\nu)$ they are
+\begin{equation}
+ (-1,1,4,-1,-4,-6,3,4,6,9),\qquad (14,30,-6).
+ \label{eq:x9-primitive-cubic}
+\end{equation}
+The equality for unconfined lifts and the jump in
+\eqref{eq:x9-smooth-cubic} compare different resolved representatives.
+The $E$ shifts reconcile them. Section~\ref{sec:quantum} determines
+whether this integral polynomial comparison extends to quantum couplings.
+
+The integral lattice also screens the local $E_0$ line-charge group.
+A plane line has $(A,B,\nu)$ charges $(2,-2,-3)$, whereas the compact
+class $D_1^2$ has charges $(1,7,1)$. Thus the local $\ZZ_3$ electric
+one-form symmetry does not persist in the compact charge lattice
+\cite[Sections~3.4 and~5.3]{Morrison:2020ool}. This uses integral
+combinations of effective curves; it does not assert an irreducible
+BPS representative of $D_1^2$.
+
+\subsection{A wrapped-M5 anomaly check}
+\label{subsec:x9-m5-anomaly}
+
+Wrap an M5-brane on $S_-=D_8\cong\mathbb F_1$ and compare it with
+the string on $S_+=\nu\cong\mathbb P^2$. This comparison fixes the
+representative $D_8$, rather than its unconfined lift $D_8+E$.
+The restrictions of $(D_0,D_1,D_8)$ to
+$\mathbb F_1=\operatorname{Bl}_{pt}\mathbb P^2$ are $(0,h,-3h+e)$,
+with $h^2=1,e^2=-1,h e=0$; on the plane they are $(0,h,-3h)$.
+The M5 tensor lattice consequently loses one negative direction
+\cite{Maldacena:1997de}.
+
+In the inflow conventions of \cite[eq.~(2.21)]{Katz:2020ewz},
+\begin{equation}
+ I_4(S)=-\frac12(SD_AD_B)F^AF^B
+ -\frac{S^3+\tfrac12c_2(X)S}{6}c_2(N)
+ +\frac{c_2(X)S}{48}p_1(T\Sigma),
+ \label{eq:x9-string-anomaly-general}
+\end{equation}
+where $N$ denotes the transverse $SU(2)$ bundle. The two transverse
+coefficients are both $-1$, while
+\begin{equation}
+ I_4(S_+)-I_4(S_-)
+ =-\frac12(F^\nu)^2-\frac1{24}p_1(T\Sigma).
+ \label{eq:x9-string-anomaly-jump}
+\end{equation}
+The removed left-moving lattice boson has unit $\nu$ charge and
+accounts for both terms. The exceptional direction approaches $e$
+in the blowdown limit; it need not be anti-self-dual at every
+polarization. Thus worldsheet content and bulk Chern--Simons inflow
+change together. This protected anomaly check does not identify an
+interacting infrared central charge or count the Higgs condensates.
