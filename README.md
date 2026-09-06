@@ -13,7 +13,7 @@ can then be obstructed, or become available only through a joint transition.
 | | Manuscript | Read | Sources and guide |
 |---|---|---|---|
 | **1** | Global Constraints on Higgsing Localized Five-Dimensional Sectors in Compact M-Theory Vacua | [PDF · 38 pages](papers/01-global-constraints/paper.pdf) | [Paper 1](papers/01-global-constraints/) |
-| **2** | Bulk Gauging and Quantum Couplings across a Compact Higgs Transition | [PDF · 54 pages](papers/02-quantum-transition/paper.pdf) | [Paper 2](papers/02-quantum-transition/) |
+| **2** | Bulk Gauging and Quantum Couplings across a Compact Higgs Transition | [PDF · 56 pages](papers/02-quantum-transition/paper.pdf) | [Paper 2](papers/02-quantum-transition/) |
 | **3** | Magnetic Sheaves and Stability Walls in a Compact Calabi–Yau Transition | [PDF · 24 pages](papers/03-magnetic-sheaves/paper.pdf) | [Technical note](papers/03-magnetic-sheaves/) |
 
 Start with **paper 2** for the explicit compact transition and its quantum
@@ -102,6 +102,12 @@ The paper develops this example in three directions:
   This is an all-orders period comparison on the marked branch, not only
   agreement of a finite set of expansion coefficients.
 
+The four light hypermultiplets reproduce the logarithmic gauge thresholds
+and their integral monodromies. Their neutral charge projections vanish,
+but that alone does not fix the regular couplings. The eight-period match
+also determines the surviving scalar metric and electromagnetic coupling
+matrix, including graviphoton mixing, on the stated branch.
+
 K3 and elliptic fibrations give a complementary interpretation: a dilaton
 gauging, an anomaly-consistent six-dimensional U(2) phase, equal compact
 images of two E-string roots, and a candidate heterotic K3. An exact volume
@@ -111,6 +117,8 @@ The global heterotic bundle construction and its massless U(1), as well as
 the finite-Planck hypermultiplet metric, are not supplied. Nor does the
 four-state finite-radius description become a complete five-dimensional
 theory: the Kaluza–Klein gap closes in the decompactification limit.
+That fixed-Planck-scale circle limit retains finite bulk gauging, unlike
+the gravity-decoupling limit with bounded local scales above.
 
 ## Paper 3 · Magnetic sheaves and stability walls
 
@@ -166,7 +174,7 @@ papers/
   02-quantum-transition/   Paper 2: PDF, main.tex and sections
   03-magnetic-sheaves/     Technical note: PDF, main.tex and sections
 shared/                   Common notation, bibliographies and journal styles
-checks/                   39 computational scripts, indexed by topic
+checks/                   40 computational scripts, indexed by topic
 scripts/                  Build and check runners
 ```
 
@@ -178,8 +186,8 @@ the full computational suite also requires SageMath (tested with 10.9).
 ```bash
 make papers       # build all three manuscripts
 make paper2       # build just paper 2 (also: paper1, paper3)
-make checks       # run the eleven Python checks
-make check-full   # run all 39 Python/Sage scripts
+make checks       # run the twelve Python checks
+make check-full   # run all 40 Python/Sage scripts
 make verify-full  # run all checks and build all papers
 ```
 

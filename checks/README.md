@@ -1,6 +1,6 @@
 # Computational checks
 
-The 39 scripts below support the three papers. Most are exact integer,
+The 40 scripts below support the three papers. Most are exact integer,
 rational or symbolic computations. The numerical period and wall diagnostics
 are identified separately. None replaces the geometric or analytic proofs.
 
@@ -9,8 +9,8 @@ are identified separately. None replaces the geometric or analytic proofs.
 From the repository root:
 
 ```bash
-make checks       # eleven Python scripts
-make check-full   # all 39 Python/Sage scripts
+make checks       # twelve Python scripts
+make check-full   # all 40 Python/Sage scripts
 ```
 
 The full suite requires SageMath (tested with 10.9). Set `SAGE=/path/to/sage`
@@ -77,6 +77,7 @@ the magnetic-sheaf note.
 | [check_x9_local_vanishing_charges.sage](check_x9_local_vanishing_charges.sage) | Local exceptional-curve charge marking. |
 | [check_x9_finite_bulk_nodes.sage](check_x9_finite_bulk_nodes.sage) | Compact four-node degeneration. |
 | [check_x9_integral_vanishing_marking.sage](check_x9_integral_vanishing_marking.sage) | Primitive compact vanishing charges. |
+| [check_x9_thresholds.py](check_x9_thresholds.py) | Hypermultiplet thresholds, unit monodromies, neutral projections and special-geometry identities. |
 | [check_x9_mirror_mutation.sage](check_x9_mirror_mutation.sage) | Smooth-side Laurent mutation. |
 | [check_x9_regular_magnetic_periods.sage](check_x9_regular_magnetic_periods.sage) | Resummed regular magnetic periods. |
 | [check_x9_neutral_quantum_periods.sage](check_x9_neutral_quantum_periods.sage) | Neutral-period coefficients and smooth-side GV data. |

@@ -14,7 +14,7 @@ case "$task_mode" in
   --help|-h)
     printf '%s\n' \
       'Usage: ./scripts/check.sh [--full]' \
-      'Default: eleven Python checks. --full: all 39 scripts; requires SageMath.' \
+      'Default: twelve Python checks. --full: all 40 scripts; requires SageMath.' \
       'Set SAGE to select Sage; PYTHON selects venv creation when Sage is absent.'
     exit 0 ;;
   *) printf 'Unknown option: %s\n' "$task_mode" >&2; exit 2 ;;

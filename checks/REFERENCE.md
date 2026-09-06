@@ -1,6 +1,6 @@
 # Computation reference
 
-The 39 scripts in this directory reproduce calculations in the three
+The 40 scripts in this directory reproduce calculations in the three
 manuscripts. Most use exact integer, rational and symbolic arithmetic;
 the explicitly identified numerical period/wall calculations are exceptions.
 They supplement the geometric and analytic proofs, not replace them.
@@ -19,8 +19,8 @@ They supplement the geometric and analytic proofs, not replace them.
 Run from the repository root:
 
 ```bash
-make verify       # eleven Python checks and all three LaTeX builds
-make verify-full  # all 39 scripts and all three LaTeX builds
+make verify       # twelve Python checks and all three LaTeX builds
+make verify-full  # all 40 scripts and all three LaTeX builds
 make papers       # all three LaTeX builds, without computations
 ```
 
@@ -88,6 +88,14 @@ The scripts here do not depend on that checkout.
   (ν³: 8→9, c₂·ν: −4→−6), E-shift invariance, the ℙ² invariants, RR integrality.
 
 ## Integral charges, current exchange and sheaf counts
+
+`sage -python checks/check_x9_thresholds.py` checks the four-hypermultiplet
+singular prepotential and its sign in the polylogarithm convention,
+the unit symplectic shifts, the distinct Smith invariants of the charge
+and combined-monodromy matrices, and the vanishing neutral projections.
+It also checks the homogeneous period-matrix identity and the effect of
+quadratic prepotential terms. The marked geometric charges are inputs;
+this check does not establish BPS stability or a hypermultiplet metric.
 
 - `check_x9_rank_one_index.py` — centered Hilbert-scheme Poincaré products
   through q^12, independent colored-partition Euler counts, refined blowup
