@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: Wuebben
     given-names: Bernd Johannes
-date-released: 2026-09-06
+date-released: 2026-09-07
 repository-code: "https://github.com/bwuebben/global-higgs-branch"
 license:
   - CC-BY-4.0
