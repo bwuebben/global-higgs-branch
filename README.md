@@ -12,7 +12,7 @@ can then be obstructed, or become available only through a joint transition.
 
 | | Manuscript | Read | Sources and guide |
 |---|---|---|---|
-| **1** | Global Constraints on Higgsing Localized Five-Dimensional Sectors in Compact M-Theory Vacua | [PDF · 38 pages](papers/01-global-constraints/paper.pdf) | [Paper 1](papers/01-global-constraints/) |
+| **1** | Global Constraints on Higgsing Localized Five-Dimensional Sectors in Compact M-Theory Vacua | [PDF · 41 pages](papers/01-global-constraints/paper.pdf) | [Paper 1](papers/01-global-constraints/) |
 | **2** | Bulk Gauging and Quantum Couplings across a Compact Higgs Transition | [PDF · 56 pages](papers/02-quantum-transition/paper.pdf) | [Paper 2](papers/02-quantum-transition/) |
 | **3** | Magnetic Sheaves and Stability Walls in a Compact Calabi–Yau Transition | [PDF · 24 pages](papers/03-magnetic-sheaves/paper.pdf) | [Technical note](papers/03-magnetic-sheaves/) |
 
@@ -29,8 +29,9 @@ and limitations.
 embedding, and how are the physical gauging conditions related to the
 geometry of smoothing singularities?
 
-The paper treats conifold points together with rank-one interacting E₂
-and E₃ sectors. Wrapped-M2 charges and compact divisor–curve pairings
+The paper treats conifold points together with rank-one interacting E₁,
+E₂, E₃ and E₄ sectors: degrees 8 (P¹×P¹), 7, 6 and 5, respectively.
+Wrapped-M2 charges and compact divisor–curve pairings
 determine a common Abelian charge and flavor-gauging matrix. Its kernel
 correlates deformation coordinates belonging to otherwise separate sectors.
 
@@ -39,16 +40,23 @@ The main results are:
 - An identification, on each chosen E₃ branch, of the invariant-coordinate
   image of the rigid triplet-moment-map zero locus with the kernel of the
   compact gauging matrix.
-- For the stated admissible toric hypersurfaces and Hodge-theoretic
-  hypotheses, an identification of that same kernel with the image of
+- For connected normal projective threefolds with the stated exact analytic
+  germs, trivial canonical bundle, H¹(O) = 0, and a smooth projective
+  crepant resolution, an identification of that same kernel with the image of
   global first-order deformations. Combining this with the exact mixed
   smoothing theorem gives a necessary and sufficient existence criterion:
   the kernel must contain a vector outside every local discriminant.
   This includes both E₃ branches and arbitrary analytic smoothing arcs.
+  All compact divisor classes enter the intrinsic statement; ambient
+  toric divisors suffice in the original toric examples.
+- Integral identifications of the E₁ ruling difference with its SU(2)
+  invariant coordinate and the E₄ root lattice with the five SU(5)
+  diagonal coordinates of sum zero. The latter are precisely the geometric
+  conic-pencil pairings, so smoothing requires all five to be nonzero.
 - Smoothness of the selected global deformation base when the relation
   space projects nontrivially to every selected E₃ summand, by the
   companion integrability theorem. Every tangent on that base integrates
-  to a convergent deformation. Nodes and E₂ points need no additional
+  to a convergent deformation. Nodes and E₁, E₂, E₄ points need no additional
   projection hypothesis for this smoothness assertion.
 - Explicit examples of three outcomes: an obstructed isolated E₂ sector;
   the X₉ model, in which two conifold sectors and one E₂ sector can move
@@ -67,6 +75,8 @@ with compact physical gauging. On the E₃ plane, all three discriminant
 coefficients must be nonzero, not merely the plane vector. The selected-base
 theorem does not settle all zero-projection E₃ profiles, unrestricted
 nilpotent deformation schemes, or the finite-Planck scalar geometry.
+Degrees 1–4 are outside the stated mixed comparison. The locally
+nonsmoothable F₁ cone is not the degree-eight E₁ smoothing sector.
 
 ## Paper 2 · An explicit transition and its quantum couplings
 
@@ -174,7 +184,7 @@ papers/
   02-quantum-transition/   Paper 2: PDF, main.tex and sections
   03-magnetic-sheaves/     Technical note: PDF, main.tex and sections
 shared/                   Common notation, bibliographies and journal styles
-checks/                   40 computational scripts, indexed by topic
+checks/                   41 computational scripts, indexed by topic
 scripts/                  Build and check runners
 ```
 
@@ -186,8 +196,8 @@ the full computational suite also requires SageMath (tested with 10.9).
 ```bash
 make papers       # build all three manuscripts
 make paper2       # build just paper 2 (also: paper1, paper3)
-make checks       # run the twelve Python checks
-make check-full   # run all 40 Python/Sage scripts
+make checks       # run the thirteen Python checks
+make check-full   # run all 41 Python/Sage scripts
 make verify-full  # run all checks and build all papers
 ```
 

@@ -45,17 +45,28 @@ isolated noncompact models.
 
 We make this relation precise for compact Calabi--Yau threefolds whose isolated
 singularities are ordinary double points and anticanonical cones over del
-Pezzo surfaces of degrees seven and six. We write
+Pezzo surfaces of degrees five, six and seven, and over
+$\PP^1\times\PP^1$ of degree eight. Our conventions are
 \begin{equation}
- S_7=\operatorname{Bl}_2\mathbb P^2,
- \qquad
- S_6=\operatorname{Bl}_3\mathbb P^2 .
+ \begin{array}{c|c|c}
+ \text{surface}&\text{degree}&\text{fixed point}\\\hline
+ S_8=\PP^1\times\PP^1&8&E_1\\
+ S_7=\operatorname{Bl}_2\PP^2&7&E_2\\
+ S_6=\operatorname{Bl}_3\PP^2&6&E_3\\
+ S_5=\operatorname{Bl}_4\PP^2&5&E_4
+ \end{array}
  \label{eq:intro-del-pezzo}
 \end{equation}
-The corresponding local sectors are a free hypermultiplet and the rank-one
-$E_2$ and $E_3$ fixed points, respectively. This notation avoids the common
+Nodes support free hypermultiplets, whereas the four surface contractions
+give interacting rank-one sectors. This notation avoids the common
 ambiguity between the degree of a del Pezzo surface and the number of blown-up
 points.
+The other degree-eight surface, $\mathbb F_1$, has no reduced smoothing
+branch and is excluded. Degrees one through four lie outside the mixed
+global theorem used here; their local complete-intersection smoothability
+is a different assertion. The original toric examples involve $E_2$ and
+$E_3$, but neither the operator comparison nor the intrinsic global
+statement is restricted to those examples.
 
 The local input is finer than a dimension count. In one complex structure, a
 nodal hypermultiplet with scalars $(h,\widetilde h)$ projects to the conifold
@@ -91,12 +102,19 @@ tangent-space count. The local rings follow from
 the known Higgs chiral rings
 \cite{Cremonesi:2015lsa}; magnetic quivers provide an independent component
 and Hilbert-series check \cite{Ferlito:2016,Cabrera:2018,Closset:2020afy}.
+For $E_1$ and $E_4$, the Higgs cones are the minimal nilpotent orbit
+closures of $\mathfrak{sl}_2$ and $\mathfrak{sl}_5$. Their torus-invariant
+rings give a line and the hyperplane $\sum_{i=1}^5z_i=0$, respectively.
+Section~\ref{subsec:e1-e4-sectors} identifies the line with the ruling
+difference and the five coordinates integrally with the conic-pencil
+pairings of $S_5$. These identifications match both the gauging and the
+local smoothing discriminant.
 
 \subsection*{Charge constraints and the local-to-global deformation map}
 
-Let $\wideX\to X$ be a crepant resolution and let $D_I$ be compact divisor
-classes. At a node, denote the exceptional curve by $C_a$. At an $E_2$ or
-$E_3$ point, let $R_{p\alpha}$ be a root in the summand of
+Let $\wideX\to X$ be a smooth projective crepant resolution and let $D_I$
+be compact divisor classes spanning $H^2(\wideX;\QQ)$. At a node, denote
+the exceptional curve by $C_a$. At a del Pezzo point, let $R_{p\alpha}$ be a root in the summand of
 $K_{S_p}^{\perp}$ selected by the chosen Higgs component. Here
 $K_{S_p}^{\perp}$ is the orthogonal complement of the canonical class in
 $H_2(S_p;\ZZ)$ for the intersection pairing. The compact matrix is
@@ -111,25 +129,30 @@ second set are the cocharacters specifying how $A^I$ gauges the local flavor
 Cartans. Thus the complex moment maps take the form
 \begin{equation}
  \mu_I^{\CC}
- =\sum_a c_{Ia}t_a
+ =\sum_a c_{Ia}t_a+\sum_s m^{(8)}_{Is}u_s
   +\sum_r m^{(7)}_{Ir}\beta_r
-  +\sum_p\bigl(m_{Ip1}H_{p1}+m_{Ip2}H_{p2}+m_{Ip0}L_p\bigr),
+  +\sum_p\bigl(m_{Ip1}H_{p1}+m_{Ip2}H_{p2}+m_{Ip0}L_p\bigr)
+  +\sum_v\sum_{j=1}^4m^{(5)}_{Ivj}c_{vj},
  \label{eq:intro-moment-map}
 \end{equation}
-with $H_{p1}L_p=H_{p2}L_p=0$ at each $E_3$ point.
+with $H_{p1}L_p=H_{p2}L_p=0$ at each $E_3$ point. Here $u_s$ is the
+$E_1$ ruling coordinate and $c_{vj}$ are the $E_4$ simple-root coefficients.
 
 A \emph{branch profile} $\sigma$ chooses the full component
 $\cH_{\mathfrak{sl}_2}$ or $\cH_{\mathfrak{sl}_3}$ at each $E_3$ point;
 $\cB_{\sigma}$ is the product of their invariant images with the nodal and
-reduced $E_2$ lines. Let $\cM_{H,\sigma}^{\mathrm{rigid}}$ denote the product
+reduced $E_2$ lines, the $E_1$ lines and the four-dimensional $E_4$ bases.
+Let $\cM_{H,\sigma}^{\mathrm{rigid}}$ denote the product
 of the selected local Higgs cones, restricted to the triplet-moment-map zero locus
 for the effective compact Abelian group and then divided by that group.
 Restricting \eqref{eq:intro-moment-map} to the invariant coordinates gives a
-linear complex map $\Qcompact$. For the geometric equality below, $X$ is a
-$\Delta$-regular anticanonical hypersurface associated with an admissible
-four-dimensional reflexive polytope as defined in
-Section~\ref{subsec:admissible-class}, and it satisfies
-\eqref{eq:global-hypotheses}. Our principal result is
+linear complex map $\Qcompact$. For the geometric equality below, $X$ is
+connected, normal and projective, with trivial canonical bundle and
+$h^1(X,\cO_X)=0$; its singularities are precisely of the stated exact
+analytic types. The resolution is small at nodes and standard divisorial
+at the cones. These intrinsic hypotheses include the admissible toric
+class of Section~\ref{subsec:admissible-class}, where ambient divisors
+already span the required rational cohomology. Our principal result is
 \begin{equation}
  \boxed{
  \operatorname{Im}\!\left(
@@ -147,8 +170,8 @@ the geometric local-to-global deformation theorem. Equation
 charge and gauging constraint, rather than attaching a field-theory
 interpretation to a dimension computed after the fact.
 
-Figure~\ref{fig:local-to-global} summarizes the three local inputs and the
-common compact charge map.
+Figure~\ref{fig:local-to-global} summarizes the node/$E_2$/$E_3$ inputs
+used in the toric examples and their common compact charge map.
 \input{figures/local_to_global}
 
 The word ``image'' in \eqref{eq:intro-main} is essential. A local deformation
@@ -158,7 +181,7 @@ linear space on a fixed reduced profile. We do not identify it with the full
 quaternionic-K\"ahler scalar manifold of the compact supergravity theory.
 
 The real moment maps do not impose an additional inequality on this projected
-image. Every value of $t_a$, $\beta_r$, $(H_{p1},H_{p2})$, or $L_p$ has a
+image. Every value of the coordinates on a selected local base has a
 balanced representative for which the corresponding local real Cartan moment
 maps vanish. Consequently every point of the complex kernel lifts to the
 zero-level triplet-moment-map locus. This also explains why signs in a homology
@@ -169,19 +192,21 @@ The geometric comparison has an exact existence consequence. The mixed
 smoothing theorem of \cite[Theorems~4.5 and~4.7]{Wuebben:2026smoothing},
 combined with \eqref{eq:intro-main}, says that a convergent smoothing on a
 chosen profile exists precisely when the charge kernel contains a vector
-outside all local discriminants. At a node, an $E_2$ point or an $E_3$ line,
+outside all local discriminants. At a node, an $E_1$ or $E_2$ point, or an $E_3$ line,
 the local coefficient must be nonzero. On an $E_3$ plane, in the root
 coordinates defined below, the condition is
 \begin{equation}
  H_1H_2(H_1-H_2)\ne0.
  \label{eq:intro-e3-discriminant}
 \end{equation}
-A nonzero plane vector alone is insufficient. Necessity holds for arbitrary
+At an $E_4$ point, all five diagonal coordinates $z_i$ must be nonzero.
+A nonzero vector alone is insufficient in either higher-dimensional base.
+Necessity holds for arbitrary
 analytic smoothing arcs, including those tangent to a discriminant to higher
 order. If the relation space projects nontrivially to every selected $E_3$
 summand, the selected global deformation base is smooth and every tangent
 on it integrates. This hypothesis is automatic whenever the smoothing
-criterion holds; nodes and $E_2$ points require no additional projection
+criterion holds; nodes and $E_1$, $E_2$, $E_4$ points require no additional projection
 hypothesis for smoothness of the selected base. These are geometric
 integrability statements, not a construction of the compact scalar metric.
 

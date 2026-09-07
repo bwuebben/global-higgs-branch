@@ -12,6 +12,7 @@ venv/bin/python checks/check_e3_magnetic_quivers.py
 venv/bin/python checks/check_xcirc_e3_profiles.py
 venv/bin/python checks/check_x9_spectrum.py
 python3 checks/check_smoothing_criterion.py
+venv/bin/python checks/check_e1_e4_dictionary.py
 \end{verbatim}
 The scripts verify, respectively:
 \begin{enumerate}
@@ -23,10 +24,12 @@ The scripts verify, respectively:
  \item the four $X^{\circ}$ profile ranks, Smith invariants and isolating
  vectors;
  \item the $X_9$ divisor quotient, Hodge numbers, effective vectors and
- multiplet changes; and
+ multiplet changes;
  \item the three $E_3$ discriminant factors in the moment-map root
  convention, the finite row-space smoothing test, and the four
- profile restrictions of \eqref{eq:discriminant-example-gaugings}.
+ profile restrictions of \eqref{eq:discriminant-example-gaugings}; and
+ \item the integral $E_1/E_4$ root markings, five conic-pencil coordinates,
+ divisor--moment-map pairing and balanced representatives (45 exact checks).
 \end{enumerate}
 
 The source geometric computations are maintained with the companion

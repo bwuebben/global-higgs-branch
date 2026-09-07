@@ -1,11 +1,18 @@
 # Computation reference
 
-The 40 scripts in this directory reproduce calculations in the three
+The 41 scripts in this directory reproduce calculations in the three
 manuscripts. Most use exact integer, rational and symbolic arithmetic;
 the explicitly identified numerical period/wall calculations are exceptions.
 They supplement the geometric and analytic proofs, not replace them.
 
 ## Source map and execution
+
+`check_e1_e4_dictionary.py` verifies 45 exact identities for paper 1:
+the E₁ ruling lattice, the integral A₄ conic-pencil isometry, its inverse,
+the divisor–moment-map pairing, torus weights and balanced representatives.
+The local Higgs cones and analytic deformation bases are cited geometric
+and field-theory inputs; this script does not prove global smoothability
+or determine a compact gauge group's global form.
 
 - [Paper 1](../papers/01-global-constraints/): general constraints.
 - [Paper 2](../papers/02-quantum-transition/): the compact quantum transition.
@@ -19,8 +26,8 @@ They supplement the geometric and analytic proofs, not replace them.
 Run from the repository root:
 
 ```bash
-make verify       # twelve Python checks and all three LaTeX builds
-make verify-full  # all 40 scripts and all three LaTeX builds
+make verify       # thirteen Python checks and all three LaTeX builds
+make verify-full  # all 41 scripts and all three LaTeX builds
 make papers       # all three LaTeX builds, without computations
 ```
 

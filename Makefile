@@ -7,8 +7,8 @@ help:
 	  'make paper1       Build the general-constraints paper' \
 	  'make paper2       Build the quantum-transition paper' \
 	  'make paper3       Build the magnetic-sheaf technical note' \
-	  'make checks       Run twelve Python checks' \
-	  'make check-full   Run all 40 Python/Sage scripts' \
+	  'make checks       Run thirteen Python checks' \
+	  'make check-full   Run all 41 Python/Sage scripts' \
 	  'make verify       Run Python checks and build all papers' \
 	  'make verify-full  Run all checks and build all papers'
 

@@ -3,7 +3,8 @@
 
 The compact argument requires the holomorphic flavor-moment-map coordinates
 that coincide with geometric deformation parameters. We identify these
-coordinates as affine schemes; the remaining Higgs-branch data of the
+invariant rings and the corresponding geometric deformation-base germs;
+the remaining Higgs-branch data of the
 rank-one theories will not enter the global charge map.
 
 \subsection{Geometric engineering and the meaning of the projection}
@@ -27,7 +28,7 @@ separate analytic question. The compact theorem uses limits of modes on a
 compact threefold, where their norms are finite. We return to noncompact
 limits in Section~\ref{sec:decoupling}.
 
-The three local dictionaries are summarized in
+The local dictionaries are summarized in
 Table~\ref{tab:local-dictionary}. Here $\cB_{\mathrm{red}}$ denotes the reduced
 geometric deformation component selected by an ordinary complex Higgs vev.
 
@@ -46,6 +47,8 @@ singularity & local 5d sector & $\cB_{\mathrm{red}}$ & invariant moment-map coor
 ordinary double point & free hypermultiplet & $\CC_t$ & $t=h\widetilde h$ \\
 cone over $S_7=\operatorname{Bl}_2\mathbb P^2$ & rank-one $E_2$ theory & $\CC_\beta$ & $\beta=J_0$, the $SU(2)$ Cartan moment map \\
 cone over $S_6=\operatorname{Bl}_3\mathbb P^2$ & rank-one $E_3$ theory & $\CC^2_{H_1,H_2}\cup_{0}\CC_L$ & $(H_1,H_2)$ for $SU(3)$ and $L$ for $SU(2)$ \\
+cone over $S_8=\mathbb P^1\times\mathbb P^1$ & rank-one $E_1$ theory & $\CC_u$ & $u$ for $SU(2)$, on the ruling difference \\
+cone over $S_5=\operatorname{Bl}_4\mathbb P^2$ & rank-one $E_4$ theory & $\{\sum_{i=1}^5z_i=0\}\cong\CC^4$ & diagonal $SU(5)$ moment maps, identified with conic-pencil pairings \\
 \bottomrule
 \end{tabular}
 \end{adjustbox}
@@ -256,14 +259,10 @@ coordinates are used throughout so that a charge functional with values
 $(m_1,m_2)$ on the simple roots couples as $m_1H_1+m_2H_2$, without an
 unwritten inverse Cartan matrix.
 
-As in the $E_2$ case, arbitrary complex Cartan values admit representatives
-with zero real moment maps. One may use the rank-one
-Atiyah--Drinfeld--Hitchin--Manin (ADHM) presentation of a
-minimal nilpotent orbit closure: write
-$z_i=q_i\widetilde q_i$, impose $\sum_i z_i=0$, and choose
-$|q_i|=|\widetilde q_i|=\sqrt{|z_i|}$ with phases reproducing $z_i$.
-This sets the ADHM and flavor real moment maps to zero pairwise. The
-$\mathfrak{sl}_2$ component is the same construction with two pairs.
+Arbitrary complex Cartan values admit representatives with zero real
+moment maps by the rank-one Atiyah--Drinfeld--Hitchin--Manin (ADHM)
+construction proved for general $\mathfrak{sl}_n$ in
+Appendix~\ref{app:local-algebra}.
 
 \subsection{Magnetic-quiver and Hasse-diagram check}
 \label{subsec:e3-magnetic}
@@ -321,3 +320,90 @@ table lists the full continuous generic stabilizer and omits only finite
 subgroups.}
 \label{tab:e3-components}
 \end{table}
+
+\subsection[The E1 and E4 sectors]{The $E_1$ and $E_4$ sectors}
+\label{subsec:e1-e4-sectors}
+
+The anticanonical cone over $S_8=\mathbb P^1\times\mathbb P^1$
+engineers $E_1$, whose Higgs branch is
+$\overline{\mathcal O_{\min}(\mathfrak{sl}_2)}\cong\CC^2/\mathbb Z_2$
+\cite[Section~2.2.2]{Cremonesi:2015lsa}.
+Its maximal-torus invariant ring is $\CC[u]$. If $f_1,f_2$ are the
+ruling classes, the root-marked geometric parameter is
+\begin{equation}
+ \kappa=u(f_1-f_2),\qquad (f_1-f_2)^2=-2.
+ \label{eq:e1-ruling-coordinate}
+\end{equation}
+The full local deformation base is a smooth line, and its discriminant
+is $u=0$ \cite[Lemma~3.5]{Wuebben:2026smoothing}. Fixing the common
+nonzero normalization identifies it with the invariant-coordinate line.
+The other degree-eight surface, $\mathbb F_1$, engineers
+$\widetilde E_1$, not $E_1$; its cone has no reduced smoothing branch
+and is not included here.
+
+The degree-five cone engineers $E_4$ with flavor algebra
+$\mathfrak{su}(5)$ and Higgs branch
+$\overline{\mathcal O_{\min}(\mathfrak{sl}_5)}$
+\cite[Section~2.5]{Cremonesi:2015lsa}. The general calculation in
+Appendix~\ref{app:local-algebra} gives
+\begin{equation}
+ \CC[\cH_{E_4}]^{T_{\CC}}
+ =\frac{\CC[z_1,\ldots,z_5]}{(z_1+\cdots+z_5)},\qquad z_i=\Phi^i{}_i.
+ \label{eq:e4-invariants}
+\end{equation}
+The geometric identification can be made integrally. Mark $S_5$ by
+$h,e_1,\ldots,e_4$, with intersection form $\operatorname{diag}(1,-1,-1,-1,-1)$.
+Its five conic pencils are $f_i=h-e_i$ for $1\leq i\leq4$ and
+$f_5=2h-e_1-e_2-e_3-e_4$. For $\kappa\in K_{S_5}^{\perp}$ set
+$\lambda_i=\kappa\cdot f_i$. Then
+\begin{equation}
+ \begin{aligned}
+ \kappa=a h+\sum_{i=1}^4b_i e_i,&\qquad \sum_i b_i=-3a,\\
+ (\lambda_1,\ldots,\lambda_5)&=(a+b_1,\ldots,a+b_4,-a),\\
+ a=-\lambda_5,&\qquad b_i=\lambda_i+\lambda_5.
+ \end{aligned}
+ \label{eq:e4-pencil-isometry}
+\end{equation}
+Thus $\kappa\mapsto\lambda$ identifies $K_{S_5}^{\perp}$ with
+$\{\lambda\in\ZZ^5:\sum_i\lambda_i=0\}$, with pairing
+$\kappa\cdot\kappa'=-\sum_i\lambda_i\lambda_i'$. The simple roots
+\begin{equation}
+ \alpha_1=e_1-e_2,\quad\alpha_2=e_2-e_3,\quad
+ \alpha_3=e_3-e_4,\quad\alpha_4=h-e_1-e_2-e_3
+ \label{eq:e4-simple-roots}
+\end{equation}
+map to the four consecutive differences of standard basis vectors.
+In particular, for $\kappa=\sum_{j=1}^4c_j\alpha_j$ the dictionary is
+\begin{equation}
+ z=\lambda=(c_1,c_2-c_1,c_3-c_2,c_4-c_3,-c_4).
+ \label{eq:e4-root-coordinates}
+\end{equation}
+The geometric base is a smooth four-dimensional germ. Its five
+discriminant hyperplanes are $\lambda_i=0$, in the Hodge normalization
+of \cite[Lemma~3.2]{Wuebben:2026smoothing}. The permutation action
+on the conic pencils agrees with the $SU(5)$ Weyl action under
+\eqref{eq:e4-pencil-isometry}; the remaining common scalar is fixed
+in choosing the local moment-map normalization. Equations
+\eqref{eq:e4-invariants}--\eqref{eq:e4-root-coordinates} therefore
+identify the invariant-coordinate germ and its geometric marking,
+not merely their dimensions. Smoothing requires $\prod_i z_i\ne0$.
+This is not the condition that the diagonal entries be pairwise distinct.
+
+For a compact divisor $D$, put $m_j=D\cdot\iota_*\alpha_j$ and choose
+a traceless diagonal generator $\xi$ with
+$\xi_j-\xi_{j+1}=m_j$. Then
+\begin{equation}
+ \operatorname{tr}(\xi\Phi)=\sum_i\xi_i z_i
+ =\sum_jm_jc_j=D\cdot\iota_*\kappa.
+ \label{eq:e4-gauging-pairing}
+\end{equation}
+The same identity for $E_1$ is
+$\operatorname{tr}(\xi\Phi)=(\xi_1-\xi_2)u
+ =D\cdot\iota_*(u(f_1-f_2))$.
+Together with the balanced lifts in Appendix~\ref{app:local-algebra},
+these identities extend the compact moment-map argument to both sectors.
+The lattice isometry does not settle the global form of a compact gauge
+group: for integral $m_j$, the traceless $\xi_i$ can have denominator
+five, while their differences are integral. The continuous constraint
+uses the Lie algebra and the actual compact charge lattice, not an
+assumed simply connected flavor group.

@@ -27,9 +27,11 @@ The spaces used in this paper are
  (X,p)&H_2(\Sigma_p;\QQ)&V_{p,\sigma_p}\\
  \hline
  \text{node}&\QQ&\QQ\\
+ C(\PP^1\times\PP^1)&K_{S_8}^{\perp}\otimes\QQ&A_1\otimes\QQ\\
  C(S_7)&K_{S_7}^{\perp}\otimes\QQ&A_1\otimes\QQ\\
  C(S_6),\ \cH_{\mathfrak{sl}_2}&K_{S_6}^{\perp}\otimes\QQ&A_1\otimes\QQ\\
- C(S_6),\ \cH_{\mathfrak{sl}_3}&K_{S_6}^{\perp}\otimes\QQ&A_2\otimes\QQ.
+ C(S_6),\ \cH_{\mathfrak{sl}_3}&K_{S_6}^{\perp}\otimes\QQ&A_2\otimes\QQ\\
+ C(S_5)&K_{S_5}^{\perp}\otimes\QQ&A_4\otimes\QQ.
  \end{array}
  \label{eq:local-milnor-table}
 \end{equation}
@@ -43,7 +45,9 @@ where the superscript $\perp$ refers to the intersection pairing. The root
 subspaces in \eqref{eq:local-milnor-table} are the cycles that die
 in the corresponding Milnor fiber (Proposition~2.1 and Section~2.4 of
 \cite{Wuebben:2026obstruction}, where the three sweeping Fano threefolds
-are identified).
+are identified). For $S_5$ and $\PP^1\times\PP^1$, the Milnor fiber
+has zero rational $H_2$, so the entire link space vanishes
+\cite[Lemmas~3.3 and~3.6]{Wuebben:2026smoothing}.
 
 Choose a branch profile $\sigma$ and set
 \begin{equation}
@@ -71,7 +75,8 @@ exceptional set $E_p$, and put
  \right].
  \label{eq:local-crepant-kernel}
 \end{equation}
-For a node and for the cones over $S_7$ and $S_6$, contraction with the
+For a node and for exact anticanonical cones over $S_5$, $S_6$, $S_7$
+or $\PP^1\times\PP^1$, contraction with the
 crepant volume form and the boundary map give natural isomorphisms
 \begin{equation}
  T^1_{X,p}\cong K_p^{\mathrm{cr}}
@@ -96,6 +101,11 @@ compatibility with the Gysin maps; the full derivation is Lemmas~2.3
 and~2.4 of \cite{Wuebben:2026smoothing}, which use Schlessinger's
 comparison \cite{Schlessinger:1971} in the depth-three form of
 \cite{Friedman:2022}.
+For degree five and $\PP^1\times\PP^1$, the same local Hodge
+comparison is proved in Lemma~2.3 of \cite{Wuebben:2026smoothing}.
+Their unique local bases are smooth, and the branch assertion follows
+because the entire link space vanishes. The root and discriminant markings
+are those of Section~\ref{subsec:e1-e4-sectors}.
 
 \subsection{A class of toric anticanonical hypersurfaces}
 \label{subsec:admissible-class}
@@ -123,7 +133,7 @@ unimodular triangle. The unit square, the unit-edge pentagon with one interior
 lattice point, and the analogous hexagon give, respectively, a node and the
 cones over $S_7$ and $S_6$.
 
-The explicit finite theorem is proved for the following controlled class. We
+The examples use the following controlled toric class. We
 call $\Delta$ admissible if:
 \begin{enumerate}
  \item every two-face is a unimodular triangle, a unit square, or a
@@ -137,6 +147,9 @@ ambient divisor matrix detects the full rational topological kernel in
 \eqref{eq:topological-kernel}; equivalently, the correction term in
 Batyrev's formula for $h^{1,1}$ \cite{Batyrev:1994} vanishes on this class
 (Proposition~8.3 of \cite{Wuebben:2026obstruction}).
+This is a computational specialization of the intrinsic theorem below,
+not its general hypothesis. In particular, the degree-five surface is
+not toric; it is not added to this class by enlarging the list of polygons.
 
 The abstract local-to-global statement below uses the following additional
 hypotheses:
@@ -160,8 +173,12 @@ view $V_{p,\sigma_p}\otimes\CC$ as a subspace of $T^1_{X,p}$ through
 
 \begin{theorem}[first-order local-to-global image]
 \label{thm:first-order-image}
-Let $X$ arise from an admissible polytope and satisfy
-\eqref{eq:global-hypotheses}. For every branch profile $\sigma$,
+Let $X$ be a connected normal projective threefold with
+$\omega_X\cong\cO_X$ and $h^1(X,\cO_X)=0$, whose singularities are
+nodes or exact analytic anticanonical cones over $S_5$, $S_6$, $S_7$
+or $\PP^1\times\PP^1$. Suppose $\wideX\to X$ is a smooth projective
+crepant resolution, small over the nodes and standard divisorial over
+the cones. For every branch profile $\sigma$,
 \begin{equation}
  \operatorname{Im}\!\left[
    \TangentDef\longrightarrow\bigoplus_pT^1_{X,p}
@@ -255,7 +272,7 @@ five-dimensional charge and gauging constraint.
 
 A nonzero local deformation need not smooth a cone point. The
 \emph{local discriminant} is the locus in a selected deformation component
-where the nearby fiber remains singular. At a node, an $E_2$ point or an
+where the nearby fiber remains singular. At a node, an $E_1$ or $E_2$ point, or an
 $E_3$ line it is the origin. At an $E_3$ plane write
 \begin{equation}
  \kappa_p=H_{p1}(e_1-e_2)+H_{p2}(e_2-e_3)
@@ -274,17 +291,25 @@ in a simultaneous partial resolution of the degree-six cone
 \cite[Section~3]{Wuebben:2026smoothing}. They also agree with the
 diagonal invariants $z_i=q_i\widetilde q_i$ of the local moment-map
 presentation in Appendix~\ref{app:local-algebra}.
+At an $E_4$ point, the discriminant is the union of five hyperplanes
+\begin{equation}
+ \prod_{i=1}^5 z_i=0,\qquad
+ z=(c_1,c_2-c_1,c_3-c_2,c_4-c_3,-c_4),
+ \label{eq:e4-discriminant}
+\end{equation}
+by the integral conic-pencil marking of \eqref{eq:e4-pencil-isometry}.
 
 Let $\mathcal D_\sigma\subset\cB_\sigma$ be the union of the inverse
 images of these local discriminants under projection to the individual
-summands. The following is the degree-six/seven specialization of the
+summands. The following is the
 mixed smoothing theorem \cite[Theorem~4.7]{Wuebben:2026smoothing}.
 
 \begin{theorem}[exact smoothing criterion]
 \label{thm:all-orders-necessity}
 Let $X$ be a connected normal projective complex threefold with
 $\omega_X\cong\cO_X$ and $h^1(X,\cO_X)=0$, whose singularities are
-nodes and exact analytic anticanonical cones over $S_7$ or $S_6$.
+nodes and exact analytic anticanonical cones over $S_5$, $S_6$, $S_7$
+or $\PP^1\times\PP^1$.
 Fix a smooth crepant resolution, small over the nodes and standard
 divisorial over the cones, and a reduced branch profile $\sigma$.
 Then $X$ has a convergent one-parameter smoothing inducing $\sigma$
@@ -295,15 +320,17 @@ if and only if
 \end{equation}
 Equivalently, the relation space contains a vector nonzero on every
 rank-one summand and with all three $\mu_{pi}$ nonzero at each $E_3$
-plane. Necessity applies to arbitrary analytic smoothing arcs, without
+plane and all five $z_i$ nonzero at each $E_4$ point. Necessity applies to arbitrary analytic smoothing arcs, without
 an assumption on their order of contact with the local discriminants.
 \end{theorem}
 
 For necessity, the simultaneous partial resolution replaces an $E_3$
 plane by three nodes without changing the noncentral fibers of a smoothing
 arc. Nodal period necessity supplies three separate nonzero coefficients;
-their sum is zero in the del Pezzo marking. The rank-one period argument
-treats the other germs. A generic rational linear combination of the
+their sum is zero in the del Pezzo marking. At degree five, the boundary
+periods identify the five conic-pencil functionals; no one of them can
+vanish identically along a smoothing arc. The rank-one period argument
+treats the remaining germs. A generic rational linear combination of the
 resulting global relations makes all required coefficients nonzero
 simultaneously. This strengthens the scalar-period criterion of
 \cite{Wuebben:2026obstruction}. Sufficiency uses the selected-base
@@ -319,7 +346,8 @@ that none of the individual scalar functionals defining
 $\mathcal D_\sigma$ vanish identically on $\Kbranch$. A rational vector
 space is not a finite union of proper linear subspaces. Nonzero projection
 to an $A_2$ plane alone is weaker: the image can be one of its three
-discriminant lines.
+discriminant lines. Likewise, a nonzero projection to an $E_4$ summand can
+be contained in a conic-pencil hyperplane.
 \end{remark}
 
 \subsection{Selected-base integrability and its physical scope}
@@ -328,7 +356,7 @@ discriminant lines.
 Fix analytic local classifying maps from a semiuniversal deformation of
 $X$. Denote by $\operatorname{Def}^{\sigma}(X)$ the scheme-theoretic inverse
 image of the product of the selected reduced local branches. The following
-specialization of \cite[Theorem~4.5]{Wuebben:2026smoothing} concerns this
+result of \cite[Theorem~4.5]{Wuebben:2026smoothing} concerns this
 selected space, not the unrestricted deformation scheme.
 
 \begin{theorem}[smooth selected deformation base]\label{thm:selected-integrability}
@@ -341,18 +369,20 @@ Then $\operatorname{Def}^{\sigma}(X)$ is smooth of dimension
 \end{equation}
 and every tangent to it integrates to a convergent curve on the selected
 branches. No additional nonzero-projection hypothesis is required at
-nodes or $E_2$ points.
+nodes, $E_1$, $E_2$ or $E_4$ points.
 \end{theorem}
 
 The geometric proof replaces an $E_2$ cone by a cone over
 $\mathbb P^1\times\mathbb P^1$ and the $E_3$ line or plane by two or
-three nodes. The partial model has an unobstructed deformation space;
+three nodes; degree-five and original $\PP^1\times\PP^1$ cones
+remain unchanged. The partial model has an unobstructed deformation space;
 analytic blow-down and a surjective map on selected tangents give the
 asserted smooth base. This addresses the non-complete-intersection cone
 germs rather than assuming the nodal unobstructedness theorem applies to
 them unchanged.
 
-For the admissible toric class, Proposition~\ref{prop:physical-kernel}
+Whenever the projective crepant resolution of
+Theorem~\ref{thm:first-order-image} exists, Proposition~\ref{prop:physical-kernel}
 and Theorem~\ref{thm:all-orders-necessity} give
 \begin{equation}
  X\text{ smooths on }\sigma
@@ -370,9 +400,9 @@ The embedded $E_2$ tangent is not an additional finite trajectory, and
 selected profiles with zero $E_3$ projection are not covered by
 Theorem~\ref{thm:selected-integrability}.
 
-The geometric theorem also covers exact cones of degree five and cones
-over $\mathbb P^1\times\mathbb P^1$: their conditions are five nonzero
-conic-pencil pairings and a nonzero ruling-difference coefficient,
-respectively \cite[Section~1.2]{Wuebben:2026smoothing}. Extending the physical
-operator dictionary to those sectors is separate from the node/$E_2$/$E_3$
-comparison proved here.
+The physical comparison thus covers nodes and the $E_1,E_2,E_3,E_4$
+sectors with the specified exact analytic germs. Degrees one through four
+are not included. Although these complete intersections are locally
+smoothable, the full tangent--link isomorphism in
+Lemma~\ref{lem:local-comparison} does not extend to them. A mixed theorem needs a different
+comparison, as explained in \cite[Section~1.2]{Wuebben:2026smoothing}.
