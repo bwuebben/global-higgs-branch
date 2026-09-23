@@ -1,0 +1,510 @@
+Throughout this section $(M,g)$ is a connected quaternionic K\"ahler manifold of dimension $4n$,
+$n\geq2$, with nonzero reduced scalar curvature $\nu=\mathrm{scal}/(16n(n+2))$, so that
+$\HH\mathbb P^n$ with sectional curvature in $[1,4]$ has $\nu=1$; in supergravity $\nu<0$, and $M$ is not
+assumed compact or complete. Write $\mathcal Q\subset\Lambda^2T^*M$ for the parallel rank-three
+subbundle spanned locally by $\omega_a=g(I_a\cdot,\cdot)$, $a=1,2,3$, and
+$\omega=\sum_a\omega_a\otimes\omega_a\in\Gamma(\Lambda^2T^*M\otimes\mathcal Q)$. Let $G$ be a
+connected compact Lie group acting by isometries, with fundamental fields $X_\xi$,
+$\xi\in\mathfrak g$. Every such isometry preserves $\mathcal Q$: for a Killing field $X$ the form
+$\mathcal L_X\Omega$, with $\Omega=\sum_a\omega_a\wedge\omega_a$, is parallel, hence a constant
+multiple of $\Omega$ when the holonomy is $Sp(n)Sp(1)$, and the constant vanishes because
+$|\Omega|$ is constant; when the holonomy is smaller, $M$ is locally a symmetric quaternionic
+K\"ahler space, whose Killing fields preserve $\mathcal Q$.
+
+For $\nu\neq0$ there is a unique section $\mu_\xi$ of $\mathcal Q$ with
+$\nabla\mu_\xi=\iota_{X_\xi}\omega$, namely
+$\mu_\xi=c_0^{-1}(\nabla X_\xi^\flat)^{\mathfrak{sp}(1)}$ with $c_0$ a nonzero
+multiple of $\nu$ fixed by the normalisation of $\mu$, whose value plays no role
+below~\cite{Galicki:1987},~\cite[Thm.~2.4]{Galicki:1988},~\cite[p.~434]{Swann:1991}.
+Uniqueness holds on every connected open set, since $\mathcal Q$ has no nonzero parallel section
+when $\nu\neq0$; in particular there are no constants of integration, and the zero level is
+canonical~\cite[pp.~7--8]{Galicki:1988}. The quaternionic K\"ahler quotient is
+$\mu^{-1}(0)/G$ with the submersed metric of~\cite[Thm.~3.1]{Galicki:1988}.
+
+\subsection{The moment map near a fixed point}
+\label{subsec:qk-fixed}
+
+\begin{lemma}\label{lem:isotropy}
+Let $p$ be fixed by $G$ and $A_\xi:=\nabla X_\xi(p)$. Then
+$A_\xi\in\mathfrak{sp}(n)\oplus\mathfrak{sp}(1)_p$ and $\mu_\xi(p)$ is $c_0^{-1}$ times the
+$\mathfrak{sp}(1)$-component of $A_\xi$. The following are equivalent: $\mu(p)=0$; $G$ acts on
+$T_pM$ through $Sp(n)$; $G$ acts trivially on $\mathcal Q_p$.
+\end{lemma}
+
+\begin{proof}
+Since $G$ preserves $\mathcal Q$, $A_\xi$ normalises $\mathfrak{sp}(1)_p$. The normaliser of
+$\mathfrak{sp}(1)$ in $\mathfrak{so}(4n)$ is $\mathfrak{sp}(n)\oplus\mathfrak{sp}(1)$: every
+derivation of $\mathfrak{sp}(1)$ is inner, and the centraliser of $\mathfrak{sp}(1)$ is
+$\mathfrak{sp}(n)$. On this subalgebra the projection to $\mathcal Q$ is the projection to
+$\mathfrak{sp}(1)$, because the two ideals are orthogonal for the trace form: on
+$\CC^{2n}\otimes\CC^2$ one has
+$\operatorname{tr}(B\otimes1\cdot1\otimes C)=\operatorname{tr}B\operatorname{tr}C=0$. The last
+equivalence holds because $A_\xi$ acts on $\mathcal Q_p\cong\mathfrak{sp}(1)$ by the adjoint
+action of its $\mathfrak{sp}(1)$-part and $G$ is connected.
+\end{proof}
+
+Lemma~\ref{lem:isotropy} is essentially in~\cite[Sect.~4]{DancerSwann:1997}: the inclusion, the formula
+for $\mu_\xi(p)$ and the implication from $\mu(p)=0$ to a trivial action on $\mathcal Q_p$ are in the proofs
+of~\cite[Prop.~4.2 and Thm.~4.6]{DancerSwann:1997}; see also~\cite{Swann:1991}. The proof above is included for
+completeness.
+
+\begin{remark}[no Fayet--Iliopoulos parameter]\label{rem:no-fi}
+On a hyperk\"ahler manifold the moment map of a torus is defined only up to an additive constant
+$\zeta\in\mathfrak z(\mathfrak g)^*\otimes\mathbb R^3$, and the quotients $\mu^{-1}(\zeta)/G$,
+$\zeta\neq0$, resolve or deform the singular quotient at $\zeta=0$, completely or partially; for
+generic $\zeta$ and the flat models of Lemma~\ref{lem:flat-model} with all $|a_i|=1$, such as that
+of $X_9$, they are
+Kronheimer's asymptotically locally Euclidean spaces~\cite{Kronheimer:1989}, and in general they
+are orbifolds with points of type $\ZZ_{|a_i|}$. In supersymmetric gauge theory $\zeta$ is the Fayet--Iliopoulos
+parameter. For $\nu\neq0$ no such constant exists, and Lemma~\ref{lem:isotropy} identifies the
+value of the moment map at a fixed point: $\mu(p)\neq0$ exactly when the isotropy rotates the
+three complex structures at $p$. In supergravity language, a nonzero moment map at a fixed point
+is a gauging of a subgroup of the $SU(2)$ R-symmetry there; for a torus, of a $U(1)$ subgroup.
+On the Swann bundle, a hyperk\"ahler cone over $M$ for $\nu>0$ and a pseudo-hyperk\"ahler cone
+for $\nu<0$, the quaternionic K\"ahler quotient corresponds to the hyperk\"ahler quotient at level
+zero~\cite{Swann:1991}. No other level is possible: the level must be fixed by the $Sp(1)$ acting
+on the cone, which rotates the three complex structures. So when
+$\mu(p)=0$ the singular quotient at $[p]$ cannot be resolved or deformed by a choice of level:
+its germ is determined by the isotropy representation, as the rest of this section shows.
+\end{remark}
+
+\begin{lemma}\label{lem:fixed}
+Let $N$ be a connected component of $M^G$. Then $\mu|_N$ is parallel, so $|\mu|$ is constant
+on $N$ and either $N\subset\mu^{-1}(0)$ or $N\cap\mu^{-1}(0)=\varnothing$. If $\mu|_N=0$,
+then $N$ is a totally geodesic quaternionic submanifold with $T_{p'}N=(T_{p'}M)^G$, and over a
+geodesic ball $N_1\subset N$ with a frame of $\mathcal Q$ parallel along radial geodesics the
+normal bundle is a $G\times Sp(1)$-vector bundle whose fibres are mutually isomorphic
+representations.
+\end{lemma}
+
+\begin{proof}
+Along $N$ the fields $X_\xi$ vanish, so $\nabla_Y\mu_\xi=\omega(X_\xi,Y)=0$ for $Y$ tangent to
+$N$. For a fixed point $p'$ the exponential map at $p'$ is $G$-equivariant, so near $p'$ the
+fixed set is $\exp_{p'}((T_{p'}M)^G)$, a totally geodesic submanifold with tangent space the
+fixed vectors (for the zero set of a single Killing field this is~\cite{Kobayashi:1958}); by
+Lemma~\ref{lem:isotropy} the isotropy commutes with the $I_a$ along $N$, so that space is
+quaternionic. For the last statement, the multiplicities of the irreducible representations of
+$G\times Sp(1)$ in the fibres are continuous and integer-valued along the connected base, hence
+constant.
+\end{proof}
+
+Lemma~\ref{lem:fixed} is likewise essentially in~\cite{DancerSwann:1997}: for a stabiliser equal to
+all of $G$, their Proposition~4.2, with the connectedness step in the proof of their Theorem~4.6, and
+their Proposition~4.4 give that $N$ is a totally geodesic quaternionic K\"ahler submanifold, by Gray's
+theorem on almost quaternionic submanifolds~\cite{Gray:1969}, on which $\mu$ is parallel; the description of $T_{p'}N$ is in~\cite[Sect.~2]{DancerSwann:1997} and the
+constancy of the normal representation in~\cite[Sect.~4]{DancerSwann:1997}. The argument above gives the
+statement in the form used below.
+
+Let $p\in N$ with $\mu|_N=0$, let $V=T_pM/T_pN$ be the normal isotropy representation, so that
+$V^G=0$, and let
+\begin{equation}
+ \mu_0:V\to\mathfrak g^*\otimes\mathcal Q_p,\qquad
+ \mu_0(w)(\xi)=\tfrac12\textstyle\sum_a g(I_aA_\xi w,w)\,\omega_a ,
+ \label{eq:flat-moment}
+\end{equation}
+be its flat hyperk\"ahler moment map (with $\mathcal Q_p$ identified with $\mathbb R^3$ by the
+frame). By Lemma~\ref{lem:isotropy} the representation $V$ is quaternionic, and $\mu_0$ is the
+moment map of the rigid model. We write $S(V)$ for the unit sphere and $L_0:=\mu_0^{-1}(0)\cap
+S(V)$ for the \emph{link}; since $\mu_0$ is homogeneous of degree two, $\mu_0^{-1}(0)$ is the
+cone over $L_0$.
+
+\begin{lemma}\label{lem:expansion}
+For $p'\in N$ and $w\in V_{p'}$, let $\widetilde\mu(p',w)\in\mathfrak g^*\otimes\mathcal Q_{p'}$
+denote $\mu(\exp_{p'}w)$ in the frame of $\mathcal Q$ parallel along $t\mapsto\exp_{p'}(tw)$.
+Then, uniformly on compact subsets of $N$,
+\begin{equation}
+ \widetilde\mu(p',w)=\mu_0(w)-\tfrac1{24}\,\omega\bigl(R(A_\xi w,w)w,w\bigr)+O(|w|^5).
+ \label{eq:expansion}
+\end{equation}
+In particular there is no cubic term, for every $G$.
+\end{lemma}
+
+\begin{proof}
+Let $\gamma(t)=\exp_{p'}(tw)$, $f(t)=\widetilde\mu(p',tw)$ and $j(t)=X_\xi(\gamma(t))$, a Jacobi
+field with $j(0)=0$ and $j'(0)=A_\xi w$. Since $\omega$ is parallel and $\gamma$ is a geodesic,
+\begin{align*}
+ f'&=\omega(j,\gamma'), & f''&=\omega(j',\gamma'),\\
+ f'''&=-\omega\bigl(R(j,\gamma')\gamma',\gamma'\bigr), &
+ f''''&=-\omega\bigl((\nabla_{\gamma'}R)(j,\gamma')\gamma'+R(j',\gamma')\gamma',\gamma'\bigr).
+\end{align*}
+At $t=0$: $f(0)=0$ because $\mu|_N=0$; $f'(0)=f'''(0)=0$ because $j(0)=0$; and
+$f''(0)=\omega(A_\xi w,w)$, which is symmetric in $w$ because $A_\xi$ commutes with the $I_a$
+(Lemma~\ref{lem:isotropy}). Taylor's theorem with smooth dependence on $(p',w)$ gives the
+expansion; polarisation shows that the whole cubic form vanishes, not only its diagonal.
+\end{proof}
+
+\subsection{The normal form}
+\label{subsec:normal-form}
+
+\begin{theorem}\label{thm:normal-form}
+Let $(M,g)$ be a quaternionic K\"ahler manifold of dimension $4n\ge8$ with $\nu\neq0$, not
+necessarily complete, and $G$ a compact connected group acting isometrically with moment map
+$\mu$. Let $p$ be a fixed point with $\mu(p)=0$, $N$ the component of $M^G$ through $p$, $V$ the
+normal isotropy representation at $p$ with flat hyperk\"ahler moment map $\mu_0$, and $L_0$ its
+link. Assume that $G$ acts locally freely on $\mu_0^{-1}(0)\smallsetminus\{0\}$. Then:
+\begin{enumerate}
+\item there exist a neighbourhood $N_0$ of $p$ in $N$, $\delta>0$, a $G$-invariant
+ neighbourhood $U$ of $p$ with $U\cap M^G=N_0$, and a $G$-equivariant homeomorphism
+ \begin{equation}
+  \Psi:N_0\times\bigl(\mu_0^{-1}(0)\cap B_\delta(V)\bigr)\longrightarrow\mu^{-1}(0)\cap U,
+  \qquad \Psi(p',0)=p',
+  \label{eq:normal-form}
+ \end{equation}
+ which is a diffeomorphism away from $N_0\times\{0\}$; hence the germ of the quaternionic
+ K\"ahler quotient at $[p]$ is that of $N\times(V/\!/\!/G)$, compatibly with orbit types;
+\item if the action is free off the origin, $(\mu^{-1}(0)\cap U\smallsetminus N_0)/G$ is a smooth
+ quaternionic K\"ahler manifold of dimension $\dim M-4\dim G$;
+\item $\Psi$ can be chosen of the form
+ $\Psi(p',r\hat w)=\exp_{p'}\bigl(\sigma(p')\,r\,\tau(p',r,\hat w)\bigr)$, where $\sigma$ is a
+ smooth equivariant isometry from the model $V$ onto the normal spaces, parallel along radial
+ geodesics of $N$, and $\tau(p',r,\cdot):L_0\to S(V)$ is smooth up to $r=0$ with
+ $\tau(p',0,\cdot)=\mathrm{id}$, $\tau-\mathrm{id}=O(r^2)$, $D_{(p',\hat w)}(\tau-\mathrm{id})=O(r^2)$
+ and $\partial_r\tau=O(r)$, uniformly on $N_0$.
+\end{enumerate}
+\end{theorem}
+
+In words: near a fixed component with vanishing moment map, the zero set of $\mu$ is a bundle
+over $N$ whose fibre is the zero set of the rigid model, bent by an amount of order $r^2$ at
+distance $r$ from $N$. The proof has three steps. The first sets up coordinates normal to $N$.
+The second rescales the moment map by $r^{-2}$ and shows that the rescaled zero set is a smooth
+manifold transverse to the link at $r=0$. The third moves the link along $r$ by the flow of a
+connection; the vanishing of the cubic term in~\eqref{eq:expansion} makes the flow stationary to
+first order at $r=0$, which gives the rate $r^2$.
+
+\begin{proof}
+\emph{Step 1: coordinates.} Over a geodesic ball $N_1\ni p$ with a radially parallel frame of
+$\mathcal Q$, Lemma~\ref{lem:fixed} provides $\sigma$; in these coordinates $\mu_0$ does not
+depend on the base point. Choose $\delta$ below the normal injectivity radius over $N_1$; then
+normal coordinates on $U=\exp(T^\perp N|_{N_0}\cap B_\delta)$ are unique, and $U\cap M^G=N_0$
+because a fixed point $\exp_{p'}(w)$ forces $gw=w$ for all $g$, hence $w=0$ as $V^G=0$.
+
+\emph{Step 2: the rescaled zero set.} Put $\Phi(p',r,\hat w):=r^{-2}\widetilde\mu(p',r\hat w)$
+for $\hat w\in S(V)$ and $0<r<\delta$. By Lemma~\ref{lem:expansion},
+$\Phi=\mu_0(\hat w)+O(r^2)$, so $\Phi$ extends smoothly to $r=0$ with $\Phi(p',0,\cdot)=\mu_0$,
+$\partial_{p'}\Phi=0$ and $\partial_r\Phi=0$ there. We show that the differential of $\mu_0$ in
+the $\hat w$-direction is onto at every point of $L_0$. Its adjoint is
+$(\xi_a)_a\mapsto\sum_aI_aX_{\xi_a}(\hat w)$. On the zero level the three subspaces
+$I_a\mathfrak g\cdot\hat w$ are mutually orthogonal, since
+$g(I_aX_\xi,I_bX_\eta)=\pm\omega_c(X_\xi,X_\eta)=\pm\mu_0^c(\hat w)([\xi,\eta])=0$, and each is
+the image of $\mathfrak g\cdot\hat w$ under an isometry; local freeness makes
+$\xi\mapsto X_\xi(\hat w)$ injective, so the adjoint is injective and $d\mu_0$ is onto. By Euler's
+identity $d\mu_0(\hat w)\hat w=2\mu_0(\hat w)=0$, so the restriction to $T_{\hat w}S(V)$ is still
+onto. Choose a neighbourhood $O$ of $L_0$ in $S(V)$ on which $\partial_{\hat w}\Phi$ stays onto
+for small $r$, uniformly on $N_0$ by compactness. Outside $O$, $|\mu_0|\ge c>0$, while
+$|\Phi-\mu_0|\le Cr^2$; so for $C\delta^2<c$ the function $\Phi$ has no zeros outside $O$.
+Hence its zero set
+\[
+ Z:=\{(p',r,\hat w)\in N_0\times[0,\delta)\times S(V):\ \Phi(p',r,\hat w)=0\}
+\]
+is a closed submanifold with boundary $Z\cap\{r=0\}=N_0\times\{0\}\times L_0$, and the
+projection $\pi:Z\to N_0\times[0,\delta)$ is a proper $G$-equivariant submersion.
+
+\emph{Step 3: trivialisation.} Give $N_0\times[0,\delta)\times S(V)$ the product metric
+$g_N\oplus dr^2\oplus g_{S(V)}$, and on $Z$ take the connection whose horizontal spaces are the
+orthogonal complements of the fibres of $\pi$; it is $G$-invariant, since $G$ acts isometrically
+on $S(V)$, trivially on the other factors, and preserves $Z$. Let $\widetilde\partial_r$ be the
+horizontal lift of $\partial_r$; it has no $N_0$-component and $r$-component $1$. At $r=0$ the vector $(0,1,0)$ is
+tangent to $Z$, because $\partial_r\Phi=0$ there, and it is orthogonal to the fibre
+$N_0\times\{0\}\times L_0$; so $\widetilde\partial_r=(0,1,0)$ at $r=0$. Its $S(V)$-component
+$Y_S$ is therefore a smooth function vanishing at $r=0$, and $Y_S$ and its derivatives in $p'$
+and $\hat w$ are $O(r)$. Let $\tau(p',r,\hat w)$ be the $S(V)$-component of the flow of
+$\widetilde\partial_r$ at time $r$ from $(p',0,\hat w)$, $\hat w\in L_0$. Then
+$\partial_r\tau=Y_S(p',r,\tau)=O(r)$ gives
+$\tau-\mathrm{id}=O(r^2)$, and differentiating the flow equation in $(p',\hat w)$ and applying
+Gronwall's inequality gives the same bound for the first derivatives; this is (3). If the
+expansion~\eqref{eq:expansion} had a cubic term, $\partial_r\Phi$ would not vanish at $r=0$, $Y_S$
+would be of order one there, and the flow would only give $\tau-\mathrm{id}=O(r)$.
+
+The map $\Psi$ of (3) is a $G$-equivariant bijection onto $\mu^{-1}(0)\cap U$, since
+$N_0\subset\mu^{-1}(0)$ by Lemma~\ref{lem:fixed}; it is a diffeomorphism for $r>0$ and
+continuous with continuous inverse along $N_0$. Being $G$-equivariant, it preserves stabilisers
+and descends to a homeomorphism of orbit spaces that preserves orbit types. This proves (1). For (2),
+$\partial_{\hat w}\Phi$ is onto on $Z$ and $d\widetilde\mu=r^2d\Phi$ for $r>0$, so $\mu$ is a
+submersion on $\mu^{-1}(0)\smallsetminus N$, and~\cite[Thm.~3.1]{Galicki:1988} applies; (2) is also the
+case of trivial stabiliser of~\cite[Prop.~4.4]{DancerSwann:1997}.
+\end{proof}
+
+The topological type of the germ therefore depends only on the isotropy representation: neither
+$\nu$ nor the hyperk\"ahler part of the curvature nor any higher jet of the metric enters.
+
+\subsection{The quotient metric and its tangent cone}
+\label{subsec:tangent-cone}
+
+Let $Z_M:=\mu^{-1}(0)$ carry the intrinsic length metric $d_{Z_M}$ induced by $g$, and let
+$M_{\mathrm{red}}:=Z_M/G$ carry the quotient metric
+$d_{\mathrm{red}}([x],[y])=\inf_{h\in G}d_{Z_M}(hx,y)$. Where $G$ acts freely, horizontal lifts
+preserve length, so off the image of $N$ the metric $d_{\mathrm{red}}$ is locally the Riemannian
+distance of the Galicki--Lawson metric~\cite{Galicki:1988}.
+For compact connected $M$ and $G$ this is the length structure of Dancer and Swann, who show that each
+component of $M_{\mathrm{red}}$ is then a complete length space whose topology is the quotient
+topology~\cite[Sect.~7, Thm.~7.1]{DancerSwann:1997}. The statements below are local and assume
+neither compactness nor completeness.
+
+\begin{lemma}\label{lem:reduced-metric}
+In the situation of Theorem~\ref{thm:normal-form}, assume that the link $L_0$ is nonempty and
+connected. Then near $[p]$ the intrinsic metrics of $Z_M$ and of $Z_M\smallsetminus N$ agree on
+$Z_M\smallsetminus N$, and $(M_{\mathrm{red}},d_{\mathrm{red}})$ is near $[p]$ the metric
+completion of its part off the image of $N$. The assumption holds for a torus with
+$\mu_0^{-1}(0)\neq\{0\}$.
+\end{lemma}
+
+\begin{proof}
+For a torus acting on $V=\HH^k$ with weights $q$, write $\mu_i$ for the moment map of the
+$i$-th summand. Then $L_0$ is the preimage under the map $w\mapsto(\mu_i(w))_i$ of the set
+\[
+ \Bigl\{(\mu_i)_i\in(\mathbb R^3)^k:\ \textstyle\sum_iq_i\otimes\mu_i=0\ \text{for all }q,\
+ \sum_i|\mu_i|=\tfrac12\Bigr\},
+\]
+the unit sphere of a norm on the subspace $K\otimes\mathbb R^3$, where $K\neq0$ is the annihilator
+of the weights in $\mathbb R^k$; this subspace has dimension at least three, so the sphere is
+connected. The map is proper and onto, with connected fibres (products of circles and points),
+so $L_0$ is connected.
+
+Work in the chart $\Psi$ of Theorem~\ref{thm:normal-form}(3), with coordinates $(v,r,\hat w)$ on
+$Z_M\cap U$, and compare the induced metric with $g_0=g_N\oplus dr^2\oplus r^2g_{L_0}$. At $r=0$
+the differential of $\exp$ is an isometry along the normal directions, and the variation along
+$N$ is a Jacobi field with initial value the variation of $v$ and initial derivative given by the
+normal connection applied to $\sigma w$, which is of order $r$; since $\tau$ is smooth up to
+$r=0$, the pullback of $g$ is $(1+O(r))g_0$ uniformly on $N_0$. Let $\gamma$ be a curve in $Z_M\cap
+U$ of length $\ell$ joining two points off $N$, and let $0<\eta'<\eta$ be smaller than the
+values of $r$ at its endpoints. Consider the components $I$ of $\{t:\ r(\gamma(t))<\eta\}$ that
+contain a zero of $r$. On each, $\gamma$ descends from $r=\eta$ to $r=0$ and returns, so its
+length there is at least $\eta$, and there are at most $\ell/\eta+1$ such components. In such a
+component let $a$ and $b$ be the first and last zeros of $r$, let $a'<a$ be the last time
+before $a$ with $r=\eta'$ and $b'>b$ the first time after $b$ with $r=\eta'$. Replace
+$\gamma|_{[a',b']}$ by the curve that moves along $L_0$ at radius $\eta'$ from $\gamma(a')$ to a
+fixed point $(v(a'),\eta',\hat w_*)$, then follows $t\mapsto(v(t),\eta',\hat w_*)$, and moves
+along $L_0$ at radius $\eta'$ to $\gamma(b')$; this uses that $L_0$ is connected. The new curve
+avoids $N$. Its middle piece is at most $(1+O(\eta))$ times as long as $\gamma|_{[a',b']}$,
+since the $g_0$-length of a curve bounds the $g_N$-length of its projection, and the two arcs in
+$L_0$ have length $O(\eta')$. The total added length is therefore at most
+$(\ell/\eta+1)\,O(\eta')+O(\eta)\,\ell$, which tends to zero when first $\eta'\to0$ and then
+$\eta\to0$. So the two intrinsic metrics agree on $Z_M\smallsetminus N$.
+
+The same comparison with $g_0$, together with the connectedness of $L_0$, shows that near $N$
+the intrinsic metric of $Z_M$ is bounded by a constant times the ambient distance, so
+$Z_M\cap\overline U$ is complete for the intrinsic metric. Since $Z_M\smallsetminus N$ is dense in
+$Z_M$, $Z_M$ is near $p$ the completion of $Z_M\smallsetminus N$. Passing to orbit metrics commutes with completion
+for a compact group acting isometrically, which gives the statement for $M_{\mathrm{red}}$.
+\end{proof}
+
+\begin{proposition}\label{prop:tangent-cone}
+In the situation of Theorem~\ref{thm:normal-form}, with the action free off the origin, the
+pointed rescalings $(M_{\mathrm{red}},\varepsilon^{-1}d_{\mathrm{red}},[p])$ converge in the
+pointed Gromov--Hausdorff sense to $T_pN\times V/\!/\!/G$ with its flat product metric. More
+precisely, for every $R>0$ and small $\varepsilon>0$ there is a homeomorphism from the ball of radius
+$R$ about the vertex of $T_pN\times V/\!/\!/G$ onto a neighbourhood of $[p]$ in
+$(M_{\mathrm{red}},\varepsilon^{-1}d_{\mathrm{red}})$, sending the vertex to $[p]$, that is bi-Lipschitz
+onto its image with constant $1+O(\varepsilon^2R^2)$; its image contains the ball of radius
+$R(1-C\varepsilon^2R^2)$ about $[p]$. In particular, at distance $r$ from $[p]$ the metric differs from the flat
+model by relative corrections of order $r^2$.
+\end{proposition}
+
+\begin{proof}
+Use the coordinates $x=(v,w)\mapsto\exp_{\exp^N_p(v)}(\sigma(\exp^N_pv)\,w)$ of
+Theorem~\ref{thm:normal-form}(3); since $\sigma$ and the frame of $\mathcal Q$ are radially
+parallel, these are Fermi coordinates along the totally geodesic $N$, and $g=g_p+O(|x|^2)$.
+Rescale: $g_\varepsilon=\varepsilon^{-2}(\text{pullback of }g\text{ under }x\mapsto\varepsilon x)$
+satisfies $g_\varepsilon=g_p+O(\varepsilon^2R^2)$ on the ball of radius $3R$. The rescaled chart
+$\Psi_\varepsilon(v,r\hat w)=(v,r\,\tau(\exp^N(\varepsilon v),\varepsilon r,\hat w))$ maps
+$T_pN\times\operatorname{cone}(L_0)$ onto the rescaled zero set, and by
+Theorem~\ref{thm:normal-form}(3) it differs from the inclusion by $O(\varepsilon^2R^2)$ in $C^1$
+there. It preserves $v$ and $|w|$ and is the identity on $\{r=0\}$. Since
+$|\Psi_\varepsilon-\mathrm{id}|=r|\tau-\mathrm{id}|=O(\varepsilon^2R^2)\,r$ and
+$d\Psi_\varepsilon-\mathrm{id}=O(\varepsilon^2R^2)$ for $r>0$, it is Lipschitz in the chart with
+constant $1+O(\varepsilon^2R^2)$.
+
+Let $\gamma$ be a rectifiable curve in the model cone. Then $\Psi_\varepsilon\circ\gamma$ is
+rectifiable and differentiable almost everywhere. At almost every time either
+$r(\gamma(t))>0$, where the $C^1$ estimate compares the speeds of $\gamma$ and
+$\Psi_\varepsilon\circ\gamma$, or $\gamma(t)$ lies in $\{r=0\}$ at a density point of the set of
+such times (the other times form a null set, by the Lebesgue density theorem), where $\gamma'(t)$ is tangent to $\{r=0\}=T_pN$ and $\Psi_\varepsilon$ acts as the
+identity; there the two metrics differ by $O(\varepsilon^2R^2)$. Integrating, the
+$g_\varepsilon$-length of $\Psi_\varepsilon\circ\gamma$ is $1+O(\varepsilon^2R^2)$ times the flat
+length of $\gamma$. The same holds for $\Psi_\varepsilon^{-1}$, and near-minimising curves between
+points of the ball of radius $R$ stay in the ball of radius $3R$. The intrinsic metrics are
+therefore $(1+O(\varepsilon^2R^2))$-bi-Lipschitz, and since $\Psi_\varepsilon$ is equivariant so
+are the orbit metrics. Since $\Psi_\varepsilon$ is defined on the ball of radius $3R$ and small
+$d_{\mathrm{red}}$-balls about $[p]$ lie in the chart, every point at rescaled distance less than
+$R(1-C\varepsilon^2R^2)$ from $[p]$ is the image of a model point of norm less than $R$.
+\end{proof}
+
+For the transition of Section~\ref{sec:face}, under Hypothesis~\ref{hyp:regular}, the model is
+$V=\HH^4$ with the weights~\eqref{eq:app-Q} and $V/\!/\!/T^3=\CC^2/\ZZ_4$ with its flat orbifold
+metric: right multiplication by $j$ on a hypermultiplet reverses the sign of its charge and
+preserves the hyperk\"ahler structure, which carries the effective torus to that of Kronheimer's
+$A_3$ quotient at zero level~\cite{Kronheimer:1989}. The leading behaviour at the root is
+therefore the flat cone over the round $S^3/\ZZ_4$, and the order of the cyclic group is fixed by
+the charges.
+
+\begin{remark}\label{rem:examples}
+The following examples illustrate Theorem~\ref{thm:normal-form} and
+Proposition~\ref{prop:tangent-cone}.
+\begin{enumerate}
+\item On quaternionic projective space $\HH\mathbb P^d$, normalised to sectional curvature in
+ $[1,4]$, with a torus acting linearly in homogeneous coordinates, fixing a point $p$ and
+ acting trivially on its homogeneous coordinate (equivalently $\mu(p)=0$), the moment map in the
+ radially parallel frame is exactly $\mu_0(w)\,(\sin|w|/|w|)^2$ for $|w|<\pi/2$; on the
+ noncompact dual it is $\mu_0(w)\,(\sinh|w|/|w|)^2$. The zero set is then exactly the flat
+ cone in normal coordinates, and the expansion~\eqref{eq:expansion} can be read off.
+\item On quaternionic hyperbolic space of quaternionic dimension four, normalised to sectional
+ curvature in $[-4,-1]$, with $T^3$ acting linearly at the origin with the
+ weights~\eqref{eq:app-Q} (so $N$ is a point), the quotient metric is exactly
+ $dr^2+\tfrac14\sinh^2(2r)\,g_{S^3/\ZZ_4}$, real hyperbolic space of curvature $-4$ divided by
+ $\ZZ_4$. Since $\tfrac14\sinh^2 2r=r^2(1+\tfrac43r^2+O(r^4))$, the coefficient of the link
+ metric deviates from the flat one at relative order $\tfrac43r^2$, and the bi-Lipschitz constant
+ of Proposition~\ref{prop:tangent-cone} is $1+\tfrac23R^2+O(R^4)$: the rate is attained. The same
+ torus acting on four homogeneous coordinates of $\HH\mathbb P^d$, $d\ge5$, gives a quotient
+ whose germ along $N=\HH\mathbb P^{d-4}$ is $N\times\CC^2/\ZZ_4$, with slice metric
+ $d\rho^2+\tfrac14\sin^2(2\rho)\,g_{S^3/\ZZ_4}$.
+\item The hypothesis $\mu(p)=0$ cannot be dropped: the circle acting on $\HH\mathbb P^d$ by
+ left multiplication with $e^{i\theta}$ has fixed set $\CC\mathbb P^d$, on which $|\mu|$ is a
+ nonzero constant, and its quotient $\operatorname{Gr}_2(\CC^{d+1})$ does not meet the image of
+ the fixed set.
+\end{enumerate}
+\end{remark}
+
+\begin{remark}[hyperk\"ahler and K\"ahler quotients]\label{rem:hk}
+The proofs of Lemmas~\ref{lem:fixed} and~\ref{lem:expansion}, Theorem~\ref{thm:normal-form},
+Lemma~\ref{lem:reduced-metric} and Proposition~\ref{prop:tangent-cone} use the quaternionic K\"ahler
+structure only through three facts: $\nabla\mu_\xi=\iota_{X_\xi}\omega$ with $\omega$ parallel,
+$\mu(p)=0$, and the action of the isotropy at $p$ through a group preserving the flat structure defined
+by the $\omega_a$ on $T_pM$. They therefore hold verbatim for a Riemannian hyperk\"ahler manifold, not
+necessarily complete, with a compact connected group acting tri-Hamiltonianly, at any fixed point $p$:
+for an equivariant moment map $\mu$, $\mu':=\mu-\mu(p)$ is again equivariant, since $\mu(p)=\mu(gp)=\mathrm{Ad}^*_g\mu(p)$, so that the statements concern $\mu^{-1}(\mu(p))/G$. Moreover, the isotropy commutes with the complex structures at
+every fixed point, the frame of $\mathcal Q$ is globally parallel, and part (2) of
+Theorem~\ref{thm:normal-form} uses the hyperk\"ahler quotient
+construction~\cite{HitchinKLR:1987} on the open set where the action is free. Theorem~\ref{thm:normal-form},
+Proposition~\ref{prop:tangent-cone} and Lemma~\ref{lem:reduced-metric}, under its hypothesis that the
+link is connected, also hold for K\"ahler quotients at a fixed point, at the level $\mu(p)$ after the same
+shift, with the flat K\"ahler quotient of
+the isotropy representation as the model; there part (1) of Theorem~\ref{thm:normal-form} is contained in the
+symplectic local normal form~\cite{Marle:1985,GuilleminSternberg:1984} and its consequences for singular
+reduction~\cite{SjamaarLerman:1991}, and the metric statements are what the proofs add. For positive-definite hyperk\"ahler manifolds on which the action of the complexified group
+exists, that is, the vector fields $I_1X_\xi$ are complete, a complex-analytic local model at any point of the quotient is due to
+Mayrand~\cite[Thm.~1.4]{Mayrand:2022}; its proof uses the global K\"ahler quotient and does not apply to an
+invariant neighbourhood of $p$ alone. The metric tangent cone of the quotient metric, with the rate $r^2$, we
+have not found in the literature; tangent cones are not considered in the length structure
+of~\cite[Sect.~7]{DancerSwann:1997} recalled in Section~\ref{subsec:tangent-cone}. The closest statements are the expansion
+$dr^2+r^2(g_0+O(r^2))$ of the $L^2$ metric near a reducible
+instanton~\cite[Thm.~I; cf.\ Thm.~2.8]{GroisserParker:1989}, the product structure, up to a term vanishing
+with the distance to the stratum, at points of the singular strata of flat hyperk\"ahler cones of quiver
+data away from the vertex~\cite{DimakisRochon:2024}, and the description of the tangent cone of a
+Riemannian orbit space $M/G$ at $[p]$ as the normal space divided by the
+isotropy~\cite[Sect.~2]{Spindeler:2015}, which concerns the extrinsic metric of $\mu^{-1}(0)/G$ rather
+than its length metric. When $M$ is a hyperk\"ahler or quaternionic K\"ahler four-manifold the link $L_0$ is empty and these
+statements are vacuous. Lemma~\ref{lem:zero-graph}
+and Proposition~\ref{prop:universal} below also hold for hyperk\"ahler quotients, with $\nu=0$ and
+$R=R_{\mathrm{hk}}$.
+\end{remark}
+
+\subsection{The leading correction}
+\label{subsec:leading}
+
+Proposition~\ref{prop:tangent-cone} says that the quotient metric differs from the flat cone at
+relative order $r^2$. We now determine this
+correction in the direction transverse to $N$. By Alekseevsky's theorem~\cite{Alekseevsky:1968} the
+curvature of $M$ at $p$ is
+\begin{equation}
+ R=\nu\,R_{\HH\mathbb P}+R_{\mathrm{hk}},
+ \label{eq:curvature-split}
+\end{equation}
+where $R_{\HH\mathbb P}$ is the curvature tensor of $\HH\mathbb P^n$ with sectional curvatures in
+$[1,4]$ and $R_{\mathrm{hk}}$ is an algebraic curvature tensor of hyperk\"ahler type, that is, commuting
+with the $I_a$. In supergravity $\nu$ is fixed in Planck units, while $R_{\mathrm{hk}}$ depends on the
+compactification.
+
+In the situation of Theorem~\ref{thm:normal-form}, the \emph{transverse slice} at $p$, which realises the
+transverse type of Section~\ref{sec:introduction} metrically, is
+$\mathcal Y_p=\bigl(\mu^{-1}(0)\cap\exp_p(V\cap B_\delta)\bigr)/G$ with the length metric induced from
+$M_{\mathrm{red}}$; by Theorem~\ref{thm:normal-form} its germ at $[p]$ is that of $V/\!/\!/G$.
+
+\begin{lemma}\label{lem:zero-graph}
+In normal coordinates at $p$, the zero set of $\mu$ in $\exp_p(V)$ is $\{x+\psi(x)\}$ with $x$ in the zero
+set $\mu_0^{-1}(0)$ of the flat moment map, where $\psi(x)$ lies in the span of the vectors $I_bA_\eta x$ of the flat model,
+is unique in a conic neighbourhood $|\psi|\leq\varepsilon|x|$, and satisfies $\psi=\psi_3+O(|x|^4)$ with $\psi_3$
+homogeneous of degree three.
+\end{lemma}
+
+\begin{proof}
+Write $x=r\hat x$ and $\psi=r\varphi$. On the link, $d\mu_0(\hat x)$ restricted to the span of the
+$I_bX_\eta(\hat x)$ is an isomorphism (Step~2 of the proof of Theorem~\ref{thm:normal-form}), so the
+implicit function theorem applied to $r^{-2}\widetilde\mu(r(\hat x+\varphi))=0$ at $(r,\varphi)=(0,0)$, uniformly
+over the compact link, gives $\varphi$; by~\eqref{eq:expansion} $\varphi=O(r^2)$, since there is no cubic term, so
+$\psi$ has a cubic leading part, and the quintic term of the expansion gives a remainder of order four.
+\end{proof}
+
+We identify $\HH=\CC\oplus\CC j$ with $\CC^2$ by $(\alpha,\beta)\mapsto\alpha+\beta j$, with $I_1,I_2,I_3$
+acting by left multiplication by $i,j,k$, and orient $\CC^2$ so that the K\"ahler forms of the flat structure
+are self-dual; tensors of hyperk\"ahler type on $\CC^2$ are then the anti-self-dual Weyl tensors, and form a
+real space of dimension five. (In the opposite orientation, the usual one for four-dimensional
+quaternionic K\"ahler geometry, these are self-dual.)
+
+\begin{definition}\label{def:leading}
+Suppose that $V/\!/\!/G$ has real dimension four, that $G$ acts freely on $\mu_0^{-1}(0)\smallsetminus\{0\}$,
+and that there is a linear map $\ell:\HH\to V$ commuting with the $I_a$, with $\ell(\HH)\subset\mu_0^{-1}(0)$
+and horizontal, $\ell(\HH)\perp\mathfrak g\cdot\ell(y)$ for every $y$. Then $|\ell y|=c_\ell|y|$ for a constant $c_\ell$; let
+$\Gamma\subset G$ be the stabiliser of the quaternionic line $\ell(\HH)$. The \emph{uniformising chart
+determined by $\ell$} is $y\mapsto[\exp_p(\ell y+\psi(\ell y))]$, from a neighbourhood of $0$ in $\HH$ to
+$\mathcal Y_p$, with $\psi$ as in Lemma~\ref{lem:zero-graph}. The pulled-back metric $g^{\mathcal Y}$ is not known to be twice
+differentiable at $0$. If, in the coordinate $z=c_\ell y$, it has an expansion
+$g^{\mathcal Y}_{ij}(z)=\delta_{ij}+Q_{ij}(z)+O(|z|^3)$ with $Q$ quadratic, the \emph{leading curvature} $R_0$ of
+$\mathcal Y_p$ is the curvature at $0$ of the metric $\delta+Q$; Proposition~\ref{prop:universal} shows that
+such an expansion exists. Where $g^{\mathcal Y}$ is twice differentiable at $0$, $R_0$ is its curvature there.
+\end{definition}
+
+For the torus models of Lemma~\ref{lem:flat-model}, $\ell(\alpha,\beta)$ is $\sqrt{|a_i|}\,(\alpha,\beta)$ on the
+hypermultiplets with $a_i>0$ and $\sqrt{|a_i|}\,(\beta,-\alpha)$ on those with $a_i<0$, in the coordinates
+$(z_i,\tilde z_i)$ of the proof of that lemma; then $c_\ell^2=m$ and $\Gamma=\ZZ_m$. For these models any other map satisfying the conditions of Definition~\ref{def:leading} is
+$h\circ\ell\circ(s\rho_v)$ with $h\in G$, $s>0$ and $\rho_v$ right multiplication by a unit quaternion, an
+isometry of $\HH$ commuting with the $I_a$; so the line $\ell(\HH)$ is unique up to $G$, and $R_0$ is defined
+up to the action of the right $Sp(1)$, which acts on the anti-self-dual Weyl tensors and conjugates $\Gamma$. By Proposition~\ref{prop:universal}, $R_0$ is a $\Gamma$-invariant
+algebraic curvature tensor, and the pulled-back metric is $|dz|^2-\tfrac13\langle R_0(\cdot,z)z,\cdot\rangle
++O(|z|^3)$.
+
+\begin{proposition}\label{prop:universal}
+Assume that $V/\!/\!/G$ has real dimension four, that $G$ acts freely on $\mu_0^{-1}(0)\smallsetminus\{0\}$,
+that the link $L_0$ is connected (automatic for a torus, Lemma~\ref{lem:reduced-metric}), and that a map
+$\ell$ as above exists. Then the leading curvature of $\mathcal Y_p$ (Definition~\ref{def:leading}) is the curvature of $M$
+at $p$ restricted to the quaternionic line $\ell(\HH)$:
+\begin{equation}
+ R_0=c_\ell^{-4}\,\ell^*\bigl(R|_{\ell(\HH)}\bigr).
+ \label{eq:delta}
+\end{equation}
+Consequently $\nu R_{\HH\mathbb P}$ contributes $4\nu R^{(1)}$, where $R^{(1)}(X,Y)Z=\langle Y,Z\rangle X-\langle X,Z\rangle Y$
+is the algebraic curvature tensor of constant sectional curvature $1$ on $\HH$, and $R_{\mathrm{hk}}$ contributes the anti-self-dual Weyl tensor
+$c_\ell^{-4}\ell^*(R_{\mathrm{hk}}|_{\ell(\HH)})$. If the latter vanishes, $\mathcal Y_p$ agrees to second order
+at its vertex with the quotient by $\Gamma$ of the space form of curvature $4\nu$.
+\end{proposition}
+
+\begin{proof}
+First, $\ell$ induces a homothety onto $V/\!/\!/G$: the induced map from the unit sphere $S^3\subset\HH$ to
+$L_0/G$ is a local homothety between compact connected three-manifolds, hence a covering and onto, and if
+$h\ell(y)=\ell(y')$, $h\in G$, then $h\ell(\HH)$ and $\ell(\HH)$ are both the horizontal space of the zero set
+at $\ell(y')$, so $h\in\Gamma$. In normal coordinates at $p$ the metric is
+$g_x(Y,Z)=\langle Y,Z\rangle-\tfrac13\langle R(Y,x)x,Z\rangle+O(|x|^3)$. The tangent vectors of the surface
+$y\mapsto\ell y+\psi(\ell y)$ of Lemma~\ref{lem:zero-graph} are $\ell v+\partial_v\psi$. Their pairings
+$\langle\ell v,\partial_w\psi\rangle$ vanish: since $\ell$ commutes with the $I_b$ and its image is orthogonal to
+the orbits, $\langle\ell v,I_bX_\eta(\ell y)\rangle=0$ for all $v,y$, and differentiating in $y$ gives the
+claim. The remainder $\psi-\psi_3=O(|x|^4)$ changes the metric by $O(r^5)$. The components of the tangent vectors
+along the orbits are $O(|R|r^3)$, against an orbit Gram matrix of size $r^2$, so passing to the horizontal
+part changes the metric by $O(|R|^2r^4)$. Hence the metric in the uniformising chart is
+$c_\ell^2|dy|^2-\tfrac13\langle R(\ell\cdot,\ell y)\ell y,\ell\cdot\rangle+O(|y|^3)$, which is~\eqref{eq:delta}
+after rescaling. For $Y$ in the line spanned by $x,I_1x,I_2x,I_3x$ one has
+$\langle R_{\HH\mathbb P}(Y,x)x,Y\rangle=|x|^2|Y|^2-\langle x,Y\rangle^2+3\sum_b\langle I_bx,Y\rangle^2
+=4\bigl(|x|^2|Y|^2-\langle x,Y\rangle^2\bigr)$: quaternionic lines have sectional curvature $4$. A tensor of
+hyperk\"ahler type restricted to a quaternionic line is of hyperk\"ahler type in dimension four, hence an
+anti-self-dual Weyl tensor.
+\end{proof}
+
+When $N$ is a point the quotient is a four-dimensional quaternionic K\"ahler orbifold with the same
+$\nu$~\cite{Galicki:1988}, that is, Einstein with one half of its Weyl tensor vanishing (with the
+orientation above, the self-dual half), so the form of its curvature at smooth points is forced. The
+content of Proposition~\ref{prop:universal} is the formula~\eqref{eq:delta} for the leading curvature at
+the vertex. For $\nu=-1$ and $R_{\mathrm{hk}}=0$ it is consistent with the metric
+$dr^2+\tfrac14\sinh^2(2r)\,g_{S^3/\ZZ_4}$ of Remark~\ref{rem:examples}(2), whose relative correction
+$\tfrac43r^2$ is that of curvature $-4$. In four-dimensional $N=2$ supergravity, in units $\kappa^2=1$ and
+for the metric of the hypermultiplet manifold normalised by the Lagrangian of~\cite{Hristov:2009}, its
+scalar curvature is $-8n_H(n_H+2)$~\cite[eq.~(2.3)]{Hristov:2009}, so that $\nu=-\tfrac12$ and the universal
+part of the leading curvature is $-2R^{(1)}$; the five-dimensional value, in units of the
+five-dimensional Planck mass, is not needed here.

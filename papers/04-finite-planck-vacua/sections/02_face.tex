@@ -1,0 +1,175 @@
+\subsection{The threefold \texorpdfstring{$X_9$}{X9} and its transition}
+\label{subsec:x9}
+
+We recall the facts about $X_9$ used below; all of them are established
+in~\cite{W26global,W26quantum}.
+
+The resolution $\wideX_9$ is a smooth anticanonical hypersurface in a toric fourfold whose fan is
+built on the polytope with vertices $v_0,\dots,v_8$ of~\cite[eq.~(3.1)]{W26quantum}. For a vertex $v_i$ we write $D_i$ for the
+restriction to $\wideX_9$ of the corresponding toric divisor. Blowing down the exceptional
+locus gives a morphism $\pi:\wideX_9\to X_9$ onto a Calabi--Yau threefold $X_9$ with three
+singular points: two ordinary double points and one cone over the degree-seven del Pezzo surface
+$S_7=\operatorname{Bl}_2\mathbb P^2$. The exceptional locus of $\pi$ consists of the two nodal
+curves $C_1,C_2$ and a surface $E\cong S_7$, the divisor of an interior lattice point of a
+two-dimensional face of the polytope. We write $e_1,e_2$ for the two exceptional curves of $E$
+and $h$ for the pullback of the hyperplane class of $\mathbb P^2$, so that $h-e_1-e_2$ is the
+third $(-1)$-curve of $E$.
+
+The singular threefold $X_9$ has an explicit smoothing $X_{9,t}$~\cite[Sect.~3.1]{W26quantum}.
+Near the three singular points, write the nodes as $xy-zw=u_i$, $i=1,2$, and let $s$ be the
+coordinate on the reduced local deformation space of the del Pezzo cone
+of~\cite[eqs.~(2.2), (2.3)]{W26quantum}, denoted $\beta$ there; in the $E_2$ theory it is the
+Cartan component of the moment map of its $SU(2)$ flavour symmetry. The image of every global
+first-order deformation of $X_9$ in these local parameters lies on the line
+\begin{equation}
+ u_1+s=u_2+s=0,
+ \label{eq:x9-line}
+\end{equation}
+and the smoothing moves along it in the direction $(u_1,u_2,s)=t(-1,-1,1)$, smoothing all
+three points at once~\cite[eqs.~(3.4), (3.9)]{W26quantum}; the statement about all global
+first-order deformations follows from the proof of~\cite[Thm.~2.2]{W26quantum}, which applies to
+the full space of local first-order deformations. The reason is that the two nodal curves and the
+class $e_1-e_2$ of the del Pezzo surface satisfy $\iota_*(e_1-e_2)=C_1+C_2$ in
+$H_2(\wideX_9;\ZZ)$, so the three local sectors are charged under the same two vector
+multiplets. The transition changes the Hodge numbers from $(h^{1,1},h^{2,1})=(6,122)$ to
+$(3,123)$~\cite[eqs.~(1.2), (3.5)]{W26quantum}: three vector multiplets are lost, two Higgsed by
+the nodal and del Pezzo hypermultiplets and one because the Coulomb direction of the $E_2$ theory
+disappears, and one neutral hypermultiplet appears.
+
+\subsection{A face on which four curves contract}
+\label{subsec:face}
+
+Let $H_1,\dots,H_6$ be the integral basis of $H^2(\wideX_9;\ZZ)$ formed by the
+generators of the ambient nef cone restricted to $\wideX_9$~\cite[eq.~(C.1)]{W26quantum},
+and $\beta_1,\dots,\beta_6$ the dual curve classes. Writing $\iota:E\to\wideX_9$ for the inclusion, in
+this basis
+\begin{equation}
+ C_2=\beta_1,\qquad C_1=\beta_5,\qquad \iota_*e_2=\beta_6,\qquad
+ \iota_*e_1=\beta_1+\beta_5+\beta_6,\qquad \iota_*(h-e_1-e_2)=\beta_2,
+ \label{eq:face-charges}
+\end{equation}
+and $H_3=D_1$, $H_4=D_0$ are the two classes pulled back from $X_9$; the divisors $D_0,D_1$
+do not meet the exceptional locus. For $J$ in the K\"ahler cone the gauge kinetic matrix of the
+vector multiplets is proportional to the Hodge metric $\int\omega_I\wedge*_J\omega_K$ on harmonic
+two-forms. With $L(J)=(\kappa_{IKM}J^M)_{I,K=1}^{6}$ the full $6\times6$ matrix on
+$H^2(\wideX_9)$, $v=LJ$ and $\operatorname{vol}=J^3/6$, it is
+$\mathcal G=-L+vv^{\mathsf T}/(4\operatorname{vol})$~\cite[eqs.~(4.1), (4.6)]{W26quantum}. For curve classes $\gamma_1,\dots,\gamma_k$ we write $\operatorname{ann}(\gamma_1,\dots,\gamma_k)$
+for the subspace of $H^2(\wideX_9;\mathbb R)$ on which they all vanish. Set
+\begin{equation}
+ F:=\{\,J=y_2H_2+y_3H_3+y_4H_4\ :\ y_2,y_3,y_4>0\,\}.
+ \label{eq:face-def}
+\end{equation}
+Since $H_2\cdot e_i=0$ and $H_2\cdot(h-e_1-e_2)=1$, one has $H_2|_E=h$, and hence
+$J|_E=y_2\,h$ for $J\in F$.
+
+\begin{proposition}\label{prop:face}
+$\overline F=\operatorname{Nef}(\wideX_9)\cap\operatorname{ann}(C_1,C_2,e_1,e_2)$, and
+for $J\in F$:
+\begin{enumerate}
+\item an irreducible curve $C\subset\wideX_9$ has $J\cdot C=0$ if and only if
+ $C\in\{C_1,C_2,e_1,e_2\}$; these four curves are pairwise disjoint and each has normal
+ bundle $\mathcal O(-1)\oplus\mathcal O(-1)$;
+\item every prime divisor has positive volume; in particular
+ $\operatorname{vol}(E)=\tfrac12J^2\cdot E=y_2^2/2$;
+\item the gauge kinetic matrix $\mathcal G$ is positive definite.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Since $H_2,H_3,H_4$ are nef, $J\cdot C=0$ forces $H_2\cdot C=D_1\cdot C=D_0\cdot C=0$.
+The classes $y_3D_1+y_4D_0$ with $y_3,y_4>0$ are exactly
+$\pi^*\operatorname{Amp}(X_9)$. Indeed $\pi^*\operatorname{Nef}(X_9)
+=\operatorname{Nef}(\wideX_9)\cap\pi^*H^2(X_9;\mathbb R)=\operatorname{cone}(D_0,D_1)$
+\cite[Prop.~4.1]{W26quantum}, and every line bundle $L$ on $\wideX_9$ of degree zero on all curves in the
+fibres of $\pi$ is pulled back from $X_9$: since $K_{\wideX_9}=0$ and every line bundle is $\pi$-big for
+birational $\pi$, the relative basepoint-free theorem~\cite[Thm.~3.24]{KollarMori:1998}, with $\Delta=0$
+and $a=1$, shows that $L^b$ and $L^{b+1}$ are $\pi$-globally generated for $b\gg0$; being of degree zero
+on the connected fibres, they are trivial there and descend, as $\pi_*\mathcal O_{\wideX_9}=\mathcal O_{X_9}$
+for the normal variety $X_9$, and hence so does $L=L^{b+1}\otimes L^{-b}$, as
+in~\cite[proof of Thm.~3.7, Step~9]{KollarMori:1998}. By Kleiman's criterion~\cite{Kleiman:1966} the
+descended class of $y_3D_1+y_4D_0$ is ample for $y_3,y_4>0$. Hence $C$ is contracted by $\pi$, that is
+$C\subset C_1\cup C_2\cup E$. On $E$ one has $J|_E=y_2h$, and the irreducible curves of
+$E$ with $h\cdot C=0$ are $e_1$ and $e_2$. The two nodes are distinct points of $X_9$ away
+from the image of $E$, and $e_1\cdot e_2=0$ on $E$, so the four curves are disjoint. For
+$e_i$ one has $N_{e_i/E}=\mathcal O(-1)$ and $E\cdot e_i=K_E\cdot e_i=-1$, and the
+extension of normal bundles splits; the $C_i$ are the exceptional curves of small
+resolutions of ordinary double points. With~\eqref{eq:face-charges} this proves (1) and
+$\overline F\subseteq\operatorname{Nef}(\wideX_9)\cap\operatorname{ann}(C_1,C_2,e_1,e_2)$;
+the reverse inclusion holds because $\beta_2$, $\beta_3$ and $\beta_4+\beta_5+\beta_6$ are
+effective (their genus-zero Gopakumar--Vafa invariants are $1$, $-2$ and $10$), which forces
+$y_2,y_3,y_4\ge0$.
+
+For (2), a class $J\in F$ with rational coordinates is nef and big, so by the
+basepoint-free theorem~\cite[Thm.~3.3]{KollarMori:1998} some multiple defines a
+birational morphism $\pi_F:\wideX_9\to X_F$ with $J=\pi_F^*A$, $A$ ample. If a prime divisor
+$D$ had $J^2\cdot D=A^2\cdot\pi_{F*}D=0$, then $\dim\pi_F(D)\le1$ and $D$ would lie in the
+exceptional locus of $\pi_F$, which by (1) is the union of four curves. At an irrational point
+write $J=\sum_ia_iJ_i$ with $a_i>0$ and rational $J_i\in F$; then
+$J^2\cdot D=\sum_{i,j}a_ia_jJ_i\cdot J_j\cdot D\ge\sum_ia_i^2J_i^2\cdot D>0$, because the mixed
+terms are nonnegative for nef $J_i,J_j$ and effective $D$. The value of $\operatorname{vol}(E)$
+follows from $J|_E=y_2h$.
+
+For (3), since $v=LJ$ we have $v^{\mathsf T}L^{-1}v=J^{\mathsf T}LJ=6\operatorname{vol}$, and the
+matrix determinant lemma gives
+$\det\mathcal G=\det(-L)\bigl(1-v^{\mathsf T}L^{-1}v/(4\operatorname{vol})\bigr)=-\tfrac12\det L$, where
+$\det(-L)=\det L$ because the size is even. In the coordinates $(y_2,y_3,y_4)$,
+\begin{equation}
+ \det L(J)=-y_2(2y_3+3y_4)(y_2+2y_4)\,P(y_2,y_3,y_4),
+ \label{eq:detL}
+\end{equation}
+with $P$ the polynomial with positive coefficients printed in~\eqref{eq:app-detL}. So
+$\det\mathcal G>0$ on $F$. On $\overline F\smallsetminus\mathbb R_{\ge0}H_2$ the volume is positive
+and $\mathcal G$ is a limit of Hodge norms from the K\"ahler cone, hence positive semidefinite, and it
+is positive definite wherever its determinant is nonzero.
+\end{proof}
+
+Four flop walls meet along $F$, one for each of the curves in (1). When the four curves are
+used as the curves $C_1,\dots,C_4$ of Section~\ref{subsec:setting} we put $C_3=e_1$ and
+$C_4=e_2$.
+
+\subsection{The contraction and its smoothing}
+\label{subsec:face-smoothing}
+
+The contraction $\pi_F:\wideX_9\to X_F$ of the proof of Proposition~\ref{prop:face} has
+four ordinary double points, the images of $C_1,C_2,e_1,e_2$, and the classes of these
+curves satisfy the single relation
+\begin{equation}
+ [C_1]+[C_2]-[e_1]+[e_2]=0 ,
+ \label{eq:face-relation}
+\end{equation}
+all of whose coefficients have absolute value one. By Friedman's
+criterion~\cite{Friedman:1986} and the unobstructedness of its deformations~\cite{Gross:1997},
+$X_F$ is smoothable, with a one-dimensional space of local
+smoothing directions compatible with~\eqref{eq:face-relation}.
+
+Write $u_{C_i},u_{e_i}$ for the local smoothing parameters of the four double points of $X_F$
+(for a node $xy-zw=u$), and $(u_1,u_2,s)$ for the local parameters of $X_9$ of
+Section~\ref{subsec:x9}.
+
+\begin{proposition}\label{prop:face-smoothing}
+A smoothing of $X_F$ in the direction permitted by~\eqref{eq:face-relation} has general fibre a
+smoothing of $X_9$ in the direction $(u_1,u_2,s)=t(-1,-1,1)$
+of Section~\ref{subsec:x9}; in particular it is deformation equivalent to $X_{9,t}$.
+\end{proposition}
+
+\begin{proof}
+The morphism $X_F\to X_9$ contracts the image $\overline E\cong\mathbb P^2$ of $E$ to a
+rational singularity, so deformations of $X_F$ blow down to deformations of
+$X_9$~\cite[Prop.~11.4]{KollarMori:1992}. The permitted direction is
+$(u_{C_1},u_{C_2},u_{e_1},u_{e_2})=t(-1,-1,1,-1)$. The two nodes of $X_9$ are the same germs as
+the nodes $C_1,C_2$ of $X_F$, so the induced deformation has $u_i=u_{C_i}=-t\neq0$. The local
+image of every global first-order deformation of $X_9$ lies on the line~\eqref{eq:x9-line}, by
+the proof of~\cite[Thm.~2.2]{W26quantum}, so $s=t+O(t^2)\neq0$ for small $t\neq0$ as well. Hence
+the induced deformation smooths both nodes and the del Pezzo cone point, and its general fibre
+$X_{9,t'}$ is smooth. The induced morphism $f:X_{F,t}\to X_{9,t'}$ between smooth Calabi--Yau
+threefolds satisfies $K_{X_{F,t}}=f^*K_{X_{9,t'}}$, so it is crepant; a crepant exceptional divisor over a smooth
+target is impossible, so $f$ is small; and a small birational morphism onto a smooth, hence
+$\mathbb Q$-factorial, variety is an isomorphism.
+\end{proof}
+
+By Proposition~\ref{prop:face}(1), and the vanishing of multiple-cover and higher-genus
+contributions of isolated $(-1,-1)$-curves (Appendix~\ref{app:data}), the charged massless
+spectrum at a point of $F$ consists
+of four hypermultiplets, one for each curve, whose charge matrix has rank three and Smith
+invariants $(1,1,1)$. Condensing them Higgses three vector multiplets and leaves one neutral
+hypermultiplet, which matches $(h^{1,1},h^{2,1})=(6,122)\to(3,123)$.

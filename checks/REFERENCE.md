@@ -1,6 +1,6 @@
 # Computation reference
 
-The 41 scripts in this directory reproduce calculations in the three
+The 41 scripts in this directory reproduce calculations in the first three
 manuscripts. Most use exact integer, rational and symbolic arithmetic;
 the explicitly identified numerical period/wall calculations are exceptions.
 They supplement the geometric and analytic proofs, not replace them.
@@ -26,9 +26,9 @@ or determine a compact gauge group's global form.
 Run from the repository root:
 
 ```bash
-make verify       # thirteen Python checks and all three LaTeX builds
-make verify-full  # all 41 scripts and all three LaTeX builds
-make papers       # all three LaTeX builds, without computations
+make verify       # thirteen Python checks and all four LaTeX builds
+make verify-full  # all 41 scripts and all four LaTeX builds
+make papers       # all four LaTeX builds, without computations
 ```
 
 The Python checks require SymPy 1.14.0 and mpmath 1.3.0, specified in

@@ -1,12 +1,13 @@
 .DEFAULT_GOAL := help
-.PHONY: help papers paper1 paper2 paper3 checks check-full verify verify-full
+.PHONY: help papers paper1 paper2 paper3 paper4 checks check-full verify verify-full
 
 help:
 	@printf '%s\n' \
-	  'make papers       Build all three manuscripts' \
+	  'make papers       Build all four manuscripts' \
 	  'make paper1       Build the general-constraints paper' \
 	  'make paper2       Build the quantum-transition paper' \
 	  'make paper3       Build the magnetic-sheaf technical note' \
+	  'make paper4       Build the finite-Planck Higgs-branch paper' \
 	  'make checks       Run thirteen Python checks' \
 	  'make check-full   Run all 41 Python/Sage scripts' \
 	  'make verify       Run Python checks and build all papers' \
@@ -15,7 +16,7 @@ help:
 papers:
 	@./scripts/build.sh
 
-paper1 paper2 paper3:
+paper1 paper2 paper3 paper4:
 	@./scripts/build.sh $(patsubst paper%,%,$@)
 
 checks:

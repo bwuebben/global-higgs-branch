@@ -3,7 +3,7 @@
 *Bulk Gauging and Quantum Couplings across a Compact Higgs Transition*
 — Bernd Johannes Wuebben.
 
-**[Read the paper · 56 pages](paper.pdf)** · [LaTeX entry point](main.tex)
+**[Read the paper · 57 pages](paper.pdf)** · [LaTeX entry point](main.tex)
 · [Back to the collection](../../README.md)
 
 The X₉ model has a mixed transition from Hodge numbers (6,122) to (3,123),
@@ -31,8 +31,11 @@ finite-Planck hypermultiplet metric.
 The fibration and heterotic K3 data do not supply the global heterotic
 bundle construction or massless U(1). At fixed five-dimensional Planck scale, the circle
 limit retains finite bulk gauging but closes the Kaluza–Klein gap, so the
-four-state description has no uniform energy range. This is distinct
-from decoupling gravity. The period results refer to the stated marking.
+four-state description has no uniform energy range along it; the limit ends
+where the del Pezzo surface collapses. This is distinct from decoupling
+gravity. On an adjacent face of the nef cone the four states are massless
+five-dimensional hypermultiplets, and [paper 4](../04-finite-planck-vacua/)
+treats the Higgs branch there. The period results refer to the stated marking.
 
 ## Files and build
 

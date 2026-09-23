@@ -1,0 +1,213 @@
+\subsection{The setting}
+\label{subsec:setting}
+
+Let $\widehat X$ be a smooth projective Calabi--Yau threefold and $F$ an open face of its nef
+cone, that is, the relative interior of a face. We assume:
+\begin{enumerate}
+\item[(S1)] for $J\in F$ one has $J^3>0$, the irreducible curves $C$ with $J\cdot C=0$ are exactly $k$ pairwise
+ disjoint $(-1,-1)$-curves $C_1,\dots,C_k$, and $F$ is open in the annihilator
+ $\operatorname{ann}(C_1,\dots,C_k)\subset H^2(\widehat X;\mathbb R)$ of their classes;
+\item[(S2)] the classes of the $C_i$ satisfy exactly one relation $\sum_ia_i[C_i]=0$, with $a$
+ primitive and every $a_i\neq0$, and the lattice $\Lambda\subset\ZZ^k$ of charge vectors
+ $(D\cdot C_1,\dots,D\cdot C_k)$, $D\in H^2(\widehat X;\ZZ)$, is saturated, so that
+ $\Lambda=a^\perp\cap\ZZ^k$ has rank $k-1$;
+\item[(S3)] the gauge kinetic matrix of the vector multiplets, the Hodge metric
+ $\int\omega\wedge*_J\omega'$ on harmonic two-forms, is positive definite on $F$.
+\end{enumerate}
+We call a face satisfying (S1)--(S3) a \emph{face with one relation}. On $F$ the Hodge metric is a limit of Hodge metrics on the K\"ahler cone, hence positive
+semidefinite, so (S3) is equivalent to its nondegeneracy there. Saturation in (S2) only
+normalises the gauge torus: in general the torus acts on the $k$ hypermultiplets below through
+its image, whose cocharacter lattice is $a^\perp\cap\ZZ^k$, and a finite subgroup acting
+trivially on them does not change the germs studied here.
+
+Under (S1) a rational class in $F$ is nef and big and defines a contraction
+$\pi_F:\widehat X\to X_F$ with $k$ ordinary double points, the images of the $C_i$. Since all
+$a_i$ are nonzero, $X_F$ has a first-order smoothing by Friedman's
+criterion~\cite{Friedman:1986}, its deformations are unobstructed~\cite{Gross:1997}, and its smoothings $X_t$ satisfy
+$h^{1,1}(X_t)=h^{1,1}(\widehat X)-(k-1)$ and $h^{2,1}(X_t)=h^{2,1}(\widehat X)+1$. In M-theory on
+$\widehat X$ with K\"ahler class $J\in F$, M2-branes on the $C_i$ give $k$ massless
+hypermultiplets, one for each curve: an isolated $(-1,-1)$-curve has genus-zero
+Gopakumar--Vafa invariant $1$ and no multiple-cover or higher-genus
+contributions~\cite{FaberPandharipande:2000,BryanKatzLeung:2001}. They carry charges in
+$\Lambda$ under the torus $T^{k-1}$ that is the image of $H^2(\widehat X;\mathbb R)/H^2(\widehat
+X;\ZZ)$ in $U(1)^k$. The $k$ flop walls through $F$ make the cubic prepotential of $\widehat X$
+only twice continuously differentiable along $F$. Writing $Z_i=J\cdot C_i$ for the central charges of the light states and
+keeping them as fields, the prepotential of the Wilsonian theory in the chamber where all
+$Z_i>0$ is
+\begin{equation}
+ \mathcal F_W=\mathcal F_{\widehat X}+\tfrac1{12}\textstyle\sum_iZ_i^3,
+ \label{eq:wilsonian-F}
+\end{equation}
+the Chern--Simons levels shifting by $\frac12q\otimes q\otimes q$ for each hypermultiplet of
+charge $q$~\cite{Witten:1996qb,Intriligator:1997}. It is a polynomial with the same Hessian as
+$\mathcal F_{\widehat X}$ at $Z=0$.
+
+For $X_9$, Propositions~\ref{prop:face} and~\ref{prop:face-smoothing} of
+Section~\ref{sec:face} show that $\widehat X=\wideX_9$ and the face~\eqref{eq:face-def} satisfy
+(S1)--(S3) with $k=4$ and $a=(1,1,-1,1)$; see the proof of Theorem~\ref{thm:four-node}.
+
+\subsection{Gauged supergravity and its Minkowski vacua}
+\label{subsec:sugra}
+
+M-theory on $\widehat X$ gives five-dimensional $N=1$ supergravity with
+$n_V=h^{1,1}(\widehat X)-1$ vector multiplets and $n_H=h^{2,1}(\widehat X)+1$ neutral
+hypermultiplets; for $\wideX_9$ these are $5$ and $123$. The vector-multiplet scalars are the
+very special real coordinates $h^I$, $I=1,\dots,n_V+1$, on the hypersurface
+$\frac16\kappa_{IKM}h^Ih^Kh^M=1$~\cite{Gunaydin:1984}; the overall volume of $\widehat X$ sits
+in the universal hypermultiplet. The hypermultiplet scalars take values in a quaternionic
+K\"ahler manifold $M$ of negative scalar curvature. Supergravity fixes only the reduced scalar
+curvature of $M$, in units of the five-dimensional Planck mass; the hyperk\"ahler part of the
+curvature is not fixed. We measure distances on $M$ in Planck units. The transverse
+correction of order $r^2$ found below is given by the curvature of $M$ at the root
+(Proposition~\ref{prop:universal}), which may be large where the neutral moduli approach a degeneration.
+At a point where charged states become massless the effective theory includes them as further
+hypermultiplets, and the vectors gauge isometries of $M$ with Killing vectors $k_I$ and
+quaternionic moment maps $P_I$; up to normalisation these are the moment maps $\mu_\xi$ of
+Section~\ref{sec:quotients} for $\xi$ the generator dual to the $I$-th basis divisor.
+
+For constant scalars and vanishing field strengths, the fermion shifts of the gravitino,
+gaugini and hyperini give the conditions~\cite[eq.~(2.9)]{W26quantum}; compare the ground-state
+conditions of~\cite[eqs.~(5.17)--(5.18)]{Ceresole:2000}:
+\begin{equation}
+ h^IP_I=0,\qquad h^I_xP_I=0,\qquad h^Ik_I=0 ,
+ \label{eq:shifts}
+\end{equation}
+where $h^I_x$ are the tangent vectors to the very special real hypersurface. The gaugino shift
+is proportional to $g^{xy}h^I_yP_I$, with $g_{xy}$ the vector-multiplet metric; where $g_{xy}$ is
+nondegenerate its vanishing is equivalent to the second condition. The vectors $h^I$ and $h^I_x$
+always span $\mathbb R^{n_V+1}$, so where the vector-multiplet metric is nondegenerate the
+conditions become
+\begin{equation}
+ P_I=0\quad\text{for all }I,\qquad h^Ik_I=0
+ \label{eq:vacua}
+\end{equation}
+\cite[eq.~(2.10)]{W26quantum}; the four-dimensional analogue is~\cite[Sect.~2.4.2]{Hristov:2009}.
+The potential vanishes on these solutions. The action of M-theory also contains
+higher-derivative terms, among them the supersymmetric completion of
+$A\wedge\operatorname{tr}R\wedge R$~\cite{Hanaki:2006}. That they do not change the set of such
+vacua is part of Hypothesis~\ref{hyp:regular} below. It is supported by the observation that on
+a background with constant scalars and vanishing field strengths the auxiliary fields of the
+Weyl multiplet are set to zero by the supersymmetry variations and by Lorentz invariance, so
+that the auxiliary equation of the vector multiplets still reduces to the vanishing of the
+moment maps.
+
+\subsection{The local vacuum space}
+\label{subsec:object}
+
+We write $N$ for the quaternionic K\"ahler manifold of neutral hypermultiplets of $\widehat X$,
+of quaternionic dimension $h^{2,1}(\widehat X)+1$, and call $b\in N$ \emph{smooth} if $N$ is a
+smooth manifold near $b$, that is, if $b$ lies over a point of the complex-structure moduli space
+of $\widehat X$ away from the loci where $\widehat X$ acquires further singularities.
+
+\begin{definition}\label{def:vacuum-germ}
+Let $\phi\in F$ be normalised by $J^3=6$ and $b\in N$ a smooth point. The \emph{root point}
+$x=(\phi,b,0)$ is the vacuum with vector moduli $\phi$, neutral hypermultiplets $b$ and
+vanishing charged hypermultiplets. The \emph{local vacuum space} $\mathcal V_x$ is the germ at
+$x$ of the set of constant-scalar, zero-field-strength solutions of~\eqref{eq:vacua} in the
+theory of Hypothesis~\ref{hyp:regular} below, modulo gauge equivalence, regarded as a
+stratified topological space.
+\end{definition}
+
+The \emph{Coulomb branch} through $x$ is the part of $\mathcal V_x$ on which the charged
+hypermultiplets vanish; we write $\mathcal K_\phi$ for its vector-multiplet germ at $\phi$. It is
+the germ at $\phi$ of the hypersurface of normalised vector-multiplet scalars, divided by the
+walls $Z_i=0$ into chambers subject to $\sum_ia_iZ_i=0$; among these chambers are the K\"ahler
+cone of $\widehat X$ and those of its flops along the $C_i$. The \emph{Higgs branch} is the closure of
+the part of $\mathcal V_x$ on which the gauge group acting on the charged hypermultiplets is
+broken to a finite group, and a \emph{mixed branch} would be a component on which some, but not
+all, of the charged hypermultiplets are nonzero. We write $F_\phi$ for the germ at $\phi$ of
+$F\cap\{J^3=6\}$. On the Higgs branch away from its root the compactification is M-theory on a
+smoothing $X_t$, $t\neq0$: we call this part the \emph{regular Higgs branch}
+$\mathcal H^{\mathrm{reg}}$. At each of its points the vector moduli are normalised K\"ahler
+classes of $X_t$, the hypermultiplet moduli form a smooth quaternionic K\"ahler manifold
+$\mathcal M_H^{\mathrm{reg}}$ of quaternionic dimension $h^{2,1}(X_t)+1$, and the scalar manifold
+is locally the product of the two. At a root where no Lagrangian description of the light
+states is available, the Higgs branch is defined through $\mathcal H^{\mathrm{reg}}$ alone: it is
+the metric completion of $\mathcal H^{\mathrm{reg}}$ near the limit point, for the metric of
+$\mathcal M_H^{\mathrm{reg}}$ on the hypermultiplet factor and the very special real metric on
+the vector factor.
+
+\subsection{The regularity hypothesis}
+\label{subsec:hypotheses}
+
+\begin{hypothesis}[regularity]\label{hyp:regular}
+Near every point of $F$ and every smooth point of $N$, the dynamics below the lightest massive
+state is five-dimensional $N=1$ gauged supergravity with: the vector multiplets of $\widehat X$
+with the Wilsonian prepotential~\eqref{eq:wilsonian-F}; a smooth quaternionic K\"ahler manifold
+$M$ of quaternionic dimension $h^{2,1}(\widehat X)+1+k$, containing $N$ and the $k$ charged
+hypermultiplets; and the gauging of the torus $T^{k-1}$ of isometries of $M$ with charge
+lattice $\Lambda$, acting on a neighbourhood of $N$. No neutral hypermultiplet is charged.
+Moreover:
+\begin{enumerate}
+\item the Coulomb branch through each root point, M-theory on $\widehat X$ with K\"ahler class
+ near $F$ and vanishing charged hypermultiplets, consists of supersymmetric Minkowski vacua of
+ this theory, and higher-derivative terms do not change the set of such vacua;
+\item the K\"ahler cone of $X_t$ is the same for all smoothings $X_t$ parametrised by a
+ neighbourhood $W$ of each root point $x$ in the hypermultiplet directions, and at every point of
+ $W\cap\mathcal M_H^{\mathrm{reg}}$ the vector moduli of the regular Higgs branch form the whole
+ normalised K\"ahler cone $\mathcal K(X_t)$;
+\item near each root point, the Higgs vacua of this theory off the root are M-theory on the
+ smoothings $X_t$, and $\mathcal M_H^{\mathrm{reg}}$ is bi-Lipschitz equivalent, near the root,
+ to $(\mu^{-1}(0)\smallsetminus N)/T^{k-1}$ with the quotient metric of~\cite{Galicki:1988}.
+\end{enumerate}
+\end{hypothesis}
+
+For $X_9$ the hypothesis concerns $M$ of quaternionic dimension $127$, the four charged
+hypermultiplets of Proposition~\ref{prop:face} and the torus $T^3$ with the
+charges~\eqref{eq:app-Q}.
+
+The hypothesis has the form of the standard treatment of conifold singularities. In four
+dimensions the singularity of the vector-multiplet moduli space at a conifold point is an
+effect of integrating out the light states: the Wilsonian action that keeps them is
+smooth~\cite{Strominger:1995Conifold,Greene:1995hu}. On the hypermultiplet side, for type~IIA
+string theory near $k$ homologous vanishing three-cycles, the metric on the neutral fields alone,
+corrected by Euclidean D2-branes on the vanishing cycles, has a $\CC^2/\ZZ_k$
+singularity~\cite{OoguriVafa:1996,SeibergShenker:1996}, the same as the hyperk\"ahler quotient of
+the Wilsonian description with $k$ light hypermultiplets. The hypothesis asserts the existence
+of the corresponding smooth Wilsonian hypermultiplet manifold in five dimensions at finite Planck
+mass, as in the supergravity models of~\cite{Mohaupt:2004de}; its metric is not
+known~\cite{Mohaupt:2004de}, and nothing below depends on it. The geometric input is proved for $X_9$ in Proposition~\ref{prop:face}: exactly four hypermultiplets are massless, no
+divisor collapses, and all gauge couplings are finite. The torus acts on a neighbourhood of $N$
+because its weights are integral.
+
+The existence of $M$ and clause (1) are the standard assumptions of the conifold analyses cited
+above, carried over to finite Planck mass; they are all that Theorem~\ref{thm:general} uses.
+Clauses (2) and (3) are technical: they are used only in Lemmas~\ref{lem:product}
+and~\ref{lem:completion} and Theorem~\ref{thm:wall}, to pass from the four-node roots of $X_9$ to
+the other roots through metric completions, which bi-Lipschitz equivalences preserve.
+
+In detail, clause (1) says that the Wilsonian theory reproduces the
+supersymmetric compactifications of M-theory on $\widehat X$, including those with the K\"ahler
+class near $F$, and that the four-derivative terms do not alter this; it is what forces the
+moment map to vanish at the root. Clause (2) excludes a dependence of the chamber structure on
+the complex structure of $X_t$ near the root. Such a dependence does occur in general: the
+K\"ahler cone of a Calabi--Yau threefold can jump under deformation of its complex structure,
+and by Wilson's theorem this happens only on members containing elliptic quasi-ruled
+surfaces~\cite{Wilson:1992,Wilson:1993}. So the first half of clause (2) holds if no $X_t$
+parametrised by $W$ contains such a surface; the second half, that the vector moduli of the
+regular Higgs branch fill the whole normalised K\"ahler cone over $W$, is an independent
+assumption. Clause (3) identifies distances measured on the smooth side with those of the
+Wilsonian quotient up to bounded distortion.
+
+\begin{lemma}\label{lem:product}
+Over the neighbourhood $W$ of clause (2) of Hypothesis~\ref{hyp:regular}, the metric of
+$\mathcal M_H^{\mathrm{reg}}$ on the regular Higgs branch does not depend on the vector-multiplet
+moduli.
+\end{lemma}
+
+\begin{proof}
+At every point of $\mathcal H^{\mathrm{reg}}$ the compactification is M-theory on a smooth
+threefold $X_t$ with K\"ahler class in the interior of its K\"ahler cone, described by
+two-derivative supergravity with neutral hypermultiplets. There supersymmetry forbids neutral
+couplings between the two kinds of multiplets at the two-derivative level, and the scalar
+manifold is locally the product of the very special real and the quaternionic K\"ahler
+factors~\cite[Sect.~2.4]{Becker:1995kb}, the form assumed in~\cite{Ceresole:2000} and the same
+factorisation that identifies the hypermultiplet moduli spaces of M-theory and of type~IIA string
+theory on one threefold~\cite[Sect.~2]{Strominger:1997}. So the hypermultiplet metric is locally
+constant in the vector moduli. By clause (2) of Hypothesis~\ref{hyp:regular}, over $W$ the
+regular Higgs branch is, as a set, the product of $W\cap\mathcal M_H^{\mathrm{reg}}$ with the
+whole normalised K\"ahler cone of $X_t$; the latter is identified by radial projection with a convex set, hence
+connected, and the metric is therefore independent of the vector moduli. The moduli space of
+vacua does not factorise at transition points themselves~\cite[Sect.~2.1]{Aspinwall:2000}, but
+$\mathcal H^{\mathrm{reg}}$ contains none.
+\end{proof}

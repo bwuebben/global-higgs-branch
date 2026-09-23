@@ -13,14 +13,16 @@ can then be obstructed, or become available only through a joint transition.
 | | Manuscript | Read | Sources and guide |
 |---|---|---|---|
 | **1** | Global Constraints on Higgsing Localized Five-Dimensional Sectors in Compact M-Theory Vacua | [PDF · 41 pages](papers/01-global-constraints/paper.pdf) | [Paper 1](papers/01-global-constraints/) |
-| **2** | Bulk Gauging and Quantum Couplings across a Compact Higgs Transition | [PDF · 56 pages](papers/02-quantum-transition/paper.pdf) | [Paper 2](papers/02-quantum-transition/) |
+| **2** | Bulk Gauging and Quantum Couplings across a Compact Higgs Transition | [PDF · 57 pages](papers/02-quantum-transition/paper.pdf) | [Paper 2](papers/02-quantum-transition/) |
 | **3** | Magnetic Sheaves and Stability Walls in a Compact Calabi–Yau Transition | [PDF · 24 pages](papers/03-magnetic-sheaves/paper.pdf) | [Technical note](papers/03-magnetic-sheaves/) |
+| **4** | The Higgs Branch of a Compact Calabi–Yau Transition at Finite Planck Mass | [PDF · 45 pages](papers/04-finite-planck-vacua/paper.pdf) | [Paper 4](papers/04-finite-planck-vacua/) |
 
 Start with **paper 2** for the explicit compact transition and its quantum
 vector couplings. **Paper 1** develops the general deformation/gauging
 framework. **Paper 3** studies magnetic sheaves and partial stability
 constraints; it does not determine the physical BPS spectrum at the endpoint.
-Each paper's directory has its PDF, source, and a short guide to its results
+**Paper 4** determines the local structure of the Higgs branch with gravity
+retained, where the hypermultiplet metric is not known. Each paper's directory has its PDF, source, and a short guide to its results
 and limitations.
 
 ## Paper 1 · Global constraints on local Higgs flows
@@ -126,9 +128,12 @@ bound excludes the six-dimensional F-theory limit on the transition face.
 The global heterotic bundle construction and its massless U(1), as well as
 the finite-Planck hypermultiplet metric, are not supplied. Nor does the
 four-state finite-radius description become a complete five-dimensional
-theory: the Kaluza–Klein gap closes in the decompactification limit.
-That fixed-Planck-scale circle limit retains finite bulk gauging, unlike
-the gravity-decoupling limit with bounded local scales above.
+theory along the decompactification limit: there the Kaluza–Klein gap closes,
+and the limit ends where the del Pezzo surface collapses. That
+fixed-Planck-scale circle limit retains finite bulk gauging, unlike the
+gravity-decoupling limit with bounded local scales above. On an adjacent face
+of the nef cone the same four states are massless five-dimensional
+hypermultiplets; paper 4 studies the Higgs branch there.
 
 ## Paper 3 · Magnetic sheaves and stability walls
 
@@ -170,11 +175,50 @@ along the continuation, classify every moduli component, or determine the
 physical BPS spectrum at the endpoint. Counts for complete moving pencils
 require a separate reduced-member hypothesis, isolated in Appendix A.
 
+## Paper 4 · The Higgs branch at finite Planck mass
+
+**Question.** With gravity retained, what is the local space of supersymmetric
+vacua where the charged hypermultiplets of a compact transition condense,
+given that the quaternionic Kähler hypermultiplet metric is unknown?
+
+A quaternionic Kähler moment map has no additive constant, so supergravity has
+no Fayet–Iliopoulos parameter that could resolve or deform the singular point
+of the quotient. The paper turns this into a determination of the local
+structure:
+
+- **A local model for quaternionic Kähler quotients** near a fixed point at
+  which the moment map vanishes: the fixed set times the flat hyperkähler
+  quotient of the normal representation, with metric corrections of relative
+  order r² and the leading correction identified as the curvature restricted
+  to a quaternionic line. It holds for either sign of the scalar curvature,
+  without completeness, and for hyperkähler and Kähler quotients.
+- **Faces with one relation.** If exactly k disjoint (−1,−1)-curves have zero
+  area on a face of the nef cone with finite gauge couplings, and their
+  classes satisfy one primitive relation with coefficients aᵢ ≠ 0, the Higgs
+  branch at the root is locally a smooth factor times C²/Z_m, m = Σ|aᵢ|, under
+  a stated regularity hypothesis. Gravity does not remove the singular point
+  or change its type.
+- **X₉.** A three-dimensional face of the nef cone of the resolved X₉ has
+  exactly four such curves, the two nodal curves and the two exceptional
+  curves of the del Pezzo surface, and gives C²/Z₄.
+- **Type IIA** in four dimensions gives, under corresponding hypotheses, the
+  A_{k−1} point near k homologous vanishing three-cycles that Greene, Morrison
+  and Vafa expected at finite Planck mass.
+- **A census** of toric Calabi–Yau hypersurfaces finds 5605 faces whose light
+  spectrum has one relation. All have unit coefficients; whether faces with
+  m ≠ k exist remains open.
+
+The physical statements rest on a regularity hypothesis on the Wilsonian
+supergravity; the results about quaternionic Kähler quotients do not. No full
+hypermultiplet metric is computed or needed.
+
 Together, the papers move from an exact geometric existence criterion with
 a compact-gauging interpretation, to the
 classical and quantum vector geometry of one realized transition, to a
-separate investigation of its magnetic objects. Paper 3 uses the geometry
+separate investigation of its magnetic objects, and finally to the Higgs
+branch of the transition with gravity retained. Paper 3 uses the geometry
 and periods of paper 2; paper 2's period proofs do not depend on the note.
+Paper 4 uses the X₉ geometry of papers 1 and 2 and is otherwise independent.
 
 ## Organization
 
@@ -183,8 +227,9 @@ papers/
   01-global-constraints/   Paper 1: PDF, main.tex, sections and figures
   02-quantum-transition/   Paper 2: PDF, main.tex and sections
   03-magnetic-sheaves/     Technical note: PDF, main.tex and sections
+  04-finite-planck-vacua/  Paper 4: PDF, main.tex and sections
 shared/                   Common notation, bibliographies and journal styles
-checks/                   41 computational scripts, indexed by topic
+checks/                   41 computational scripts for papers 1–3, indexed by topic
 scripts/                  Build and check runners
 ```
 
@@ -194,8 +239,8 @@ Run from the repository root. Builds require TeX Live and `latexmk`;
 the full computational suite also requires SageMath (tested with 10.9).
 
 ```bash
-make papers       # build all three manuscripts
-make paper2       # build just paper 2 (also: paper1, paper3)
+make papers       # build all four manuscripts
+make paper2       # build just paper 2 (also: paper1, paper3, paper4)
 make checks       # run the thirteen Python checks
 make check-full   # run all 41 Python/Sage scripts
 make verify-full  # run all checks and build all papers
@@ -208,7 +253,7 @@ commands and the distinction between exact checks and numerical diagnostics.
 
 ## Citation and related work
 
-[BibTeX entries](CITATION.bib) are provided for all three manuscripts;
+[BibTeX entries](CITATION.bib) are provided for all four manuscripts;
 [CITATION.cff](CITATION.cff) supplies machine-readable citation metadata.
 Cite the paper relevant to the result used. The geometric companion papers
 and their computations are in

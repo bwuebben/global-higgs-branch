@@ -1,0 +1,117 @@
+The intersection numbers, Gopakumar--Vafa invariants and invariant-theory computations
+used in this paper were carried out in SageMath from the toric data of~\cite{W26quantum}; the
+Gopakumar--Vafa invariants were computed from the mirror periods up to total degree eight in the
+dual basis. The scripts are available from the author.
+
+\paragraph{Toric data.} The resolution $\wideX_9$ is an anticanonical hypersurface in the toric
+fourfold built on the polytope with vertices
+\begin{gather*}
+ v_0=(1,0,0,0),\ v_1=(0,1,0,0),\ v_2=(-1,-1,0,0),\ v_3=(0,0,1,0),\ v_4=(0,0,0,1),\\
+ v_5=(-4,-2,-1,0),\ v_6=(-4,-2,0,-1),\ v_7=(3,1,1,1),\ v_8=(2,1,1,1),
+\end{gather*}
+with the triangulation of~\cite[Sect.~3.1]{W26quantum}; the exceptional surface $E$ is the
+divisor of the point $(-2,-1,0,0)$ interior to the pentagon with vertices $v_3,v_4,v_5,v_6,v_8$.
+
+All data below refer to the integral basis $H_1,\dots,H_6$ of
+Section~\ref{subsec:face} and to $J=y_2H_2+y_3H_3+y_4H_4$. The triple intersection numbers
+$\kappa_{IKM}$ of $\wideX_9$ are those of~\cite[eq.~(B.2)]{W26quantum}, transformed to this basis
+by~\cite[eq.~(C.1)]{W26quantum}.
+
+\paragraph{Cubic form and second Chern class on the face.}
+In lexicographic order of triples from $(H_2,H_3,H_4)$,
+\begin{equation}
+ \kappa=(0,2,3,6,11,17,14,27,49,83),\qquad
+ c_2\cdot(H_2,H_3,H_4)=(36,80,146),
+ \label{eq:app-cubic}
+\end{equation}
+so that
+\begin{equation}
+ \tfrac16J^3=y_2^2y_3+3y_2y_3^2+\tfrac73y_3^3+\tfrac32y_2^2y_4
+ +11y_2y_3y_4+\tfrac{27}2y_3^2y_4+\tfrac{17}2y_2y_4^2
+ +\tfrac{49}2y_3y_4^2+\tfrac{83}6y_4^3 .
+ \label{eq:app-volume}
+\end{equation}
+These agree entry by entry with the cubic form and second Chern class of the smooth side
+$X_{9,t}$~\cite[eq.~(5.26)]{W26quantum}, as they must by
+Proposition~\ref{prop:face-smoothing}.
+
+\paragraph{The kinetic determinant.}
+For the $6\times6$ matrix $L(J)_{IK}=\kappa_{IKM}J^M$ on all of $H^2(\wideX_9)$,
+\begin{equation}
+\begin{split}
+ \det L(J)=-y_2(2y_3+3y_4)(y_2+2y_4)\bigl(&22y_2^2y_3+96y_2y_3^2+90y_3^3
+ +33y_2^2y_4+272y_2y_3y_4\\
+ &+321y_3^2y_4+165y_2y_4^2+297y_3y_4^2\bigr).
+\end{split}
+ \label{eq:app-detL}
+\end{equation}
+The last factor has positive coefficients, so $\det L<0$ and $\det\mathcal G=-\tfrac12\det L>0$ on
+the open face. (The $3\times3$ block on $(H_2,H_3,H_4)$ alone, which is all
+that~\eqref{eq:app-cubic} determines, has a different determinant; the formula above needs
+the full matrix.) On the closed face the factor $y_2$ vanishes exactly on the del Pezzo
+facet $y_2=0$, where $E$ collapses and its coupling degenerates. The factors
+$2y_3+3y_4$ and $y_2+2y_4$ are positive on $\overline F$ except on the edges spanned by $H_2$
+and $H_3$ respectively; in particular $\det\mathcal G>0$ on the relative interiors of the facets
+$y_3=0$ and $y_4=0$.
+
+\paragraph{Massless classes on the face.}
+The genus-zero Gopakumar--Vafa invariants of $\wideX_9$ vanish on every class of zero area
+on $F$ except
+\begin{equation}
+ \beta_5=C_1,\quad \beta_1=C_2,\quad \beta_1+\beta_5+\beta_6=\iota_*e_1,\quad
+ \beta_6=\iota_*e_2 ,
+ \label{eq:app-light}
+\end{equation}
+each with invariant $1$, among all classes of total degree at most eight in the dual
+basis. Proposition~\ref{prop:face}(1), together with the vanishing of multiple-cover
+and higher-genus contributions of isolated $(-1,-1)$-curves~\cite{FaberPandharipande:2000,BryanKatzLeung:2001}, gives
+the same conclusion in all degrees and genera.
+
+\paragraph{Charge conventions and the flat quotient.}
+Order the four light hypermultiplets as $(C_1,C_2,e_1,e_2)$ and write $(z_i,\tilde z_i)$ for
+their scalars in one complex structure, $z_i$ of charge $q_i$ and $\tilde z_i$ of charge $-q_i$. On the
+three vectors $(H_5,H_1,H_6)$ that act, the charge matrix is
+\begin{equation}
+ Q=\begin{pmatrix}1&0&1&0\\0&1&1&0\\0&0&1&1\end{pmatrix},
+ \label{eq:app-Q}
+\end{equation}
+with Smith invariants $(1,1,1)$ and unique relation $a=(1,1,-1,1)$, the relation~\eqref{eq:face-relation}. The complex moment maps
+are $\mu_{\mathbb C}=Q\,(z_1\tilde z_1,\dots,z_4\tilde z_4)^{\mathsf T}$; they are invariant, so the
+invariants of the quotient ring are the quotient of the invariant ring. Elimination gives
+\begin{equation}
+ \bigl(\CC[z,\tilde z]/(\mu_{\mathbb C})\bigr)^{T^3}
+ \;\cong\;\CC[X,Y,s]/(XY+s^4),\qquad
+ X=z_1z_2\tilde z_3z_4,\quad Y=\tilde z_1\tilde z_2z_3\tilde z_4,\quad s=-z_3\tilde z_3,
+ \label{eq:app-ring}
+\end{equation}
+the generators of Lemma~\ref{lem:flat-model} for this $a$, an $A_3$ surface singularity (equivalently
+$XY=s^4$ after $X\mapsto-X$), normal and singular only at the origin, with Hilbert series
+$(1-t^8)/\bigl((1-t^2)(1-t^4)^2\bigr)$. Quotienting first by the third row of $Q$
+reproduces the reduced rank-one del Pezzo ring of~\cite{W26quantum} and then its rank-two
+flavour constraint, so the two presentations agree.
+
+\paragraph{The leading correction.}
+Proposition~\ref{prop:x9-leading} has a complete proof in Section~\ref{sec:higgs}; the following computation
+is an independent check of Proposition~\ref{prop:universal} and of the three-dimensional image. It evaluates the quotient metric in the
+uniformising chart with exact truncated Taylor expansions to total degree three, including the correction $\psi$
+of Lemma~\ref{lem:zero-graph}, reads off the curvature of its second-order Taylor polynomial, and confirms
+that the terms involving $\psi$ cancel and that the result is the restriction of the curvature to
+$\ell(\HH)$; the image of the $T^3$-invariant tensors of hyperk\"ahler type under $R_{\mathrm{hk}}\mapsto R_0$ has dimension
+three. It was
+validated on two exact models. The first is $\mathrm{TN}_\lambda\times\mathrm{TN}_\lambda$ with the diagonal
+circle, where $\mathrm{TN}_\lambda$ is the Taub--NUT space, the Gibbons--Hawking space~\cite{GibbonsHawking:1978}
+with potential $\lambda+1/(2|x|)$ and moment map $x$. The zero level is $x_2=-x_1$, and the quotient is the
+Gibbons--Hawking space with potential $2\lambda+1/|x|$, which after $x=2y$ and a rescaling of the fibre
+coordinate is four times $\mathrm{TN}_{2\lambda}/\ZZ_2$, that is $\mathrm{TN}_{\lambda/2}/\ZZ_2$ in coordinates in which
+the flat part of the metric is standard. Since the curvature of the model is determined only up to a rotation of the chart, the computed leading
+curvature is compared through its invariants: it has the invariants
+$(|R|^2,\operatorname{tr}\mathcal R^3)$, $\mathcal R$ the curvature operator on two-forms, of the curvature of
+$\mathrm{TN}_{\lambda/2}$ at its nut. The second uses the charges of $X_9$ themselves: the hyperk\"ahler
+metric on $\HH^4$ with potential matrix $\operatorname{diag}(1/(2|x_i|))+C$ in the form
+of~\cite{PedersenPoon:1988}, $C$ a constant symmetric matrix (for $C=0$ these are the toric hyperk\"ahler
+metrics of~\cite{BielawskiDancer:2000}; for $C\neq0$ see~\cite{GibbonsRychenkovaGoto:1997,Bielawski:1999};
+when $C$ is not positive semidefinite the metric is defined only near the origin, which suffices here), whose quotient by $T^3$ at level zero
+is the Gibbons--Hawking space with potential $a^{\mathsf T}Ca+2/|y|$, that is
+$\mathrm{TN}_{a^{\mathsf T}Ca/16}/\ZZ_4$ in coordinates in which the flat part of the metric is standard; for generic $C$ with nonzero off-diagonal
+entries (several numerical choices) the computed leading curvature equals the curvature of
+$\mathrm{TN}_{a^{\mathsf T}Ca/16}$ at its nut entry by entry.

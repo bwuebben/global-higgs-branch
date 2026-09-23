@@ -1,0 +1,104 @@
+\documentclass[11pt,letterpaper]{article}
+\pdfoutput=1
+
+\makeatletter
+\def\input@path{{../../shared/tex/}}
+\makeatother
+\usepackage{jheppub}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{adjustbox}
+
+\input{../../shared/macros}
+
+\hypersetup{
+  pdftitle={The Higgs branch of a compact Calabi--Yau transition at finite Planck mass},
+  pdfauthor={Bernd Johannes Wuebben},
+  pdfsubject={Compact Calabi--Yau transitions and Higgs branches in five and four dimensions},
+  pdfkeywords={M-theory; type IIA string theory; five-dimensional supergravity; four-dimensional N=2 supergravity; Calabi--Yau threefolds; Higgs branches; quaternionic-Kaehler geometry}
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{hypothesis}[theorem]{Hypothesis}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{The Higgs branch of a compact Calabi--Yau\\transition at finite Planck mass}
+\author{Bernd Johannes Wuebben}
+\affiliation{New York, NY, USA}
+\emailAdd{wuebben@gmail.com}
+\date{}
+
+\abstract{When a compact Calabi--Yau threefold degenerates, M-theory on it acquires light charged
+hypermultiplets whose condensation opens a Higgs branch, locally a hyperk\"ahler quotient without gravity. At finite Planck mass the hypermultiplet moduli space is quaternionic K\"ahler, its
+metric is unknown, and its moment maps have no additive constant, hence no Fayet--Iliopoulos
+parameter. We prove a local normal form for quaternionic K\"ahler quotients near a
+fixed point at which the moment map vanishes, under a freeness condition on the normal
+representation: the quotient is locally the
+product of the fixed set with the flat hyperk\"ahler quotient of that representation, with relative
+metric corrections of order $r^2$ at distance $r$. Consequently, if exactly $k$ disjoint
+$(-1,-1)$-curves have zero area on a face of the nef cone with finite gauge couplings, and their
+classes satisfy one primitive relation $\sum_ia_i[C_i]=0$ with all $a_i\neq0$, then, under a regularity
+hypothesis on the effective supergravity, the Higgs branch opened by the $k$ light hypermultiplets is locally a smooth factor times $\CC^2/\ZZ_m$, $m=\sum_i|a_i|$, as without gravity.
+Transverse to the smooth factor, the order-$r^2$ correction is the curvature of the hypermultiplet manifold restricted to a
+quaternionic line. A transition with two nodes and a cone over the degree-seven del Pezzo surface has
+such a face with $k=4$, giving $\CC^2/\ZZ_4$; where the del Pezzo surface collapses, the Higgs branch defined as the metric
+completion of the vacua on the smoothed threefold is again of this form. In type IIA string
+theory, under corresponding hypotheses, the $\CC^2/\ZZ_k$ point that Greene, Morrison and Vafa expected
+near $k$ homologous vanishing three-cycles persists at finite Planck mass for these smoothings. A
+census of toric hypersurfaces finds 5605 faces whose light spectrum has one relation, 372 with
+$k\geq3$, all with $m=k$.}
+
+\keywords{M-Theory, Superstring Vacua, Supergravity Models, Differential and Algebraic Geometry,
+Supersymmetric Gauge Theory}
+\renewcommand{\afterTocRuleSpace}{\bigskip\bigskip\clearpage}
+\begin{document}
+\hypersetup{pageanchor=false}
+\maketitle
+\hypersetup{pageanchor=true}
+
+\section{Introduction}
+\label{sec:introduction}
+\input{sections/01_introduction}
+
+\section{The transition and a face with four contracted curves}
+\label{sec:face}
+\input{sections/02_face}
+
+\section{Supersymmetric vacua at a face with one relation}
+\label{sec:vacua}
+\input{sections/03_vacua}
+
+\section{Quaternionic K\"ahler quotients near a fixed point}
+\label{sec:quotients}
+\input{sections/04_quotients}
+
+\section{The Higgs branch at finite Planck mass}
+\label{sec:higgs}
+\input{sections/05_higgs}
+
+\section{Four dimensions: type IIA string theory}
+\label{sec:4d}
+\input{sections/055_four_dimensions}
+
+\section{Comparison and discussion}
+\label{sec:discussion}
+\input{sections/06_discussion}
+
+\appendix
+\section{Intersection and Gopakumar--Vafa data}
+\label{app:data}
+\input{sections/A_data}
+
+\bibliographystyle{JHEP}
+\bibliography{foundations,transition,finite_planck}
+\end{document}

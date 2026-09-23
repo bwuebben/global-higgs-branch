@@ -1,6 +1,6 @@
 # Computational checks
 
-The 41 scripts below support the three papers. Most are exact integer,
+The 41 scripts below support papers 1–3. Most are exact integer,
 rational or symbolic computations. The numerical period and wall diagnostics
 are identified separately. None replaces the geometric or analytic proofs.
 

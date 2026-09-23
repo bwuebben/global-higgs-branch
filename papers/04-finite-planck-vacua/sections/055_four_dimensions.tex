@@ -1,0 +1,256 @@
+The arguments of Sections~\ref{sec:quotients} and~\ref{sec:higgs} use the spacetime dimension only
+through the supersymmetry conditions~\eqref{eq:vacua}. In this section we impose the corresponding
+conditions of four-dimensional $N=2$ supergravity directly. The resulting statement concerns type~IIA
+string theory on $\widehat X$ and, through its hypermultiplet moduli space, the setting of Greene,
+Morrison and Vafa~\cite[Sect.~6]{Greene:1996Confinement}. Type~IIA on $\widehat X$ is M-theory on
+$\widehat X\times S^1$, but the argument does not pass through the five-dimensional theory: it is carried
+out directly in four dimensions, where the massless states at the root carry no D0-brane charge, so that
+no tower of Kaluza--Klein (D0) states has to be truncated.
+
+\subsection{Supersymmetric Minkowski vacua in four dimensions}
+\label{subsec:4d-setting}
+
+We use the conventions of~\cite{Andrianopoli:1996cm,Hristov:2009}: $n_V$ vector multiplets with special
+K\"ahler manifold $\mathcal S$, homogeneous coordinates $X^\Lambda$, $\Lambda=0,\dots,n_V$, a prepotential
+$\mathcal F(X)$, symplectic sections $(\mathcal L^\Lambda,\mathcal M_\Lambda)=e^{K/2}(X^\Lambda,\partial_\Lambda\mathcal F)$,
+$f_i^\Lambda=\nabla_i\mathcal L^\Lambda$ and metric $g_{i\bar\jmath}$; hypermultiplets with quaternionic
+K\"ahler manifold $M$ of reduced scalar curvature $\nu<0$ fixed by supergravity; and an electric gauging of
+a torus acting on $M$ by isometries, with Killing vectors $k_\Lambda$ and triplets of moment maps
+$\vec P_\Lambda$, and acting trivially on $\mathcal S$. For a light state of charge $q\in\ZZ^{n_V+1}$ we write
+$Z_q=e^{K/2}q_\Lambda X^\Lambda$ for its central charge.
+
+For configurations with constant scalars and vanishing field strengths the gravitino, gaugino and
+hyperino variations vanish if and only if $\vec P_\Lambda\mathcal L^\Lambda=0$,
+$g^{i\bar\jmath}\bar f^\Lambda_{\bar\jmath}\vec P_\Lambda=0$ and $k_\Lambda\mathcal L^\Lambda=0$~\cite[Sects.~2.1--2.3,
+2.4.2]{Hristov:2009}. Since the $\vec P_\Lambda$ are real and, where $g_{i\bar\jmath}$ is positive definite,
+the $(n_V+1)\times(n_V+1)$ matrix $(\bar{\mathcal L}^\Lambda,f_i^\Lambda)$ is
+invertible~\cite[Lemma~B.5, Cor.~B.6]{crapsetal1997specialgeometry}, the conditions become
+\begin{equation}
+ \vec P_\Lambda=0\quad\text{for all }\Lambda,\qquad k_\Lambda\mathcal L^\Lambda=0,
+ \label{eq:vacua-4d}
+\end{equation}
+as stated in~\cite[Sect.~2.4.2]{Hristov:2009}. Positive definiteness of $g_{i\bar\jmath}$ is equivalent to
+negative definiteness of the imaginary part of the gauge kinetic matrix
+$\mathcal N_{\Lambda\Sigma}$~\cite[eq.~(4.45)]{crapsetal1997specialgeometry}; it takes the place of
+condition~(S3). We write $n_N$ for the quaternionic dimension of the manifold $N$ of neutral hypermultiplets. Given charge
+vectors $q_1,\dots,q_k$ of $k$ charged hypermultiplets, a \emph{root point} is a point $x=(z_0,b,0)$ with
+$z_0\in\mathcal S$ at which $Z_{q_1},\dots,Z_{q_k}$ vanish, $b\in N$, and vanishing charged hypermultiplets;
+$\mathcal V_x$ is defined as in Definition~\ref{def:vacuum-germ}, with $z_0$ in place of $\phi$ and the theory
+of the following hypothesis.
+
+\begin{hypothesis}[regularity, four dimensions]\label{hyp:regular-4d}
+Near a root point $x=(z_0,b,0)$ the dynamics below the lightest massive state is a four-dimensional $N=2$
+gauged supergravity as described above, in which exactly $k$ charged hypermultiplets are light, with: $g_{i\bar\jmath}$ positive definite at
+$z_0$; a smooth quaternionic K\"ahler manifold $M$ of quaternionic dimension $n_N+k$ containing the
+manifold $N$ of neutral hypermultiplets, including the corrections to its metric from D2-instantons on
+three-cycles that do not vanish at the root and from NS5-instantons; charge vectors
+$q_1,\dots,q_k$ of the light states spanning a lattice of rank $k-1$ with the single relation
+$\sum_ia_iq_i=0$, $a$ primitive and every $a_i\neq0$; no neutral hypermultiplet charged; and $b$ a smooth
+point of $N$. Moreover, the Coulomb branch through $x$ consists of supersymmetric Minkowski vacua, and the
+higher-derivative couplings do not change the set of such vacua.
+\end{hypothesis}
+
+As in five dimensions (Section~\ref{subsec:other-effects}), D2-instantons on three-cycles that do not
+vanish and NS5-instantons correct the metric of $M$ smoothly and preserve the gauged isometries. We expect, as in
+the three-dimensional analysis of~\cite{SeibergShenker:1996}, that the Euclidean D2-branes on the vanishing
+three-spheres, which produce the singularity of the neutral metric in~\cite{OoguriVafa:1996}, describe the
+same singular point in terms of the neutral fields alone: in the Wilsonian description their effect is
+carried by the light charged hypermultiplets and, through the massive D2--D0 states, by smooth corrections
+to $M$. This is part of the content of the identification (W-IIA) of Section~\ref{subsec:gmv}.
+
+\begin{theorem}\label{thm:4d}
+Assume Hypothesis~\ref{hyp:regular-4d}, write $Z_i=Z_{q_i}$, and let $\mathcal S_0=\{Z_1=\dots=Z_k=0\}$.
+Then $\mathcal S_0$ is a complex submanifold of $\mathcal S$ of codimension $k-1$ near $z_0$ and, writing
+$(\mathcal S,z_0)$ and $(\mathcal S_0,z_0)$ for germs, as germs of stratified spaces
+\begin{equation}
+ \mathcal V_x\;\cong\;\bigl((\mathcal S,z_0)\times N\bigr)\;\cup\;\bigl((\mathcal S_0,z_0)\times N\times\CC^2/\ZZ_m\bigr),
+ \qquad m=\sum_i|a_i|,
+ \label{eq:thm-4d}
+\end{equation}
+glued along $(\mathcal S_0,z_0)\times N\times\{0\}$. There is no mixed branch; the hypermultiplet
+factor of the Higgs branch off its root is a smooth quaternionic K\"ahler manifold of quaternionic
+dimension $n_N+1$, and at distance $r$ from the root, measured in the metric of $M$ normalised as
+in~\cite{Hristov:2009} ($\kappa^2=1$), its metric is the
+flat orbifold metric of $\CC^2/\ZZ_m$ times the flat metric on $T_bN$ up to relative corrections of order
+$r^2$.
+\end{theorem}
+
+\begin{proof}
+In a frame with a prepotential the matrix $(X^\Lambda,\partial_jX^\Lambda)$ is
+invertible~\cite[Sect.~4, on the existence of a prepotential]{crapsetal1997specialgeometry}, so a
+combination $\sum_ic^iq_i$ annihilating both $X$ and $\partial X$ at a point of $\{q\cdot X=0\}$ vanishes;
+since $\sum_ia_iZ_i\equiv0$ and the $q_i$ have rank $k-1$, $\mathcal S_0$ has codimension $k-1$. On the
+Coulomb branch through $x$ the conditions~\eqref{eq:vacua-4d} hold with the charged hypermultiplets set
+to zero, so the moment map vanishes at the point $p\in M$ over $b$, and on $N$ near $b$ by
+Lemma~\ref{lem:fixed}. The torus acting effectively on the charged hypermultiplets is the image of
+$U(1)^{n_V+1}$ in $U(1)^k$, whose cocharacter lattice is $a^\perp\cap\ZZ^k$, so Lemma~\ref{lem:flat-model}
+applies without a saturation assumption. Section~\ref{sec:quotients} and Lemma~\ref{lem:flat-model} do
+not refer to the spacetime dimension, and Theorem~\ref{thm:normal-form},
+Proposition~\ref{prop:tangent-cone} and Lemma~\ref{lem:flat-model} give the hypermultiplet germ
+$N\times\CC^2/\ZZ_m$ and the metric statement as in the proof of Theorem~\ref{thm:general}. For the
+vector conditions, $k_\Lambda\mathcal L^\Lambda$ is the fundamental field of the element $\xi$ of
+$\mathrm{Lie}(T)\otimes\CC$ determined by $(Z_1,\dots,Z_k)$. Off the root the effective torus acts freely
+near $p$, so the real and imaginary parts of $\xi$ vanish, that is $Z_i=0$ for all $i$; conversely $Z=0$
+gives $k_\Lambda\mathcal L^\Lambda=0$. On the Coulomb branch every $z$ is allowed. The absence of a mixed
+branch follows as in Theorem~\ref{thm:general}.
+\end{proof}
+
+The Higgs branch has vector factor $(\mathcal S_0,z_0)$ of complex dimension $n_V-(k-1)$. For type~IIA on
+$\widehat X$ at large volume (Section~\ref{subsec:iia}), with the D0-charges fixed by the gauge choice
+$B\cdot C_i=0$ made there, the root points with $J\in F$ are the points of $\mathcal E_F\times N$,
+and $n_V-(k-1)=h^{1,1}(X_t)$, the number of vector multiplets of type~IIA on the smoothing.
+
+\subsection{Type IIA string theory at the massless locus}
+\label{subsec:iia}
+
+Let $\widehat X$ and $F$ satisfy (S1)--(S3). We use the large-volume symplectic frame of type~IIA on
+$\widehat X$, with complexified K\"ahler moduli $w=B+iJ$, where $w^A=X^A/X^0$ and the prepotential is
+$\mathcal F=-\tfrac16\kappa_{ABC}X^AX^BX^C/X^0$ plus worldsheet-instanton terms. In this frame a D2-brane on a class
+$\beta$ bound to $n$ D0-branes has holomorphic central charge $\beta\cdot w-n$, up to the factor $e^{K/2}$
+and the sign conventions of~\cite[eq.~(A.10)]{Denef:2007Halos}; D2- and D0-charges are
+electric~\cite{Denef:2007Halos}. The vector multiplets gauge no isometry of $\mathcal S$. We call
+\[
+ \mathcal E_F=\{\,w=B+iJ:\ J\in F,\ B\cdot C_i\in\ZZ\ \text{for all }i\,\}
+\]
+the \emph{massless locus} over $F$, the locus of the complexified K\"ahler cone at which D2-branes on the
+curves $C_i$ become massless. The large gauge transformations $B\mapsto B+D$, $D\in H^2(\widehat X;\ZZ)$,
+identify its components and shift the D0-charges; since the charge lattice is saturated by (S2), we can
+use them to set $B\cdot C_i=0$. A D2-brane on a class
+in the span of the $C_i$ then has central charge proportional to $n$, so among these states only the
+D2-branes on the $C_i$ with $n=0$ are massless; by (S1) and the vanishing of multiple-cover and
+higher-genus invariants of isolated $(-1,-1)$-curves~\cite{FaberPandharipande:2000,BryanKatzLeung:2001}
+they give $k$ hypermultiplets with charges $q_{iA}=H_A\cdot C_i$, $q_{i0}=0$. D4- and D6-brane central
+charges receive worldsheet-instanton corrections and can vanish at finite volume, for instance for
+D4-branes on a small divisor near the del Pezzo facet of $X_9$. We therefore work at large volume,
+$J=\rho J_0$ with $J_0$ in a compact subset of $F$ and $\rho\geq\rho_0(J_0)$, and assume, as part of
+Hypothesis~\ref{hyp:regular-4d}, that there the central charges of all other BPS states are bounded away
+from zero (for D0-branes and D2--D0 states on the span of the $C_i$ this holds exactly, $|n|\geq1$);
+$\rho_0(J_0)\to\infty$ as $J_0$ approaches the boundary of $F$.
+
+\begin{proposition}\label{prop:4d-kinetic}
+For the cubic prepotential, with $L(J)_{AB}=\kappa_{ABC}J^C$, $v=L(J)J$ and $\operatorname{vol}=\tfrac16\kappa(J,J,J)$,
+one has $e^{-K}=\tfrac43\kappa(J,J,J)$ and the special K\"ahler metric on the complexified K\"ahler cone is
+\begin{equation}
+ g_{A\bar B}=\frac{1}{4\operatorname{vol}}\,\mathcal G_{AB},\qquad
+ \mathcal G=-L(J)+\frac{vv^{\mathsf T}}{4\operatorname{vol}},
+ \label{eq:4d-kinetic}
+\end{equation}
+where $\mathcal G$ is the Hodge metric on harmonic two-forms of (S3), that is the five-dimensional gauge
+kinetic matrix~\cite[eqs.~(4.1), (4.6)]{W26quantum}. In particular, on $F$ the metric of the cubic
+prepotential is positive definite if and only if (S3) holds.
+\end{proposition}
+
+\begin{proof}
+With $X^0=1$, $e^{-K}=i(\bar X^\Lambda\partial_\Lambda\mathcal F-X^\Lambda\overline{\partial_\Lambda\mathcal F})
+=\tfrac43\kappa(J,J,J)$. Since $K$ depends on $J$ only,
+$\partial_{w^A}\partial_{\bar w^B}K=\tfrac14\partial_{J^A}\partial_{J^B}K$, and with
+$\partial_A\kappa(J,J,J)=3v_A$, $\partial_A\partial_B\kappa(J,J,J)=6L_{AB}$ one obtains
+$g=\tfrac14\bigl(-6L/\kappa(J,J,J)+9vv^{\mathsf T}/\kappa(J,J,J)^2\bigr)$, which
+is~\eqref{eq:4d-kinetic} with $\kappa(J,J,J)=6\operatorname{vol}$.
+\end{proof}
+
+The corrections to the Wilsonian prepotential near $\mathcal E_F$ are the constant $\zeta(3)\chi$ term, of
+relative order $\rho^{-3}$; worldsheet instantons on classes of positive area, exponentially small; and the
+regular part of $\operatorname{Li}_3(e^{2\pi i\,w\cdot C_i})$ at the shrinking curves, whose non-analytic part,
+proportional to $(w\cdot C_i)^2\log(w\cdot C_i)$, is the one-loop contribution of the light hypermultiplets
+and is absent from the Wilsonian prepotential. The regular part changes $g$ by a relative amount of order
+$\rho^{-1}$ in the directions normal to $\mathcal S_0$, with a coefficient fixed by the Wilsonian
+subtraction scale; for any fixed subtraction scale, the positive definiteness in
+Hypothesis~\ref{hyp:regular-4d} follows from (S3) for $\rho$ large. Proposition~\ref{prop:face}(3)
+establishes (S3) for $X_9$.
+
+\subsection{The vanishing three-spheres}
+\label{subsec:spheres}
+
+\begin{lemma}\label{lem:spheres}
+Let $X_t$ be a smoothing of the contraction $X_F$ of Section~\ref{subsec:setting}, and $S_i\subset
+X_t$ the vanishing three-sphere of the $i$-th node. For suitable orientations of the $S_i$,
+$[S_i]=a_i[S]$ in $H_3(X_t;\ZZ)$ for a class $[S]$ generating the span of the $[S_i]$. If the relation
+$\sum_ia_i[C_i]=0$ holds in $H_2(\widehat X;\ZZ)$ and not only modulo torsion, then $[S]$ is primitive.
+\end{lemma}
+
+\begin{proof}
+The complements $\widehat X\smallsetminus\bigcup_iC_i$ and $X_t\smallsetminus\bigcup_iS_i$ are
+diffeomorphic, and the linking three-sphere of $C_i$ is identified with $S_i$. In the exact sequence
+$H_4(\widehat X)\to\bigoplus_iH_4(\widehat X,\widehat X\smallsetminus C_i)\cong\ZZ^k\to
+H_3(\widehat X\smallsetminus\textstyle\bigcup C_i)$ the first map is $D\mapsto(D\cdot C_i)_i$, whose
+image is $a^\perp\cap\ZZ^k$ by (S2), and the second sends the $i$-th generator to the linking
+sphere. The map $H_3(X_t\smallsetminus\bigcup S_i)\to H_3(X_t)$ is injective, because
+$H_4(X_t,X_t\smallsetminus\bigcup S_i)\cong H^2(\bigsqcup S_i)=0$ by Lefschetz duality. So the span of
+the $[S_i]$ is $\ZZ^k/(a^\perp\cap\ZZ^k)\cong\ZZ$, via $c\mapsto a\cdot c$. For primitivity consider
+$H_3(X_t)\to H_3(X_t,X_t\smallsetminus\bigcup S_i)\cong\ZZ^k\to H_2(X_t\smallsetminus\bigcup S_i)\cong
+H_2(\widehat X\smallsetminus\bigcup C_i)\cong H_2(\widehat X)$, the last isomorphism because
+$H_j(\widehat X,\widehat X\smallsetminus\bigcup C_i)\cong H^{6-j}(\bigsqcup C_i)=0$ for $j=2,3$. The first map
+is $\gamma\mapsto(\gamma\cdot S_i)_i$ and the second sends the $i$-th generator to $\pm[C_i]$, so the image
+of the first is the integral relation lattice of the curves, $\ZZ a$. Hence some $\gamma$ has
+$\gamma\cdot S=\pm1$, and $[S]$ is primitive.
+\end{proof}
+
+For unit coefficients the $k$ vanishing spheres are homologous up to orientation: this is the
+configuration of $k$ homologous vanishing three-cycles of~\cite{OoguriVafa:1996,Greene:1996Confinement}.
+For $X_9$, Lemma~\ref{lem:spheres} with~\eqref{eq:face-relation} gives four such spheres.
+
+\subsection{The expectation of Greene, Morrison and Vafa}
+\label{subsec:gmv}
+
+Greene, Morrison and Vafa argued from the rigid field theory that near homologous vanishing three-cycles
+the type~IIA hypermultiplet moduli space has, with gravity decoupled, an $A_{k-1}$ singularity, $k$ the
+number of cycles, and wrote: ``When we turn on gravity we do expect that the qualitative features we have
+found will persist but the actual metric will get corrected in a non-universal way, depending on how the
+vanishing cycle sits in the Calabi--Yau, and the total space will be a quaternionic
+manifold''~\cite[Sect.~6]{Greene:1996Confinement}. Here ``gravity decoupled'' is the limit in which the
+four-dimensional dilaton, a coordinate of the universal hypermultiplet, is sent to weak coupling while
+approaching the conifold locus, so that the relevant piece of the quaternionic K\"ahler metric scales to a
+hyperk\"ahler one~\cite[Sect.~6]{Greene:1996Confinement}; ``finite Planck mass'' means the quaternionic
+K\"ahler metric at fixed $\nu$.
+
+Under (W-IIA) below, we identify the neutral manifold $N$ of $\widehat X$ with the locus in the hypermultiplet
+moduli space of the smoothings $X_t$ where they degenerate to $X_F$: its points are the complex structures of $X_F$ with their
+Ramond--Ramond axions and the scalars of the universal hypermultiplet. We call $N\times\{0\}$ the \emph{root locus}; it lies in the conifold
+locus of $\mathcal M_H(X_t)$, where the vanishing cycles have zero period. To compare the vacuum space of
+Theorem~\ref{thm:4d} with the moduli space of type~IIA on $X_t$ we assume, at large volume:
+\begin{itemize}
+\item[(W-IIA)] near $x$, the Higgs vacua off the root are type~IIA compactifications on the smoothings
+$X_t$, and the hypermultiplet moduli space $\mathcal M_H^{\mathrm{reg}}$ of these (the same manifold as in
+Section~\ref{subsec:object}, by~\cite[Sect.~2]{Strominger:1997}) is bi-Lipschitz
+equivalent near the root to $(\mu^{-1}(0)\smallsetminus N)/T$ with the quotient metric
+of~\cite{Galicki:1988}.
+\end{itemize}
+This is the four-dimensional counterpart of clause~(3) of Hypothesis~\ref{hyp:regular}, and it is the
+assumption on which the comparison with~\cite{Greene:1996Confinement} rests. Without gravity its analogue
+holds for the known model metrics: the hyperk\"ahler metrics obtained from Euclidean D2-branes on $k$
+homologous vanishing spheres~\cite{OoguriVafa:1996,SeibergShenker:1996} (constructed rigorously for $k=1$
+in~\cite{FredricksonZimet:2025}, whose Remarks~3.14 and~4.44 indicate the extension to multiplicity $k$)
+have the same $A_{k-1}$ point as the hyperk\"ahler quotient of the $k$ light
+hypermultiplets. A proof at finite Planck mass would require control of the instanton-corrected
+quaternionic K\"ahler metric near the conifold locus. The twistorial construction~\cite{Alexandrov:2008gh} describes the D-instanton corrections to
+this metric, NS5-instantons aside, through the invariants of the wrapped branes, but its behaviour where the central charge of a wrapped brane vanishes has not been
+analysed there, and it does not settle (W-IIA).
+
+\begin{corollary}\label{cor:gmv}
+Let $\widehat X$ and $F$ satisfy (S1)--(S3), and assume Hypothesis~\ref{hyp:regular-4d} and (W-IIA) for
+type~IIA on $\widehat X$ at large volume. At a point of the root locus the germ of the metric completion of
+the hypermultiplet moduli space of $X_t$ is homeomorphic to $N\times\CC^2/\ZZ_m$ with $m=\sum_i|a_i|$, and
+it is a smooth quaternionic K\"ahler manifold off $N\times\{0\}$. If the equivalence in (W-IIA) is an
+isometry, the metric is the flat orbifold metric up to relative corrections of order $r^2$.
+\end{corollary}
+
+\begin{proof}
+The argument of Lemma~\ref{lem:completion} for the hypermultiplet factor, with
+Theorem~\ref{thm:4d} in place of Theorem~\ref{thm:general} and (W-IIA) in place of clause (3) of
+Hypothesis~\ref{hyp:regular}; the metric clause follows from Proposition~\ref{prop:tangent-cone} when the
+equivalence is an isometry.
+\end{proof}
+
+For unit coefficients $m=k$, the number of homologous vanishing spheres. Near the root the rest of the
+conifold locus consists of smooth points of the completion: in $\CC[X,Y,s]/(XY-c\,s^m)$, $c\neq0$ as in Lemma~\ref{lem:flat-model}, it is
+$\{s=0,\,(X,Y)\neq0\}$. For coefficients $|a_i|\geq2$ the rigid instanton picture is consistent with this description of the root.
+Near the conifold locus the rigid metric has Gibbons--Hawking form, with coordinates the period $\int_S\Omega$
+and the Ramond--Ramond phase $\theta=\int_SC_3$ and a harmonic potential. A BPS state of charge $n$ with
+respect to $[S]$ (for the sphere $S_i$, $n=|a_i|$) in the three-dimensional description obtained by compactification on a
+circle~\cite{SeibergShenker:1996} contributes $n$ singular points to this
+potential, at $\theta\in2\pi\ZZ/n$, each of which is an $A_{n-1}$ point~\cite[Sect.~4.1]{Gaiotto:2008cd}, and
+the one-loop potential is a sum over the light hypermultiplets~\cite{SeibergShenker:1996,Gaiotto:2008cd}.
+Hence at $\theta=0$, where the centres of all the $S_i$ coincide, the singularity is of type $A_{m-1}$ with
+$m=\sum_i|a_i|$. The rigid picture also places orbifold points
+at other values of $\theta$, outside the germ; we make no statement about them.

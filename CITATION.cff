@@ -1,11 +1,11 @@
 cff-version: 1.2.0
-message: "Please cite the individual manuscript relevant to the result used; entries for all three are in CITATION.bib."
+message: "Please cite the individual manuscript relevant to the result used; entries for all four are in CITATION.bib."
 title: "Compact Higgs Transitions: Manuscripts and Reproducibility Code"
 type: software
 authors:
   - family-names: Wuebben
     given-names: Bernd Johannes
-date-released: 2026-09-07
+date-released: 2026-09-23
 repository-code: "https://github.com/bwuebben/global-higgs-branch"
 license:
   - CC-BY-4.0
@@ -42,3 +42,10 @@ references:
     year: 2026
     notes: "Supporting technical note."
     url: "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/03-magnetic-sheaves/paper.pdf"
+  - type: unpublished
+    title: "The Higgs Branch of a Compact Calabi–Yau Transition at Finite Planck Mass"
+    authors:
+      - family-names: Wuebben
+        given-names: Bernd Johannes
+    year: 2026
+    url: "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/04-finite-planck-vacua/paper.pdf"

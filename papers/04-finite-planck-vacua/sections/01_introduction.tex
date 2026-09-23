@@ -1,0 +1,259 @@
+When a compact Calabi--Yau threefold develops singularities, M-theory on it acquires light
+states, and the vacuum moduli space of the five-dimensional supergravity acquires a new branch
+along which these states condense. With gravity decoupled, the local structure of such a Higgs
+branch is a hyperk\"ahler quotient computed from the charges of the light states. In a compactification on a compact threefold the Planck mass is finite, the hypermultiplet scalars take values in a
+quaternionic K\"ahler manifold rather than a hyperk\"ahler one~\cite{Galicki:1988}, and the
+metric of that manifold is not known~\cite{Mohaupt:2004de}. This paper asks what the local space
+of supersymmetric vacua is at finite Planck mass, and shows that for a class of transitions it
+can be determined without knowing the metric.
+
+We use the following terms. A \emph{root} of the Higgs branch is a point at which it meets the
+Coulomb branch, that is, where the charged hypermultiplets become massless. If near a root the
+Higgs branch is locally a product (vector moduli)$\,\times\,$(neutral
+hypermultiplets)$\,\times\,S$ with $S$ a cone, we call the germ of $S$ at its vertex the
+\emph{transverse type} of the root. The \emph{rigid model} of a root is the flat hyperk\"ahler
+quotient of the light hypermultiplets by the gauge group that acts on them, with gravity and all
+other fields ignored. In the language of stratified spaces the transverse type is the transverse
+slice to the stratum through the root. Finally, a \emph{Wilsonian} effective action is one for
+the modes below a fixed mass scale that keeps the light charged states as fields, as opposed to
+the moduli-space action obtained by integrating them out.
+
+\paragraph{The example.}
+The threefold $X_9$ of~\cite{W26global,W26quantum}, recalled in Section~\ref{subsec:x9}, has
+two ordinary double points and one cone over the degree-seven del Pezzo surface
+$S_7=\operatorname{Bl}_2\mathbb P^2$; its crepant resolution $\wideX_9$ has Hodge numbers
+$(h^{1,1},h^{2,1})=(6,122)$ and its smoothing $X_{9,t}$ has $(3,123)$. Physically, the two nodes
+contribute two charged hypermultiplets and the del Pezzo cone the rank-one $E_2$ theory. This is
+the strongly coupled five-dimensional superconformal theory, without a Lagrangian description,
+obtained from M-theory on a local del Pezzo surface of degree seven; in the same series $E_1$
+corresponds to $\mathbb P^1\times\mathbb P^1$ and $E_0$ to $\mathbb P^2$. Write $C_1,C_2$ for the exceptional
+curves of small resolutions of the two nodes, $u_1,u_2$ for their smoothing parameters
+($xy-zw=u_i$) and $s$ for the deformation parameter of the del Pezzo cone
+(Section~\ref{subsec:x9}). The three sectors are charged under the same two bulk vector multiplets,
+and every global first-order deformation of $X_9$ satisfies $u_1+s=u_2+s=0$, so none of them can be Higgsed
+alone: every first-order smoothing of $X_9$ smooths all three singular points at once. The rigid model of
+this transition has transverse type
+\begin{equation}
+ \CC^2/\ZZ_4,\qquad \CC[X,Y,s]/(XY-s^4),
+ \label{eq:intro-A3}
+\end{equation}
+an $A_3$ surface singularity~\cite[eq.~(3.10)]{W26quantum}. The coupling of the three sectors
+is a gravitational effect. The inverse gauge couplings of the vector multiplets are the Hodge
+norms of the corresponding two-forms. Along any path on which the volume of the threefold grows
+while the areas of $C_1$, $C_2$ and of all curves in the del Pezzo surface stay bounded, some
+combination of the classes that couple the sectors acquires a divergent norm and its canonically
+normalised coupling to the local fields vanishes. The joint constraint is then never retained; at
+most $u_1=u_2$ survives~\cite[Sect.~4, Thm.~4.3]{W26quantum}. The question is therefore only
+meaningful at finite Planck mass.
+
+\paragraph{Results.}
+First, we prove a local normal form for quaternionic K\"ahler quotients
+(Theorem~\ref{thm:normal-form}). Let a compact connected group $G$ act isometrically on a
+quaternionic K\"ahler manifold $M$ of dimension at least eight and nonzero scalar curvature, which
+need not be complete, and
+let $p$ lie on a component $N$ of the fixed set on which the moment map vanishes. If $G$ acts
+locally freely on the nonzero part of the zero set of the flat hyperk\"ahler moment map $\mu_0$ of
+the normal isotropy representation $V$, then near $[p]$ the quotient is homeomorphic, compatibly
+with its stratification, to $N\times V/\!/\!/G$, where $V/\!/\!/G=\mu_0^{-1}(0)/G$ is the flat
+hyperk\"ahler quotient. If the action there is free, the metric
+tangent cone is the flat product, and the metric agrees with it up to relative corrections of
+order $r^2$ at distance $r$ from $[p]$ (Proposition~\ref{prop:tangent-cone}); the rate is
+attained. The statement holds for either sign of the scalar curvature, so it applies to positive
+quaternionic K\"ahler manifolds as well. Behind this lies an
+elementary observation (Lemma~\ref{lem:isotropy} and Remark~\ref{rem:no-fi}): the moment map of
+a quaternionic K\"ahler manifold has no constants of integration, and at a fixed point it is
+determined by the isotropy representation. A hyperk\"ahler quotient can be resolved or deformed
+by moving the level of the moment map, a Fayet--Iliopoulos parameter; at finite Planck mass no
+such parameter exists, and a nonzero value of the moment map at a fixed point is the same thing
+as a gauging of (a subgroup of) the $SU(2)$ R-symmetry there. The normal form and the
+tangent-cone estimate apply, at the level $\mu(p)$, to hyperk\"ahler and K\"ahler quotients at a fixed point
+(Remark~\ref{rem:hk}). 
+
+When the flat quotient $V/\!/\!/G$ is four-dimensional and the action is free off the origin, we also identify the correction of order
+$r^2$ transverse to $N$. Suppose that $V$ contains a quaternionic line that lies in $\mu_0^{-1}(0)$ and
+is orthogonal to the $G$-orbits through its points, as it does for the torus actions on $\HH^k$ with
+one relation among the weights considered below. That line maps onto the flat quotient and gives
+an orbifold chart of the transverse slice. The metric in this chart is not known to be twice
+differentiable at the vertex, but it has an expansion to second order, and we call the curvature at the
+vertex of its second-order truncation the \emph{leading curvature}. It is the curvature of $M$ at $p$ restricted to that
+line (Proposition~\ref{prop:universal}): the part of the curvature fixed by supergravity
+contributes constant curvature $4\nu$, where $\nu$ is the reduced scalar curvature of $M$ (with $\nu=1$ for
+$\HH\mathbb P^n$ of sectional curvature in $[1,4]$), and the hyperk\"ahler part of the curvature contributes an
+anti-self-dual Weyl tensor, with respect to the orientation in which the K\"ahler forms $\omega_a$ are
+self-dual (self-dual in the opposite orientation customary in four-dimensional quaternionic K\"ahler
+geometry).
+
+Second, the physical statement holds for every face with one relation
+(Theorem~\ref{thm:general}). Suppose that on an open face $F$ of the nef cone of a compact
+Calabi--Yau threefold $\widehat X$ exactly $k$ disjoint $(-1,-1)$-curves have zero area, and that
+their classes satisfy a single primitive relation $\sum_ia_i[C_i]=0$ with every $a_i\neq0$, that $F$ is
+open in the annihilator of their classes, and that the gauge kinetic matrix of the vector multiplets is
+positive definite on $F$ (Section~\ref{subsec:setting}).
+Assume the regularity hypothesis of Section~\ref{subsec:hypotheses}, whose main content is that
+there is a smooth Wilsonian hypermultiplet manifold containing the $k$ light states and that the
+Coulomb branch through the root consists of supersymmetric vacua. Then the Higgs branch at the
+root has transverse type $\CC^2/\ZZ_m$ with $m=\sum_i|a_i|$, the same as its rigid model, and
+the metric of its hypermultiplet factor is the flat orbifold metric of $\CC^2/\ZZ_m$ times the flat
+metric on the tangent space of $N$, up to relative corrections
+of order $r^2$, where $r$ is the distance from the root. For $k$ nodes whose vanishing three-spheres are homologous up to sign, $m=k$.
+
+Third, $X_9$ has such a face (Section~\ref{sec:face}). On a three-dimensional open face $F$ of
+the nef cone of $\wideX_9$ exactly four irreducible curves have zero area, the two nodal curves and
+the two exceptional curves of the del Pezzo surface, and they are disjoint $(-1,-1)$-curves
+(Proposition~\ref{prop:face}); so the massless spectrum, in all degrees and genera, consists of four
+hypermultiplets. No divisor collapses and all gauge couplings stay finite on $F$,
+and the resulting threefold with four nodes smooths, in the direction allowed by its single
+relation, to a smoothing of $X_9$ deformation equivalent to $X_{9,t}$
+(Proposition~\ref{prop:face-smoothing}). The four vanishing charges and their relation were
+found from the mirror periods of a four-node degeneration in~\cite[Sects.~5.1--5.2,
+Prop.~5.1]{W26quantum}, and the corresponding mirror family was related there to that of
+$X_{9,t}$~\cite[Prop.~5.2]{W26quantum}. What is new here is the statement in
+five-dimensional M-theory, that on $F$ exactly these curves and no others have zero area, together with a
+direct proof that the four-node threefold smooths to $X_{9,t}$. At a root over $F$ the light
+states are four free hypermultiplets of a rank-three torus with relation $a=(1,1,-1,1)$, and
+the local space of supersymmetric Minkowski vacua is (Theorem~\ref{thm:four-node})
+\begin{equation}
+ \mathcal V_x\cong(\mathcal K_\phi\times N)\cup(F_\phi\times N\times\CC^2/\ZZ_4),
+ \label{eq:intro-main}
+\end{equation}
+where $\mathcal K_\phi$ is the germ of the Coulomb branch, $F_\phi$ the germ of the face and $N$
+the manifold of $123$ neutral hypermultiplets, the two branches being glued along
+$F_\phi\times N\times\{0\}$. The transverse type is the rigid one~\eqref{eq:intro-A3}: gravity
+does not remove the $A_3$ point or change its type. The leading curvature of the transverse $\CC^2/\ZZ_4$ is the constant curvature $4\nu$ fixed by
+supergravity plus a $\ZZ_4$-invariant anti-self-dual Weyl tensor; the latter is the only
+compactification-dependent datum at this order. It lies in a space of dimension three, every element of
+which comes from some invariant algebraic curvature tensor of hyperk\"ahler type
+(Proposition~\ref{prop:x9-leading}); whether each comes from a quaternionic K\"ahler manifold with this
+torus action is not addressed. Curvature tensors of hyperk\"ahler type correspond to quartic
+polynomials. One of the three directions, invariant under a triholomorphic circle, is realised
+by the curvature of the Taub--NUT space at its nut; the other two come from the generators $X$, $Y$
+of the ring~\eqref{eq:intro-A3}, which are quartic because $m=4$.
+
+A census of the hypersurfaces from favourable Kreuzer--Skarke polytopes with $h^{1,1}\leq5$ and from the
+favourable members of a random sample with $h^{1,1}=6$ (Section~\ref{subsec:census}) finds
+5605 faces of toric K\"ahler cones whose light spectrum, computed up to degree six, has a single
+relation: 5233 flop walls with $k=2$, and 372 faces with $k=3$, $4$ or $5$ in 210 polytopes. In none of
+them does a coefficient $|a_i|\geq2$ occur, so $m=k$ throughout; whether faces with $m\neq k$ exist at all
+remains open. For 4092 of the 5605 faces toric data show that the contraction has exactly $k$ nodes, the light
+states being disjoint $(-1,-1)$-curves; in the others they do not decide it.
+
+The del Pezzo point, where the whole surface collapses and the $E_2$ theory appears, lies on the
+facet of the closure of $F$ on which the del Pezzo surface has zero volume. Call the part of the Higgs branch on which M-theory is compactified
+on the smooth threefold $X_{9,t}$ the \emph{regular Higgs branch}. The facet is not a boundary of
+it: the regular Higgs branch continues across the facet, and its vacua immediately beyond the facet end
+at roots where a surface of a flopped threefold collapses and the $E_1$ theory, together with the two
+nodes, appears
+(Section~\ref{subsec:other-roots}). Since the $E_2$ theory has no Lagrangian, we define the Higgs
+branch at the del Pezzo point as the metric completion of the regular Higgs branch. Because the hypermultiplet metric of
+that part does not depend on the vector moduli (Lemma~\ref{lem:product}), the germ computed
+over $F$ is carried across the facet, and the completion again has transverse type
+$\CC^2/\ZZ_4$ (Theorem~\ref{thm:wall}).
+
+Fourth, in type~IIA string theory on $\widehat X$ in four dimensions, under the corresponding
+four-dimensional regularity hypothesis, at large volume, the Wilsonian vacuum space at the locus where the D2-branes on the
+curves $C_i$ become massless has the same structure: the hypermultiplet factor of the Higgs branch is
+locally $N\times\CC^2/\ZZ_m$, quaternionic K\"ahler off $N\times\{0\}$ and flat up to relative corrections of
+order $r^2$ (Theorem~\ref{thm:4d}). The massless states carry no D0-charge, the four-dimensional vacuum
+conditions~\cite{Hristov:2009} replace those of five-dimensional supergravity, and at large volume the
+special K\"ahler metric is the five-dimensional gauge kinetic matrix divided by $4\operatorname{vol}$
+(Proposition~\ref{prop:4d-kinetic}), so the positivity assumed in five dimensions carries over. The $k$
+vanishing three-spheres of the smoothing satisfy $[S_i]=a_i[S]$ (Lemma~\ref{lem:spheres}); for unit
+coefficients they are homologous up to sign. If in addition the Higgs vacua are type~IIA compactifications on the
+smoothing, with hypermultiplet moduli space bi-Lipschitz equivalent to the quotient with its quotient metric, then the type~IIA
+hypermultiplet moduli space at finite Planck mass keeps its $A_{k-1}$ point near the $k$ homologous
+vanishing three-cycles and is quaternionic K\"ahler around it (Corollary~\ref{cor:gmv}): this is the
+statement Greene, Morrison and Vafa expected, for the smoothings of the contractions considered here.
+
+\paragraph{Outline of the proofs.}
+The normal form rests on three facts about a fixed point $p$ with vanishing moment map. At a
+fixed point the moment map is the $\mathfrak{sp}(1)$-part of the isotropy
+(Lemma~\ref{lem:isotropy}), so $\mu(p)=0$ forces the isotropy to preserve a flat hyperk\"ahler
+structure on $T_pM$. Along normal geodesics the moment map is the flat one up to terms of order
+four, with no cubic term (Lemma~\ref{lem:expansion}), because the fundamental vector field is a
+Jacobi field vanishing at the starting point. Blowing up along $N$, the rescaled zero set is
+transverse on the link at $r=0$, and the flow of a connection carries the flat cone to the true
+zero set; the absence of the cubic term is what makes the deviation of order $r^2$ rather than
+$r$. The general physical theorem then reduces to its flat model: for a single relation with
+nonzero coefficients the torus acts freely off the origin of the zero set of the flat moment
+map, and the flat quotient is $\CC^2/\ZZ_m$ (Lemma~\ref{lem:flat-model}). At the root the
+moment map vanishes because the Coulomb branch through it consists of supersymmetric vacua (the
+first clause of the hypothesis) and the gauge kinetic matrix is nondegenerate there, so that the
+vacuum conditions force every moment map to vanish. For $X_9$ the face is found by a contraction
+argument: every $J\in F$ is a class pulled back from an ample class on $X_9$ plus a positive multiple
+of a nef class that restricts to the hyperplane class on the del Pezzo surface, so a curve of zero area
+is contracted by the resolution and, if it lies in the surface, is one of its exceptional
+curves.
+
+\paragraph{Relation to earlier work.}
+With gravity decoupled, the $\CC^2/\ZZ_k$ structure of the hypermultiplet moduli space near $k$
+homologous vanishing three-cycles was derived from D-instanton sums by Ooguri and
+Vafa~\cite{OoguriVafa:1996} and by Seiberg and Shenker~\cite{SeibergShenker:1996}, the
+multiplicity was identified with a Gopakumar--Vafa invariant~\cite{SaueressigVandoren:2007}, and
+smooth hyperk\"ahler model geometries of this kind were constructed rigorously for $k=1$
+in~\cite{FredricksonZimet:2025}, where the extension to multiplicity $k$ is indicated. Greene, Morrison and Vafa obtained $\CC^2/\ZZ_k$ for $k$
+hypermultiplets with one relation of unit coefficients~\cite[Sect.~3, eqs.~(3.13)--(3.18)]{Greene:1996Confinement}
+and expected that with gravity its qualitative features persist while the metric is
+corrected~\cite[Sect.~6]{Greene:1996Confinement}, a statement about the four-dimensional
+hypermultiplet space. Theorem~\ref{thm:general} and Proposition~\ref{prop:tangent-cone} make
+the five-dimensional counterpart precise, under the regularity hypothesis, for every face with
+one relation with nonzero coefficients, and Corollary~\ref{cor:gmv} the four-dimensional statement
+itself, for the smoothings considered here and under the identification (W-IIA) of
+Section~\ref{subsec:gmv}. Mohaupt and Saueressig constructed five-dimensional
+gauged supergravities for M-theory conifold transitions with a model hypermultiplet
+metric~\cite{Mohaupt:2004de}; the germ found here does not depend on such a choice. On the mathematical side, quaternionic K\"ahler reduction is due to Galicki and
+Lawson~\cite{Galicki:1988} and the correspondence with hyperk\"ahler cones to
+Swann~\cite{Swann:1991}. Dancer and Swann described a singular quaternionic K\"ahler quotient as a
+union of smooth pieces, some quaternionic K\"ahler and some locally K\"ahler, and as a union of
+quaternionic K\"ahler orbifolds~\cite[Thm.~4.6, Props.~4.4 and~5.1, Thm.~6.1]{DancerSwann:1997}, and
+showed that for compact connected $M$ and $G$ each component is a complete length space~\cite[Thm.~7.1]{DancerSwann:1997};
+through a fixed point with vanishing moment map the piece is the fixed component $N$
+(Lemmas~\ref{lem:isotropy} and~\ref{lem:fixed}). These works describe the pieces but not how they fit
+together: the frontier condition is not established~\cite[Sect.~2]{DancerSwann:1997}, and no local
+model near a singular piece is given. In symplectic geometry that role is
+played by the local normal form of Marle and of Guillemin and
+Sternberg~\cite{Marle:1985,GuilleminSternberg:1984}, on which the stratification of singular symplectic
+quotients by Sjamaar and Lerman~\cite{SjamaarLerman:1991} rests. The hyperk\"ahler analogue of that
+local model is not a normal form, since a hyperk\"ahler equivalence is an
+isometry~\cite[p.~149]{Swann:1997sing}; see
+also~\cite[Sect.~1]{Mayrand:2022}. For hyperk\"ahler quotients of positive-definite hyperk\"ahler
+manifolds on which the complexified group acts, that is, on which the vector fields $I_1X_\xi$ are
+complete, Mayrand gives a complex-analytic local model at every point of the
+quotient~\cite[Thm.~1.4]{Mayrand:2022}, and the product form of the germ along a fixed component was
+conjectured for semi-free circle actions by Fang~\cite[Rem.~3.2]{Fang:2008}. For negative scalar
+curvature the Swann bundle is pseudo-hyperk\"ahler, so the model of~\cite{Mayrand:2022} does not
+apply, and Theorem~\ref{thm:normal-form} is proved directly on the quaternionic K\"ahler manifold;
+for positive scalar curvature that model describes the complex-analytic germ of the hyperk\"ahler
+cone, which is not the metric statement along $N$ proved here. Theorem~\ref{thm:normal-form} is
+accordingly a model up to homeomorphism of germs, with metric estimates, and
+Proposition~\ref{prop:tangent-cone} describes the tangent cone of the orbit length metric at such
+points without assuming compactness; for compact connected $M$ and $G$ this metric is that of Dancer and Swann.
+
+\paragraph{Scope.}
+The results of Section~\ref{sec:quotients}, among them Theorem~\ref{thm:normal-form} and
+Proposition~\ref{prop:universal}, are theorems about quaternionic K\"ahler quotients and are proved
+unconditionally, as are Propositions~\ref{prop:face}, \ref{prop:face-smoothing}
+and~\ref{prop:4d-kinetic} and Lemmas~\ref{lem:flat-model} and~\ref{lem:spheres}.
+Lemmas~\ref{lem:product} and~\ref{lem:completion} and Theorems~\ref{thm:general},
+\ref{thm:four-node} and~\ref{thm:wall} are proved under Hypothesis~\ref{hyp:regular};
+Theorem~\ref{thm:4d} and Corollary~\ref{cor:gmv} under Hypothesis~\ref{hyp:regular-4d} and, for the
+corollary, the identification (W-IIA) of Section~\ref{subsec:gmv}. Proposition~\ref{prop:x9-leading} is proved for the manifold $M$ of Hypothesis~\ref{hyp:regular};
+Appendix~\ref{app:data} describes an independent computer check of it and of
+Proposition~\ref{prop:universal}. The
+census of Section~\ref{subsec:census} rests on computer calculations of genus-zero invariants. Theorem~\ref{thm:wall} describes the metric completion of the
+part of the Higgs branch over the smooth threefold $X_{9,t}$, over a region of the K\"ahler cone of $X_{9,t}$ that contains the del
+Pezzo facet, not the vacuum space of the interacting theory at the del Pezzo point. The
+statements about the other roots of $X_9$ in Section~\ref{sec:discussion} concern their light
+spectra and rigid models only. All statements about the vacuum space are topological or metric;
+no complex-analytic structure is claimed.
+
+\paragraph{Organisation.}
+Section~\ref{sec:face} recalls $X_9$ and proves the statements about the face.
+Section~\ref{sec:vacua} states the setting for a general face with one relation, the vacuum
+conditions and the regularity hypothesis. Section~\ref{sec:quotients} proves the normal form and
+the tangent-cone statement and identifies the leading curvature. Section~\ref{sec:higgs} proves the theorems on the Higgs branch and computes the leading correction
+for $X_9$. Section~\ref{sec:4d} treats type~IIA string theory in four dimensions.
+Section~\ref{sec:discussion} compares with the rigid picture, describes the other roots of $X_9$, compares
+with the instanton picture, reports the census of one-relation faces, discusses other effects at finite
+Planck mass, and lists open problems. Appendix~\ref{app:data} prints the intersection data, the kinetic
+determinant, the Gopakumar--Vafa data and the charge conventions, and describes an independent check of
+the leading correction.
